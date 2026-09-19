@@ -1,0 +1,102 @@
+{
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "as_of": "2026-09-20",
+  "topics": [
+    {
+      "topic_id": "F-LA-M01",
+      "topic": "构型选择决定悬停效率、巡航效率与失效模式的基本权衡",
+      "node_ids": [
+        "evtol",
+        "aircraft"
+      ],
+      "monitor_query": "低空经济 构型选择决定悬停效率、巡航效率与失效模式的基本权衡 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-LA-M02",
+      "topic": "航空电池必须用任务功率曲线而不是常规汽车循环评价",
+      "node_ids": [
+        "battery"
+      ],
+      "monitor_query": "低空经济 航空电池必须用任务功率曲线而不是常规汽车循环评价 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-LA-M03",
+      "topic": "分布式电推进的优势来自系统级协同，也引入多电机故障与热管理",
+      "node_ids": [
+        "electric-drive",
+        "evtol"
+      ],
+      "monitor_query": "低空经济 分布式电推进的优势来自系统级协同，也引入多电机故障与热管理 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-LA-M04",
+      "topic": "DAA是感知、跟踪、冲突预测和机动决策的闭环",
+      "node_ids": [
+        "detect-avoid",
+        "radar",
+        "traffic-management"
+      ],
+      "monitor_query": "低空经济 DAA是感知、跟踪、冲突预测和机动决策的闭环 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-LA-M05",
+      "topic": "城市低空噪声受构型、飞行阶段和干涉源共同影响",
+      "node_ids": [
+        "evtol",
+        "operations"
+      ],
+      "monitor_query": "低空经济 城市低空噪声受构型、飞行阶段和干涉源共同影响 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-LA-M06",
+      "topic": "适航证据必须分对象、分阶段，不是一个“拿证”标签",
+      "node_ids": [
+        "airworthiness"
+      ],
+      "monitor_query": "低空经济 适航证据必须分对象、分阶段，不是一个“拿证”标签 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    }
+  ]
+}

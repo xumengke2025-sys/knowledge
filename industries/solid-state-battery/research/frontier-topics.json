@@ -1,0 +1,108 @@
+{
+  "industry_id": "solid-state-battery",
+  "industry": "固态电池与下一代电池材料",
+  "as_of": "2026-09-20",
+  "topics": [
+    {
+      "topic_id": "F-SSB-M01",
+      "topic": "高离子电导是必要条件，但材料路线选择还受稳定窗口和可制造性约束",
+      "node_ids": [
+        "solid-electrolyte",
+        "sulfide-electrolyte",
+        "oxide-electrolyte",
+        "halide-electrolyte"
+      ],
+      "monitor_query": "固态电池与下一代电池材料 高离子电导是必要条件，但材料路线选择还受稳定窗口和可制造性约束 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SSB-M02",
+      "topic": "固固界面是电化学、机械接触和副反应的耦合边界",
+      "node_ids": [
+        "interface",
+        "coating"
+      ],
+      "monitor_query": "固态电池与下一代电池材料 固固界面是电化学、机械接触和副反应的耦合边界 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SSB-M03",
+      "topic": "枝晶不只来自机械刺穿，也可能来自电化学还原与局部电流集中",
+      "node_ids": [
+        "li-metal",
+        "interface",
+        "oxide-electrolyte"
+      ],
+      "monitor_query": "固态电池与下一代电池材料 枝晶不只来自机械刺穿，也可能来自电化学还原与局部电流集中 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SSB-M04",
+      "topic": "堆压通过接触、锂蠕变和裂纹演化改变电化学性能",
+      "node_ids": [
+        "cell-process",
+        "interface",
+        "li-metal"
+      ],
+      "monitor_query": "固态电池与下一代电池材料 堆压通过接触、锂蠕变和裂纹演化改变电化学性能 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SSB-M05",
+      "topic": "硅负极和锂金属负极的失效机制不同，不能混为“高能量密度负极”",
+      "node_ids": [
+        "silicon-anode",
+        "li-metal"
+      ],
+      "monitor_query": "固态电池与下一代电池材料 硅负极和锂金属负极的失效机制不同，不能混为“高能量密度负极” review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SSB-M06",
+      "topic": "实验室单层扣式结果到多层电芯之间存在制造放大鸿沟",
+      "node_ids": [
+        "cell-process",
+        "pilot-line",
+        "cell-validation"
+      ],
+      "monitor_query": "固态电池与下一代电池材料 实验室单层扣式结果到多层电芯之间存在制造放大鸿沟 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    }
+  ]
+}

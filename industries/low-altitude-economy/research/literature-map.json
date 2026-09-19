@@ -1,0 +1,48 @@
+{
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "as_of": "2026-09-20",
+  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "review_and_survey": [
+    "LA-P02",
+    "LA-P03",
+    "LA-P04",
+    "LA-P06",
+    "LA-P07"
+  ],
+  "landmark_or_foundational": [
+    "LA-P01"
+  ],
+  "frontier_or_method": [
+    "LA-P05"
+  ],
+  "mechanism_to_papers": {
+    "LA-M01": [
+      "LA-P02",
+      "LA-P04"
+    ],
+    "LA-M02": [
+      "LA-P01",
+      "LA-P03"
+    ],
+    "LA-M03": [
+      "LA-P02",
+      "LA-P07"
+    ],
+    "LA-M04": [
+      "LA-P05",
+      "LA-P04"
+    ],
+    "LA-M05": [
+      "LA-P06"
+    ],
+    "LA-M06": [
+      "LA-P02",
+      "LA-P04"
+    ]
+  },
+  "reading_status_counts": {
+    "sections_reviewed": 1,
+    "abstract_reviewed": 6
+  }
+}

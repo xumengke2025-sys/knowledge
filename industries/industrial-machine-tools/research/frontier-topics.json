@@ -1,0 +1,106 @@
+{
+  "industry_id": "industrial-machine-tools",
+  "industry": "工业母机与高端数控",
+  "as_of": "2026-09-20",
+  "topics": [
+    {
+      "topic_id": "F-IMT-M01",
+      "topic": "五轴体积精度来自多轴几何误差的空间叠加",
+      "node_ids": [
+        "five-axis",
+        "geometric-calibration"
+      ],
+      "monitor_query": "工业母机与高端数控 五轴体积精度来自多轴几何误差的空间叠加 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-IMT-M02",
+      "topic": "热误差是时变系统，稳态补偿模型容易跨工况失效",
+      "node_ids": [
+        "thermal-error",
+        "spindle",
+        "linear-motion"
+      ],
+      "monitor_query": "工业母机与高端数控 热误差是时变系统，稳态补偿模型容易跨工况失效 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-IMT-M03",
+      "topic": "数字孪生只有形成‘预测—补偿—验证’闭环才产生精度价值",
+      "node_ids": [
+        "industrial-software",
+        "thermal-error"
+      ],
+      "monitor_query": "工业母机与高端数控 数字孪生只有形成‘预测—补偿—验证’闭环才产生精度价值 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-IMT-M04",
+      "topic": "伺服、编码器和机械传动共同决定动态轮廓误差",
+      "node_ids": [
+        "servo",
+        "encoder",
+        "ball-screw"
+      ],
+      "monitor_query": "工业母机与高端数控 伺服、编码器和机械传动共同决定动态轮廓误差 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-IMT-M05",
+      "topic": "颤振是机床-刀具-工件动态系统与切削过程再生效应的耦合",
+      "node_ids": [
+        "chatter",
+        "spindle",
+        "tooling"
+      ],
+      "monitor_query": "工业母机与高端数控 颤振是机床-刀具-工件动态系统与切削过程再生效应的耦合 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-IMT-M06",
+      "topic": "机床精度最终要回到工件和验收标准，而不是算法自报指标",
+      "node_ids": [
+        "acceptance",
+        "five-axis"
+      ],
+      "monitor_query": "工业母机与高端数控 机床精度最终要回到工件和验收标准，而不是算法自报指标 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    }
+  ]
+}

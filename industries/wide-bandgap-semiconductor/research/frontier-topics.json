@@ -1,0 +1,102 @@
+{
+  "industry_id": "wide-bandgap-semiconductor",
+  "industry": "第三代/宽禁带半导体",
+  "as_of": "2026-09-20",
+  "topics": [
+    {
+      "topic_id": "F-WBG-M01",
+      "topic": "衬底缺陷通过外延和器件区域放大为良率与可靠性问题",
+      "node_ids": [
+        "crystal-growth",
+        "substrate",
+        "sic-epitaxy"
+      ],
+      "monitor_query": "第三代/宽禁带半导体 衬底缺陷通过外延和器件区域放大为良率与可靠性问题 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-WBG-M02",
+      "topic": "SiC MOS界面决定沟道迁移率和阈值稳定性，是器件可靠性核心",
+      "node_ids": [
+        "sic-mosfet",
+        "qualification"
+      ],
+      "monitor_query": "第三代/宽禁带半导体 SiC MOS界面决定沟道迁移率和阈值稳定性，是器件可靠性核心 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-WBG-M03",
+      "topic": "GaN陷阱效应使动态Ron与静态Ron不是同一件事",
+      "node_ids": [
+        "gan-hemt"
+      ],
+      "monitor_query": "第三代/宽禁带半导体 GaN陷阱效应使动态Ron与静态Ron不是同一件事 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-WBG-M04",
+      "topic": "高速开关把封装寄生、电磁兼容和热设计推到系统瓶颈",
+      "node_ids": [
+        "advanced-package",
+        "module"
+      ],
+      "monitor_query": "第三代/宽禁带半导体 高速开关把封装寄生、电磁兼容和热设计推到系统瓶颈 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-WBG-M05",
+      "topic": "系统效率收益依赖开关频率、拓扑和磁性/散热的协同设计",
+      "node_ids": [
+        "module",
+        "qualification"
+      ],
+      "monitor_query": "第三代/宽禁带半导体 系统效率收益依赖开关频率、拓扑和磁性/散热的协同设计 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-WBG-M06",
+      "topic": "车规/工业可靠性要从加速应力映射到真实任务谱",
+      "node_ids": [
+        "qualification"
+      ],
+      "monitor_query": "第三代/宽禁带半导体 车规/工业可靠性要从加速应力映射到真实任务谱 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "industry_id": "smart-sensors-mems",
+  "industry": "高端智能传感器与MEMS",
+  "as_of": "2026-09-20",
+  "topics": [
+    {
+      "topic_id": "F-SEN-M01",
+      "topic": "传感器指标必须沿‘敏感结构—转导—读出—校准’整链条理解",
+      "node_ids": [
+        "sensing-material",
+        "mems-chip",
+        "asic",
+        "calibration"
+      ],
+      "monitor_query": "高端智能传感器与MEMS 传感器指标必须沿‘敏感结构—转导—读出—校准’整链条理解 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SEN-M02",
+      "topic": "MEMS陀螺长期稳定性高度依赖温度、封装应力和真空腔状态",
+      "node_ids": [
+        "gyro",
+        "wafer-package",
+        "calibration"
+      ],
+      "monitor_query": "高端智能传感器与MEMS MEMS陀螺长期稳定性高度依赖温度、封装应力和真空腔状态 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SEN-M03",
+      "topic": "机械冲击/振动与热应力常通过多物理耦合改变MEMS结构和封装",
+      "node_ids": [
+        "inertial",
+        "packaging"
+      ],
+      "monitor_query": "高端智能传感器与MEMS 机械冲击/振动与热应力常通过多物理耦合改变MEMS结构和封装 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SEN-M04",
+      "topic": "触觉阵列的核心是空间分辨、力学解耦和大面积一致性的权衡",
+      "node_ids": [
+        "tactile-array",
+        "flexible"
+      ],
+      "monitor_query": "高端智能传感器与MEMS 触觉阵列的核心是空间分辨、力学解耦和大面积一致性的权衡 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SEN-M05",
+      "topic": "MEMS气体传感的实际难点是选择性、漂移和环境干扰",
+      "node_ids": [
+        "gas",
+        "gas-selectivity"
+      ],
+      "monitor_query": "高端智能传感器与MEMS MEMS气体传感的实际难点是选择性、漂移和环境干扰 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SEN-M06",
+      "topic": "多传感融合的价值取决于误差模型和时间同步，而非传感器数量",
+      "node_ids": [
+        "sensor-fusion",
+        "inertial",
+        "optical-sensor"
+      ],
+      "monitor_query": "高端智能传感器与MEMS 多传感融合的价值取决于误差模型和时间同步，而非传感器数量 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    }
+  ]
+}

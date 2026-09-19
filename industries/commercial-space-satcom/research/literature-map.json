@@ -1,0 +1,46 @@
+{
+  "industry_id": "commercial-space-satcom",
+  "industry": "商业航天与卫星互联网",
+  "as_of": "2026-09-20",
+  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "review_and_survey": [
+    "CS-P01",
+    "CS-P03",
+    "CS-P04",
+    "CS-P05",
+    "CS-P06",
+    "CS-P07"
+  ],
+  "landmark_or_foundational": [],
+  "frontier_or_method": [
+    "CS-P02"
+  ],
+  "mechanism_to_papers": {
+    "CS-M01": [
+      "CS-P01"
+    ],
+    "CS-M02": [
+      "CS-P01",
+      "CS-P03",
+      "CS-P05"
+    ],
+    "CS-M03": [
+      "CS-P02",
+      "CS-P05"
+    ],
+    "CS-M04": [
+      "CS-P07"
+    ],
+    "CS-M05": [
+      "CS-P03",
+      "CS-P04",
+      "CS-P05"
+    ],
+    "CS-M06": [
+      "CS-P01"
+    ]
+  },
+  "reading_status_counts": {
+    "abstract_reviewed": 7
+  }
+}

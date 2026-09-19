@@ -1,0 +1,47 @@
+{
+  "industry_id": "industrial-machine-tools",
+  "industry": "工业母机与高端数控",
+  "as_of": "2026-09-20",
+  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "review_and_survey": [
+    "IMT-P01",
+    "IMT-P02",
+    "IMT-P03",
+    "IMT-P04"
+  ],
+  "landmark_or_foundational": [],
+  "frontier_or_method": [
+    "IMT-P05",
+    "IMT-P06",
+    "IMT-P07"
+  ],
+  "mechanism_to_papers": {
+    "IMT-M01": [
+      "IMT-P01",
+      "IMT-P02"
+    ],
+    "IMT-M02": [
+      "IMT-P03",
+      "IMT-P05",
+      "IMT-P06"
+    ],
+    "IMT-M03": [
+      "IMT-P04",
+      "IMT-P05"
+    ],
+    "IMT-M04": [
+      "IMT-P02"
+    ],
+    "IMT-M05": [
+      "IMT-P01"
+    ],
+    "IMT-M06": [
+      "IMT-P06",
+      "IMT-P07"
+    ]
+  },
+  "reading_status_counts": {
+    "metadata_only": 1,
+    "abstract_reviewed": 6
+  }
+}

@@ -21,7 +21,7 @@ for row in coverage['industries']:
   if p['reading_status']!='metadata_only':assert p['summary'] and p['limitations'];all_ids.add(p['id'])
  counts['nodes']+=len(nodes);counts['excerpts']+=len(es);counts['papers']+=len(papers);counts['reviewed_papers']+=sum(p['reading_status']!='metadata_only' for p in papers)
  assert row['nodes']==len(nodes) and row['reviewed_excerpts']==len(es) and row['papers']==len(papers)
-bundle=load(R/'firmbuddy/import-bundle.json');keys={d['logical_key'] for d in bundle['documents']};assert len(keys)==len(bundle['documents'])==28
+bundle=load(R/'firmbuddy/import-bundle.json');keys={d['logical_key'] for d in bundle['documents']};assert len(keys)==len(bundle['documents'])==36
 for d in bundle['documents']:assert digest(d['text'])==d['sha256'];assert d['sourceType'] in ['research','ai_generated']
 for e in bundle['equipments']:assert set(e['document_keys'])<=keys;assert e['type']==e['slot'];assert e['type'] in ['core_spec','research','product_capability','supplement']
 data=load(R/'firmbuddy/plugin-data.json');assert data==load(R/'firmbuddy/technology-intelligence/data/knowledge.json')

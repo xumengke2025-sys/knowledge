@@ -1,0 +1,48 @@
+{
+  "industry_id": "wide-bandgap-semiconductor",
+  "industry": "第三代/宽禁带半导体",
+  "as_of": "2026-09-20",
+  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "review_and_survey": [
+    "WBG-P02",
+    "WBG-P03",
+    "WBG-P04",
+    "WBG-P05",
+    "WBG-P06",
+    "WBG-P07"
+  ],
+  "landmark_or_foundational": [
+    "WBG-P01"
+  ],
+  "frontier_or_method": [],
+  "mechanism_to_papers": {
+    "WBG-M01": [
+      "WBG-P06"
+    ],
+    "WBG-M02": [
+      "WBG-P02",
+      "WBG-P05"
+    ],
+    "WBG-M03": [
+      "WBG-P01",
+      "WBG-P02"
+    ],
+    "WBG-M04": [
+      "WBG-P03",
+      "WBG-P04",
+      "WBG-P07"
+    ],
+    "WBG-M05": [
+      "WBG-P03",
+      "WBG-P07"
+    ],
+    "WBG-M06": [
+      "WBG-P02",
+      "WBG-P05"
+    ]
+  },
+  "reading_status_counts": {
+    "sections_reviewed": 1,
+    "abstract_reviewed": 6
+  }
+}

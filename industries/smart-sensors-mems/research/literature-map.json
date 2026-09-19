@@ -1,0 +1,50 @@
+{
+  "industry_id": "smart-sensors-mems",
+  "industry": "高端智能传感器与MEMS",
+  "as_of": "2026-09-20",
+  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "review_and_survey": [
+    "SEN-P01",
+    "SEN-P02",
+    "SEN-P04",
+    "SEN-P05",
+    "SEN-P06",
+    "SEN-P07",
+    "SEN-P08"
+  ],
+  "landmark_or_foundational": [],
+  "frontier_or_method": [
+    "SEN-P03"
+  ],
+  "mechanism_to_papers": {
+    "SEN-M01": [
+      "SEN-P01",
+      "SEN-P06"
+    ],
+    "SEN-M02": [
+      "SEN-P01",
+      "SEN-P02",
+      "SEN-P03"
+    ],
+    "SEN-M03": [
+      "SEN-P01",
+      "SEN-P02"
+    ],
+    "SEN-M04": [
+      "SEN-P04",
+      "SEN-P05",
+      "SEN-P07",
+      "SEN-P08"
+    ],
+    "SEN-M05": [
+      "SEN-P06"
+    ],
+    "SEN-M06": [
+      "SEN-P01",
+      "SEN-P05"
+    ]
+  },
+  "reading_status_counts": {
+    "abstract_reviewed": 8
+  }
+}

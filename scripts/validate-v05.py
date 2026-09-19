@@ -17,7 +17,7 @@ for iid in IDS:
  assert any("技术评价基准" in x for x in pack["knowledge_scope"])
  assert any("企业快速研判手册" in x for x in pack["knowledge_scope"])
  assert set(pack["expert_profile"]["tools"])==tools
-bundle=load(R/"firmbuddy/import-bundle.json");assert bundle["version"]=="0.5.0"
+bundle=load(R/"firmbuddy/import-bundle.json");assert bundle["version"] in ["0.5.0","0.5.1"]
 assert len(bundle["documents"])==52,(len(bundle["documents"]),len(bundle["equipments"]))
 assert len(bundle["equipments"])==52
 docs={d["logical_key"]:d for d in bundle["documents"]}; eq={e["logical_key"]:e for e in bundle["equipments"]}

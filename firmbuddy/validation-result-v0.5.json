@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "as_of": "2026-09-20",
+  "test_type": "actual_FirmBuddy_service_isolated_database",
+  "target": {
+    "repository": "xumengke2025-sys/firmbuddy",
+    "tested_base_commit": "8b6d49958ffc49e80f80be0c6c798689997932c1",
+    "workflow_run_id": 35477219129,
+    "workflow_result": "success"
+  },
+  "knowledge_commit": "42267220b5ef930fa441cfa16c821e85fc93af9b",
+  "documents": 52,
+  "equipments": 52,
+  "experts": 8,
+  "academic_equipments": 8,
+  "benchmark_equipments": 8,
+  "playbook_equipments": 8,
+  "runtime_tool_contract": {
+    "required": 16,
+    "forbidden": 7,
+    "status": "validated_against_target_code_catalog"
+  },
+  "knowledge_checks": [
+    {
+      "industry": "commercial-space-satcom",
+      "query": "星间链路",
+      "hits": 10,
+      "citation": "KB:KD-mu91jq7s-9k77:v1:KC-d5127a7af21f1707982a"
+    },
+    {
+      "industry": "low-altitude-economy",
+      "query": "电芯",
+      "hits": 6,
+      "citation": "KB:KD-mu91jq7y-90m0:v1:KC-8ec60a4dadc0abd4910f"
+    },
+    {
+      "industry": "wide-bandgap-semiconductor",
+      "query": "动态导通电阻",
+      "hits": 10,
+      "citation": "KB:KD-mu91jq83-t2rg:v1:KC-458f80bc1aa82ad31e75"
+    },
+    {
+      "industry": "solid-state-battery",
+      "query": "界面",
+      "hits": 10,
+      "citation": "KB:KD-mu91jq88-obdm:v1:KC-44f4649190a069bcffcd"
+    },
+    {
+      "industry": "synthetic-biology-biomanufacturing",
+      "query": "发酵",
+      "hits": 10,
+      "citation": "KB:KD-mu91jq8d-xvm3:v1:KC-8e763a1e2cbcd67a1909"
+    },
+    {
+      "industry": "industrial-machine-tools",
+      "query": "仿真",
+      "hits": 4,
+      "citation": "KB:KD-mu91jq8r-l631:v1:KC-11fdbdab53b322b3ff0f"
+    },
+    {
+      "industry": "smart-sensors-mems",
+      "query": "零偏",
+      "hits": 8,
+      "citation": "KB:KD-mu91jq8t-tzvn:v1:KC-65eb66212485abdb1150"
+    },
+    {
+      "industry": "embodied-intelligence",
+      "query": "VLA",
+      "hits": 8,
+      "citation": "KB:KD-mu91jq8y-8piv:v1:KC-f0aa4fb29b1212006810"
+    }
+  ],
+  "idempotency": "passed",
+  "document_equipment_upgrade": "passed",
+  "historical_chunks": "retained",
+  "cas_conflict": "rejected",
+  "live_moss_queries": "not_run",
+  "live_llm_answers": "not_run",
+  "production_import": "not_run"
+}

@@ -1,0 +1,29 @@
+name: Bootstrap knowledge snapshot
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/bootstrap-knowledge.yml'
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore validated repository snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/archive.part*.b64 | base64 -d > /tmp/knowledge-v0.2.0.tar.gz
+          tar -xzf /tmp/knowledge-v0.2.0.tar.gz -C .
+          rm -rf .bootstrap
+          rm -f .github/workflows/bootstrap-knowledge.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "feat: publish FirmBuddy technology intelligence knowledge base v0.2.0"
+          git push origin HEAD:main

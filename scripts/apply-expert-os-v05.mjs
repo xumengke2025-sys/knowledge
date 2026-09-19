@@ -130,9 +130,4 @@ let log=fs.readFileSync(path.join(ROOT,'RESEARCH-LOG.md'),'utf8');
 if(!log.includes('v0.5.0')) log+='\n## 2026-09-20 v0.5.0\n- 新增8行业Technology Benchmark、企业快速研判Playbook、Radar Source Catalog。\n- 知识装备由36扩展为52；每位专家增加benchmark与playbook。\n- 专家增加MOSS/本地企业只读工具白名单，明确行业先验与企业运行时事实分层。\n';
 fs.writeFileSync(path.join(ROOT,'RESEARCH-LOG.md'),log);
 
-const workflow=path.join(ROOT,'.github','workflows','validate.yml');
-let wf=fs.readFileSync(workflow,'utf8');
-if(!wf.includes('validate-v05.py')) wf+='\n      - name: Validate v0.5 expert operating system\n        run: python scripts/validate-v05.py\n';
-fs.writeFileSync(workflow,wf);
-
 console.log(JSON.stringify({version:bundle.version,documents:bundle.documents.length,equipments:bundle.equipments.length,experts:Object.keys(packs).length,runtime_tools:RUNTIME_TOOLS.length}));

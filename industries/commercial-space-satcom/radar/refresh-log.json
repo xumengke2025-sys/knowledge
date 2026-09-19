@@ -1,0 +1,48 @@
+{
+  "industry_id": "commercial-space-satcom",
+  "from_date": "2026-01-22",
+  "attempts": [
+    {
+      "channel": "openalex",
+      "query": "LEO satellite NTN inter-satellite link phased array",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.openalex.org/works?search=LEO+satellite+NTN+inter-satellite+link+phased+array&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "LEO satellite NTN inter-satellite link phased array",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=LEO+satellite+NTN+inter-satellite+link+phased+array&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    },
+    {
+      "channel": "openalex",
+      "query": "卫星互联网 星间链路 手机直连卫星 NTN",
+      "ok": true,
+      "count": 3,
+      "url": "https://api.openalex.org/works?search=%E5%8D%AB%E6%98%9F%E4%BA%92%E8%81%94%E7%BD%91+%E6%98%9F%E9%97%B4%E9%93%BE%E8%B7%AF+%E6%89%8B%E6%9C%BA%E7%9B%B4%E8%BF%9E%E5%8D%AB%E6%98%9F+NTN&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "卫星互联网 星间链路 手机直连卫星 NTN",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=%E5%8D%AB%E6%98%9F%E4%BA%92%E8%81%94%E7%BD%91+%E6%98%9F%E9%97%B4%E9%93%BE%E8%B7%AF+%E6%89%8B%E6%9C%BA%E7%9B%B4%E8%BF%9E%E5%8D%AB%E6%98%9F+NTN&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    },
+    {
+      "channel": "openalex",
+      "query": "reusable launch vehicle methane engine satellite terminal",
+      "ok": true,
+      "count": 7,
+      "url": "https://api.openalex.org/works?search=reusable+launch+vehicle+methane+engine+satellite+terminal&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "reusable launch vehicle methane engine satellite terminal",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=reusable+launch+vehicle+methane+engine+satellite+terminal&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    }
+  ]
+}

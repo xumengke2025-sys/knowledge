@@ -1,0 +1,48 @@
+{
+  "industry_id": "wide-bandgap-semiconductor",
+  "from_date": "2026-01-22",
+  "attempts": [
+    {
+      "channel": "openalex",
+      "query": "SiC substrate defect density MOS interface reliability",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.openalex.org/works?search=SiC+substrate+defect+density+MOS+interface+reliability&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "SiC substrate defect density MOS interface reliability",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=SiC+substrate+defect+density+MOS+interface+reliability&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    },
+    {
+      "channel": "openalex",
+      "query": "GaN HEMT dynamic RON gate reliability packaging",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.openalex.org/works?search=GaN+HEMT+dynamic+RON+gate+reliability+packaging&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "GaN HEMT dynamic RON gate reliability packaging",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=GaN+HEMT+dynamic+RON+gate+reliability+packaging&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    },
+    {
+      "channel": "openalex",
+      "query": "碳化硅 外延 缺陷 MOSFET 功率模块 可靠性",
+      "ok": true,
+      "count": 0,
+      "url": "https://api.openalex.org/works?search=%E7%A2%B3%E5%8C%96%E7%A1%85+%E5%A4%96%E5%BB%B6+%E7%BC%BA%E9%99%B7+MOSFET+%E5%8A%9F%E7%8E%87%E6%A8%A1%E5%9D%97+%E5%8F%AF%E9%9D%A0%E6%80%A7&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "碳化硅 外延 缺陷 MOSFET 功率模块 可靠性",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=%E7%A2%B3%E5%8C%96%E7%A1%85+%E5%A4%96%E5%BB%B6+%E7%BC%BA%E9%99%B7+MOSFET+%E5%8A%9F%E7%8E%87%E6%A8%A1%E5%9D%97+%E5%8F%AF%E9%9D%A0%E6%80%A7&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    }
+  ]
+}

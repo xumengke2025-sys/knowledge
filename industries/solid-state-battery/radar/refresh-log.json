@@ -1,0 +1,48 @@
+{
+  "industry_id": "solid-state-battery",
+  "from_date": "2026-01-22",
+  "attempts": [
+    {
+      "channel": "openalex",
+      "query": "all-solid-state battery sulfide halide LLZO interface stack pressure",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.openalex.org/works?search=all-solid-state+battery+sulfide+halide+LLZO+interface+stack+pressure&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "all-solid-state battery sulfide halide LLZO interface stack pressure",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=all-solid-state+battery+sulfide+halide+LLZO+interface+stack+pressure&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    },
+    {
+      "channel": "openalex",
+      "query": "lithium metal critical current density solid electrolyte",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.openalex.org/works?search=lithium+metal+critical+current+density+solid+electrolyte&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "lithium metal critical current density solid electrolyte",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=lithium+metal+critical+current+density+solid+electrolyte&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    },
+    {
+      "channel": "openalex",
+      "query": "固态电池 固态电解质 界面 堆压 循环 中试",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.openalex.org/works?search=%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0+%E5%9B%BA%E6%80%81%E7%94%B5%E8%A7%A3%E8%B4%A8+%E7%95%8C%E9%9D%A2+%E5%A0%86%E5%8E%8B+%E5%BE%AA%E7%8E%AF+%E4%B8%AD%E8%AF%95&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+    },
+    {
+      "channel": "crossref",
+      "query": "固态电池 固态电解质 界面 堆压 循环 中试",
+      "ok": true,
+      "count": 8,
+      "url": "https://api.crossref.org/works?query.bibliographic=%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0+%E5%9B%BA%E6%80%81%E7%94%B5%E8%A7%A3%E8%B4%A8+%E7%95%8C%E9%9D%A2+%E5%A0%86%E5%8E%8B+%E5%BE%AA%E7%8E%AF+%E4%B8%AD%E8%AF%95&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+    }
+  ]
+}

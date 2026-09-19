@@ -31,6 +31,7 @@ const mossToolNames=Object.keys(mossLabelsMod.MOSS_TOOL_LABELS??{});
 const tools=[...new Set(['search_knowledge',...plugin.getTools().map(t=>t.name),...nativeIndustry.getTools().map(t=>t.name),...market.getTools().map(t=>t.name),...companyProfile.getTools().map(t=>t.name),...mossToolNames])];
 const requiredRuntime=['moss_company_search','moss_company_profile','moss_company_get_annual_reports','moss_company_get_patents','moss_company_get_listed_financial_data','moss_company_get_news','moss_company_get_certificates_v2','moss_industry_search_nodes','moss_industry_get_chain','moss_public_opinion_search','moss_policy_search_projects','search_company','get_financial_summary','get_company_announcements','get_industry_landscape','generate_company_profile'];
 const forbiddenRuntime=['moss_company_get_contact','create_task','create_opportunity','transition_opportunity','claim_opportunity','reassign_opportunity','push_to_dept'];
+const {validateExpertProfile,expertProfilePayload}=await import(pathToFileURL(path.resolve(app,'web/js/expert-profile.mjs')));
 for(const name of requiredRuntime)assert(tools.includes(name),'target FirmBuddy missing intended runtime tool '+name);
 for(const industry of expertIndustries){
  const exp=JSON.parse(fs.readFileSync(path.join(root,'industries',industry,'expert-pack.json'),'utf8'));

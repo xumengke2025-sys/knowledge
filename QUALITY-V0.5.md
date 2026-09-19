@@ -17,3 +17,22 @@
 
 ## 验收
 运行 scripts/validate-v05.py。正式FirmBuddy还需在目标运行环境核验MCP是否连接、实际工具capability以及企业问答轨迹。
+
+## FirmBuddy 实际兼容验收
+
+已在 FirmBuddy 当前代码基线（测试前父提交 `8b6d49958ffc49e80f80be0c6c798689997932c1`）的 GitHub Actions 中执行真实隔离集成测试，运行结果 **PASS**（run `35477219129`）。
+
+- 52 份 Knowledge Documents、52 件 Knowledge Equipments 导入临时 SQLite 成功。
+- 8 位行业专家均建立 Loadout；每位都包含 academic、benchmark、playbook 等预期装备。
+- 8 行业均通过目标工程真实 `KnowledgeService.search` 返回可还原的 `KB:` citation。
+- 16 个企业运行时只读工具名均在目标 FirmBuddy 当前工具目录/MOSS 工具目录中得到验证。
+- 7 个高敏感/有业务副作用工具明确不在行业专家白名单。
+- 重复导入幂等、文档/装备版本升级、历史 chunks 保留、CAS 冲突拒绝均通过。
+
+机器可读结果：`firmbuddy/validation-result-v0.5.json`。
+
+### 仍未执行
+- 未连接生产 MOSS 实例实际查询某一家企业，因此“工具存在”不等于生产数据源此刻在线。
+- 未把 v0.5 导入生产 FirmBuddy 数据库。
+- 未执行真实 LLM 的完整企业问答回归；当前证明的是知识装备、工具授权和检索链路兼容。
+

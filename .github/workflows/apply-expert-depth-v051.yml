@@ -34,3 +34,5 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "feat: deepen industry maturity and finance assessment models"
           git push origin HEAD:main
+
+# rerun: 2

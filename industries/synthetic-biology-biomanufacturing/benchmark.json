@@ -1,0 +1,614 @@
+{
+  "version": "0.5.0",
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "industry": "合成生物学与生物制造",
+  "as_of": "2026-09-20",
+  "principles": [
+    "不设置无来源的硬阈值；优先使用标准、论文与同条件竞品形成动态benchmark。",
+    "参数值必须与测试条件绑定；不同层级（材料/器件/模组/系统）不得直接互换。",
+    "技术领先、产业成熟、商业成功是三个独立判断。",
+    "企业未披露的数据保持unknown，不用行业平均值代填。"
+  ],
+  "standards": [
+    {
+      "title": "ISO 20688-2:2024 Nucleic acid synthesis",
+      "authority": "ISO/TC 276",
+      "url": "https://www.iso.org/standard/75852.html",
+      "status": "effective"
+    },
+    {
+      "title": "ISO 5058-1:2021 Genome editing vocabulary",
+      "authority": "ISO/TC 276",
+      "url": "https://www.iso.org/standard/80679.html",
+      "status": "effective"
+    },
+    {
+      "title": "ISO 20691:2022 Life sciences data formatting and description",
+      "authority": "ISO/TC 276",
+      "url": "https://www.iso.org/standard/68848.html",
+      "status": "effective"
+    }
+  ],
+  "dimensions": [
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B01",
+      "dimension": "菌株/细胞工厂",
+      "metrics": [
+        {
+          "metric": "titer",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "yield",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "productivity",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "遗传稳定代数",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "副产物谱",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "必须带培养基、底物、规模、批次/连续模式和培养时间。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B02",
+      "dimension": "DBTL效率",
+      "metrics": [
+        {
+          "metric": "单轮周期",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "构建数量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "筛选通量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "成功率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "模型预测命中率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "自动化吞吐量不等于最终工业菌株成功率。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B03",
+      "dimension": "酶工程",
+      "metrics": [
+        {
+          "metric": "kcat",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "Km",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "转化率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "选择性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "半衰期",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "温度/pH稳定性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "不同底物和反应体系不能直接横向比较。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B04",
+      "dimension": "发酵放大",
+      "metrics": [
+        {
+          "metric": "发酵体积",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "kLa/OTR",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "混合时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "OUR",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "补料策略",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "批间一致性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "摇瓶和小罐结果不能直接外推万吨级工厂。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B05",
+      "dimension": "工业稳健性",
+      "metrics": [
+        {
+          "metric": "污染率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "表型漂移",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "原料波动容忍度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "连续运行时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "实验室最优条件与工业原料/非无菌条件分开。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B06",
+      "dimension": "下游工程",
+      "metrics": [
+        {
+          "metric": "回收率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "纯度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "单位产品溶剂/水/能耗",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "步骤数",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "上游高滴度若带来高纯化成本，不能单独判断经济性。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B07",
+      "dimension": "技术经济",
+      "metrics": [
+        {
+          "metric": "原料成本",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "单位产品变动成本",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "CAPEX强度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "产能利用率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "盈亏平衡",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "TEA假设必须显式，不能把目标成本当现有成本。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "synthetic-biology-biomanufacturing-B08",
+      "dimension": "环境评价",
+      "metrics": [
+        {
+          "metric": "碳足迹",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "能耗",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "水耗",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "土地/副产物",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "生物基标签不能自动推出全生命周期减排。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    }
+  ]
+}

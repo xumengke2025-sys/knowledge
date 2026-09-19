@@ -1,0 +1,89 @@
+{
+  "version": "0.5.0",
+  "as_of": "2026-09-20",
+  "layers": [
+    {
+      "layer": "regulation_standard",
+      "sources": [
+        "工信部",
+        "市场监管总局/国家标准委",
+        "中国民航局",
+        "全国标准信息公共服务平台",
+        "工业和信息化标准信息服务平台",
+        "ISO",
+        "IEC",
+        "3GPP"
+      ],
+      "use": "政策、标准、测试方法、认证状态"
+    },
+    {
+      "layer": "academic",
+      "sources": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar Academic Graph",
+        "PubScholar",
+        "ChinaXiv"
+      ],
+      "use": "机制、综述、前沿研究、作者/机构/引用网络"
+    },
+    {
+      "layer": "patent",
+      "sources": [
+        "CNIPA重点产业专利信息服务平台",
+        "WIPO PATENTSCOPE",
+        "EPO Espacenet"
+      ],
+      "use": "权利要求、专利族、申请人/发明人、法律状态"
+    },
+    {
+      "layer": "company_primary",
+      "sources": [
+        "交易所/巨潮资讯",
+        "企业年报/半年报/IR",
+        "FirmBuddy MOSS"
+      ],
+      "use": "企业当前事实"
+    },
+    {
+      "layer": "research_institution",
+      "sources": [
+        "中国科学院机构知识库/PubScholar",
+        "高校实验室/国家实验室",
+        "国家科技项目公开信息"
+      ],
+      "use": "科研团队、研究方向和工程验证"
+    },
+    {
+      "layer": "news_signal",
+      "sources": [
+        "MOSS企业新闻",
+        "MOSS舆情",
+        "监管/协会新闻"
+      ],
+      "use": "发现最新变化，不作为单独定论"
+    }
+  ],
+  "known_open_interfaces": [
+    {
+      "name": "Crossref REST API",
+      "url": "https://api.crossref.org/",
+      "note": "无需注册即可检索书目元数据"
+    },
+    {
+      "name": "OpenAlex API/Content",
+      "url": "https://api.openalex.org/",
+      "note": "论文/作者/机构/引用图谱；开放全文可通过content接口发现"
+    },
+    {
+      "name": "Semantic Scholar Academic Graph API",
+      "url": "https://api.semanticscholar.org/api-docs/",
+      "note": "引用、参考文献和作者网络"
+    },
+    {
+      "name": "CNIPA重点产业专利信息服务平台",
+      "url": "https://chinaip.cnipa.gov.cn/",
+      "note": "重点产业专利导航和统计分析"
+    }
+  ]
+}

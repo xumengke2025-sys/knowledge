@@ -1,0 +1,594 @@
+{
+  "version": "0.5.0",
+  "industry_id": "commercial-space-satcom",
+  "industry": "商业航天与卫星互联网",
+  "as_of": "2026-09-20",
+  "principles": [
+    "不设置无来源的硬阈值；优先使用标准、论文与同条件竞品形成动态benchmark。",
+    "参数值必须与测试条件绑定；不同层级（材料/器件/模组/系统）不得直接互换。",
+    "技术领先、产业成熟、商业成功是三个独立判断。",
+    "企业未披露的数据保持unknown，不用行业平均值代填。"
+  ],
+  "standards": [
+    {
+      "title": "关于优化业务准入促进卫星通信产业发展的指导意见",
+      "authority": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2025/art_e4f6b24e18b74a56bf60f6fcb78ef568.html",
+      "status": "effective"
+    },
+    {
+      "title": "3GPP Release 18/19 specifications",
+      "authority": "3GPP",
+      "url": "https://portal.3gpp.org/Releases.aspx",
+      "status": "living"
+    }
+  ],
+  "dimensions": [
+    {
+      "benchmark_id": "commercial-space-satcom-B01",
+      "dimension": "卫星平台",
+      "metrics": [
+        {
+          "metric": "质量/载荷比",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "平台功耗",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "热控裕量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "设计寿命",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "姿控精度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "抗辐照等级",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "必须区分设计值、地面鉴定、在轨验证与批量星表现。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "commercial-space-satcom-B02",
+      "dimension": "通信载荷",
+      "metrics": [
+        {
+          "metric": "EIRP",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "G/T",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "瞬时带宽",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "波束数量/可重构能力",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "载荷功耗",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "单位质量吞吐",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "吞吐量必须结合频谱、波束复用、网关和用户分布。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "commercial-space-satcom-B03",
+      "dimension": "星间链路",
+      "metrics": [
+        {
+          "metric": "数据率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "捕获时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "误码率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "链路可用度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "终端功耗/质量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "实验链路、在轨单链路验证和星座级路由能力分开。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "commercial-space-satcom-B04",
+      "dimension": "用户终端",
+      "metrics": [
+        {
+          "metric": "天线增益",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "扫描角损失",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "峰值/平均功耗",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "吞吐",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "尺寸质量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "成本",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "终端峰值速率不等于用户体验；必须说明仰角、频段和链路条件。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "commercial-space-satcom-B05",
+      "dimension": "星座网络",
+      "metrics": [
+        {
+          "metric": "覆盖可用率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "端到端时延分位数",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "切换失败率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "频谱效率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "网关依赖度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "低轨传播时延优势不能替代排队、路由与地面骨干分析。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "commercial-space-satcom-B06",
+      "dimension": "运载火箭",
+      "metrics": [
+        {
+          "metric": "入轨能力",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "发射成功率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "单位公斤成本",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "发动机寿命",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "复用次数",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "周转时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "首飞成功不等于商业复用；回收、复飞和维修周转必须有证据。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "commercial-space-satcom-B07",
+      "dimension": "测运控/运营",
+      "metrics": [
+        {
+          "metric": "测控覆盖率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "定轨精度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "故障处置时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "卫星在线率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "网络SLA",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "建设数量、在轨数量和可提供服务数量不得混用。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    }
+  ]
+}

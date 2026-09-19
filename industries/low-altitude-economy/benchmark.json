@@ -1,0 +1,650 @@
+{
+  "version": "0.5.0",
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "as_of": "2026-09-20",
+  "principles": [
+    "不设置无来源的硬阈值；优先使用标准、论文与同条件竞品形成动态benchmark。",
+    "参数值必须与测试条件绑定；不同层级（材料/器件/模组/系统）不得直接互换。",
+    "技术领先、产业成熟、商业成功是三个独立判断。",
+    "企业未披露的数据保持unknown，不用行业平均值代填。"
+  ],
+  "standards": [
+    {
+      "title": "低空经济标准体系建设指南（2025年版）",
+      "authority": "市场监管总局等十部门",
+      "url": "https://www.samr.gov.cn/bzjss/zcfg/art/2026/art_688745c034654328b589af994eb4d2f6.html",
+      "status": "effective"
+    },
+    {
+      "title": "V2000CG无人驾驶航空器系统型号合格审定实践",
+      "authority": "中国民航局",
+      "url": "https://www.caac.gov.cn/PHONE/GLJ_PHONE/HDGLJ/HD_XWZX/202404/t20240410_223477.html",
+      "status": "case"
+    },
+    {
+      "title": "EH216-S无人驾驶航空器系统专用条件",
+      "authority": "中国民航局",
+      "url": "https://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202202/t20220222_211914.html",
+      "status": "effective"
+    }
+  ],
+  "dimensions": [
+    {
+      "benchmark_id": "low-altitude-economy-B01",
+      "dimension": "航空器任务能力",
+      "metrics": [
+        {
+          "metric": "有效载荷",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "任务航程",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "巡航速度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "最大起飞重量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "储备能量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "任务完成率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "空载最长航程不可替代带载任务航程；起降、备降和气象条件需一致。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "low-altitude-economy-B02",
+      "dimension": "航空电池",
+      "metrics": [
+        {
+          "metric": "pack级Wh/kg",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "峰值/持续功率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "高功率末端能力",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "循环寿命",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "快充时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "热失控隔离",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "必须用eVTOL任务功率谱，不用普通汽车电池单体指标直接外推。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "low-altitude-economy-B03",
+      "dimension": "电推进",
+      "metrics": [
+        {
+          "metric": "电机比功率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "系统效率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "冗余度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "热裕量",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "噪声",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "单电机台架效率不能代表整套推进系统和机体气动效率。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "low-altitude-economy-B04",
+      "dimension": "航电/飞控",
+      "metrics": [
+        {
+          "metric": "控制时延",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "传感冗余",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "失效处置",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "导航完整性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "软件/硬件符合性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "演示飞行与符合性验证、审定试飞分开。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "low-altitude-economy-B05",
+      "dimension": "探测与避让",
+      "metrics": [
+        {
+          "metric": "探测距离",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "跟踪概率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "虚警率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "决策时延",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "非合作目标覆盖",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "仿真结果必须说明目标模型、传感器和通信假设。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "low-altitude-economy-B06",
+      "dimension": "C2/通导监",
+      "metrics": [
+        {
+          "metric": "覆盖率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "链路可用率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "时延",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "丢包",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "导航精度/完整性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "监视更新率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "平台软件上线不等于端到端安全闭环完成。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "low-altitude-economy-B07",
+      "dimension": "适航/生产/运营",
+      "metrics": [
+        {
+          "metric": "TC状态",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "PC状态",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "AC状态",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "运营许可/场景批准",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "TC、PC、单机适航和运营许可是不同对象，禁止合并成“已商业化”。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "low-altitude-economy-B08",
+      "dimension": "场景经济性",
+      "metrics": [
+        {
+          "metric": "日利用小时",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "单架任务数",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "调度成功率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "气象取消率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "单位任务成本",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "示范航线、收费试运行和常态商业运营分层记录。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    }
+  ]
+}

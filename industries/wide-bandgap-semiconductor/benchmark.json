@@ -1,0 +1,570 @@
+{
+  "version": "0.5.0",
+  "industry_id": "wide-bandgap-semiconductor",
+  "industry": "第三代/宽禁带半导体",
+  "as_of": "2026-09-20",
+  "principles": [
+    "不设置无来源的硬阈值；优先使用标准、论文与同条件竞品形成动态benchmark。",
+    "参数值必须与测试条件绑定；不同层级（材料/器件/模组/系统）不得直接互换。",
+    "技术领先、产业成熟、商业成功是三个独立判断。",
+    "企业未披露的数据保持unknown，不用行业平均值代填。"
+  ],
+  "standards": [
+    {
+      "title": "GB/T 43493.1-2023 碳化硅同质外延片缺陷分类",
+      "authority": "国家标准委",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=0DF2F72AE34F403DE06397BE0A0A87C4",
+      "status": "effective"
+    },
+    {
+      "title": "GB/T 43493.3-2023 碳化硅外延片缺陷光致发光检测",
+      "authority": "国家标准委",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=0DF2F72AE350403DE06397BE0A0A87C4",
+      "status": "effective"
+    }
+  ],
+  "dimensions": [
+    {
+      "benchmark_id": "wide-bandgap-semiconductor-B01",
+      "dimension": "SiC晶体/衬底",
+      "metrics": [
+        {
+          "metric": "尺寸",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "微管/位错缺陷密度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "翘曲/弯曲",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "电阻率均匀性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "可用面积/良率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "大尺寸样品发布不能等于稳定量产；晶体、切磨抛和客户验证需分开。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "wide-bandgap-semiconductor-B02",
+      "dimension": "外延",
+      "metrics": [
+        {
+          "metric": "厚度均匀性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "掺杂均匀性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "表面缺陷",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "外延缺陷密度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "片间一致性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "缺陷检测方法和统计口径必须一致。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "wide-bandgap-semiconductor-B03",
+      "dimension": "SiC MOSFET",
+      "metrics": [
+        {
+          "metric": "Rds(on)",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "击穿电压",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "阈值漂移",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "短路耐受",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "雪崩能力",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "体二极管退化",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "室温静态Rds(on)不能单独代表车规/工业工况。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "wide-bandgap-semiconductor-B04",
+      "dimension": "GaN HEMT",
+      "metrics": [
+        {
+          "metric": "动态Rds(on)",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "击穿",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "栅极可靠性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "开关损耗",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "频率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "反向导通",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "必须说明关态应力、脉冲、温度和测量延迟。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "wide-bandgap-semiconductor-B05",
+      "dimension": "功率模块",
+      "metrics": [
+        {
+          "metric": "寄生电感",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "热阻",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "结温",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "功率循环",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "温度循环",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "绝缘",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "额定电流必须结合冷却、开关频率和寿命目标。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "wide-bandgap-semiconductor-B06",
+      "dimension": "制造良率",
+      "metrics": [
+        {
+          "metric": "晶圆良率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "芯片良率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "封装良率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "测试覆盖率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "批次一致性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "产能与可销售良品产出必须分开。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "wide-bandgap-semiconductor-B07",
+      "dimension": "系统价值",
+      "metrics": [
+        {
+          "metric": "逆变器效率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "功率密度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "磁性器件/散热缩减",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "系统成本",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "器件理论优值不能直接等同整机效率或成本优势。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    }
+  ]
+}

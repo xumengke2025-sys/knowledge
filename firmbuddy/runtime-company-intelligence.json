@@ -1,0 +1,125 @@
+{
+  "version": "0.5.0",
+  "as_of": "2026-09-20",
+  "purpose": "Runtime company intelligence for industry experts",
+  "read_only_tools": [
+    "moss_company_search",
+    "moss_company_profile",
+    "moss_company_get_annual_reports",
+    "moss_company_get_patents",
+    "moss_company_get_listed_financial_data",
+    "moss_company_get_news",
+    "moss_company_get_certificates_v2",
+    "moss_industry_search_nodes",
+    "moss_industry_get_chain",
+    "moss_public_opinion_search",
+    "moss_policy_search_projects",
+    "search_company",
+    "get_financial_summary",
+    "get_company_announcements",
+    "get_industry_landscape",
+    "generate_company_profile"
+  ],
+  "workflow": [
+    {
+      "step": 1,
+      "goal": "主体锁定",
+      "primary": [
+        "moss_company_search"
+      ],
+      "fallback": [
+        "search_company"
+      ]
+    },
+    {
+      "step": 2,
+      "goal": "企业画像/主体边界",
+      "primary": [
+        "moss_company_profile"
+      ],
+      "fallback": [
+        "generate_company_profile"
+      ]
+    },
+    {
+      "step": 3,
+      "goal": "年报/技术与产品披露",
+      "primary": [
+        "moss_company_get_annual_reports"
+      ],
+      "fallback": [
+        "get_company_announcements"
+      ]
+    },
+    {
+      "step": 4,
+      "goal": "专利",
+      "primary": [
+        "moss_company_get_patents"
+      ],
+      "rules": [
+        "申请人归一",
+        "按taxonomy分类",
+        "标题只初筛",
+        "不按件数直接排名"
+      ]
+    },
+    {
+      "step": 5,
+      "goal": "财务",
+      "primary": [
+        "moss_company_get_listed_financial_data"
+      ],
+      "fallback": [
+        "get_financial_summary"
+      ]
+    },
+    {
+      "step": 6,
+      "goal": "资质/认证",
+      "primary": [
+        "moss_company_get_certificates_v2"
+      ]
+    },
+    {
+      "step": 7,
+      "goal": "产业链",
+      "primary": [
+        "moss_industry_search_nodes",
+        "moss_industry_get_chain"
+      ],
+      "fallback": [
+        "get_industry_landscape"
+      ]
+    },
+    {
+      "step": 8,
+      "goal": "近期事件",
+      "primary": [
+        "moss_company_get_news",
+        "moss_public_opinion_search"
+      ]
+    },
+    {
+      "step": 9,
+      "goal": "政策项目",
+      "primary": [
+        "moss_policy_search_projects"
+      ]
+    }
+  ],
+  "forbidden_for_autonomous_company_assessment": [
+    "moss_company_get_contact",
+    "create_task",
+    "create_opportunity",
+    "transition_opportunity",
+    "claim_opportunity",
+    "push_to_dept"
+  ],
+  "principles": [
+    "MOSS主体查询先锁credit_code",
+    "工具缺字段不等于0",
+    "运行时事实与长期知识分层",
+    "公司新闻只作事件线索，关键结论回原文核验"
+  ]
+}

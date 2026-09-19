@@ -1,0 +1,686 @@
+{
+  "version": "0.5.0",
+  "industry_id": "smart-sensors-mems",
+  "industry": "高端智能传感器与MEMS",
+  "as_of": "2026-09-20",
+  "principles": [
+    "不设置无来源的硬阈值；优先使用标准、论文与同条件竞品形成动态benchmark。",
+    "参数值必须与测试条件绑定；不同层级（材料/器件/模组/系统）不得直接互换。",
+    "技术领先、产业成熟、商业成功是三个独立判断。",
+    "企业未披露的数据保持unknown，不用行业平均值代填。"
+  ],
+  "standards": [
+    {
+      "title": "GB/T 42597-2023 MEMS技术 陀螺仪",
+      "authority": "国家标准委",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=FC816D04FECD62EBE05397BE0A0AD5FA",
+      "status": "effective"
+    },
+    {
+      "title": "智能传感器 第1部分：总则（修订计划）",
+      "authority": "国家标准委",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=49FD1852C8B5C31FE06397BE0A0A1304",
+      "status": "plan"
+    },
+    {
+      "title": "智能传感器产品数据字典",
+      "authority": "国家标准委",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=4D2EB43D3F157368E06397BE0A0A8E2F",
+      "status": "plan"
+    }
+  ],
+  "dimensions": [
+    {
+      "benchmark_id": "smart-sensors-mems-B01",
+      "dimension": "通用测量性能",
+      "metrics": [
+        {
+          "metric": "量程",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "灵敏度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "分辨率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "准确度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "线性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "迟滞",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "重复性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "规格必须带激励、安装、温度、采样与标定条件。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "smart-sensors-mems-B02",
+      "dimension": "动态性能",
+      "metrics": [
+        {
+          "metric": "带宽",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "响应时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "采样率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "相位延迟",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "静态精度不能代表动态控制可用性。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "smart-sensors-mems-B03",
+      "dimension": "惯性MEMS",
+      "metrics": [
+        {
+          "metric": "零偏稳定性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "角随机游走/速度随机游走",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "标度因数误差",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "交叉轴",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "温漂",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "必须说明Allan方差时长、温度、振动和批次。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "smart-sensors-mems-B04",
+      "dimension": "力/压力",
+      "metrics": [
+        {
+          "metric": "满量程输出",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "非线性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "迟滞",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "蠕变",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "温度零漂",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "过载",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "传感芯片与封装模组、六维解耦性能分开。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "smart-sensors-mems-B05",
+      "dimension": "气体/化学",
+      "metrics": [
+        {
+          "metric": "检测限",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "选择性",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "交叉敏感",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "响应/恢复时间",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "寿命",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "湿度影响",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "单气体实验室结果不能代表复杂气氛。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "smart-sensors-mems-B06",
+      "dimension": "柔性/触觉",
+      "metrics": [
+        {
+          "metric": "阵列密度",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "压力范围",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "空间分辨率",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "循环次数",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "弯折耐久",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "迟滞",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "材料级灵敏度不能替代封装后系统性能。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "smart-sensors-mems-B07",
+      "dimension": "封装与可靠性",
+      "metrics": [
+        {
+          "metric": "温循",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "冲击",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "振动",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "密封",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "长期漂移",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "校准保持",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "消费级、车规、高可靠航天场景的资格要求不可混用。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    },
+    {
+      "benchmark_id": "smart-sensors-mems-B08",
+      "dimension": "智能化与融合",
+      "metrics": [
+        {
+          "metric": "自校准",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "自诊断",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "边缘算法时延",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "多传感融合漂移",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        },
+        {
+          "metric": "接口兼容",
+          "unit": "按指标定义",
+          "required_conditions": [
+            "测试对象/版本",
+            "环境/温度",
+            "负载或任务条件",
+            "测量方法",
+            "样本量/重复次数"
+          ],
+          "interpretation": "只在条件一致或完成归一化后比较"
+        }
+      ],
+      "expert_rule": "算法演示必须与原始传感质量和失效模式一起评估。",
+      "evidence_priority": [
+        "国家/国际标准与监管方法",
+        "同行评议论文或可复现实验",
+        "企业法定披露/官方测试",
+        "第三方测试",
+        "企业宣传仅作线索"
+      ]
+    }
+  ]
+}

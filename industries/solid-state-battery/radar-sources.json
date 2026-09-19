@@ -1,0 +1,125 @@
+{
+  "version": "0.5.0",
+  "industry_id": "solid-state-battery",
+  "industry": "固态电池与下一代电池材料",
+  "as_of": "2026-09-20",
+  "signal_types": [
+    "政策/监管",
+    "标准新立项/发布",
+    "论文/预印本",
+    "专利/专利族",
+    "科研项目/数据集",
+    "产品发布",
+    "认证/适航/客户验证",
+    "产线/中试/扩产",
+    "订单/交付",
+    "关键人员/团队",
+    "供应链变化"
+  ],
+  "general_channels": {
+    "academic": [
+      {
+        "name": "OpenAlex",
+        "role": "论文发现、作者/机构/主题/引用图谱、开放全文发现",
+        "url": "https://openalex.org/",
+        "cadence": "weekly"
+      },
+      {
+        "name": "Crossref",
+        "role": "DOI与书目元数据校验、基金/许可/更新状态",
+        "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+        "cadence": "weekly"
+      },
+      {
+        "name": "Semantic Scholar Academic Graph",
+        "role": "论文引用/参考文献网络与作者图谱",
+        "url": "https://api.semanticscholar.org/api-docs/",
+        "cadence": "weekly"
+      },
+      {
+        "name": "PubScholar",
+        "role": "中国科学院公益学术资源与中文科研成果发现",
+        "url": "https://pubscholar.cn/",
+        "cadence": "weekly"
+      },
+      {
+        "name": "ChinaXiv",
+        "role": "中文预印本与前沿研究信号",
+        "url": "https://www.chinaxiv.org/",
+        "cadence": "weekly"
+      }
+    ],
+    "patent": [
+      {
+        "name": "CNIPA重点产业专利信息服务平台",
+        "role": "重点产业专利检索、分类导航、法律状态与多维分析",
+        "url": "https://chinaip.cnipa.gov.cn/",
+        "cadence": "monthly"
+      },
+      {
+        "name": "WIPO PATENTSCOPE",
+        "role": "PCT/全球专利与专利族线索",
+        "url": "https://patentscope.wipo.int/",
+        "cadence": "monthly"
+      },
+      {
+        "name": "EPO Espacenet",
+        "role": "全球专利族、引用和法律状态交叉核验",
+        "url": "https://worldwide.espacenet.com/",
+        "cadence": "monthly"
+      }
+    ],
+    "company": [
+      {
+        "name": "上交所/深交所/北交所/巨潮资讯",
+        "role": "上市公司法定披露、年报、半年报、公告与IR材料",
+        "cadence": "daily"
+      },
+      {
+        "name": "FirmBuddy MOSS企业数据",
+        "role": "运行时主体锁定、年报、专利、财务、新闻、资质、产业链",
+        "cadence": "runtime"
+      }
+    ]
+  },
+  "industry_specific": [
+    {
+      "channel": "standard_or_regulation",
+      "name": "电动汽车用固态电池 第2部分：性能规范",
+      "authority": "国家标准委/工信部",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=511EE6179A2A9C3BE06397BE0A0AEB63",
+      "status": "plan",
+      "cadence": "weekly",
+      "use": "标准/政策变化与评价口径"
+    },
+    {
+      "channel": "academic_query_pack",
+      "name": "学术主题检索",
+      "queries": [
+        "all-solid-state battery sulfide halide LLZO interface stack pressure",
+        "lithium metal critical current density solid electrolyte",
+        "固态电池 固态电解质 界面 堆压 循环 中试"
+      ],
+      "cadence": "weekly",
+      "use": "经典补齐、前沿论文、方法变化"
+    },
+    {
+      "channel": "patent_query_pack",
+      "name": "专利主题检索",
+      "queries": [
+        "all-solid-state battery sulfide halide LLZO interface stack pressure",
+        "lithium metal critical current density solid electrolyte",
+        "固态电池 固态电解质 界面 堆压 循环 中试"
+      ],
+      "cadence": "monthly",
+      "use": "技术路线、申请人、发明人和权利要求演进"
+    }
+  ],
+  "triage_rules": [
+    "先判断信号落在哪个taxonomy节点，再判断是科学突破、工程改进、产业化事件还是纯宣传。",
+    "论文/专利的重要性由机制变化与可复现证据决定，不由标题热度或数量决定。",
+    "企业事件必须回到主体、产品、阶段和时间四个字段。",
+    "相同消息的转载不算多源验证。",
+    "重大信号进入长期知识前需要二次核验；未核验信号只进入radar，不写入稳定事实。"
+  ]
+}

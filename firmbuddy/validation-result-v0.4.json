@@ -1,0 +1,67 @@
+{
+  "version": "0.4.0",
+  "as_of": "2026-09-20",
+  "status": "PASS",
+  "test_type": "actual_FirmBuddy_service_isolated_database",
+  "firmbuddy_base_commit": "f774ae95b3e8b9dd231a465e037f0c597d698f48",
+  "firmbuddy_workflow_run": "https://github.com/xumengke2025-sys/firmbuddy/actions/runs/35475028952",
+  "documents": 36,
+  "equipments": 36,
+  "experts": 8,
+  "academic_equipments": 8,
+  "knowledge_checks": [
+    {
+      "industry": "commercial-space-satcom",
+      "query": "星间链路",
+      "hits": 9
+    },
+    {
+      "industry": "low-altitude-economy",
+      "query": "电芯",
+      "hits": 6
+    },
+    {
+      "industry": "wide-bandgap-semiconductor",
+      "query": "动态导通电阻",
+      "hits": 7
+    },
+    {
+      "industry": "solid-state-battery",
+      "query": "界面",
+      "hits": 10
+    },
+    {
+      "industry": "synthetic-biology-biomanufacturing",
+      "query": "发酵",
+      "hits": 10
+    },
+    {
+      "industry": "industrial-machine-tools",
+      "query": "仿真",
+      "hits": 4
+    },
+    {
+      "industry": "smart-sensors-mems",
+      "query": "零偏",
+      "hits": 6
+    },
+    {
+      "industry": "embodied-intelligence",
+      "query": "VLA",
+      "hits": 6
+    }
+  ],
+  "invariants": {
+    "idempotency": "passed",
+    "document_equipment_upgrade": "passed",
+    "historical_chunks": "retained",
+    "cas_conflict": "rejected",
+    "kb_citations": "resolved_to_real_chunks"
+  },
+  "not_tested": {
+    "live_llm_answers": true,
+    "production_database_import": true,
+    "production_expert_publication": true
+  },
+  "note": "KB citation IDs produced by the isolated test database are ephemeral and must not be copied into production content."
+}

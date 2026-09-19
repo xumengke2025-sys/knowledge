@@ -20,3 +20,6 @@ jobs:
         run: python scripts/validate-upgrade.py
       - name: Validate v0.4 academic knowledge equipment
         run: python scripts/validate-academic.py
+
+      - name: Validate v0.5 expert operating system
+        run: python scripts/validate-v05.py

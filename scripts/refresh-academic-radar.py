@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import argparse, datetime as dt, json, pathlib, time, urllib.parse, urllib.request
+import argparse, datetime as dt, json, pathlib, re, time, urllib.parse, urllib.request
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 INDUSTRIES=[
@@ -7,6 +7,21 @@ INDUSTRIES=[
  "solid-state-battery","synthetic-biology-biomanufacturing","industrial-machine-tools","smart-sensors-mems"
 ]
 UA="FirmBuddy-Technology-Intelligence-Radar/0.5 (+https://github.com/xumengke2025-sys/knowledge)"
+STOPWORDS={"the","and","for","with","from","into","using","based","system","systems","engineering","industrial","technology","technologies","study","studies","model","models","control","current","high","performance","analysis"}
+def query_terms(q):
+    en=[x.lower() for x in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}",q) if x.lower() not in STOPWORDS]
+    zh=[x for x in re.findall(r"[\u4e00-\u9fff]{2,}",q)]
+    return list(dict.fromkeys(en+zh))
+def relevance(text,q):
+    t=str(text or "").lower().replace("-"," ")
+    hits=[x for x in query_terms(q) if x.lower().replace("-"," ") in t]
+    return hits
+def sane_date(value,from_date,today):
+    if not value:return False
+    m=re.match(r"^(\d{4})",str(value))
+    if not m:return False
+    y=int(m.group(1));return int(from_date[:4])<=y<=today.year
+
 
 def get_json(url, timeout=30):
     req=urllib.request.Request(url,headers={"User-Agent":UA,"Accept":"application/json"})
@@ -48,18 +63,22 @@ def openalex(query,from_date,per_page):
         authors,inst=authors_openalex(w.get("authorships"))
         oa=w.get("open_access") or {}
         topic=w.get("primary_topic") or {}
+        title=w.get("display_name") or ""; topic_name=topic.get("display_name") or ""
+        hits=relevance(title+" "+topic_name,query)
+        if len(hits)<1: continue
         out.append({
-          "record_id":w.get("id"),"doi":norm_doi(w.get("doi")),"title":w.get("display_name") or "",
+          "record_id":w.get("id"),"doi":norm_doi(w.get("doi")),"title":title,
           "publication_date":w.get("publication_date") or "","publication_type":w.get("type") or "",
           "cited_by_count":w.get("cited_by_count") or 0,"authors":authors,"institutions":inst,
-          "primary_topic":topic.get("display_name") or "","is_oa":bool(oa.get("is_oa")),
+          "primary_topic":topic_name,"is_oa":bool(oa.get("is_oa")),
           "oa_status":oa.get("oa_status"),"landing_page":(w.get("primary_location") or {}).get("landing_page_url") or w.get("doi") or w.get("id"),
-          "channel":"openalex","query":query
+          "channel":"openalex","query":query,"relevance_terms":hits,"relevance_match_count":len(hits)
         })
     return out,url
 
 def crossref(query,from_date,rows):
-    params={"query.bibliographic":query,"filter":f"from-pub-date:{from_date}","rows":str(rows),"sort":"published","order":"desc"}
+    today=dt.date.today().isoformat()
+    params={"query.title":query,"filter":f"from-pub-date:{from_date},until-pub-date:{today}","rows":str(rows),"sort":"score","order":"desc"}
     url="https://api.crossref.org/works?"+urllib.parse.urlencode(params)
     data=get_json(url)
     out=[]
@@ -69,13 +88,16 @@ def crossref(query,from_date,rows):
             n=" ".join(x for x in [a.get("given"),a.get("family")] if x)
             if n:auth.append(n)
         title=(w.get("title") or [""])[0]
+        pub=date_parts(w.get("published-online") or w.get("published-print") or w.get("published"))
+        hits=relevance(title,query)
+        if len(hits)<min(2,max(1,len(query_terms(query)))): continue
         out.append({
           "record_id":"https://doi.org/"+w.get("DOI","") if w.get("DOI") else "",
-          "doi":norm_doi(w.get("DOI")),"title":title,"publication_date":date_parts(w.get("published-online") or w.get("published-print") or w.get("published")),
+          "doi":norm_doi(w.get("DOI")),"title":title,"publication_date":pub,
           "publication_type":w.get("type") or "","cited_by_count":w.get("is-referenced-by-count") or 0,
           "authors":auth[:12],"institutions":[],"primary_topic":"","is_oa":None,"oa_status":None,
           "landing_page":w.get("URL") or ("https://doi.org/"+w.get("DOI","") if w.get("DOI") else ""),
-          "channel":"crossref","query":query
+          "channel":"crossref","query":query,"relevance_terms":hits,"relevance_match_count":len(hits)
         })
     return out,url
 
@@ -112,6 +134,7 @@ def main():
                     attempts.append({"channel":channel,"query":q,"ok":False,"error":str(e)[:300]})
                 time.sleep(.2)
         items=merge(rec)
+        items=[x for x in items if sane_date(x.get("publication_date"),from_date,today)]
         items.sort(key=lambda x:(x.get("publication_date") or "",x.get("cited_by_count") or 0),reverse=True)
         items=items[:40]
         now=dt.datetime.now(dt.timezone.utc).isoformat()

@@ -33,3 +33,5 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "feat: wire v0.5 benchmarks playbooks and runtime company tools"
           git push origin HEAD:main
+
+# validator-contract-v05

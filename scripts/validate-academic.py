@@ -33,8 +33,8 @@ for iid in IDS:
     assert any("学术机制与研究证据" in x for x in pack.get("knowledge_scope",[])),iid
     total_papers+=len(papers); total_mechs+=len(mechs); reviewed+=sum(p["reading_status"]!="metadata_only" for p in papers)
 bundle=load(R/"firmbuddy/import-bundle.json")
-assert bundle["version"]=="0.4.0"
-assert len(bundle["documents"])==36 and len(bundle["equipments"])==36
+assert bundle["version"] in ["0.4.0","0.5.0"]
+assert len(bundle["documents"])>=36 and len(bundle["equipments"])>=36
 docs={d["logical_key"]:d for d in bundle["documents"]}
 eq={e["logical_key"]:e for e in bundle["equipments"]}
 for iid in IDS:

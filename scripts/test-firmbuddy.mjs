@@ -20,7 +20,9 @@ for(const [industry,query] of Object.entries(pluginQueries)){
  pluginChecks.push({industry,query,hits:result.matches.length});
 }
 assert.equal(plugin.search({query:'test',industry:'missing'}).error,'unknown_industry');assert.equal(plugin.method({industry:'solid-state-battery',offset:-1}).error,'invalid_offset');
-const tools=['search_knowledge',...plugin.getTools().map(t=>t.name)];
+const nativeIndustryMod=await import(pathToFileURL(path.resolve(app,'plugins/industry-research/plugin.mjs')));
+const nativeIndustry=new nativeIndustryMod.default();nativeIndustry.onLoad?.();
+const tools=[...new Set(['search_knowledge',...plugin.getTools().map(t=>t.name),...nativeIndustry.getTools().map(t=>t.name)])];
 const {validateExpertProfile,expertProfilePayload}=await import(pathToFileURL(path.resolve(app,'web/js/expert-profile.mjs')));
 for(const industry of expertIndustries){const exp=JSON.parse(fs.readFileSync(path.join(root,'industries',industry,'expert-pack.json'),'utf8'));const errors=validateExpertProfile(exp.expert_profile,tools);assert.equal(errors.length,0,JSON.stringify(errors));assert(expertProfilePayload(exp.expert_profile));}
 const {openDatabase}=await import(pathToFileURL(path.resolve(app,'src/storage/db.mjs')));

@@ -23,3 +23,9 @@ v0.4 在 v0.3 现有 28 件知识装备基础上，为 8 个行业各增加一�
 5. 引用时使用 KnowledgeService 返回的实际 KB citation；论文 ID 只作为学术文献内部定位。
 
 正式导入仍使用 `firmbuddy/import-knowledge.mjs`，发布专家和生产数据库导入步骤沿用 v0.3。
+
+## 已验证的实际导入行为
+
+针对 FirmBuddy 基线 `f774ae95b3e8b9dd231a465e037f0c597d698f48` 已执行隔离 SQLite + KnowledgeService 全链路验证，结果 PASS：36 文档、36 装备、8 专家、8 academic 装备；8 个专家均能从自身 Loadout 检索到真实 KB citation。详细结果见 `validation-result-v0.4.json`。
+
+该验证不等于生产导入：正式环境仍需备份数据库、读取真实专家 ID 建立 `expert-map.json`，再执行 `import-knowledge.mjs --apply`。

@@ -86,3 +86,8 @@ industries/<industry>/
 6. 抽样人工复核通过。
 
 当前版本 **不声称已经覆盖所有相关上市公司或全部专利**，但已将具身智能提升为可训练的深度样板，并将其余行业从“3家公司样板”扩展为可持续核验的候选 Universe。
+
+
+## v0.5 行业专家操作系统
+
+8个行业新增Technology Benchmark、企业快速研判Playbook和Radar Source Catalog；专家长期知识负责行业先验，企业当前专利/年报/财务/新闻/资质/产业链由FirmBuddy运行时只读工具补齐。详见 `EXPERT-OS-V0.5.md` 与 `QUALITY-V0.5.md`。

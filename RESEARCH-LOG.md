@@ -7,3 +7,8 @@
 - 其余7个行业将公司池从2–3家样本扩展为“verified seed + candidate universe”，candidate不进入确定事实训练。
 - 明确专利图谱当前为代表性样本，未虚构全量统计。
 - 明确本仓库不含商机触发层。
+
+## 2026-09-20 v0.5.0
+- 新增8行业Technology Benchmark、企业快速研判Playbook、Radar Source Catalog。
+- 知识装备由36扩展为52；每位专家增加benchmark与playbook。
+- 专家增加MOSS/本地企业只读工具白名单，明确行业先验与企业运行时事实分层。

@@ -1,0 +1,74 @@
+{
+  "version": "0.5.0",
+  "as_of": "2026-09-20",
+  "industries": [
+    {
+      "industry_id": "embodied-intelligence",
+      "industry": "具身智能与人形机器人",
+      "benchmark_dimensions": 8,
+      "radar_sources": 5,
+      "benchmark_equipment": "embodied-intelligence:benchmark",
+      "playbook_equipment": "embodied-intelligence:playbook"
+    },
+    {
+      "industry_id": "commercial-space-satcom",
+      "industry": "商业航天与卫星互联网",
+      "benchmark_dimensions": 7,
+      "radar_sources": 4,
+      "benchmark_equipment": "commercial-space-satcom:benchmark",
+      "playbook_equipment": "commercial-space-satcom:playbook"
+    },
+    {
+      "industry_id": "low-altitude-economy",
+      "industry": "低空经济",
+      "benchmark_dimensions": 8,
+      "radar_sources": 5,
+      "benchmark_equipment": "low-altitude-economy:benchmark",
+      "playbook_equipment": "low-altitude-economy:playbook"
+    },
+    {
+      "industry_id": "wide-bandgap-semiconductor",
+      "industry": "第三代/宽禁带半导体",
+      "benchmark_dimensions": 7,
+      "radar_sources": 4,
+      "benchmark_equipment": "wide-bandgap-semiconductor:benchmark",
+      "playbook_equipment": "wide-bandgap-semiconductor:playbook"
+    },
+    {
+      "industry_id": "solid-state-battery",
+      "industry": "固态电池与下一代电池材料",
+      "benchmark_dimensions": 8,
+      "radar_sources": 3,
+      "benchmark_equipment": "solid-state-battery:benchmark",
+      "playbook_equipment": "solid-state-battery:playbook"
+    },
+    {
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "industry": "合成生物学与生物制造",
+      "benchmark_dimensions": 8,
+      "radar_sources": 5,
+      "benchmark_equipment": "synthetic-biology-biomanufacturing:benchmark",
+      "playbook_equipment": "synthetic-biology-biomanufacturing:playbook"
+    },
+    {
+      "industry_id": "industrial-machine-tools",
+      "industry": "工业母机与高端数控",
+      "benchmark_dimensions": 8,
+      "radar_sources": 5,
+      "benchmark_equipment": "industrial-machine-tools:benchmark",
+      "playbook_equipment": "industrial-machine-tools:playbook"
+    },
+    {
+      "industry_id": "smart-sensors-mems",
+      "industry": "高端智能传感器与MEMS",
+      "benchmark_dimensions": 8,
+      "radar_sources": 5,
+      "benchmark_equipment": "smart-sensors-mems:benchmark",
+      "playbook_equipment": "smart-sensors-mems:playbook"
+    }
+  ],
+  "documents": 52,
+  "equipments": 52,
+  "experts": 8,
+  "runtime_read_tools": 16
+}

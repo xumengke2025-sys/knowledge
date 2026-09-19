@@ -26,7 +26,6 @@ jobs:
           python scripts/validate-v05.py
       - name: Commit generated v0.5 state
         run: |
-          rm -f .github/workflows/apply-expert-os-v05.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
@@ -34,4 +33,4 @@ jobs:
           git commit -m "feat: wire v0.5 benchmarks playbooks and runtime company tools"
           git push origin HEAD:main
 
-# validator-contract-v05
+# validator-contract-v05-r2

@@ -1,0 +1,228 @@
+{
+  "industry_id": "solid-state-battery",
+  "industry": "固态电池与下一代电池材料",
+  "as_of": "2026-09-19",
+  "companies": [
+    {
+      "code": "002460",
+      "name": "赣锋锂业",
+      "exchange": "SZSE",
+      "nodes": [
+        "sulfide-electrolyte",
+        "oxide-electrolyte",
+        "anode",
+        "cell-process",
+        "applications"
+      ],
+      "stage": "多环节研发/生产/商业化推进",
+      "evidence": [
+        "SSB-COMP-002460-2025AR"
+      ],
+      "summary": "年报披露自研氧化物电解质、硫化物材料、固液电池以及面向低空等应用的电芯布局。",
+      "caveat": "不同电解质路线与不同电芯形态成熟度不一致，必须逐产品记录。"
+    },
+    {
+      "code": "002074",
+      "name": "国轩高科",
+      "exchange": "SZSE",
+      "nodes": [
+        "cell-process",
+        "pilot-line"
+      ],
+      "stage": "全固态中试线已建设投产",
+      "evidence": [
+        "SSB-COMP-002074-2025AR"
+      ],
+      "summary": "2025年报披露将固态电池作为研发重点，并完成首条全固态电池中试线建设与投产。",
+      "caveat": "中试线投产不等于规模量产。"
+    },
+    {
+      "code": "300073",
+      "name": "当升科技",
+      "exchange": "SZSE",
+      "nodes": [
+        "cathode",
+        "sulfide-electrolyte",
+        "oxide-electrolyte",
+        "applications"
+      ],
+      "stage": "材料批量供货/客户批量验证",
+      "evidence": [
+        "SSB-COMP-300073-2025AR"
+      ],
+      "summary": "年报披露全固态用超高镍/富锂锰基材料20吨级以上批量供货，多款固态电解质进入头部客户批量验证。",
+      "caveat": "“材料供货”不能推定下游全固态电池已量产。"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "cell",
+        "solid-electrolyte"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300014",
+      "name": "亿纬锂能",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "cell"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300207",
+      "name": "欣旺达",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "cell"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688567",
+      "name": "孚能科技",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cell"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002812",
+      "name": "恩捷股份",
+      "exchange": "SZSE",
+      "nodes": [
+        "separator"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "603659",
+      "name": "璞泰来",
+      "exchange": "SSE",
+      "nodes": [
+        "anode",
+        "coating"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688005",
+      "name": "容百科技",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cathode"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "835185",
+      "name": "贝特瑞",
+      "exchange": "BSE",
+      "nodes": [
+        "anode"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002709",
+      "name": "天赐材料",
+      "exchange": "SZSE",
+      "nodes": [
+        "electrolyte"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300037",
+      "name": "新宙邦",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "electrolyte"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300919",
+      "name": "中伟股份",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "cathode-precursor"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688778",
+      "name": "厦钨新能",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cathode"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    }
+  ],
+  "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FirmBuddy Tech Intelligence Source",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "publisher",
+    "date",
+    "type",
+    "grade",
+    "url"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

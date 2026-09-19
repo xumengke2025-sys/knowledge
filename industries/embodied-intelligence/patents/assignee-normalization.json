@@ -1,0 +1,57 @@
+{
+  "industry_id": "embodied-intelligence",
+  "as_of": "2026-09-19",
+  "rules": [
+    "上市主体与核心技术子公司分开保留",
+    "历史名称保留alias，不直接合并",
+    "外观/实用新型/发明分开统计",
+    "关联公司只有在控制关系可验证时才归入集团视图"
+  ],
+  "entities": [
+    {
+      "company": "汇川技术",
+      "canonical": "深圳市汇川技术股份有限公司",
+      "aliases": [
+        "苏州汇川技术有限公司",
+        "南京汇川技术有限公司"
+      ],
+      "merge_policy": "group_view_with_subsidiary_tag"
+    },
+    {
+      "company": "雷赛智能",
+      "canonical": "深圳市雷赛智能控制股份有限公司",
+      "aliases": [
+        "上海雷赛机器人科技有限公司",
+        "深圳市灵巧驱控技术有限公司",
+        "深圳市雷赛控制技术有限公司"
+      ],
+      "merge_policy": "group_view_with_subsidiary_tag"
+    },
+    {
+      "company": "奥比中光",
+      "canonical": "奥比中光科技集团股份有限公司",
+      "aliases": [
+        "奥比中光(广东顺德)科技有限公司"
+      ],
+      "merge_policy": "group_view_with_subsidiary_tag"
+    },
+    {
+      "company": "绿的谐波",
+      "canonical": "苏州绿的谐波传动科技股份有限公司",
+      "aliases": [],
+      "merge_policy": "canonical_only"
+    },
+    {
+      "company": "柯力传感",
+      "canonical": "宁波柯力传感科技股份有限公司",
+      "aliases": [],
+      "merge_policy": "canonical_only"
+    },
+    {
+      "company": "兆威机电",
+      "canonical": "深圳市兆威机电股份有限公司",
+      "aliases": [],
+      "merge_policy": "canonical_only"
+    }
+  ]
+}

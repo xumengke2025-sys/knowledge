@@ -1,0 +1,225 @@
+{
+  "industry_id": "industrial-machine-tools",
+  "industry": "工业母机与高端数控",
+  "as_of": "2026-09-19",
+  "companies": [
+    {
+      "code": "300161",
+      "name": "华中数控",
+      "exchange": "SZSE",
+      "nodes": [
+        "cnc-system",
+        "servo",
+        "industrial-software"
+      ],
+      "stage": "国产中高档数控系统规模应用/持续迭代",
+      "evidence": [
+        "IMT-COMP-300161-2025AR"
+      ],
+      "summary": "具备数控装置、伺服驱动、伺服电机全链条能力；2025年报披露华中10型智能数控系统等进展。",
+      "caveat": "数控系统装机规模、下游行业结构和高端机型占比需持续更新。"
+    },
+    {
+      "code": "000837",
+      "name": "秦川机床",
+      "exchange": "SZSE",
+      "nodes": [
+        "cnc-machine",
+        "tooling",
+        "linear-motion",
+        "cnc-system"
+      ],
+      "stage": "核心机床+功能部件+高端产品产业化推进",
+      "evidence": [
+        "IMT-COMP-000837-2024AR"
+      ],
+      "summary": "主营齿轮机床、加工中心、磨床、刀具等，并推进五轴、机器人关节减速器、数控系统研发产业化。",
+      "caveat": "2024年报用于技术底座，2025/2026最新进展需二次更新。"
+    },
+    {
+      "code": "688305",
+      "name": "科德数控",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cnc-machine",
+        "cnc-system",
+        "servo"
+      ],
+      "stage": "高端五轴等产品规模应用",
+      "evidence": [
+        "IMT-MKT-688305-2025"
+      ],
+      "summary": "上交所公开综述将科德数控列为高端装备代表，持续推出高端五轴相关产品。",
+      "caveat": "交易所综述用于索引，核心零部件自主化率与装机数需引用对应年度报告。"
+    },
+    {
+      "code": "601882",
+      "name": "海天精工",
+      "exchange": "SSE",
+      "nodes": [
+        "cnc-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688697",
+      "name": "纽威数控",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cnc-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688577",
+      "name": "浙海德曼",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cnc-lathe"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688558",
+      "name": "国盛智科",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cnc-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002520",
+      "name": "日发精机",
+      "exchange": "SZSE",
+      "nodes": [
+        "cnc-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "000410",
+      "name": "沈阳机床",
+      "exchange": "SZSE",
+      "nodes": [
+        "cnc-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002559",
+      "name": "亚威股份",
+      "exchange": "SZSE",
+      "nodes": [
+        "forming-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300083",
+      "name": "创世纪",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "cnc-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002903",
+      "name": "宇环数控",
+      "exchange": "SZSE",
+      "nodes": [
+        "grinding-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002248",
+      "name": "华东数控",
+      "exchange": "SZSE",
+      "nodes": [
+        "cnc-machine"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688308",
+      "name": "欧科亿",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cutting-tool"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688059",
+      "name": "华锐精密",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "cutting-tool"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    }
+  ],
+  "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"
+}

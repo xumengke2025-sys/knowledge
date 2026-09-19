@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Listed Company Technology Card",
+  "type": "object",
+  "required": [
+    "code",
+    "name",
+    "exchange",
+    "nodes",
+    "stage",
+    "evidence",
+    "summary"
+  ],
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "exchange": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stage": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "caveat": {
+      "type": "string"
+    }
+  }
+}

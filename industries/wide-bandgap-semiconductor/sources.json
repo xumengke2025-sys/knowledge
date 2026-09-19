@@ -1,0 +1,37 @@
+{
+  "industry_id": "wide-bandgap-semiconductor",
+  "industry": "第三代/宽禁带半导体",
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "WBG-MKT-001",
+      "title": "科创板公司2024年度经营业绩概览",
+      "publisher": "上海证券交易所",
+      "date": "2025-04-30",
+      "type": "exchange_summary",
+      "grade": "A",
+      "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20250430_10778299.shtml",
+      "note": "天岳先进12英寸碳化硅衬底、科创板专精特新覆盖。"
+    },
+    {
+      "id": "WBG-COMP-300316-2025AR",
+      "title": "晶盛机电2025年年度报告",
+      "publisher": "巨潮资讯/晶盛机电",
+      "date": "2026-04-11",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-11/1225095476.PDF",
+      "note": "8英寸/12英寸SiC、半导体装备和耗材。"
+    },
+    {
+      "id": "WBG-COMP-600703-2024ESG",
+      "title": "三安光电2024年度可持续发展报告",
+      "publisher": "上交所/三安光电",
+      "date": "2025-08-02",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-02/600703_20250802_YRAF.pdf",
+      "note": "SiC垂直产业链、合资晶圆厂等布局。"
+    }
+  ]
+}

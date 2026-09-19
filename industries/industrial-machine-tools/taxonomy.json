@@ -1,0 +1,42 @@
+{
+  "industry_id": "industrial-machine-tools",
+  "industry": "工业母机与高端数控",
+  "as_of": "2026-09-19",
+  "nodes": [
+    {
+      "id": "cnc-machine",
+      "name": "高端数控机床",
+      "description": "五轴、车铣复合、磨削、齿轮加工"
+    },
+    {
+      "id": "cnc-system",
+      "name": "数控系统",
+      "description": "控制器、实时系统、插补、智能数控"
+    },
+    {
+      "id": "servo",
+      "name": "伺服与驱动",
+      "description": "伺服驱动、伺服电机"
+    },
+    {
+      "id": "spindle",
+      "name": "主轴与转台",
+      "description": "电主轴、转台、摆头"
+    },
+    {
+      "id": "linear-motion",
+      "name": "功能部件",
+      "description": "滚珠丝杠、导轨、轴承"
+    },
+    {
+      "id": "tooling",
+      "name": "刀具与量仪",
+      "description": "精密刀具、测量、在线检测"
+    },
+    {
+      "id": "industrial-software",
+      "name": "工业软件",
+      "description": "CAM、数字孪生、误差补偿、数据采集"
+    }
+  ]
+}

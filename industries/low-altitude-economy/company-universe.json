@@ -1,0 +1,223 @@
+{
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "as_of": "2026-09-19",
+  "companies": [
+    {
+      "code": "301091",
+      "name": "深城交",
+      "exchange": "SZSE",
+      "nodes": [
+        "low-altitude-network",
+        "infrastructure",
+        "traffic-management",
+        "operations"
+      ],
+      "stage": "规划/平台/建设/运营多环节落地",
+      "evidence": [
+        "LA-COMP-301091-2025AR"
+      ],
+      "summary": "公司年报将低空新基建、智能网联、低空运营纳入发展方向，并披露多地低空规划与基础设施相关业务。",
+      "caveat": "项目规划、建设交付和自营运营应分开统计。"
+    },
+    {
+      "code": "001696",
+      "name": "宗申动力",
+      "exchange": "SZSE",
+      "nodes": [
+        "propulsion",
+        "aircraft"
+      ],
+      "stage": "航空动力产品与适航推进",
+      "evidence": [
+        "LA-COMP-001696-2025H1"
+      ],
+      "summary": "控股子公司宗申航发形成中小型航空活塞发动机产品线，并推进动力系统集成和适航认证。",
+      "caveat": "通航飞机与工业无人机的适航/客户要求不同，不能混用阶段。"
+    },
+    {
+      "code": "000099",
+      "name": "中信海直",
+      "exchange": "SZSE",
+      "nodes": [
+        "operations"
+      ],
+      "stage": "成熟通航运营+低空场景拓展",
+      "evidence": [
+        "LA-COMP-000099-2024AR"
+      ],
+      "summary": "主营通航运营，并将应急救援、医疗救援、空中交通、物流运输视为低空经济的重要应用方向。",
+      "caveat": "运营企业与航空器制造企业的技术评价维度不同。"
+    },
+    {
+      "code": "002085",
+      "name": "万丰奥威",
+      "exchange": "SZSE",
+      "nodes": [
+        "aircraft"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688631",
+      "name": "莱斯信息",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "air-traffic-management"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "000801",
+      "name": "四川九洲",
+      "exchange": "SZSE",
+      "nodes": [
+        "avionics"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "600038",
+      "name": "中直股份",
+      "exchange": "SSE",
+      "nodes": [
+        "aircraft"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "600316",
+      "name": "洪都航空",
+      "exchange": "SSE",
+      "nodes": [
+        "aircraft"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688070",
+      "name": "纵横股份",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "uav"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002111",
+      "name": "威海广泰",
+      "exchange": "SZSE",
+      "nodes": [
+        "ground-support"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300719",
+      "name": "安达维尔",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "avionics"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300900",
+      "name": "广联航空",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "airframe"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002389",
+      "name": "航天彩虹",
+      "exchange": "SZSE",
+      "nodes": [
+        "uav"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688297",
+      "name": "中无人机",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "uav"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "600990",
+      "name": "四创电子",
+      "exchange": "SSE",
+      "nodes": [
+        "radar",
+        "air-traffic-management"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    }
+  ],
+  "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"
+}

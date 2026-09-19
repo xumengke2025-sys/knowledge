@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-09-19",
+  "experts": [
+    {
+      "industry_id": "embodied-intelligence",
+      "industry": "具身智能与人形机器人",
+      "expert_id": "industry-embodied-intelligence",
+      "expert_name": "具身智能与人形机器人产业研究专家",
+      "path": "industries/embodied-intelligence/expert-pack.json"
+    },
+    {
+      "industry_id": "commercial-space-satcom",
+      "industry": "商业航天与卫星互联网",
+      "expert_id": "industry-commercial-space-satcom",
+      "expert_name": "商业航天与卫星互联网产业研究专家",
+      "path": "industries/commercial-space-satcom/expert-pack.json"
+    },
+    {
+      "industry_id": "low-altitude-economy",
+      "industry": "低空经济",
+      "expert_id": "industry-low-altitude-economy",
+      "expert_name": "低空经济产业研究专家",
+      "path": "industries/low-altitude-economy/expert-pack.json"
+    },
+    {
+      "industry_id": "wide-bandgap-semiconductor",
+      "industry": "第三代/宽禁带半导体",
+      "expert_id": "industry-wide-bandgap-semiconductor",
+      "expert_name": "第三代/宽禁带半导体产业研究专家",
+      "path": "industries/wide-bandgap-semiconductor/expert-pack.json"
+    },
+    {
+      "industry_id": "solid-state-battery",
+      "industry": "固态电池与下一代电池材料",
+      "expert_id": "industry-solid-state-battery",
+      "expert_name": "固态电池与下一代电池材料产业研究专家",
+      "path": "industries/solid-state-battery/expert-pack.json"
+    },
+    {
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "industry": "合成生物学与生物制造",
+      "expert_id": "industry-synthetic-biology-biomanufacturing",
+      "expert_name": "合成生物学与生物制造产业研究专家",
+      "path": "industries/synthetic-biology-biomanufacturing/expert-pack.json"
+    },
+    {
+      "industry_id": "industrial-machine-tools",
+      "industry": "工业母机与高端数控",
+      "expert_id": "industry-industrial-machine-tools",
+      "expert_name": "工业母机与高端数控产业研究专家",
+      "path": "industries/industrial-machine-tools/expert-pack.json"
+    },
+    {
+      "industry_id": "smart-sensors-mems",
+      "industry": "高端智能传感器与MEMS",
+      "expert_id": "industry-smart-sensors-mems",
+      "expert_name": "高端智能传感器与MEMS产业研究专家",
+      "path": "industries/smart-sensors-mems/expert-pack.json"
+    }
+  ]
+}

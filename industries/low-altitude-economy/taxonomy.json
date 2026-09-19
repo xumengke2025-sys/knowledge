@@ -1,0 +1,42 @@
+{
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "as_of": "2026-09-19",
+  "nodes": [
+    {
+      "id": "aircraft",
+      "name": "低空航空器",
+      "description": "无人机、eVTOL、通航飞机"
+    },
+    {
+      "id": "propulsion",
+      "name": "航空动力",
+      "description": "活塞发动机、电推进、螺旋桨、热管理"
+    },
+    {
+      "id": "cnns",
+      "name": "通导监",
+      "description": "通信、导航、监视、雷达、ADS-B"
+    },
+    {
+      "id": "low-altitude-network",
+      "name": "低空智联网",
+      "description": "5G/5G-A、卫星通信、多元融合感知"
+    },
+    {
+      "id": "infrastructure",
+      "name": "低空基础设施",
+      "description": "起降点、枢纽、测试基地、数字底座"
+    },
+    {
+      "id": "traffic-management",
+      "name": "低空交通管理",
+      "description": "空域、航路、飞行服务、UTM"
+    },
+    {
+      "id": "operations",
+      "name": "运营与场景",
+      "description": "物流、医疗、应急、文旅、通航运营"
+    }
+  ]
+}

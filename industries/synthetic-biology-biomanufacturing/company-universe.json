@@ -1,0 +1,229 @@
+{
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "industry": "合成生物学与生物制造",
+  "as_of": "2026-09-19",
+  "companies": [
+    {
+      "code": "688639",
+      "name": "华恒生物",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "design",
+        "build",
+        "fermentation",
+        "separation",
+        "bio-based-chemicals"
+      ],
+      "stage": "多品类产业化",
+      "evidence": [
+        "SB-COMP-688639-2024QA"
+      ],
+      "summary": "公开审核材料显示公司以合成生物技术为核心，形成工业菌种创制、发酵过程控制、分离提取等技术体系，并有多类氨基酸/维生素产品产业化。",
+      "caveat": "审核问询材料时间较早，新增产能和最新品类应结合后续年报更新。"
+    },
+    {
+      "code": "301301",
+      "name": "川宁生物",
+      "exchange": "SZSE",
+      "nodes": [
+        "design",
+        "build",
+        "test",
+        "learn",
+        "fermentation"
+      ],
+      "stage": "平台化研发+产业化推进",
+      "evidence": [
+        "SB-COMP-301301-2025H1"
+      ],
+      "summary": "半年报披露计算驱动设计、自动化高通量构建筛选、多尺度发酵及机器学习闭环。",
+      "caveat": "平台能力与单一产品商业化应分层记录。"
+    },
+    {
+      "code": "688065",
+      "name": "凯赛生物",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "fermentation",
+        "separation",
+        "bio-based-chemicals",
+        "bio-materials"
+      ],
+      "stage": "生物制造规模产业化",
+      "evidence": [
+        "SB-COMP-688065-2025H1"
+      ],
+      "summary": "公开报告围绕生物制造、生物基长链二元酸和生物基材料建立产业化体系。",
+      "caveat": "产品竞争力需结合产能、成本、客户和替代路线，不以“生物基”标签直接判断。"
+    },
+    {
+      "code": "600873",
+      "name": "梅花生物",
+      "exchange": "SSE",
+      "nodes": [
+        "fermentation"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "600866",
+      "name": "星湖科技",
+      "exchange": "SSE",
+      "nodes": [
+        "fermentation"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002001",
+      "name": "新和成",
+      "exchange": "SZSE",
+      "nodes": [
+        "bio-based-chemical"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "603739",
+      "name": "蔚蓝生物",
+      "exchange": "SSE",
+      "nodes": [
+        "enzyme"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688089",
+      "name": "嘉必优",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "precision-fermentation"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688363",
+      "name": "华熙生物",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "microbial-fermentation"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "600298",
+      "name": "安琪酵母",
+      "exchange": "SSE",
+      "nodes": [
+        "fermentation"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300381",
+      "name": "溢多利",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "enzyme"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300233",
+      "name": "金城医药",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "biopharma-fermentation"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "603079",
+      "name": "圣达生物",
+      "exchange": "SSE",
+      "nodes": [
+        "vitamin-biomanufacturing"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300497",
+      "name": "富祥药业",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "biomanufacturing"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "000990",
+      "name": "诚志股份",
+      "exchange": "SZSE",
+      "nodes": [
+        "bio-based-chemical"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    }
+  ],
+  "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"
+}

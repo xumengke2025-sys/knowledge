@@ -1,0 +1,57 @@
+{
+  "industry_id": "commercial-space-satcom",
+  "industry": "商业航天与卫星互联网",
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "CS-POL-001",
+      "title": "关于优化业务准入促进卫星通信产业发展的指导意见",
+      "publisher": "工业和信息化部",
+      "date": "2025-08-27",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2025/art_e4f6b24e18b74a56bf60f6fcb78ef568.html",
+      "note": "低轨卫星互联网、业务准入、2030用户目标等。"
+    },
+    {
+      "id": "CS-POL-002",
+      "title": "商业火箭企业适用科创板第五套上市标准审核指引发布说明",
+      "publisher": "上海证券交易所",
+      "date": "2025-12-26",
+      "type": "exchange_policy",
+      "grade": "A",
+      "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20251226_10803077.shtml",
+      "note": "商业火箭领域阶段性成果与资本市场制度背景。"
+    },
+    {
+      "id": "CS-COMP-300762-2025AR",
+      "title": "上海瀚讯2025年年度报告",
+      "publisher": "巨潮资讯/上海瀚讯",
+      "date": "2026-04-28",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225205348.PDF",
+      "note": "低轨卫星互联网、通信载荷、地面终端。"
+    },
+    {
+      "id": "CS-COMP-688270-2025H1",
+      "title": "臻镭科技2025年半年度报告",
+      "publisher": "上交所/臻镭科技",
+      "date": "2025-08-13",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-13/688270_20250813_Z35W.pdf",
+      "note": "射频收发、电源管理、T/R微系统、卫星互联网等术语与产品技术。"
+    },
+    {
+      "id": "CS-MKT-600879-2025",
+      "title": "沪市主板公司2025年年报业绩综述（含航天电子）",
+      "publisher": "上海证券交易所",
+      "date": "2026-04-30",
+      "type": "exchange_summary",
+      "grade": "A",
+      "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260430_10817333.shtml",
+      "note": "航天电子北斗卫星应用芯片、激光链路技术公开汇总。"
+    }
+  ]
+}

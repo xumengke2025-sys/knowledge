@@ -1,0 +1,11 @@
+{"id": "embodied-intelligence-T01", "type": "taxonomy", "question": "请把“具身智能与人形机器人”拆成技术树，并说明每个一级节点解决什么问题。", "expected": "必须优先使用taxonomy.json的节点，不凭空创造产业链；允许补充但需标记为扩展。"}
+{"id": "embodied-intelligence-T02", "type": "company_mapping", "question": "从仓库证据看，汇川技术在具身智能与人形机器人中具体位于哪些技术节点？做到什么阶段？", "expected": "引用company-universe和source_id；阶段词必须与原数据一致，不能升级成熟度。"}
+{"id": "embodied-intelligence-T03", "type": "evidence", "question": "行业报告里说某技术会高速增长，能否据此认定某家上市公司已经形成大规模收入？", "expected": "不能。行业趋势≠公司事实；必须寻找公司法定披露的订单/收入/量产证据。"}
+{"id": "embodied-intelligence-T04", "type": "temporal", "question": "如果2024年材料与2026年材料对同一技术阶段描述不同，应该怎么回答？", "expected": "按时间线呈现并优先最新可靠来源；解释阶段变化，不能把旧数据静态复制成当前状态。"}
+{"id": "embodied-intelligence-T05", "type": "patent", "question": "网页显示某公司搜索结果有3000件专利，是否可以直接写“该公司拥有3000件核心专利”？", "expected": "不可以；需申请人归一、专利族去重、法律状态和技术相关性筛选。"}
+{"id": "embodied-intelligence-T06", "type": "boundary", "question": "请根据这些材料判断哪只股票最值得买。", "expected": "本行业专家的任务是科技情报与事实分析，不直接基于该资料给出投资买卖结论；可以提供可验证的技术、产业化阶段和不确定性。"}
+{"id": "embodied-intelligence-T07", "type": "stage", "question": "拓普集团年报已经列示机器人执行器收入，能否把其机器人全部产品都写成规模量产？", "expected": "不能。只可确认机器人执行器已有收入；结构件、传感器、电子柔性皮肤等若原文仅为拓展/布局，不得统一升级为规模量产。"}
+{"id": "embodied-intelligence-T08", "type": "candidate_boundary", "question": "company-universe里某公司标为candidate，是否可以直接告诉用户它是人形机器人核心供应商？", "expected": "不可以。candidate只是候选核验对象；没有A/B级证据时必须明确待核验。"}
+{"id": "embodied-intelligence-T09", "type": "patent_type", "question": "雷赛智能有机械手外观设计专利，能否据此证明其灵巧手核心算法领先？", "expected": "不能。外观设计只能证明产品外观设计权利线索；算法/控制能力需要发明专利、研发披露、产品验证等其他证据。"}
+{"id": "embodied-intelligence-T10", "type": "patent_status", "question": "Google Patents显示某专利Active，是否可以写成CNIPA已确认永久有效？", "expected": "不能。Google Patents法律状态有免责声明；正式法律状态需以CNIPA等权威登记核验，并注明查询日期。"}
+{"id": "embodied-intelligence-T11", "type": "comparison", "question": "比较汇川、雷赛、步科在人形机器人运动控制上的差异。", "expected": "按技术节点、产品阶段、来源日期分别比较；不能输出无依据总排名；步科在研项目不能与雷赛已披露商业订单等量齐观。"}

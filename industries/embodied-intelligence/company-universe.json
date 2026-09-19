@@ -1,0 +1,693 @@
+{
+  "industry_id": "embodied-intelligence",
+  "industry": "具身智能与人形机器人",
+  "as_of": "2026-09-19",
+  "universe_definition": "A股/科创板/创业板/北交所中国大陆上市公司；以具身智能整机、关键部件、感知、运动控制、制造测试等为候选生成范围。",
+  "companies": [
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "exchange": "SSE",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "actuator",
+        "body-structure",
+        "force-tactile",
+        "energy-thermal"
+      ],
+      "stage": "batch_delivery",
+      "evidence": [
+        "EI-COMP-601689-2025AR"
+      ],
+      "summary": "2025年报将机器人执行器单列收入，并披露向躯体结构件、传感器、足部减震器、电子柔性皮肤等扩展。",
+      "caveat": "机器人业务收入仍需结合分产品披露理解，不能把规划矩阵全部视为已规模化。"
+    },
+    {
+      "code": "300124",
+      "name": "汇川技术",
+      "exchange": "SZSE",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "motion-control",
+        "actuator",
+        "motor-drive",
+        "reducer-screw"
+      ],
+      "stage": "product_released",
+      "evidence": [
+        "EI-COMP-300124-2025AR"
+      ],
+      "summary": "人形机器人零部件覆盖仿生臂、关节模组、无框电机、低压伺服、丝杠/编码器等，首代产品已开发交付并推进送样合作。",
+      "caveat": "未据此推定具体客户与业务收入。"
+    },
+    {
+      "code": "002979",
+      "name": "雷赛智能",
+      "exchange": "SZSE",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "motion-control",
+        "actuator",
+        "motor-drive",
+        "dexterous-hand"
+      ],
+      "stage": "batch_delivery",
+      "evidence": [
+        "EI-COMP-002979-2025AR",
+        "EI-COMP-002979-2025H1"
+      ],
+      "summary": "形成无框力矩电机、空心杯电机、行星/谐波关节模组、高自由度灵巧手；半年报披露部分组件取得规模商业订单。",
+      "caveat": "公司表述“进入主流厂商供应体系”属公司披露，客户名单与收入结构仍需逐项核验。"
+    },
+    {
+      "code": "003021",
+      "name": "兆威机电",
+      "exchange": "SZSE",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "dexterous-hand",
+        "motor-drive",
+        "force-tactile"
+      ],
+      "stage": "development",
+      "evidence": [
+        "EI-COMP-003021-2025AR"
+      ],
+      "summary": "聚焦仿生灵巧手、微型传动、电机控制、电子皮肤等；核心项目仍处研发推进。",
+      "caveat": "产品发布不等同规模量产。"
+    },
+    {
+      "code": "688017",
+      "name": "绿的谐波",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "reducer-screw",
+        "actuator"
+      ],
+      "stage": "batch_delivery",
+      "evidence": [
+        "EI-MKT-688017-2026H1"
+      ],
+      "summary": "核心为谐波减速器，交易所综述披露面向国际头部机器人客户批量交付。",
+      "caveat": "交易所综述需与公司定期报告结合；具体客户未披露。"
+    },
+    {
+      "code": "688322",
+      "name": "奥比中光",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "vision"
+      ],
+      "stage": "scaled",
+      "evidence": [
+        "EI-COMP-688322-2025AR"
+      ],
+      "summary": "结构光、ToF等3D视觉覆盖机器人场景，机器人业务成为重要增长方向。",
+      "caveat": "不同机器人子场景收入需另行拆分。"
+    },
+    {
+      "code": "300007",
+      "name": "汉威科技",
+      "exchange": "SZSE",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "force-tactile",
+        "inertial-sensing"
+      ],
+      "stage": "small_batch",
+      "evidence": [
+        "EI-COMP-300007-2025AR",
+        "EI-COMP-300007-2025H1"
+      ],
+      "summary": "柔性触觉、电子皮肤、IMU、压力/气体等多模态传感布局；电子皮肤/触觉传感器已披露小批量供货。",
+      "caveat": "不能把全部传感器产品统一视为小批量。"
+    },
+    {
+      "code": "603662",
+      "name": "柯力传感",
+      "exchange": "SSE",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "force-tactile",
+        "testing-manufacturing"
+      ],
+      "stage": "customer_validation",
+      "evidence": [
+        "EI-COMP-603662-2025AR"
+      ],
+      "summary": "围绕机器人力学传感、MEMS多维力及多模态传感布局，并建设机器人产业生态。",
+      "caveat": "具体型号销售和送样数量应以最新公告/IR为准。"
+    },
+    {
+      "code": "300660",
+      "name": "江苏雷利",
+      "exchange": "SZSE",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "motor-drive",
+        "reducer-screw",
+        "dexterous-hand",
+        "motion-control"
+      ],
+      "stage": "sampling",
+      "evidence": [
+        "EI-COMP-300660-2025AR"
+      ],
+      "summary": "自研空心杯、无框力矩电机、精密齿轮箱、多类丝杠；控股子公司发布连杆/绳驱灵巧手，相关产品处测试或送样。",
+      "caveat": "不同产品阶段不同，不能统一写为量产。"
+    },
+    {
+      "code": "688160",
+      "name": "步科股份",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T1",
+      "verification_status": "verified_core",
+      "nodes": [
+        "motor-drive",
+        "motion-control",
+        "actuator"
+      ],
+      "stage": "development",
+      "evidence": [
+        "EI-COMP-688160-2025AR"
+      ],
+      "summary": "年报列示人形无框电机、关节模组伺服驱动器等研发项目。",
+      "caveat": "研发项目不等于已形成销售。"
+    },
+    {
+      "code": "002896",
+      "name": "中大力德",
+      "exchange": "SZSE",
+      "relevance_tier": "T2",
+      "verification_status": "verified_supply_chain",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "product_released",
+      "evidence": [
+        "EI-COMP-002896-2025AR"
+      ],
+      "summary": "全品类精密减速器制造商，产品与机器人关节/灵巧手减速需求相关。",
+      "caveat": "年报同时明确人形机器人仍处商业化初期，不能据行业空间推定公司放量。"
+    },
+    {
+      "code": "002126",
+      "name": "银轮股份",
+      "exchange": "SZSE",
+      "relevance_tier": "T2",
+      "verification_status": "verified_supply_chain",
+      "nodes": [
+        "actuator",
+        "dexterous-hand",
+        "energy-thermal"
+      ],
+      "stage": "development",
+      "evidence": [
+        "EI-IR-002126-2025"
+      ],
+      "summary": "公司IR披露机器人“1+4+N”规划，覆盖旋转、线性、手部、热管理模组。",
+      "caveat": "规划不等同量产；需以后续年报核验各模组阶段。"
+    },
+    {
+      "code": "301226",
+      "name": "祥明智能",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T2",
+      "verification_status": "verified_supply_chain",
+      "nodes": [
+        "motor-drive",
+        "motion-control",
+        "actuator"
+      ],
+      "stage": "development",
+      "evidence": [
+        "EI-COMP-301226-2025IR"
+      ],
+      "summary": "业绩说明会披露无框电机、控制、运动关节模组系列研发技术。",
+      "caveat": "IR为公司口径，需跟踪产品验证和收入。"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T2",
+      "verification_status": "candidate",
+      "nodes": [
+        "energy-thermal"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "作为电池系统龙头进入机器人能源系统候选池；需核验是否有针对人形机器人披露的专用产品/项目。",
+      "caveat": "不得仅因电池能力把公司认定为人形机器人供应商。"
+    },
+    {
+      "code": "002050",
+      "name": "三花智控",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "actuator",
+        "energy-thermal"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "603728",
+      "name": "鸣志电器",
+      "exchange": "SSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motor-drive"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002472",
+      "name": "双环传动",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw",
+        "actuator"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "300580",
+      "name": "贝斯特",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "603667",
+      "name": "五洲新春",
+      "exchange": "SSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw",
+        "precision-bearing"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "603009",
+      "name": "北特科技",
+      "exchange": "SSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "688320",
+      "name": "禾川科技",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motion-control",
+        "motor-drive"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "688698",
+      "name": "伟创电气",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motor-drive",
+        "motion-control"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "301413",
+      "name": "安培龙",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "force-tactile"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "688582",
+      "name": "芯动联科",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "inertial-sensing"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "300354",
+      "name": "东华测试",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "force-tactile",
+        "testing-manufacturing"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002903",
+      "name": "宇环数控",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "testing-manufacturing"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "300607",
+      "name": "拓斯达",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motion-control",
+        "body-structure"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "688165",
+      "name": "埃夫特",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motion-control",
+        "body-structure"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002747",
+      "name": "埃斯顿",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motion-control",
+        "body-structure"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "300024",
+      "name": "机器人",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motion-control",
+        "body-structure"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002527",
+      "name": "新时达",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "motion-control",
+        "motor-drive"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "688003",
+      "name": "天准科技",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "vision",
+        "testing-manufacturing"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "688400",
+      "name": "凌云光",
+      "exchange": "SSE STAR",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "vision"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002975",
+      "name": "博杰股份",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "testing-manufacturing",
+        "vision",
+        "inertial-sensing",
+        "force-tactile"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "300953",
+      "name": "震裕科技",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "actuator",
+        "body-structure"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "300718",
+      "name": "长盛轴承",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002553",
+      "name": "南方精工",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "603915",
+      "name": "国茂股份",
+      "exchange": "SSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "000837",
+      "name": "秦川机床",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002008",
+      "name": "大族激光",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "testing-manufacturing"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "301029",
+      "name": "怡合达",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "body-structure"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "002600",
+      "name": "领益智造",
+      "exchange": "SZSE",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "body-structure"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "301368",
+      "name": "丰立智能",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "reducer-screw"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    },
+    {
+      "code": "301488",
+      "name": "豪恩汽电",
+      "exchange": "SZSE ChiNext",
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "nodes": [
+        "vision",
+        "inertial-sensing"
+      ],
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于公开产业链能力/市场线索进入具身智能核验池；需补充法定披露后才能转为训练事实。",
+      "caveat": "candidate 不等于已确认参与人形机器人业务。"
+    }
+  ],
+  "coverage_note": "本版本显著扩大 Universe，但仍不声称数学意义穷尽。verified 条目可用于专家事实；candidate 只用于后续检索补证。"
+}

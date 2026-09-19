@@ -1,0 +1,47 @@
+{
+  "industry_id": "smart-sensors-mems",
+  "industry": "高端智能传感器与MEMS",
+  "as_of": "2026-09-19",
+  "nodes": [
+    {
+      "id": "sensing-material",
+      "name": "敏感材料",
+      "description": "敏感膜、柔性材料、压阻/压电材料"
+    },
+    {
+      "id": "mems-chip",
+      "name": "MEMS芯片",
+      "description": "结构设计、MEMS工艺、ASIC协同"
+    },
+    {
+      "id": "packaging",
+      "name": "封装与测试",
+      "description": "晶圆级/器件封装、可靠性、标定"
+    },
+    {
+      "id": "force-pressure",
+      "name": "力/压力传感",
+      "description": "压力、应变、六维力、力矩"
+    },
+    {
+      "id": "inertial",
+      "name": "惯性传感",
+      "description": "陀螺、加速度计、IMU"
+    },
+    {
+      "id": "gas",
+      "name": "气体/化学传感",
+      "description": "电化学、MOS、NDIR、PID"
+    },
+    {
+      "id": "flexible",
+      "name": "柔性触觉",
+      "description": "电子皮肤、柔性压力/应变"
+    },
+    {
+      "id": "sensor-fusion",
+      "name": "多模态融合",
+      "description": "传感融合、边缘计算、AI感知"
+    }
+  ]
+}

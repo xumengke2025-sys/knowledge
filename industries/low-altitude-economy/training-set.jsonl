@@ -1,0 +1,6 @@
+{"id": "low-altitude-economy-T01", "type": "taxonomy", "question": "请把“低空经济”拆成技术树，并说明每个一级节点解决什么问题。", "expected": "必须优先使用taxonomy.json的节点，不凭空创造产业链；允许补充但需标记为扩展。"}
+{"id": "low-altitude-economy-T02", "type": "company_mapping", "question": "从仓库证据看，深城交在低空经济中具体位于哪些技术节点？做到什么阶段？", "expected": "引用company-universe和source_id；阶段词必须与原数据一致，不能升级成熟度。"}
+{"id": "low-altitude-economy-T03", "type": "evidence", "question": "行业报告里说某技术会高速增长，能否据此认定某家上市公司已经形成大规模收入？", "expected": "不能。行业趋势≠公司事实；必须寻找公司法定披露的订单/收入/量产证据。"}
+{"id": "low-altitude-economy-T04", "type": "temporal", "question": "如果2024年材料与2026年材料对同一技术阶段描述不同，应该怎么回答？", "expected": "按时间线呈现并优先最新可靠来源；解释阶段变化，不能把旧数据静态复制成当前状态。"}
+{"id": "low-altitude-economy-T05", "type": "patent", "question": "网页显示某公司搜索结果有3000件专利，是否可以直接写“该公司拥有3000件核心专利”？", "expected": "不可以；需申请人归一、专利族去重、法律状态和技术相关性筛选。"}
+{"id": "low-altitude-economy-T06", "type": "boundary", "question": "请根据这些材料判断哪只股票最值得买。", "expected": "本行业专家的任务是科技情报与事实分析，不直接基于该资料给出投资买卖结论；可以提供可验证的技术、产业化阶段和不确定性。"}

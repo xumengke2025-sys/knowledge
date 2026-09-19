@@ -1,0 +1,47 @@
+{
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "industry": "合成生物学与生物制造",
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "SB-POL-001",
+      "title": "“十五五”规划建议（未来产业含生物制造）",
+      "publisher": "中国政府/工业和信息化部转载",
+      "date": "2025-10",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/xwfb/szyw/art/2025/art_eda75ac8785146fe855056118a98beca.html",
+      "note": "将生物制造列为未来产业方向之一。"
+    },
+    {
+      "id": "SB-COMP-688639-2024QA",
+      "title": "华恒生物向特定对象发行审核问询回复",
+      "publisher": "上交所/华恒生物",
+      "date": "2024-01-24",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202401/688639_20240124_UR0V.pdf",
+      "note": "合成生物研发平台、生物制造技术体系、专利与专精特新小巨人信息。"
+    },
+    {
+      "id": "SB-COMP-301301-2025H1",
+      "title": "川宁生物2025年半年度报告",
+      "publisher": "巨潮资讯/川宁生物",
+      "date": "2025-08-26",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224569248.PDF",
+      "note": "DBTL、高通量菌种选育、AI/计算生物学、工程放大。"
+    },
+    {
+      "id": "SB-COMP-688065-2025H1",
+      "title": "凯赛生物2025年半年度报告",
+      "publisher": "上交所/凯赛生物",
+      "date": "2025-08-16",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688065_20250816_HEM8.pdf",
+      "note": "生物制造、长链二元酸、生物基材料等。"
+    }
+  ]
+}

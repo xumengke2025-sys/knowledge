@@ -1,0 +1,57 @@
+{
+  "industry_id": "industrial-machine-tools",
+  "industry": "工业母机与高端数控",
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "IMT-POL-001",
+      "title": "工业母机高质量标准体系建设方案",
+      "publisher": "工业和信息化部等",
+      "date": "2025",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2025/art_e3ce3beceebe4e73bea38e97d2cd570c.html",
+      "note": "高端机床、数控系统、功能部件、工艺、标准体系。"
+    },
+    {
+      "id": "IMT-POL-002",
+      "title": "2025年度享受研发费用加计扣除政策的工业母机企业清单制定工作",
+      "publisher": "工业和信息化部等",
+      "date": "2026",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/jgsj/zbys/wjfb/art/2026/art_c1f820627d654bdabcf98487d4ce4b38.html",
+      "note": "先进工业母机企业产品与研发强度条件。"
+    },
+    {
+      "id": "IMT-COMP-300161-2025AR",
+      "title": "华中数控2025年年度报告",
+      "publisher": "巨潮资讯/华中数控",
+      "date": "2026-04-29",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225236346.PDF",
+      "note": "华中10型、数控系统、伺服及创新平台；含专精特新子公司信息。"
+    },
+    {
+      "id": "IMT-COMP-000837-2024AR",
+      "title": "秦川机床2024年年度报告",
+      "publisher": "巨潮资讯/秦川机床",
+      "date": "2025-04-15",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-04-15/1223095829.PDF",
+      "note": "齿轮机床、五轴、刀具、机器人关节减速器、数控系统。"
+    },
+    {
+      "id": "IMT-MKT-688305-2025",
+      "title": "科创板公司2025年年报业绩解码（含科德数控）",
+      "publisher": "上海证券交易所",
+      "date": "2026-04-30",
+      "type": "exchange_summary",
+      "grade": "A",
+      "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260430_10817331.shtml",
+      "note": "科德数控高端装备成果。"
+    }
+  ]
+}

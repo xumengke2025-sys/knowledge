@@ -1,0 +1,47 @@
+{
+  "industry_id": "commercial-space-satcom",
+  "industry": "商业航天与卫星互联网",
+  "as_of": "2026-09-19",
+  "nodes": [
+    {
+      "id": "satellite-manufacturing",
+      "name": "卫星制造",
+      "description": "平台、结构、电源、热控、星载计算"
+    },
+    {
+      "id": "payload-communication",
+      "name": "通信载荷",
+      "description": "相控阵、基带、射频、星间链路"
+    },
+    {
+      "id": "rf-chips",
+      "name": "射频与微系统",
+      "description": "射频收发、T/R组件、抗辐照、电源管理"
+    },
+    {
+      "id": "ground-terminal",
+      "name": "地面终端",
+      "description": "用户终端、网关站、卫星地面站"
+    },
+    {
+      "id": "satcom-network",
+      "name": "卫星通信网络",
+      "description": "低轨星座、天地融合、手机直连卫星"
+    },
+    {
+      "id": "satellite-operation",
+      "name": "卫星运营",
+      "description": "转发器、通信服务、网络运营"
+    },
+    {
+      "id": "ttc",
+      "name": "测运控",
+      "description": "遥测、遥控、数传、测控"
+    },
+    {
+      "id": "launch",
+      "name": "商业发射",
+      "description": "运载火箭、可复用火箭、发射服务"
+    }
+  ]
+}

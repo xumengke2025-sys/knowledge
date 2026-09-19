@@ -1,0 +1,47 @@
+{
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "industry": "合成生物学与生物制造",
+  "as_of": "2026-09-19",
+  "nodes": [
+    {
+      "id": "design",
+      "name": "设计",
+      "description": "代谢网络、基因线路、计算生物学、AI设计"
+    },
+    {
+      "id": "build",
+      "name": "构建",
+      "description": "基因编辑、DNA组装、底盘细胞/菌株构建"
+    },
+    {
+      "id": "test",
+      "name": "测试",
+      "description": "高通量筛选、组学、自动化实验"
+    },
+    {
+      "id": "learn",
+      "name": "学习",
+      "description": "数据闭环、机器学习、模型优化"
+    },
+    {
+      "id": "fermentation",
+      "name": "发酵与放大",
+      "description": "发酵工艺、过程控制、工程放大"
+    },
+    {
+      "id": "separation",
+      "name": "分离纯化",
+      "description": "提取、纯化、连续化工艺"
+    },
+    {
+      "id": "bio-based-chemicals",
+      "name": "生物基化学品",
+      "description": "氨基酸、有机酸、二元酸等"
+    },
+    {
+      "id": "bio-materials",
+      "name": "生物基材料",
+      "description": "聚酰胺单体、生物基材料"
+    }
+  ]
+}

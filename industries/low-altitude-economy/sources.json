@@ -1,0 +1,47 @@
+{
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "LA-POL-001",
+      "title": "关于加强信息通信业能力建设支撑低空基础设施发展的实施意见",
+      "publisher": "工业和信息化部等五部门",
+      "date": "2026-02-10",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/yj/art/2026/art_d1cb1667897e4c999a303d110b6691dc.html",
+      "note": "低空通信、监视、导航、智能网联系统与基础设施。"
+    },
+    {
+      "id": "LA-COMP-301091-2025AR",
+      "title": "深城交2025年年度报告",
+      "publisher": "巨潮资讯/深城交",
+      "date": "2026-04-24",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-24/1225172005.PDF",
+      "note": "低空新基建、交通数智化、低空运营。"
+    },
+    {
+      "id": "LA-COMP-001696-2025H1",
+      "title": "宗申动力2025年半年度报告",
+      "publisher": "巨潮资讯/宗申动力",
+      "date": "2025-08-26",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224565164.PDF",
+      "note": "航空活塞发动机、动力系统集成与适航。"
+    },
+    {
+      "id": "LA-COMP-000099-2024AR",
+      "title": "中信海直2024年年度报告",
+      "publisher": "巨潮资讯/中信海直",
+      "date": "2025-03-18",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-03-18/1222821612.PDF",
+      "note": "通航运营、应急/医疗救援、空中交通与物流等场景。"
+    }
+  ]
+}

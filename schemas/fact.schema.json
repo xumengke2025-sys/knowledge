@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Technology Intelligence Fact",
+  "type": "object",
+  "required": [
+    "fact_id",
+    "industry",
+    "topic",
+    "statement",
+    "as_of",
+    "source_ids",
+    "confidence",
+    "fact_type"
+  ],
+  "properties": {
+    "fact_id": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "fact_type": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

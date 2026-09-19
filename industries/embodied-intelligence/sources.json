@@ -1,0 +1,207 @@
+{
+  "industry_id": "embodied-intelligence",
+  "industry": "具身智能与人形机器人",
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "EI-POL-001",
+      "title": "国家人形机器人产业标准体系建设指南（2026版，征求意见稿）",
+      "publisher": "工业和信息化部",
+      "date": "2026-08-25",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/gzcy/yjzj/art/2026/art_cb9cca921b2946c595d897b14bf520a6.html",
+      "note": "行业标准体系顶层框架；当前为征求意见稿。"
+    },
+    {
+      "id": "EI-POL-002",
+      "title": "成立工业和信息化部人形机器人与具身智能标准化技术委员会",
+      "publisher": "工业和信息化部",
+      "date": "2025-12-31",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/jgsj/kjs/wjfb/art/2025/art_91588a03c1694803b04f6e7674ac973a.html",
+      "note": "明确标准化技术委员会覆盖基础共性、关键技术、部组件、整机与系统、应用、安全。"
+    },
+    {
+      "id": "EI-COMP-300124-2025AR",
+      "title": "汇川技术2025年年度报告",
+      "publisher": "巨潮资讯/汇川技术",
+      "date": "2026-04-28",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225208488.PDF",
+      "note": "人形机器人零部件全栈能力、首代产品开发交付、送样合作。"
+    },
+    {
+      "id": "EI-COMP-688322-2025AR",
+      "title": "奥比中光2025年年度报告",
+      "publisher": "上交所/奥比中光",
+      "date": "2026-04-20",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-20/688322_20260420_BAVZ.pdf",
+      "note": "机器人3D视觉应用与技术路线。"
+    },
+    {
+      "id": "EI-COMP-003021-2025AR",
+      "title": "兆威机电2025年年度报告",
+      "publisher": "巨潮资讯/兆威机电",
+      "date": "2026-03-31",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225057987.PDF",
+      "note": "仿生灵巧手系列及核心零部件研发项目。"
+    },
+    {
+      "id": "EI-COMP-300007-2025AR",
+      "title": "汉威科技2025年年度报告",
+      "publisher": "巨潮资讯/汉威科技",
+      "date": "2026-04-18",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225118947.PDF",
+      "note": "MEMS、柔性、气体、压力、惯性等多类传感器产品体系。"
+    },
+    {
+      "id": "EI-COMP-300007-2025H1",
+      "title": "汉威科技2025年半年度报告",
+      "publisher": "巨潮资讯/汉威科技",
+      "date": "2025-08-29",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-08-29/1224604256.PDF",
+      "note": "具身智能多模态感知产品矩阵，电子皮肤和触觉传感器小批量供货。"
+    },
+    {
+      "id": "EI-MKT-688017-2026H1",
+      "title": "沪市公司2026年半年报业绩综述（含绿的谐波）",
+      "publisher": "上海证券交易所",
+      "date": "2026-08-30",
+      "type": "exchange_summary",
+      "grade": "A",
+      "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260830_10830362.shtml",
+      "note": "绿的谐波国际头部机器人客户批量交付等公开汇总。"
+    },
+    {
+      "id": "EI-COMP-601689-2025AR",
+      "title": "拓普集团2025年年度报告",
+      "publisher": "巨潮资讯/拓普集团",
+      "date": "2026-03-24",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-24/1225026446.PDF",
+      "note": "机器人执行器及机器人业务平台化产品矩阵；年报披露机器人执行器营业收入。"
+    },
+    {
+      "id": "EI-COMP-002979-2025AR",
+      "title": "雷赛智能2025年年度报告",
+      "publisher": "巨潮资讯/雷赛智能",
+      "date": "2026-04-23",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225153567.PDF",
+      "note": "无框力矩电机、空心杯电机、关节模组、灵巧手及机器人小脑。"
+    },
+    {
+      "id": "EI-COMP-002979-2025H1",
+      "title": "雷赛智能2025年半年度报告",
+      "publisher": "巨潮资讯/雷赛智能",
+      "date": "2025-08-28",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-08-28/1224598431.PDF",
+      "note": "机器人核心部件测试试用、规模商业订单和收入占比仍较小。"
+    },
+    {
+      "id": "EI-COMP-002896-2025AR",
+      "title": "中大力德2025年年度报告",
+      "publisher": "巨潮资讯/中大力德",
+      "date": "2026-04-16",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-16/1225108100.PDF",
+      "note": "全品类精密减速器；同时提示人形机器人仍处商业化初期。"
+    },
+    {
+      "id": "EI-COMP-603662-2025AR",
+      "title": "柯力传感2025年年度报告",
+      "publisher": "巨潮资讯/柯力传感",
+      "date": "2026-04-28",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225199660.PDF",
+      "note": "机器人产业、MEMS多维力/多模态传感研发与产业生态布局。"
+    },
+    {
+      "id": "EI-COMP-300660-2025AR",
+      "title": "江苏雷利2025年年度报告",
+      "publisher": "巨潮资讯/江苏雷利",
+      "date": "2026-04-29",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225232415.PDF",
+      "note": "空心杯/无框电机、丝杠、精密齿轮箱和灵巧手产品；部分产品测试/送样。"
+    },
+    {
+      "id": "EI-COMP-688160-2025AR",
+      "title": "步科股份2025年年度报告",
+      "publisher": "上交所/步科股份",
+      "date": "2026-04-03",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-03/688160_20260403_16A8.pdf",
+      "note": "人形无框电机、关节模组驱动器等在研项目。"
+    },
+    {
+      "id": "EI-IR-002126-2025",
+      "title": "银轮股份2024年度业绩说明会",
+      "publisher": "互动易/银轮股份",
+      "date": "2025-05-12",
+      "type": "company_ir",
+      "grade": "B",
+      "url": "https://irm.cninfo.com.cn/interview/interview/activityInfo?activityId=1170704670668767232",
+      "note": "披露机器人1+4+N规划：旋转、线性、手部、热管理模组。"
+    },
+    {
+      "id": "EI-COMP-301226-2025IR",
+      "title": "祥明智能2025年度业绩说明会",
+      "publisher": "互动易/祥明智能",
+      "date": "2026-04-30",
+      "type": "company_ir",
+      "grade": "B",
+      "url": "https://irm.cninfo.com.cn/interview/interview/activityInfo?activityId=1440279762067324928",
+      "note": "无框电机、控制、运动关节模组研发技术。"
+    },
+    {
+      "id": "EI-STD-DEXTEROUS-2026",
+      "title": "人工智能 具身智能灵巧操作要求",
+      "publisher": "全国标准信息公共服务平台",
+      "date": "2026-05-28",
+      "type": "standard",
+      "grade": "A",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=52DF1D7A4A83D870E06397BE0A0AB2DE",
+      "note": "具身智能灵巧操作国家标准化指导性技术文件登记项目。"
+    },
+    {
+      "id": "EI-STD-OS-2026",
+      "title": "人工智能 具身智能操作系统技术要求",
+      "publisher": "全国标准信息公共服务平台",
+      "date": "2026-05-14",
+      "type": "standard",
+      "grade": "A",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=51C733602C115302E06397BE0A0ACC0E",
+      "note": "具身智能操作系统技术要求国家标准计划。"
+    },
+    {
+      "id": "EI-STD-PERF-2026",
+      "title": "人工智能 具身智能通用性能要求与测试方法",
+      "publisher": "全国标准信息公共服务平台",
+      "date": "2026",
+      "type": "standard",
+      "grade": "A",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=51C733602C145302E06397BE0A0ACC0E",
+      "note": "具身智能性能与测试方法登记项目。"
+    }
+  ]
+}

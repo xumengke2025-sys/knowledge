@@ -1,0 +1,247 @@
+{
+  "industry_id": "embodied-intelligence",
+  "industry": "具身智能与人形机器人",
+  "as_of": "2026-09-19",
+  "model": "感知→认知→决策→控制→执行→本体→数据/仿真→测试/制造",
+  "nodes": [
+    {
+      "id": "brain-cognition",
+      "name": "大脑与认知",
+      "description": "多模态理解、VLA、世界模型、任务规划、推理与决策",
+      "children": [
+        {
+          "id": "foundation-model",
+          "name": "具身大模型",
+          "keywords": [
+            "VLA",
+            "多模态大模型",
+            "机器人基础模型"
+          ]
+        },
+        {
+          "id": "world-model",
+          "name": "世界模型与预测",
+          "keywords": [
+            "world model",
+            "环境建模",
+            "未来状态预测"
+          ]
+        },
+        {
+          "id": "task-planning",
+          "name": "任务规划与推理",
+          "keywords": [
+            "任务分解",
+            "规划",
+            "推理"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motion-control",
+      "name": "小脑与运动控制",
+      "description": "实时控制、全身控制、轨迹规划、伺服与驱动",
+      "children": [
+        {
+          "id": "whole-body-control",
+          "name": "全身运动控制",
+          "keywords": [
+            "WBC",
+            "MPC",
+            "平衡控制"
+          ]
+        },
+        {
+          "id": "motion-planning",
+          "name": "运动/轨迹规划",
+          "keywords": [
+            "轨迹规划",
+            "避障",
+            "步态"
+          ]
+        },
+        {
+          "id": "servo-drive",
+          "name": "伺服与低压驱动",
+          "keywords": [
+            "伺服驱动器",
+            "低压驱动",
+            "运动控制器"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "actuator",
+      "name": "执行器与一体化关节",
+      "description": "旋转/线性执行器、关节模组",
+      "children": [
+        {
+          "id": "rotary-actuator",
+          "name": "旋转执行器",
+          "keywords": [
+            "旋转执行器",
+            "关节模组"
+          ]
+        },
+        {
+          "id": "linear-actuator",
+          "name": "线性执行器",
+          "keywords": [
+            "线性执行器",
+            "直线执行器"
+          ]
+        },
+        {
+          "id": "integrated-joint",
+          "name": "一体化智能关节",
+          "keywords": [
+            "机电控一体化",
+            "智能关节"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motor-drive",
+      "name": "电机与驱动",
+      "description": "无框力矩、空心杯、微型电机、驱动器",
+      "children": [
+        {
+          "id": "frameless-torque-motor",
+          "name": "无框力矩电机"
+        },
+        {
+          "id": "coreless-motor",
+          "name": "空心杯电机"
+        },
+        {
+          "id": "micro-motor",
+          "name": "微型电机"
+        }
+      ]
+    },
+    {
+      "id": "reducer-screw",
+      "name": "精密传动",
+      "description": "谐波/RV/行星减速器、滚柱/滚珠丝杠、轴承",
+      "children": [
+        {
+          "id": "harmonic-reducer",
+          "name": "谐波减速器"
+        },
+        {
+          "id": "planetary-reducer",
+          "name": "行星减速器"
+        },
+        {
+          "id": "rv-reducer",
+          "name": "RV减速器"
+        },
+        {
+          "id": "planetary-roller-screw",
+          "name": "行星滚柱丝杠"
+        },
+        {
+          "id": "ball-screw",
+          "name": "滚珠丝杠"
+        },
+        {
+          "id": "precision-bearing",
+          "name": "精密轴承"
+        }
+      ]
+    },
+    {
+      "id": "dexterous-hand",
+      "name": "灵巧手与末端执行",
+      "description": "多自由度灵巧手、夹爪、腱绳/连杆驱动",
+      "children": [
+        {
+          "id": "tendon-hand",
+          "name": "腱绳驱动灵巧手"
+        },
+        {
+          "id": "linkage-hand",
+          "name": "连杆式灵巧手"
+        },
+        {
+          "id": "gripper",
+          "name": "夹爪/末端执行器"
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "name": "机器视觉与空间感知",
+      "description": "RGB/3D/深度/ToF/结构光/激光雷达",
+      "children": [
+        {
+          "id": "depth-camera",
+          "name": "深度相机"
+        },
+        {
+          "id": "structured-light",
+          "name": "结构光"
+        },
+        {
+          "id": "tof",
+          "name": "ToF"
+        },
+        {
+          "id": "lidar",
+          "name": "激光雷达"
+        }
+      ]
+    },
+    {
+      "id": "force-tactile",
+      "name": "力觉与触觉",
+      "description": "六维力、关节力矩、触觉、电子皮肤",
+      "children": [
+        {
+          "id": "six-axis-force",
+          "name": "六维力/力矩"
+        },
+        {
+          "id": "joint-torque",
+          "name": "关节扭矩"
+        },
+        {
+          "id": "electronic-skin",
+          "name": "电子皮肤"
+        },
+        {
+          "id": "tactile-array",
+          "name": "触觉阵列"
+        }
+      ]
+    },
+    {
+      "id": "inertial-sensing",
+      "name": "惯性与多模态感知",
+      "description": "IMU、姿态/平衡、压力、气体、温度等多模态"
+    },
+    {
+      "id": "body-structure",
+      "name": "本体与结构",
+      "description": "结构件、腿足、机械臂、轻量化材料、线束连接"
+    },
+    {
+      "id": "energy-thermal",
+      "name": "能源与热管理",
+      "description": "电池、电源、热管理、关节散热"
+    },
+    {
+      "id": "data-simulation",
+      "name": "数据、仿真与训练场",
+      "description": "遥操作、数据采集、合成数据、数字孪生、仿真"
+    },
+    {
+      "id": "testing-manufacturing",
+      "name": "测试、制造与验证",
+      "description": "传感器/IMU/Camera测试、关节测试、整机验证、自动化装配"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "GEN-SME-001",
+      "title": "关于进一步支持专精特新中小企业高质量发展的通知",
+      "publisher": "财政部/工业和信息化部",
+      "date": "2024-06",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/xwdt/gxdt/art/2024/art_8df1cf7787fb4e3589bd5233022a51e7.html",
+      "note": "2024-2026聚焦重点产业链、工业“六基”、战略性新兴产业、未来产业。"
+    },
+    {
+      "id": "GEN-SME-002",
+      "title": "加力培育专精特新中小企业",
+      "publisher": "工业和信息化部",
+      "date": "2025",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://www.miit.gov.cn/xwfb/bldhd/art/2025/art_fb2e3795fe044c3ba15a07dbed6c52ba.html",
+      "note": "小巨人制造业与战略性新兴产业链分布、人工智能/低空等未来产业。"
+    },
+    {
+      "id": "GEN-FUTURE-001",
+      "title": "关于推动未来产业创新发展的实施意见",
+      "publisher": "工业和信息化部等七部门",
+      "date": "2024",
+      "type": "regulator",
+      "grade": "A",
+      "url": "https://sdca.miit.gov.cn/zwgk/zcwj/wjfb/art/2024/art_b576470b18de4a8589e24ad37a8d9848.html",
+      "note": "未来制造、未来信息、未来材料、未来能源、未来空间、未来健康。"
+    }
+  ]
+}

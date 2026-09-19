@@ -1,0 +1,37 @@
+{
+  "industry_id": "solid-state-battery",
+  "industry": "固态电池与下一代电池材料",
+  "as_of": "2026-09-19",
+  "sources": [
+    {
+      "id": "SSB-COMP-002460-2025AR",
+      "title": "赣锋锂业2025年年度报告",
+      "publisher": "巨潮资讯/赣锋锂业",
+      "date": "2026-03-31",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225059953.PDF",
+      "note": "氧化物/硫化物固体电解质、固液电池、电芯与应用。"
+    },
+    {
+      "id": "SSB-COMP-002074-2025AR",
+      "title": "国轩高科2025年年度报告",
+      "publisher": "巨潮资讯/国轩高科",
+      "date": "2026-04-29",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225241936.PDF",
+      "note": "全固态电池中试线建设与投产。"
+    },
+    {
+      "id": "SSB-COMP-300073-2025AR",
+      "title": "当升科技2025年年度报告",
+      "publisher": "巨潮资讯/当升科技",
+      "date": "2026-03-31",
+      "type": "listed_company_filing",
+      "grade": "A",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225057127.PDF",
+      "note": "全固态正极材料、固态电解质、批量供货/验证。"
+    }
+  ]
+}

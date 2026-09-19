@@ -1,0 +1,47 @@
+{
+  "industry_id": "solid-state-battery",
+  "industry": "固态电池与下一代电池材料",
+  "as_of": "2026-09-19",
+  "nodes": [
+    {
+      "id": "sulfide-electrolyte",
+      "name": "硫化物电解质",
+      "description": "硫化物粉体、硫化锂原料、界面稳定"
+    },
+    {
+      "id": "oxide-electrolyte",
+      "name": "氧化物电解质",
+      "description": "LLZO/LATP等氧化物固体电解质"
+    },
+    {
+      "id": "polymer-electrolyte",
+      "name": "聚合物/复合电解质",
+      "description": "聚合物、复合固态电解质"
+    },
+    {
+      "id": "cathode",
+      "name": "正极材料",
+      "description": "高镍、富锂锰基、正极包覆/界面工程"
+    },
+    {
+      "id": "anode",
+      "name": "负极材料",
+      "description": "锂金属、硅基等"
+    },
+    {
+      "id": "cell-process",
+      "name": "电芯与制造工艺",
+      "description": "叠片、压力管理、干法/湿法、封装"
+    },
+    {
+      "id": "pilot-line",
+      "name": "中试与量产",
+      "description": "中试线、验证线、量产线"
+    },
+    {
+      "id": "applications",
+      "name": "应用",
+      "description": "汽车、储能、无人机/eVTOL、机器人"
+    }
+  ]
+}

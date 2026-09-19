@@ -1,0 +1,214 @@
+{
+  "industry_id": "smart-sensors-mems",
+  "industry": "高端智能传感器与MEMS",
+  "as_of": "2026-09-19",
+  "companies": [
+    {
+      "code": "300007",
+      "name": "汉威科技",
+      "exchange": "SZSE",
+      "nodes": [
+        "mems-chip",
+        "packaging",
+        "force-pressure",
+        "gas",
+        "flexible",
+        "inertial"
+      ],
+      "stage": "多品类规模化+新型柔性/MEMS拓展",
+      "evidence": [
+        "SEN-COMP-300007-2025AR"
+      ],
+      "summary": "公司产品覆盖气体、湿度、压力、流量、惯性、柔性等多类传感器，并布局MEMS与柔性电子。",
+      "caveat": "各传感器技术路线与下游市场完全不同，应按产品族拆分收入和成熟度。"
+    },
+    {
+      "code": "688539",
+      "name": "高华科技",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "force-pressure",
+        "packaging"
+      ],
+      "stage": "高可靠/高精度传感器产业化",
+      "evidence": [
+        "SEN-COMP-688539-2025H1"
+      ],
+      "summary": "产品主要应用航天、航空、轨道交通、机械装备、能源等，对高可靠高精度要求较高。",
+      "caveat": "军用/航天场景与机器人消费场景的认证和成本结构差异很大。"
+    },
+    {
+      "code": "688286",
+      "name": "敏芯股份",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "mems-microphone",
+        "pressure",
+        "inertial"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "002241",
+      "name": "歌尔股份",
+      "exchange": "SZSE",
+      "nodes": [
+        "mems-microphone"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300323",
+      "name": "华灿光电",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "inertial"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688582",
+      "name": "芯动联科",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "inertial"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "301413",
+      "name": "安培龙",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "pressure",
+        "force"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300354",
+      "name": "东华测试",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "force"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "688665",
+      "name": "四方光电",
+      "exchange": "SSE STAR",
+      "nodes": [
+        "gas-sensor"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300701",
+      "name": "森霸传感",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "infrared"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300114",
+      "name": "中航电测",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "force",
+        "weight"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300667",
+      "name": "必创科技",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "industrial-sensor"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300862",
+      "name": "蓝盾光电",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "optical-sensor"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    },
+    {
+      "code": "300112",
+      "name": "万讯自控",
+      "exchange": "SZSE ChiNext",
+      "nodes": [
+        "industrial-sensor"
+      ],
+      "relevance_tier": "T3",
+      "verification_status": "candidate",
+      "stage": "待核验",
+      "evidence": [],
+      "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
+      "caveat": "candidate 不等于已确认参与该行业。"
+    }
+  ],
+  "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"
+}

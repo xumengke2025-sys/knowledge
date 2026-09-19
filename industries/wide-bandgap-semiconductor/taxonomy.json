@@ -1,0 +1,42 @@
+{
+  "industry_id": "wide-bandgap-semiconductor",
+  "industry": "第三代/宽禁带半导体",
+  "as_of": "2026-09-19",
+  "nodes": [
+    {
+      "id": "crystal-growth",
+      "name": "晶体生长",
+      "description": "SiC/GaN晶体、长晶技术"
+    },
+    {
+      "id": "substrate",
+      "name": "衬底",
+      "description": "6/8/12英寸SiC衬底、GaN相关衬底"
+    },
+    {
+      "id": "epitaxy",
+      "name": "外延",
+      "description": "SiC/GaN外延片与外延工艺"
+    },
+    {
+      "id": "device",
+      "name": "功率/射频器件",
+      "description": "SiC MOSFET、SBD、GaN HEMT"
+    },
+    {
+      "id": "module",
+      "name": "功率模块",
+      "description": "车规、工业、储能等功率模块"
+    },
+    {
+      "id": "equipment",
+      "name": "制造装备",
+      "description": "长晶、切磨抛、外延、检测装备"
+    },
+    {
+      "id": "consumables",
+      "name": "材料耗材",
+      "description": "高纯石墨、石英、陶瓷等"
+    }
+  ]
+}

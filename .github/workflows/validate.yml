@@ -18,3 +18,5 @@ jobs:
         run: python scripts/validate.py
       - name: Validate seven-industry evidence and import bundle
         run: python scripts/validate-upgrade.py
+      - name: Validate v0.4 academic knowledge equipment
+        run: python scripts/validate-academic.py

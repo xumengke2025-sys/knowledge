@@ -1,3 +1,5 @@
+> v0.2历史记录。当前版本请参阅 ../QUALITY-V0.3.md 与 IMPORT-V0.3.md。
+
 # FirmBuddy 导入映射（基于当前 firmbuddy 代码扫描）
 
 本映射针对 `xumengke2025-sys/firmbuddy` 当前结构设计。

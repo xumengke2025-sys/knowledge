@@ -1,0 +1,54 @@
+{
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "selection": "有目的的基础/机制样本，不是系统综述或最新文献全量覆盖。",
+  "papers": [
+    {
+      "id": "PAPER-de0d5c68dd0d",
+      "doi": "10.1016/j.cell.2016.02.004",
+      "title": "Engineering Cellular Metabolism",
+      "authors": [
+        "Jens Nielsen",
+        "Jay D. Keasling"
+      ],
+      "year": "2016-3",
+      "venue": [
+        "Cell"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1016/j.cell.2016.02.004",
+      "reading_status": "metadata_only",
+      "summary": "仅核实书目，尚未据此形成研究结论。",
+      "limitations": "正文未阅读，不能用于支持具体技术结论。",
+      "node_ids": [],
+      "metadata_source": "https://api.crossref.org/works/10.1016/j.cell.2016.02.004",
+      "abstract_source": null,
+      "quote": null,
+      "full_text_reviewed": false
+    },
+    {
+      "id": "PAPER-4f5ab11b6563",
+      "doi": "10.35534/sbe.2023.10019",
+      "title": "A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging",
+      "authors": [
+        "Shang-Tian Yang",
+        "Geng Wang Zhen Qin"
+      ],
+      "year": "2023",
+      "venue": [
+        "Synthetic Biology and Engineering"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.35534/sbe.2023.10019",
+      "reading_status": "sections_reviewed",
+      "summary": "观点文章将滴度、生产强度、得率与微生物寿命、老化及过程稳定性联系起来，强调高密度细胞回用或固定化连续发酵的长期活性问题。",
+      "limitations": "已读摘要及第1、3节相关段落；观点与所引案例并非对所有菌株的独立实验。市场规模预测未采纳为事实，案例放大状态不等于普遍量产。",
+      "node_ids": [
+        "scale-down"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.35534/sbe.2023.10019",
+      "abstract_source": "https://openalex.org/W4390420094",
+      "quote": "Sancang Publishing House is mainly engaged in the publication and distribution of Chinese international open source journals. The journals cover engineering technology, mathematics and physics, humanities and society, information science, economics and management, medicine and health, agriculture, global",
+      "full_text_reviewed": false
+    }
+  ]
+}

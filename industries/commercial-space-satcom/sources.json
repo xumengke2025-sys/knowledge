@@ -31,7 +31,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225205348.PDF",
-      "note": "低轨卫星互联网、通信载荷、地面终端。"
+      "note": "低轨卫星互联网、通信载荷、地面终端。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "b0842242f7351989fe6d2bf072dd4781a00c97dadd8155cd42e30e3cbf297d93"
     },
     {
       "id": "CS-COMP-688270-2025H1",
@@ -41,7 +43,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-13/688270_20250813_Z35W.pdf",
-      "note": "射频收发、电源管理、T/R微系统、卫星互联网等术语与产品技术。"
+      "note": "射频收发、电源管理、T/R微系统、卫星互联网等术语与产品技术。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "e6fff4fdf4ed36fe41f514406734ccd8456fccedc0355f4ba812f82ee3c812f3"
     },
     {
       "id": "CS-MKT-600879-2025",

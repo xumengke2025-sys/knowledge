@@ -31,7 +31,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225118947.PDF",
-      "note": "MEMS、柔性、气体、压力、流量、惯性等多类传感器。"
+      "note": "MEMS、柔性、气体、压力、流量、惯性等多类传感器。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "c144feea3f801bdfdf4f5ad3d27d3efc7b2afed79bbdab83f132084c2e7dcd5b"
     },
     {
       "id": "SEN-COMP-688539-2025H1",
@@ -41,7 +43,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-30/688539_20250830_2BSM.pdf",
-      "note": "高精度传感器面向航天、航空、机械装备等领域。"
+      "note": "高精度传感器面向航天、航空、机械装备等领域。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "a6233b504f4e5e2b1bf116fd33a02e9f76cdce3a506cb556736a5fda6590f59b"
     }
   ]
 }

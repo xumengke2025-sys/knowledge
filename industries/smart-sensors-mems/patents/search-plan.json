@@ -1,0 +1,88 @@
+{
+  "industry_id": "smart-sensors-mems",
+  "as_of": "2026-09-19",
+  "queries": [
+    {
+      "query_id": "smart-sensors-mems-Q1",
+      "ipc_cpc_seed": [
+        "B81B",
+        "B81C"
+      ],
+      "keywords": [
+        "MEMS",
+        "micromachining",
+        "wafer bonding"
+      ],
+      "conceptual_query": "(MEMS OR micromachining OR wafer bonding) AND (对应IPC/CPC分类)",
+      "screening": "器件结构与制造工艺分组",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "smart-sensors-mems-Q2",
+      "ipc_cpc_seed": [
+        "G01C19"
+      ],
+      "keywords": [
+        "MEMS gyroscope",
+        "bias instability",
+        "陀螺"
+      ],
+      "conceptual_query": "(MEMS gyroscope OR bias instability OR 陀螺) AND (对应IPC/CPC分类)",
+      "screening": "排除光纤/激光陀螺或作相邻路线",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "smart-sensors-mems-Q3",
+      "ipc_cpc_seed": [
+        "G01L",
+        "G01N"
+      ],
+      "keywords": [
+        "pressure sensor",
+        "gas sensor",
+        "tactile array"
+      ],
+      "conceptual_query": "(pressure sensor OR gas sensor OR tactile array) AND (对应IPC/CPC分类)",
+      "screening": "按测量对象及机理二次筛选",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    }
+  ],
+  "scope": {
+    "jurisdiction": "CN first, international families as follow-up",
+    "publication_cutoff": "2026-09-19",
+    "unit": "publication initially; family grouping pending"
+  },
+  "attempts": [
+    {
+      "industry": "smart-sensors-mems",
+      "company_code": "300007",
+      "assignee_query": "汉威",
+      "keywords": "sensor",
+      "query_url": "https://patents.google.com/?q=(sensor)&assignee=汉威&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:27.939831+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "smart-sensors-mems",
+      "company_code": "688286",
+      "assignee_query": "苏州敏芯",
+      "keywords": "MEMS",
+      "query_url": "https://patents.google.com/?q=(MEMS)&assignee=苏州敏芯&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:27.678562+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "smart-sensors-mems",
+      "company_code": "688582",
+      "assignee_query": "芯动联科",
+      "keywords": "gyroscope",
+      "query_url": "https://patents.google.com/?q=(gyroscope)&assignee=芯动联科&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:27.746756+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "result": "批量检索失败；没有以失败结果推断专利不存在。"
+}

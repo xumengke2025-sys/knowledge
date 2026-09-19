@@ -1,0 +1,85 @@
+{
+  "industry_id": "low-altitude-economy",
+  "as_of": "2026-09-19",
+  "queries": [
+    {
+      "query_id": "low-altitude-economy-Q1",
+      "ipc_cpc_seed": [
+        "B64U"
+      ],
+      "keywords": [
+        "unmanned aircraft",
+        "UAV",
+        "无人机"
+      ],
+      "conceptual_query": "(unmanned aircraft OR UAV OR 无人机) AND (对应IPC/CPC分类)",
+      "screening": "注意2023年前旧B64C分类并行检索",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "low-altitude-economy-Q2",
+      "ipc_cpc_seed": [
+        "B64C"
+      ],
+      "keywords": [
+        "eVTOL",
+        "tilt rotor",
+        "electric vertical takeoff"
+      ],
+      "conceptual_query": "(eVTOL OR tilt rotor OR electric vertical takeoff) AND (对应IPC/CPC分类)",
+      "screening": "排除无航空用途的通用电机",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "low-altitude-economy-Q3",
+      "ipc_cpc_seed": [
+        "G08G5"
+      ],
+      "keywords": [
+        "air traffic management",
+        "detect and avoid"
+      ],
+      "conceptual_query": "(air traffic management OR detect and avoid) AND (对应IPC/CPC分类)",
+      "screening": "区分系统仿真与实际运行部署",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    }
+  ],
+  "scope": {
+    "jurisdiction": "CN first, international families as follow-up",
+    "publication_cutoff": "2026-09-19",
+    "unit": "publication initially; family grouping pending"
+  },
+  "attempts": [
+    {
+      "industry": "low-altitude-economy",
+      "company_code": "002389",
+      "assignee_query": "航天彩虹",
+      "keywords": "unmanned",
+      "query_url": "https://patents.google.com/?q=(unmanned)&assignee=航天彩虹&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:24.326968+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "low-altitude-economy",
+      "company_code": "688070",
+      "assignee_query": "成都纵横",
+      "keywords": "unmanned aerial vehicle",
+      "query_url": "https://patents.google.com/?q=(unmanned aerial vehicle)&assignee=成都纵横&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:23.108895+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "low-altitude-economy",
+      "company_code": "688631",
+      "assignee_query": "南京莱斯",
+      "keywords": "air traffic",
+      "query_url": "https://patents.google.com/?q=(air traffic)&assignee=南京莱斯&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:23.111904+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "result": "批量检索失败；没有以失败结果推断专利不存在。"
+}

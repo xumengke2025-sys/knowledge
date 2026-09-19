@@ -1,0 +1,856 @@
+{
+  "version": "0.3.0",
+  "as_of": "2026-09-19",
+  "space": {
+    "logical_key": "technology-intelligence",
+    "name": "先进科技产业研究资料",
+    "scope": "org",
+    "exportPolicy": "excerpt",
+    "description": "七行业技术、公司证据、学术研究与专利导航；阅读和覆盖限制逐项标明。"
+  },
+  "documents": [
+    {
+      "logical_key": "commercial-space-satcom:core",
+      "industry_id": "commercial-space-satcom",
+      "title": "商业航天与卫星互联网｜技术原理与路线",
+      "sourceType": "ai_generated",
+      "text": "# 商业航天与卫星互联网：技术研究底座\n\n截至 2026-09-19。本说明为整理者综合分析，所列文献阅读范围分别披露；不是逐句均经文献认证的教科书。\n\n以大陆上市公司相关的卫星平台、通信载荷、地面设备、网络运营和商业发射供应链为边界。导航和遥感是相邻应用，不因同属航天自动计入卫星互联网收入；研究院、集团与上市子公司的专利分别核验。\n\n## 系统预算先于部件参数\n\n卫星通信的基本链条是终端—用户链路—载荷—星间或馈电链路—地面网关—核心网。链路预算应同时列出发射等效全向辐射功率EIRP、接收品质因数G/T、自由空间损耗、雨衰与实现损耗。提高单颗卫星标称吞吐并不保证用户速率同步提高，因为频谱复用、用户密度、网关回传和星间拥塞均可能成为瓶颈。研究终端小型化时应将天线口径、扫描角损失、功耗及散热同时纳入，不能只比较芯片峰值速率。\n\n## 轨道、覆盖与时延的耦合\n\n低轨降低传播距离，但卫星相对地面快速运动，引入多普勒变化、频繁切换和连续覆盖所需的星座规模。端到端时延包括传播、排队、处理、路由与地面骨干，不等于两倍轨道高度除以光速。比较LEO与GEO时，应固定业务区域、仰角门限、可用率和终端条件。星间激光链路可减少对当地网关的依赖，但需要捕获跟踪瞄准、拓扑变化下的路由和可用性管理。\n\n## 载荷技术与器件归属\n\n透明转发载荷以信号转发为主，再生载荷增加星上解调、交换和处理；后者的灵活性以计算、电源、热管理和软件可靠性为代价。相控阵的移相器、功率放大器、低噪声放大器、收发芯片、封装与阵列校准共同决定性能。公司拥有射频芯片产品并不能推出已取得某星座订单，更不能推出整套载荷自主可控。\n\n## 专利导航的粒度\n\n检索分为天线与波束、星上载荷、星间链路、星地协议、地面终端和平台部组件。申请人维度要穿透公司全称、历史名称和经核实的子公司，研究院与上市公司不能按集团名称混算。对同一优先权族分别记录公开申请、授权文本及国家成员，统计时明确按公开件、申请或简单专利族计数。权利要求涉及的模块应落到技术树，而非依据标题中的“卫星”统一归类。\n\n## 产业化证据与业务口径\n\n地面试验、搭载验证、在轨验证、批量交付、可重复订单及独立收入披露是不同证据层级。商业航天、军工电子、北斗和遥感业务可能共享器件，但市场准入、客户与交付节奏不同。火箭的成功首飞也不证明重复使用成本成立；应核查回收、复飞、维修周转、有效载荷和发射频率等条件。\n\n## 学术研究如何用于研判\n\n论文阅读优先核查轨道模型、流量分布、信道假设、仰角、波束与频谱分配、是否包含切换开销，再比较吞吐、时延分位数和可用性。仿真算法的改善比例只能在同一基线下比较，不能直接转化为企业产品优势。对NTN论文还要标明协议版本及研究的是空口、架构还是原型验证。\n\n## 技术节点与可比指标\n\n|节点|范围/关键词|比较指标|\n|---|---|---|\n|卫星制造|平台、结构、电源、热控、星载计算|按具体产品补证|\n|通信载荷|相控阵、基带、射频、星间链路|按具体产品补证|\n|射频与微系统|射频收发、T/R组件、抗辐照、电源管理|按具体产品补证|\n|地面终端|用户终端、网关站、卫星地面站|按具体产品补证|\n|卫星通信网络|低轨星座、天地融合、手机直连卫星|按具体产品补证|\n|卫星运营|转发器、通信服务、网络运营|按具体产品补证|\n|测运控|遥测、遥控、数传、测控|按具体产品补证|\n|商业发射|运载火箭、可复用火箭、发射服务|按具体产品补证|\n|星务与部组件|星载计算机、姿轨控、星敏感器、电源与热控|在轨寿命; 功耗; 抗辐照等级|\n|地面测试|热真空、振动、EMC、整星测试|试验条件; 故障覆盖率|\n|导航增强与终端|GNSS、北斗、PPP、RTK|定位精度; 收敛时间; 可用性|\n|遥感与数据服务|SAR、光学遥感、数据处理|重访周期; 分辨率; 服务收入|\n|相控阵天线|波束赋形、移相器、幅相校准|EIRP; G/T; 扫描范围; 旁瓣|\n|数字透明与再生载荷|信道化、星上交换、软件定义载荷|吞吐; 功耗; 可重构能力|\n|星间链路|激光通信、捕获跟踪瞄准、RF星间链路|捕获时间; 误码率; 链路可用性|\n|移动性与切换|多普勒预补偿、波束切换、星地切换|中断时长; 切换失败率|\n|非地面网络融合|3GPP NTN、窄带物联网、直连手机|终端功率; 覆盖; 协议兼容性|\n|馈电链路与网关|Ka/Ku、网关分集、雨衰补偿|链路裕量; 可用度|\n|空间可持续性|碰撞规避、离轨、空间态势感知|离轨时间; 失效处置能力|\n|火箭发动机与重复使用|液氧甲烷、液氧煤油、变推力、再点火|重复点火次数; 寿命; 回收后检测|\n\n## 学术来源与阅读范围\n\n- [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)：abstract_reviewed。摘要层面；不是最新星座部署统计，也不证明某家上市公司的产品性能。\n- [Enhancing LEO Mega-constellations with Inter-Satellite Links: Vision and Challenges](https://doi.org/10.1109/mwc.003.2400195)：abstract_reviewed。未复核正文评价参数；不能将初步评价写成真实商业网络已实现的收益。\n",
+      "sha256": "4f826389f39385d0e436cb433019e02a4fd44512ef8706cd4cf01c7d45abd476",
+      "tags": [
+        "commercial-space-satcom",
+        "core"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "commercial-space-satcom:companies",
+      "industry_id": "commercial-space-satcom",
+      "title": "商业航天与卫星互联网｜上市公司证据",
+      "sourceType": "ai_generated",
+      "text": "# 商业航天与卫星互联网：公司技术证据与候选矩阵\n\n候选池不是完整上市公司名单；本轮不将缺少证据的公司升级。原有披露时点与当前经营状态不可混用。\n\n|代码|公司|技术节点|验证状态|原有阶段|\n|---|---|---|---|---|\n|300762|上海瀚讯|payload-communication, ground-terminal, satcom-network|legacy_source_linked_not_reaudited|持续研发/星座项目配套|\n|688270|臻镭科技|rf-chips, payload-communication|legacy_source_linked_not_reaudited|芯片与射频微系统产品布局|\n|600879|航天电子|rf-chips, payload-communication, ttc|legacy_source_linked_not_reaudited|项目验收/技术突破|\n|600118|中国卫星|satellite-manufacturing|candidate|待核验|\n|688523|航天环宇|satellite-manufacturing, ground-test|candidate|待核验|\n|001270|铖昌科技|rf-chips|candidate|待核验|\n|688375|国博电子|rf-chips|candidate|待核验|\n|688311|盟升电子|ground-terminal|candidate|待核验|\n|300045|华力创通|ground-terminal, navigation|candidate|待核验|\n|688568|中科星图|satellite-application|candidate|待核验|\n|688066|航天宏图|satellite-application|candidate|待核验|\n|002465|海格通信|ground-terminal, navigation|candidate|待核验|\n|300101|振芯科技|navigation, rf-chips|candidate|待核验|\n|300342|天银机电|satellite-component|candidate|待核验|\n|002413|雷科防务|rf-chips, satellite-application|candidate|待核验|\n\n## 本轮核查的来源摘录\n\n### commercial-space-satcom-E-CS-COMP-300762-2025AR-116\n\n[上海瀚讯2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-28/1225205348.PDF)；2026-04-28；解析文本第116行。\n\n> 在商业航天通信领域，公司作为通信系统的主要承担单位深度参与了千帆星座的建设和标准制定工作，承担了卫星通信 载荷、地基基站、测试终端等关键设备的研制任务及系统的维护与运行支撑。公司面向卫星集成商和卫星星座运营商提 供包括低轨卫星星载通信载荷、地面通信设备及配套测试系统等低轨卫星通信系统的整体解决方案。 （二）生产经营模式 在专用宽带移动通信领域，公司主要服务于行业客户，公司基于客户的采购需求来安排研发、原材料采购、产品生产和 销售环节。 订单环节，公司市场部门前期通过获悉客户潜在需求、主动上门介绍产品和技术，或者参与客户需求的某个产品技术方 案论证等方法进行营销，了解客户需求并设计产品方案以争取商机，获得订单。此外，公司还通过参与客户招投标的方 式获取业务。公司获取订单后将订单信息输入运营管理系统。 设计、开发环节，研发部门根据订单设计方案，并进行评审、论证。经过结构设计、软件设计、电路设计、产品试制、 设计验证等一系列环节后形成产品 BOM（物料清单）。 采购环节，公司运营管理部根据订单需求和原材料库存情况，计算实际采购需求，并向采购部门下派采购任务。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### commercial-space-satcom-E-CS-COMP-300762-2025AR-136\n\n[上海瀚讯2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-28/1225205348.PDF)；2026-04-28；解析文本第136行。\n\n> 2025 年度公司持续加大低轨卫星载荷系统及终端的研发投入和建设相关的生产制造环境，一体化信关站产品完成研制和 批产，保障客户完成海外首局点建设开通，并获得首个拉美商用许可。卫星终端产品完成量产验证具备大规模量产能力， 积极配合运营商多次海内外产品演示活动，验证了低轨星座的全球服务能力，助力运营商海外业务渗透与市场拓展。 3）工程与售后工作 2025 年度，部门技术保障体系覆盖 70 余个专项任务，包含销售支撑项目、科研试制项目、竞争性比测项目、售后维保 项目，构建起全生命周期技术支撑网络。各项目累计回收有效满意度调查表 63 份。经测算，客户综合满意度达到 99.57%，达成了既定质量目标。评估维度涵盖产品质量、工程质量及技术服务质量三大体系，其中产品质量满意度为 100%，工程质量满意度为 99.13%，技术服务质量满意度为 99.83%。收到顾客给予的感谢信 17 封、锦旗 1 面。 持续完善客户关系管理体系，与顾客建立有效的沟通反馈机制，通过定期回访、提供 7×24 小时技术咨询以及定制化巡 检维护方案，加深对需求的理解，提高响应精度。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### commercial-space-satcom-E-CS-COMP-688270-2025H1-166\n\n[臻镭科技2025年半年度报告](https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-13/688270_20250813_Z35W.pdf)；2025-08-13；解析文本第166行。\n\n> 公司主要产品包括射频收发芯片及高速高精度 ADC/DAC 芯片、电源管理芯片、微系统及模组 等，为客户提供从天线到信号处理之间的芯片及微系统产品和技术解决方案。 公司产品及技术主要应用于数据链、电子对抗、无线通信终端、新一代电台、相控阵通信等 特种领域，及移动通信系统、卫星互联网等民用领域。在特种行业领域，公司产品作为核心芯片 大规模批量应用于多个装备型号，且亮相 70 周年国庆阅兵、军民融合发展高科技成果展等，为国 防信息化、现代化提供有效支撑通信保障，在国产装备跨越式发展中起到了重要作用；在卫星互 联网领域，公司产品推动了卫星和载荷系统小型化、轻量化，已与行业内主流核心科研院所及多 家优势企业开展合作，已成为国产基础元器件最重要的供应商之一，卡位和份额优势显著。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n",
+      "sha256": "fb1b621fc8e575f55b03e24bdd9427b1860825b6a266cd5c981c4fef7d41a9d6",
+      "tags": [
+        "commercial-space-satcom",
+        "companies"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "commercial-space-satcom:research",
+      "industry_id": "commercial-space-satcom",
+      "title": "商业航天与卫星互联网｜学术研究卡",
+      "sourceType": "research",
+      "text": "# 商业航天与卫星互联网：学术研究卡\n\n书目与研究结论分开；metadata_only不进入专家证据检索。\n\n## Satellite Communications in the New Space Era: A Survey and Future Challenges\n\nDOI：[10.1109/COMST.2020.3028247](https://doi.org/10.1109/COMST.2020.3028247)；2021；阅读：abstract_reviewed。\n\n综述从系统、空口、介质访问、网络及测试原型五个维度组织卫星通信研究，适合作为技术树的交叉检查框架。\n\n适用边界：摘要层面；不是最新星座部署统计，也不证明某家上市公司的产品性能。\n\n## Enhancing LEO Mega-constellations with Inter-Satellite Links: Vision and Challenges\n\nDOI：[10.1109/mwc.003.2400195](https://doi.org/10.1109/mwc.003.2400195)；2025-10；阅读：abstract_reviewed。\n\n文章讨论星间链路减少地面站依赖的潜力，并将系统设计、路由负载均衡与资源分配列为关键问题；包含机上连接的初步性能评价。\n\n适用边界：未复核正文评价参数；不能将初步评价写成真实商业网络已实现的收益。\n\n",
+      "sha256": "c6171b97455d7e028cfe9cec199d81c539abcff29e58367696701f91cc4ae9f9",
+      "tags": [
+        "commercial-space-satcom",
+        "research"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "commercial-space-satcom:patents",
+      "industry_id": "commercial-space-satcom",
+      "title": "商业航天与卫星互联网｜专利导航方法与缺口",
+      "sourceType": "ai_generated",
+      "text": "# 商业航天与卫星互联网：专利导航深化\n\n本轮批量查询遭遇HTTP 500/503，未形成可验收的逐公司专利清单。以下是可复用检索与筛选计划，不是已完成的专利图谱。\n\n## commercial-space-satcom-Q1\n\n分类起点：H04B7/185\n\n概念式：`(satellite communication OR non-terrestrial network OR 卫星通信) AND (对应IPC/CPC分类)`\n\n筛选：排除仅引用卫星作背景的地面网络\n\n## commercial-space-satcom-Q2\n\n分类起点：H01Q\n\n概念式：`(phased array OR beamforming OR 相控阵) AND (对应IPC/CPC分类)`\n\n筛选：必须关联星载或卫星终端场景\n\n## commercial-space-satcom-Q3\n\n分类起点：B64G\n\n概念式：`(spacecraft OR reusable launch OR 航天器) AND (对应IPC/CPC分类)`\n\n筛选：将运载与通信子库分别统计\n\n## 归并与统计\n\n申请人全称、历史名称与子公司关系分别核验；上市集团与科研院所不合并计数。公开申请和授权记录分别保存，法律有效性以官方登记为准。记录优先权、同族规则、去重键及排除理由。未完成全量检索前，不计算技术份额、增长趋势、引用中心性或空白区，也不作自由实施结论。\n",
+      "sha256": "fddf75f96199849d9457e5d55c4bbfad48ed631a7ef474e13da85487c7b1e6c5",
+      "tags": [
+        "commercial-space-satcom",
+        "patents"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "low-altitude-economy:core",
+      "industry_id": "low-altitude-economy",
+      "title": "低空经济｜技术原理与路线",
+      "sourceType": "ai_generated",
+      "text": "# 低空经济：技术研究底座\n\n截至 2026-09-19。本说明为整理者综合分析，所列文献阅读范围分别披露；不是逐句均经文献认证的教科书。\n\n区分传统通航、工业无人机与载人eVTOL三类产品和运营体系。通导监、飞行服务、起降设施和零部件分别建图；军用无人机技术线索不自动等于民用低空商业化。\n\n## 构型决定任务包线\n\n多旋翼依靠旋翼持续提供升力，机构较简单但巡航效率与航程受约束；复合翼在巡航时由机翼提供升力，却增加升力系统的重量或阻力；倾转构型兼顾垂直起降与巡航，但过渡段控制、机构和审定更复杂。构型比较必须固定有效载荷、航程、起降条件、备降及储备要求，不能将空载最长续航当成商业载荷任务能力。\n\n## 航空电池必须看任务功率\n\n起飞爬升要求高功率，巡航要求能量，着陆时还需在低荷电状态提供功率裕量。应同时记录电芯和电池包能量密度、倍率、温度、循环寿命、快充、热失控隔离和备用能量。实验室单体的高比能不能直接推导整机载客航程，结构、冷却、连接和防护都会降低包级有效比能。\n\n## 适航不是一个证书标签\n\n型号设计、生产体系、单架航空器和运营许可针对不同对象。公司披露“进入适航审定”不能改写为“取得型号合格证”，取得某一构型或限定条件许可也不代表所有运行场景获批。传统直升机运营经验可提供运行基础，但不能代替新型eVTOL型号的系统安全分析与验证。\n\n## 通导监与飞行服务的链条\n\nC2链路解决指挥控制，导航解决位置与时间，监视解决对周围目标的观测，空域与飞行服务解决冲突和运行协调。城市峡谷中GNSS遮挡、多路径、非合作目标与微气象叠加，意味着只建设平台软件无法证明端到端安全。需要按传感器覆盖、航迹融合、告警和失链处置形成可验证闭环。\n\n## 场景经济性与供应链落位\n\n巡检、测绘、应急、物流和载客运输的载荷、频次及风险暴露不同。运营收入、平台项目收入、零部件销售和整机订单不能混算；采购框架与确定订单分开。建立公司矩阵时把机体、动力、航电、地面设施、管理平台和运营分列，避免把传统汽车零件供应能力写成航空认证能力。\n\n## 研究证据的读取方法\n\n气动论文核查风洞或CFD边界、缩比效应、旋翼干扰和噪声测点；航迹算法核查是否考虑动力学、通信时延、非合作目标与突发天气；电池论文核查循环工况是否反映起降脉冲。仿真可行、样机飞行、符合性验证和商业常态运行必须分别标注。\n\n## 技术节点与可比指标\n\n|节点|范围/关键词|比较指标|\n|---|---|---|\n|低空航空器|无人机、eVTOL、通航飞机|按具体产品补证|\n|航空动力|活塞发动机、电推进、螺旋桨、热管理|按具体产品补证|\n|通导监|通信、导航、监视、雷达、ADS-B|按具体产品补证|\n|低空智联网|5G/5G-A、卫星通信、多元融合感知|按具体产品补证|\n|低空基础设施|起降点、枢纽、测试基地、数字底座|按具体产品补证|\n|低空交通管理|空域、航路、飞行服务、UTM|按具体产品补证|\n|运营与场景|物流、医疗、应急、文旅、通航运营|按具体产品补证|\n|工业无人机|多旋翼、固定翼、垂直起降固定翼|有效载荷; 续航; 作业效率|\n|载人电动垂直起降|多旋翼、复合翼、倾转旋翼|任务航程; 备份能量; 失效安全|\n|航电与飞控|飞控计算机、余度控制、航姿系统|完整性; 故障检测覆盖|\n|低空监视|低慢小雷达、光电、ADS-B、多点定位|探测概率; 虚警率; 盲区|\n|地面保障|消防、充换电、维修、地面测试|周转时间; 故障处置能力|\n|航空电池|高比能、高倍率、热失控防护|包级能量密度; 寿命; 低温功率|\n|电驱与螺旋桨|电机、逆变器、变距桨|功重比; 效率图; 噪声|\n|活塞与混合动力|航空活塞发动机、增程|耗油率; 可靠性; 适航范围|\n|探测与避让|DAA、冲突预测、航迹解脱|安全间隔; 误警漏警|\n|指挥控制链路|C2、链路冗余、失链处置|时延; 覆盖; 可用性|\n|适航与安全验证|型号合格、生产许可、单机适航|审定对象; 阶段; 运行限制|\n|低空气象|微尺度风场、阵风、结冰|可飞天气窗口; 预警时效|\n|起降场与航路|净空、容量、地面风险|起降吞吐; 应急备降覆盖|\n\n## 学术来源与阅读范围\n\n- [A battery dataset for electric vertical takeoff and landing aircraft](https://doi.org/10.1038/s41597-023-02180-5)：sections_reviewed。已读摘要、背景与方法相关段落；没有下载并重新分析数据。单一电芯型号及有限样本，不能外推所有航空电池或直接支持适航结论。\n- [A Review of Detect and Avoid Standards for Unmanned Aircraft Systems](https://doi.org/10.20944/preprints202502.2173.v1)：abstract_reviewed。2025-02-27的v1明确未同行评审；涉及国外标准的适用范围，不能当作中国民航现行强制要求。\n",
+      "sha256": "e1c2e070d74abf54fd2228ab4e1df2394004272822784b82b4fa74ea33062df5",
+      "tags": [
+        "low-altitude-economy",
+        "core"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "low-altitude-economy:companies",
+      "industry_id": "low-altitude-economy",
+      "title": "低空经济｜上市公司证据",
+      "sourceType": "ai_generated",
+      "text": "# 低空经济：公司技术证据与候选矩阵\n\n候选池不是完整上市公司名单；本轮不将缺少证据的公司升级。原有披露时点与当前经营状态不可混用。\n\n|代码|公司|技术节点|验证状态|原有阶段|\n|---|---|---|---|---|\n|301091|深城交|low-altitude-network, infrastructure, traffic-management, operations|legacy_source_linked_not_reaudited|规划/平台/建设/运营多环节落地|\n|001696|宗申动力|propulsion, aircraft|legacy_source_linked_not_reaudited|航空动力产品与适航推进|\n|000099|中信海直|operations|legacy_source_linked_not_reaudited|成熟通航运营+低空场景拓展|\n|002085|万丰奥威|aircraft|candidate|待核验|\n|688631|莱斯信息|traffic-management|candidate|待核验|\n|000801|四川九洲|avionics|candidate|待核验|\n|600038|中直股份|aircraft|candidate|待核验|\n|600316|洪都航空|aircraft|candidate|待核验|\n|688070|纵横股份|uav|candidate|待核验|\n|002111|威海广泰|ground-support|candidate|待核验|\n|300719|安达维尔|avionics|candidate|待核验|\n|300900|广联航空|aircraft|candidate|待核验|\n|002389|航天彩虹|uav|candidate|待核验|\n|688297|中无人机|uav|candidate|待核验|\n|600990|四创电子|radar, traffic-management|candidate|待核验|\n\n## 本轮核查的来源摘录\n\n### low-altitude-economy-E-LA-COMP-301091-2025AR-446\n\n[深城交2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-24/1225172005.PDF)；2026-04-24；解析文本第446行。\n\n> TransPaaS  是深城交面向自主式无人化新一代城市交通体系打造的  AI  原生新一代交通操作系统，目前已迭代至  4.0  版本。平台以交通世界模型、虚实融合训练场、交通多智能体协同为核心技术底座，可统一承载城市、交通、能源、装备等 多源时空数据，构建可计算、可推演、可运营的城市级数字孪生体系；依托鸿蒙  UDH  互操作框架与  MCP  标准协议，实现 跨厂商、跨协议、跨场景智能装备统一接入与全域调度，具备态势感知、智能决策、预测推演、闭环优化等核心能力。产 品已覆盖城市基建、低空交通、网联信控、交能融合、轨道枢纽、城市生命线等高价值场景，支撑自动驾驶、低空经济与 智能装备从试点走向规模化应用，目前已逐步在国内及中东、中亚等重点城市落地部署，具备显著的商业化落地能力与全 球化复制潜力。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### low-altitude-economy-E-LA-COMP-301091-2025AR-460\n\n[深城交2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-24/1225172005.PDF)；2026-04-24；解析文本第460行。\n\n> 为实现  TransPaaS  操作系统对城市全域感知及对城市治理及运营无人化装备的监管调度，深城交聚焦地空一体、车路协 同、城市治理等核心场景，打造与  TransPaaS  深度协同的新一代通信、感知、控制一体化智能硬件装备体系。针对当前低 空飞行监管难、地空数据割裂、道路盲区感知不足、智能装备协同不畅等行业痛点，公司重点研发形成低空智能融合塔台 （具身智能协同基站） ，采用模块化分层架构设计，深度集成  TransPaaS  平台的低空运行管理能力与边缘计算单元，可提供 低空飞行器运行监测、异常预警、智能调度、运营管理、运维保障五大核心功能，有效保障低空飞行安全合规、空域资源 高效利用。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### low-altitude-economy-E-LA-COMP-001696-2025H1-324\n\n[宗申动力2025年半年度报告](https://static.cninfo.com.cn/finalpage/2025-08-26/1224565164.PDF)；2025-08-26；解析文本第324行。\n\n> 公司控股子公司 —重庆宗申航空发动机制造股份有限公司（简称 “宗申航发公司 ”）主要为旋翼、 固定翼等通航飞机和无人机等航空飞行器提供动力系统解决方案，是国内以民营为主体成功自主研发航 空发动机的国家高新技术企业。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### low-altitude-economy-E-LA-COMP-001696-2025H1-330\n\n[宗申动力2025年半年度报告](https://static.cninfo.com.cn/finalpage/2025-08-26/1224565164.PDF)；2025-08-26；解析文本第330行。\n\n> 在全球工业无人化进程持续深化与国内低空经济政策全面落地的双重驱动下，无人机行业正迈入战 略机遇窗口期。下游低空经济基础设施建设加速推进，各类场景化应用需求不断释放，市场活力强劲。 宗申航发公司紧抓政策红利与市场机遇，始终保持稳健发展态势。一方面，紧密跟踪客户需求，推动项 目交付；持续优化系列产品，稳步开展新产品研发，不断健全产品生态；同时完善营销网络，深化客户 合作。另一方面，宗申航发公司自主研发的  CA500  型航空活塞发动机（以下简称 “CA500” ），在山河 星航  Aurora SA60L  轻型运动飞机上随机认证末次审查会成功召开，标志宗申航发  CA500  即将成为国内 首款严格遵循  CAAC  适用的适航要求和  ASTM F2339  国际标准、通过 “随机审定 ”模式，获得适航批准的 国产航空动力产品。后续，宗申航发公司将推进更多核心产品开展适航认证工作，为进入通航市场、拓 展低空经济应用场景筑牢合规基础。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### low-altitude-economy-E-LA-COMP-000099-2024AR-82\n\n[中信海直2024年年度报告](https://static.cninfo.com.cn/finalpage/2025-03-18/1222821612.PDF)；2025-03-18；解析文本第82行。\n\n> ## 司在电力工程方面的首次合作。新增与唐山港引航站飞行保障合作，开辟驻唐山港引航基地。与舟 山引航站、宁波引航站共同推进宁波舟山港直升机引航业务，成功执行舟山港引航作业首飞任务， 为宁波舟山港及长三角区域开拓引航市场奠定基础。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n",
+      "sha256": "ffe0dac77e7d63786843531f314745718fc28eb0c4d2c9261dbc360933c641dd",
+      "tags": [
+        "low-altitude-economy",
+        "companies"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "low-altitude-economy:research",
+      "industry_id": "low-altitude-economy",
+      "title": "低空经济｜学术研究卡",
+      "sourceType": "research",
+      "text": "# 低空经济：学术研究卡\n\n书目与研究结论分开；metadata_only不进入专家证据检索。\n\n## A battery dataset for electric vertical takeoff and landing aircraft\n\nDOI：[10.1038/s41597-023-02180-5](https://doi.org/10.1038/s41597-023-02180-5)；2023-6-2；阅读：sections_reviewed。\n\n研究提供22只电芯、合计21,392次充放电循环的eVTOL任务工况数据集。方法使用Sony-Murata VTC-6电芯，以高功率起飞、较低功率巡航和高功率着陆构造任务；以单变量方式改变功率、充电或冷却条件。\n\n适用边界：已读摘要、背景与方法相关段落；没有下载并重新分析数据。单一电芯型号及有限样本，不能外推所有航空电池或直接支持适航结论。\n\n## A Review of Detect and Avoid Standards for Unmanned Aircraft Systems\n\nDOI：[10.20944/preprints202502.2173.v1](https://doi.org/10.20944/preprints202502.2173.v1)；2025-2-27；阅读：abstract_reviewed。\n\n预印本比较无人机探测与避让标准，区分保持安全间隔、碰撞规避、遭遇建模及系统/部件要求。\n\n适用边界：2025-02-27的v1明确未同行评审；涉及国外标准的适用范围，不能当作中国民航现行强制要求。\n\n",
+      "sha256": "7eeeb22afe4d1daadcd2d0355184e164e0373afb741e7db01de6569543eabff8",
+      "tags": [
+        "low-altitude-economy",
+        "research"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "low-altitude-economy:patents",
+      "industry_id": "low-altitude-economy",
+      "title": "低空经济｜专利导航方法与缺口",
+      "sourceType": "ai_generated",
+      "text": "# 低空经济：专利导航深化\n\n本轮批量查询遭遇HTTP 500/503，未形成可验收的逐公司专利清单。以下是可复用检索与筛选计划，不是已完成的专利图谱。\n\n## low-altitude-economy-Q1\n\n分类起点：B64U\n\n概念式：`(unmanned aircraft OR UAV OR 无人机) AND (对应IPC/CPC分类)`\n\n筛选：注意2023年前旧B64C分类并行检索\n\n## low-altitude-economy-Q2\n\n分类起点：B64C\n\n概念式：`(eVTOL OR tilt rotor OR electric vertical takeoff) AND (对应IPC/CPC分类)`\n\n筛选：排除无航空用途的通用电机\n\n## low-altitude-economy-Q3\n\n分类起点：G08G5\n\n概念式：`(air traffic management OR detect and avoid) AND (对应IPC/CPC分类)`\n\n筛选：区分系统仿真与实际运行部署\n\n## 归并与统计\n\n申请人全称、历史名称与子公司关系分别核验；上市集团与科研院所不合并计数。公开申请和授权记录分别保存，法律有效性以官方登记为准。记录优先权、同族规则、去重键及排除理由。未完成全量检索前，不计算技术份额、增长趋势、引用中心性或空白区，也不作自由实施结论。\n",
+      "sha256": "fca84705202b980e6f0240f17b5aa3335ef36bf984673eff56701f53ed924c81",
+      "tags": [
+        "low-altitude-economy",
+        "patents"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:core",
+      "industry_id": "wide-bandgap-semiconductor",
+      "title": "第三代/宽禁带半导体｜技术原理与路线",
+      "sourceType": "ai_generated",
+      "text": "# 第三代/宽禁带半导体：技术研究底座\n\n截至 2026-09-19。本说明为整理者综合分析，所列文献阅读范围分别披露；不是逐句均经文献认证的教科书。\n\n以SiC功率器件和GaN功率/射频器件为主线，分别覆盖衬底、外延、器件、封装模块、装备和材料。硅基IGBT、LED业务作为相邻能力，不自动计入宽禁带收入。\n\n## 材料优势需要器件与系统兑现\n\n宽禁带、高临界击穿场等材料特性为高压、高频应用提供空间，但系统效率仍受导通、开关、驱动、磁性器件和散热影响。比较SiC与硅IGBT或GaN时固定电压、电流、结温、频率和电路拓扑；不将材料理论优值直接当作模块或整车效率改善。GaN射频与GaN功率的衬底、结构和封装要求也应分别讨论。\n\n## 长晶和大尺寸化的约束\n\nPVT温场、籽晶、掺杂及气相传输共同影响晶体多型、位错和应力。扩大直径能增加每片理论芯片数，但边缘损失、缺陷、翘曲、设备利用率和切磨抛损耗可能抵消收益。发布大尺寸样品、具备中试线与稳定量产的证据不同；需要良率、晶片质量、客户验证和实际供货口径才能判断经济性。\n\n## 从衬底缺陷到器件失效\n\n衬底和外延缺陷可能影响漏电、击穿、双极退化与可靠性；MOS界面态、栅氧工艺和应力影响迁移率及阈值漂移。平面与沟槽结构在导通电阻、单元密度、栅氧电场及制造难度间权衡。不能只凭室温导通电阻比较路线，还应看短路、雪崩、体二极管和栅极偏压条件。\n\n## GaN动态特性与测试陷阱\n\nGaN HEMT的陷阱效应可导致动态导通电阻增大，关态应力、脉冲宽度和测量延迟会改变结果。p-GaN栅、MIS栅和级联结构的驱动及可靠性问题不同。论文与产品数据必须统一测试电压、温度、频率和动态测量方法；小信号射频指标也不能直接替代高功率工作条件下的效率和热可靠性。\n\n## 封装决定可用工作区\n\n高开关速度使寄生电感、共模干扰和驱动回路更重要。银烧结、AMB基板、双面散热和铜互联可改善部分热机械条件，但必须验证功率循环、温度循环和绝缘。模块额定电流不能直接等于系统持续电流，应结合冷却条件、结温和寿命目标。装备供应商的整机业务收入也不能全计为SiC业务。\n\n## 学术与专利路线连接\n\n论文用于解释缺陷—工艺—性能机制，专利用于识别具体工艺步骤、结构及权利要求边界，公司公告用于识别产线、产品和收入。三种证据相互补充而不能互相替代。检索时并用SiC/GaN材料词与器件、工艺词，兼顾H01L旧分类和H10新分类，不将分类号命中当作技术相关性的最终判断。\n\n## 技术节点与可比指标\n\n|节点|范围/关键词|比较指标|\n|---|---|---|\n|晶体生长|SiC/GaN晶体、长晶技术|按具体产品补证|\n|衬底|6/8/12英寸SiC衬底、GaN相关衬底|按具体产品补证|\n|外延|SiC/GaN外延片与外延工艺|按具体产品补证|\n|功率/射频器件|SiC MOSFET、SBD、GaN HEMT|按具体产品补证|\n|功率模块|车规、工业、储能等功率模块|按具体产品补证|\n|制造装备|长晶、切磨抛、外延、检测装备|按具体产品补证|\n|材料耗材|高纯石墨、石英、陶瓷等|按具体产品补证|\n|电学与缺陷检测|晶圆测试、缺陷检测、可靠性测试|检测灵敏度; 吞吐; 覆盖率|\n|PVT升华长晶|籽晶、温场、气相传输|位错密度; 多型稳定; 良率|\n|液相法长晶|助熔剂、溶液生长|缺陷; 杂质; 放大能力|\n|切磨抛与表面处理|切片、研磨、CMP、损伤去除|翘曲; 厚度均匀性; 粗糙度|\n|导电SiC衬底|n型、掺杂、功率器件|电阻率均匀性; 基面位错|\n|半绝缘SiC衬底|射频衬底、补偿|电阻率; 微波损耗|\n|SiC同质外延|CVD、掺杂、厚度控制|缺陷扩展; 厚度与掺杂均匀性|\n|GaN异质外延|GaN-on-Si、GaN-on-SiC|应力; 位错; 缓冲层漏电|\n|SiC MOSFET|平面栅、沟槽栅、终端结构|比导通电阻; 栅氧寿命; 短路耐受|\n|GaN HEMT|p-GaN、MIS、级联|动态导通电阻; 阈值稳定性|\n|SiC肖特基二极管|JBS、势垒、边缘终端|漏电; 正向压降; 浪涌|\n|高温低寄生封装|银烧结、双面散热、AMB|热阻; 寄生电感; 功率循环|\n|应用与可靠性验证|车规验证、栅偏压、温湿偏|样本数; 应力条件; 失效分布|\n\n## 学术来源与阅读范围\n\n- [Characterisation and Modeling of Gallium Nitride Power Semiconductor Devices Dynamic On-State Resistance](https://doi.org/10.1109/tpel.2017.2730260)：sections_reviewed。已读摘要及测量、模型相关段落，未复算模型。结果限于器件和测试条件；不将文中一只SiC对照器件的表现推广为所有SiC器件不存在动态效应。\n",
+      "sha256": "55d37b7b0c65af7329190b2f619b157ade3b70afd7ae06a19f6d7dee60f96fae",
+      "tags": [
+        "wide-bandgap-semiconductor",
+        "core"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:companies",
+      "industry_id": "wide-bandgap-semiconductor",
+      "title": "第三代/宽禁带半导体｜上市公司证据",
+      "sourceType": "ai_generated",
+      "text": "# 第三代/宽禁带半导体：公司技术证据与候选矩阵\n\n候选池不是完整上市公司名单；本轮不将缺少证据的公司升级。原有披露时点与当前经营状态不可混用。\n\n|代码|公司|技术节点|验证状态|原有阶段|\n|---|---|---|---|---|\n|688234|天岳先进|crystal-growth, substrate|legacy_source_linked_not_reaudited|大尺寸SiC衬底持续技术推进|\n|300316|晶盛机电|equipment, substrate, consumables|legacy_source_linked_not_reaudited|装备+材料多环节产业化|\n|600703|三安光电|substrate, epitaxy, device|legacy_source_linked_not_reaudited|SiC垂直产业链持续建设/量产验证|\n|603595|东尼电子|substrate|candidate|待核验|\n|002617|露笑科技|substrate|candidate|待核验|\n|605111|新洁能|device|candidate|待核验|\n|603290|斯达半导|module|candidate|待核验|\n|688396|华润微|device|candidate|待核验|\n|600460|士兰微|device|candidate|待核验|\n|300373|扬杰科技|device|candidate|待核验|\n|600745|闻泰科技|device|candidate|待核验|\n|002371|北方华创|equipment|candidate|待核验|\n|688037|芯源微|equipment|candidate|待核验|\n|300604|长川科技|test-equipment|candidate|待核验|\n|300623|捷捷微电|device|candidate|待核验|\n\n## 本轮核查的来源摘录\n\n### wide-bandgap-semiconductor-E-WBG-MKT-001-24\n\n[科创板公司2024年度经营业绩概览](https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20250430_10778299.shtml)；2025-04-30；解析文本第24行。\n\n> 自主可控水平稳步提升。面向全球科技竞合的关键领域，科创板公司加快推进进口替代和国际首创，带动行业实现从无到有、从弱到强的质的飞跃。据统计，超八成公司核心产品瞄准进口替代及自主可控，超380家公司的850余项产品或技术达到国际先进水平。如华海清科已达成超500台12英寸化学机械抛光（CMP）装备出机里程碑，产品实现对国内12英寸集成电路大生产线的基本覆盖；爱博医疗推出的中国首款非球面有晶体眼人工晶状体产品获批上市，有望打破该领域长期被海外龙头垄断的局面。超60家公司推出全球首创性产品，引领医疗装备、半导体材料、光伏组件等细分领域实现“弯道超车”。如天岳先进推出全球首款12英寸碳化硅衬底产品，标志着我国第三代半导体领域从“国产替代”迈向“全球引领”；联影医疗助力全球首台运用“零噪声”数字减影血管造影（DSA）技术的复杂冠脉介入（PCI）手术圆满完成，有力印证了国产医疗装备的技术实力与临床价值。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### wide-bandgap-semiconductor-E-WBG-COMP-300316-2025AR-237\n\n[晶盛机电2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-11/1225095476.PDF)；2026-04-11；解析文本第237行。\n\n> 图三 先进制程及先进封装设备产品 （2）化合物半导体装备 碳化硅装备领域，公司开发了碳化硅长晶及加工设备（研磨、切割、减薄、倒角、抛光、清洗及检测），满足碳化 硅衬底规模化产能建设需求的同时，在技术、工艺以及成本方面构筑壁垒，强化公司在碳化硅衬底领域的核心竞争力。 基于产业链核心设备的国产化突破，在检测、离子注入、激活、氧化、减薄、退火等工艺环节积极布局产品体系，以高 标准研发目标，逐步实现产品产业化市场突破， 6-8 英寸碳化硅外延设备实现国产替代并市占率领先，率先开发了 12 英寸碳化硅外延设备。在蓝宝石装备领域，公司开发了长晶、切片、研磨、抛光等系列设备，实现设备、工艺的高度融 合，促进联合创新，提升公司蓝宝石材料领域的综合竞争力。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### wide-bandgap-semiconductor-E-WBG-COMP-300316-2025AR-249\n\n[晶盛机电2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-11/1225095476.PDF)；2026-04-11；解析文本第249行。\n\n> 2、半导体衬底材料 公司碳化硅衬底材料已实现 6-8 英寸衬底规模化量产，并实现 12 英寸碳化硅单晶生长技术突破，建设 12 英寸碳化 硅衬底中试产线并小规模送样。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n",
+      "sha256": "1c0247a30ceeae94bdcdf22b44f31ce81cacc1f9c693d0672c405410a1eb0348",
+      "tags": [
+        "wide-bandgap-semiconductor",
+        "companies"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:research",
+      "industry_id": "wide-bandgap-semiconductor",
+      "title": "第三代/宽禁带半导体｜学术研究卡",
+      "sourceType": "research",
+      "text": "# 第三代/宽禁带半导体：学术研究卡\n\n书目与研究结论分开；metadata_only不进入专家证据检索。\n\n## Characterisation and Modeling of Gallium Nitride Power Semiconductor Devices Dynamic On-State Resistance\n\nDOI：[10.1109/tpel.2017.2730260](https://doi.org/10.1109/tpel.2017.2730260)；2018-6；阅读：sections_reviewed。\n\n研究将GaN HEMT动态导通电阻与关态偏置电压、俘获和释放时间联系起来，使用测量电路与RC网络模型描述动态变化。公开正文包含20°C条件及不同商用器件测试，说明静态数据表不足以描述全部开关工况。\n\n适用边界：已读摘要及测量、模型相关段落，未复算模型。结果限于器件和测试条件；不将文中一只SiC对照器件的表现推广为所有SiC器件不存在动态效应。\n\n",
+      "sha256": "cf445507c4257a8a85ba242368dfd97fbf7bb1924a43825ff222dd5a1e19b6ab",
+      "tags": [
+        "wide-bandgap-semiconductor",
+        "research"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:patents",
+      "industry_id": "wide-bandgap-semiconductor",
+      "title": "第三代/宽禁带半导体｜专利导航方法与缺口",
+      "sourceType": "ai_generated",
+      "text": "# 第三代/宽禁带半导体：专利导航深化\n\n本轮批量查询遭遇HTTP 500/503，未形成可验收的逐公司专利清单。以下是可复用检索与筛选计划，不是已完成的专利图谱。\n\n## wide-bandgap-semiconductor-Q1\n\n分类起点：C30B\n\n概念式：`(silicon carbide crystal growth OR PVT OR 碳化硅长晶) AND (对应IPC/CPC分类)`\n\n筛选：区分粉料、单晶与外延\n\n## wide-bandgap-semiconductor-Q2\n\n分类起点：H01L29\n\n概念式：`(SiC MOSFET OR GaN HEMT OR gate oxide) AND (对应IPC/CPC分类)`\n\n筛选：历史分类与H10迁移并行\n\n## wide-bandgap-semiconductor-Q3\n\n分类起点：H01L21\n\n概念式：`(SiC epitaxy OR implantation OR annealing) AND (对应IPC/CPC分类)`\n\n筛选：工艺用途必须匹配材料体系\n\n## 归并与统计\n\n申请人全称、历史名称与子公司关系分别核验；上市集团与科研院所不合并计数。公开申请和授权记录分别保存，法律有效性以官方登记为准。记录优先权、同族规则、去重键及排除理由。未完成全量检索前，不计算技术份额、增长趋势、引用中心性或空白区，也不作自由实施结论。\n",
+      "sha256": "b3fc72904f01de07b40da7ee35db97a81e0f425073e68b92fcfd9815bff7c7c6",
+      "tags": [
+        "wide-bandgap-semiconductor",
+        "patents"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "solid-state-battery:core",
+      "industry_id": "solid-state-battery",
+      "title": "固态电池与下一代电池材料｜技术原理与路线",
+      "sourceType": "ai_generated",
+      "text": "# 固态电池与下一代电池材料：技术研究底座\n\n截至 2026-09-19。本说明为整理者综合分析，所列文献阅读范围分别披露；不是逐句均经文献认证的教科书。\n\n区分固液混合与全固态，按硫化物、氧化物、聚合物及卤化物电解质和复合体系建图。材料送样、样品电芯、中试、车规验证及批量交付分别记录。\n\n## 首先定义固态的口径\n\n固液混合电池仍含液相，不能仅凭企业使用“固态”名称就归入全固态。记录电解质类型、液体比例及测量口径、正负极和电芯形式；未披露的信息保留未知。电芯比能、电池包比能、材料理论比容量和正极活性物质比容量是不同指标，不可互相代换。\n\n## 四类电解质的主要权衡\n\n硫化物通常具有较好的离子传导和可压实性，但水分敏感、界面反应及制造环境控制是重点；氧化物的机械和化学特性随组成变化，硬脆和界面接触及烧结工艺常形成约束；聚合物具加工优势，但室温导电、温度依赖和高电压稳定性需核查；卤化物被研究用于高电压正极相容性，但负极稳定性、湿敏性和成本仍需结合配方判断。不存在仅凭电解质家族即可断定最佳路线的规则。\n\n## 界面决定材料性能能否变成电芯性能\n\n电极体积变化可造成接触损失，副反应层可能阻碍离子传输，电子泄漏与缺陷可能促进锂穿透。高离子电导并不自动保证高倍率和长循环。应同时看界面面积比阻抗、工作压力、电极厚度、活性物质比例和实际面容量，并区别对称电池、半电池与全电池测试。\n\n## 实用化测试条件是核心证据\n\n论文中长循环可能建立在低面容量、高过量锂、较高温度或较大外压下。比较时至少并列温度、倍率、电压窗口、正极面容量、N/P、锂厚度、电解质厚度、堆叠压力、容量保持率、库仑效率及样本数。缺少条件的“循环上千次”不能直接写成动力电池寿命。临界电流密度也依赖测试协议，不能孤立排序。\n\n## 量产瓶颈超出配方\n\n规模化涉及水氧控制、粉体一致性、涂布或干法成膜、辊压致密化、缺陷检测、封装和压力保持。高实验良率不代表连续产线良率，材料送样不等于客户定点，建成中试线不等于满产。成本分析应同时考虑材料、环境设施、节拍、良率及包级压力结构增加的成本。\n\n## 企业—论文—专利的交叉使用\n\n企业公告用于确认产品及阶段；论文用于解释界面机制与测试条件；专利权利要求用于识别材料组成、制造窗口和结构。申请了全固态相关专利不能证明量产，也不能把供给传统液态电池材料的收入归为全固态收入。下一轮优先补足大容量软包、独立验证和实际良率等公开证据。\n\n## 技术节点与可比指标\n\n|节点|范围/关键词|比较指标|\n|---|---|---|\n|硫化物电解质|硫化物粉体、硫化锂原料、界面稳定|按具体产品补证|\n|氧化物电解质|LLZO/LATP等氧化物固体电解质|按具体产品补证|\n|聚合物/复合电解质|聚合物、复合固态电解质|按具体产品补证|\n|正极材料|高镍、富锂锰基、正极包覆/界面工程|按具体产品补证|\n|负极材料|锂金属、硅基等|按具体产品补证|\n|电芯与制造工艺|叠片、压力管理、干法/湿法、封装|按具体产品补证|\n|中试与量产|中试线、验证线、量产线|按具体产品补证|\n|应用|汽车、储能、无人机/eVTOL、机器人|按具体产品补证|\n|固态电解质总类|离子导体、电子绝缘、复合体系|室温离子电导; 稳定性|\n|卤化物电解质|氯化物、溴化物、复合卤化物|氧化稳定性; 湿敏性; 成本|\n|固固界面与接触|空间电荷、界面反应、包覆|界面阻抗; 接触保持|\n|锂金属负极|锂箔、无负极、亲锂界面|库仑效率; 临界电流; N/P|\n|硅基负极|硅碳、预锂化、体积变化|膨胀; 首效; 循环|\n|前驱体与正极结构|共沉淀、单晶、元素掺杂|粒径分布; 残碱; 批次一致性|\n|正极包覆与界面层|氧化物包覆、离子传输|包覆厚度; 阻抗; 稳定性|\n|复合膜与隔离层|支撑膜、陶瓷层、浸润|厚度; 强度; 是否保留液相|\n|干法与压制|辊压、干法成膜、压力控制|面密度; 孔隙率; 良率|\n|水氧与环境控制|露点、硫化氢、密闭输送|暴露时间; 安全控制|\n|实用化测试|软包、堆叠压力、失效分析|Ah容量; 循环条件; 良率|\n|电池包集成|压力机构、热管理、BMS|包级比能; 体积; 寿命|\n\n## 学术来源与阅读范围\n\n- [A solid future for battery development](https://doi.org/10.1038/nenergy.2016.141)：metadata_only。正文未阅读，不能用于支持具体技术结论。\n- [Interfaces and Interphases in All-Solid-State Batteries with Inorganic Solid Electrolytes](https://doi.org/10.1021/acs.chemrev.0c00101)：abstract_reviewed。仅通过OpenAlex重建并阅读摘要，出版社正文未取得；“瓶颈转向界面”不能推广为所有电解质的体相输运问题均已解决。\n",
+      "sha256": "8d9d88d804a18082b2c188c55e9ab9253db10d24c403b276d5c8757944765e32",
+      "tags": [
+        "solid-state-battery",
+        "core"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "solid-state-battery:companies",
+      "industry_id": "solid-state-battery",
+      "title": "固态电池与下一代电池材料｜上市公司证据",
+      "sourceType": "ai_generated",
+      "text": "# 固态电池与下一代电池材料：公司技术证据与候选矩阵\n\n候选池不是完整上市公司名单；本轮不将缺少证据的公司升级。原有披露时点与当前经营状态不可混用。\n\n|代码|公司|技术节点|验证状态|原有阶段|\n|---|---|---|---|---|\n|002460|赣锋锂业|sulfide-electrolyte, oxide-electrolyte, anode, cell-process, applications|legacy_source_linked_not_reaudited|多环节研发/生产/商业化推进|\n|002074|国轩高科|cell-process, pilot-line|legacy_source_linked_not_reaudited|全固态中试线已建设投产|\n|300073|当升科技|cathode, sulfide-electrolyte, oxide-electrolyte, applications|legacy_source_linked_not_reaudited|材料批量供货/客户批量验证|\n|300750|宁德时代|cell-process, solid-electrolyte|candidate|待核验|\n|300014|亿纬锂能|cell-process|candidate|待核验|\n|300207|欣旺达|cell-process|candidate|待核验|\n|688567|孚能科技|cell-process|candidate|待核验|\n|002812|恩捷股份|separator|candidate|待核验|\n|603659|璞泰来|anode, coating|candidate|待核验|\n|688005|容百科技|cathode|candidate|待核验|\n|835185|贝特瑞|anode|candidate|待核验|\n|002709|天赐材料|solid-electrolyte|candidate|待核验|\n|300037|新宙邦|solid-electrolyte|candidate|待核验|\n|300919|中伟股份|cathode-precursor|candidate|待核验|\n|688778|厦钨新能|cathode|candidate|待核验|\n\n## 本轮核查的来源摘录\n\n### solid-state-battery-E-SSB-COMP-002460-2025AR-343\n\n[赣锋锂业2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-03-31/1225059953.PDF)；2026-03-31；解析文本第343行。\n\n> 固态电池：公司较早布局固态电池技术，利用自身优势，自研自产的氧化物电解质材料、硫化物粉体材料均具有更 高离子电导率和工程化能力；新一代混合固液锂离子电池在大幅提升能量密度的同时，在多点针刺测试、加热测试中体 现出更优异的安全性能；在续航方面，高比能电芯满足长里程需求，在极低温寒冷条件下仍保持强劲动力。公司持续推 进固态锂电池的研发、生产和商业化应用，积极布局和开发高能量密度、高功率的飞行动力电芯与电源系统产品，以满 足不同领域需求。 锂电池回收：电动汽车及消费型电子产品的使用必将带动退役锂电池处理的社会需求不断增加，公司开展锂电池回 收业务市场前景广阔，经济潜力巨大，并可进一步丰富了锂原料的多元化供应渠道，实现锂、镍、钴、锰等金属的资源 综合循环利用。公司回收退役锂电池业务为电池生产商及电动汽车生产商提供了可持续的增值解决方案，进一步巩固与 来自电池生产业务客户的关系。 公司拥有丰富的行业经验、全面的产品组合及卓越的产品质量，在中国及全球建立了稳定的多元的蓝筹客户资源， 产品销售至逾 10 个国家，主要用于电池及医药行业。公司与蓝筹客户建立了长期战略关系，包括全球一线的电池供应 商和全球领先的汽车 OEM 厂商。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### solid-state-battery-E-SSB-COMP-002460-2025AR-375\n\n[赣锋锂业2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-03-31/1225059953.PDF)；2026-03-31；解析文本第375行。\n\n> 3、下游锂电池制造：核心流程为原料预处理 →极片制造 →电芯组装 →电芯化成 →电芯分容 →模组 /PACK 组装 →成品检测 →包装入库，不同品类电池根据应用场景优化对应工艺，固态电池额外增加固态电解质制备、界面改性等核心工 序。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### solid-state-battery-E-SSB-COMP-300073-2025AR-128\n\n[当升科技2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-03-31/1225057127.PDF)；2026-03-31；解析文本第128行。\n\n> ①固态电池材料方面，全固态用高镍多元材料通 过形貌、粒径、体相组分以及表面修饰的多重设计，在全固态电池中的性能发挥（循环、容量等）已经 接近液态电池的水平，可满足超过 400 Wh/kg 电池能量密度需求，双相复合超高镍产品成功入选国务院 国资委中央企业科技创新成果推荐目录成果手册；全固态用超高容量富锂锰基材料可满足 500 Wh/kg 电池需求，核心性能指标突出。固液电池用中镍高电压、超高镍体系正极材料在长续航电池上可通过针刺、 200 ℃热箱等试验，具备较高的安全性。固态电解质方面，公司全方位布局硫化物、卤化物、氧化物等 材料体系，成功开发出高离子电导率、具有良好界面浸润性的氯碘复合固态电解质等新型固态电解质产 品，保持高离子电导率的同时显著降低界面压力，并具备规模化供应能力，产品已在头部客户进入批量 验证。②磷酸锰铁锂方面，公司致力于解决锰溶出等关键技术难点，加速推进技术创新迭代和工艺成本 优化，报告期内已实现小批量连续出货，成为行业标杆产品，技术优势明显。③尖晶石正极材料方面， 公司成功开发出兼具高容量与长循环的镍锰酸锂材料，各项性能指标表现优异满足客户需求。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n",
+      "sha256": "c29ae92c63b9c8cb566d550b2cc18c41d94a6ed4d72a65f4995ad3a2a8795176",
+      "tags": [
+        "solid-state-battery",
+        "companies"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "solid-state-battery:research",
+      "industry_id": "solid-state-battery",
+      "title": "固态电池与下一代电池材料｜学术研究卡",
+      "sourceType": "research",
+      "text": "# 固态电池与下一代电池材料：学术研究卡\n\n书目与研究结论分开；metadata_only不进入专家证据检索。\n\n## A solid future for battery development\n\nDOI：[10.1038/nenergy.2016.141](https://doi.org/10.1038/nenergy.2016.141)；2016-9-8；阅读：metadata_only。\n\n仅核实书目，尚未据此形成研究结论。\n\n适用边界：正文未阅读，不能用于支持具体技术结论。\n\n## Interfaces and Interphases in All-Solid-State Batteries with Inorganic Solid Electrolytes\n\nDOI：[10.1021/acs.chemrev.0c00101](https://doi.org/10.1021/acs.chemrev.0c00101)；2020-6-30；阅读：abstract_reviewed。\n\n综述指出在已有高离子电导电解质的体系中，界面接触、晶界、化学和电化学反应等引起的阻抗可能限制效率、功率和循环。它强调界面组成、离子/电子性质、机械行为与表征的协同。\n\n适用边界：仅通过OpenAlex重建并阅读摘要，出版社正文未取得；“瓶颈转向界面”不能推广为所有电解质的体相输运问题均已解决。\n\n",
+      "sha256": "60c135539fcc2061d365d6fb10a9afc2d6fe18136109ef242c50f6a659827e5f",
+      "tags": [
+        "solid-state-battery",
+        "research"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "solid-state-battery:patents",
+      "industry_id": "solid-state-battery",
+      "title": "固态电池与下一代电池材料｜专利导航方法与缺口",
+      "sourceType": "ai_generated",
+      "text": "# 固态电池与下一代电池材料：专利导航深化\n\n本轮批量查询遭遇HTTP 500/503，未形成可验收的逐公司专利清单。以下是可复用检索与筛选计划，不是已完成的专利图谱。\n\n## solid-state-battery-Q1\n\n分类起点：H01M10/0562\n\n概念式：`(solid electrolyte OR all solid state OR 全固态) AND (对应IPC/CPC分类)`\n\n筛选：与凝胶、固液混合分别标记\n\n## solid-state-battery-Q2\n\n分类起点：H01M4\n\n概念式：`(lithium metal OR cathode coating OR 界面包覆) AND (对应IPC/CPC分类)`\n\n筛选：必须关联固态电解质或固态电芯\n\n## solid-state-battery-Q3\n\n分类起点：H01M10\n\n概念式：`(sulfide OR oxide OR halide electrolyte) AND (对应IPC/CPC分类)`\n\n筛选：加入化学式同义词并去除纯液态体系\n\n## 归并与统计\n\n申请人全称、历史名称与子公司关系分别核验；上市集团与科研院所不合并计数。公开申请和授权记录分别保存，法律有效性以官方登记为准。记录优先权、同族规则、去重键及排除理由。未完成全量检索前，不计算技术份额、增长趋势、引用中心性或空白区，也不作自由实施结论。\n",
+      "sha256": "458eb5596b8e81c8ef73369767b091bfbf1d67fca75cbf1589ce932462e58270",
+      "tags": [
+        "solid-state-battery",
+        "patents"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:core",
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "title": "合成生物学与生物制造｜技术原理与路线",
+      "sourceType": "ai_generated",
+      "text": "# 合成生物学与生物制造：技术研究底座\n\n截至 2026-09-19。本说明为整理者综合分析，所列文献阅读范围分别披露；不是逐句均经文献认证的教科书。\n\n覆盖DBTL、细胞工厂、酶催化、发酵放大、分离纯化和生物基产品。传统发酵与使用现代工程手段的合成生物路线分开标注，不能按“生物”名称归类。\n\n## DBTL是实验闭环而非标签\n\n设计阶段确定目标产物、底盘和代谢路径；构建阶段实现遗传改造与表达；测试阶段测量产物、增长、副产物与稳定性；学习阶段把结果反馈到下一轮设计。使用基因编辑或AI工具只是其中一环，不能凭工具名称判断平台成熟度。应核查闭环周期、可复现实验、跨产品迁移和失败记录。\n\n## 滴度、得率和生产强度要同时看\n\n滴度表示单位体积产物浓度，得率表示产物相对于底物的转化，生产强度表示单位体积单位时间产量，三者可能相互制约。高滴度若以更长发酵时间、更贵培养基或复杂纯化换取，未必经济。比较时记录底盘、底物、发酵方式、培养基、时间、罐规模及产物回收口径，禁止把摇瓶结果直接外推吨级成本。\n\n## 从摇瓶到大罐的放大机制\n\n规模增大带来氧、底物、pH与温度梯度，混合时间与剪切条件改变，实验室最优菌株在生产罐未必最优。kLa、氧消耗、补料策略、泡沫和散热需要一起分析。基因稳定性、污染控制和批间一致性影响全年有效产能；设计产能不能替代持续稳定生产。\n\n## 下游分离常决定商业化\n\n发酵液中杂质、盐、副产物及细胞残留影响膜、萃取、结晶、脱色和干燥流程。产物性质决定下游路线，纯度和客户标准又决定回收损失。公司声称生物法“绿色”时，应核查底物来源、蒸汽电力、溶剂、水耗、废物与副产品分摊；生物来源本身不构成低碳结论。\n\n## 专利与商业秘密的分工\n\n专利可覆盖菌株、序列、代谢改造、酶、发酵条件、纯化和应用，而最佳操作窗口可能作为商业秘密保留。序列和菌株保藏信息不能被标题替代；同名产物可能存在不同底盘和工艺路线。研究机构专利、许可使用与企业自有权利应分列，不能以专利较少判断技术空白。\n\n## 论文结论如何进入专家知识\n\n优先提取底盘—路径—关键改造—实验条件—结果—失败机制的结构，并区分机理实验、方法论文、综述与经济模型。综述引用的实验应回溯原始论文，不能把同一原始实验经多篇综述重复引用算作独立证据。TEA与LCA需要做原料价格、收率、能源结构和规模的敏感性分析，避免输出单一确定成本。\n\n## 技术节点与可比指标\n\n|节点|范围/关键词|比较指标|\n|---|---|---|\n|设计|代谢网络、基因线路、计算生物学、AI设计|按具体产品补证|\n|构建|基因编辑、DNA组装、底盘细胞/菌株构建|按具体产品补证|\n|测试|高通量筛选、组学、自动化实验|按具体产品补证|\n|学习|数据闭环、机器学习、模型优化|按具体产品补证|\n|发酵与放大|发酵工艺、过程控制、工程放大|按具体产品补证|\n|分离纯化|提取、纯化、连续化工艺|按具体产品补证|\n|生物基化学品|氨基酸、有机酸、二元酸等|按具体产品补证|\n|生物基材料|聚酰胺单体、生物基材料|按具体产品补证|\n|酶工程与生物催化|定向进化、固定化、酶活|转化率; 选择性; 酶寿命|\n|医药中间体发酵|抗生素中间体、前体合成|杂质谱; 效价; 合规|\n|维生素与营养品|维生素、氨基酸、类胡萝卜素|纯度; 批间一致性|\n|底盘细胞|大肠杆菌、酵母、谷氨酸棒杆菌|耐受性; 遗传稳定性|\n|代谢模型与通量|FBA、同位素示踪、组学|预测误差; 通量验证|\n|基因编辑与表达|CRISPR、启动子、基因组整合|编辑效率; 表达稳定性|\n|高通量筛选|微滴、自动化、表型筛选|通量; 假阳性; 可重复性|\n|数据与模型学习|主动学习、蛋白设计、实验闭环|外推误差; 验证集|\n|传质与混合|kLa、溶氧、剪切、补料|氧转移; 混合时间; 产率|\n|下游工程|膜分离、萃取、结晶、干燥|回收率; 纯度; 能耗|\n|经济与环境评价|TEA、LCA、系统边界|最低售价; 碳强度; 敏感性|\n|缩小模型与稳健性|梯度模拟、菌种稳定、污染控制|放大一致性; 批次成功率|\n\n## 学术来源与阅读范围\n\n- [Engineering Cellular Metabolism](https://doi.org/10.1016/j.cell.2016.02.004)：metadata_only。正文未阅读，不能用于支持具体技术结论。\n- [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)：sections_reviewed。已读摘要及第1、3节相关段落；观点与所引案例并非对所有菌株的独立实验。市场规模预测未采纳为事实，案例放大状态不等于普遍量产。\n",
+      "sha256": "fba305d25c1a4371511f966f0b1ce8c9a0bd419b715698b3ab6c9d4ec8d4f10a",
+      "tags": [
+        "synthetic-biology-biomanufacturing",
+        "core"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:companies",
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "title": "合成生物学与生物制造｜上市公司证据",
+      "sourceType": "ai_generated",
+      "text": "# 合成生物学与生物制造：公司技术证据与候选矩阵\n\n候选池不是完整上市公司名单；本轮不将缺少证据的公司升级。原有披露时点与当前经营状态不可混用。\n\n|代码|公司|技术节点|验证状态|原有阶段|\n|---|---|---|---|---|\n|688639|华恒生物|design, build, fermentation, separation, bio-based-chemicals|legacy_source_linked_not_reaudited|多品类产业化|\n|301301|川宁生物|design, build, test, learn, fermentation|legacy_source_linked_not_reaudited|平台化研发+产业化推进|\n|688065|凯赛生物|fermentation, separation, bio-based-chemicals, bio-materials|legacy_source_linked_not_reaudited|生物制造规模产业化|\n|600873|梅花生物|fermentation|candidate|待核验|\n|600866|星湖科技|fermentation|candidate|待核验|\n|002001|新和成|bio-based-chemicals|candidate|待核验|\n|603739|蔚蓝生物|enzyme|candidate|待核验|\n|688089|嘉必优|fermentation|candidate|待核验|\n|688363|华熙生物|fermentation|candidate|待核验|\n|600298|安琪酵母|fermentation|candidate|待核验|\n|300381|溢多利|enzyme|candidate|待核验|\n|300233|金城医药|biopharma-fermentation|candidate|待核验|\n|603079|圣达生物|vitamin-biomanufacturing|candidate|待核验|\n|300497|富祥药业|fermentation|candidate|待核验|\n|000990|诚志股份|bio-based-chemicals|candidate|待核验|\n\n## 本轮核查的来源摘录\n\n### synthetic-biology-biomanufacturing-E-SB-COMP-688639-2024QA-168\n\n[华恒生物向特定对象发行审核问询回复](https://static.sse.com.cn/stock/disclosure/announcement/c/202401/688639_20240124_UR0V.pdf)；2024-01-24；解析文本第168行。\n\n>  以上生产工艺的产业化放大能力依托于公司常年从事生物发酵行业的经 验优势 生产设备 公司新产品发酵法生产与现有主要产品发酵法生产所需的灭菌设备、发酵系 统、分离提取系统等核心设备在设备选型以及工艺结构设计方面相似度较高， 发行人原有业务的主要核心技术人员即可承担发酵法生产苹果酸和丁二酸相 关核心系统的调试、设计以及运维工作 产品形态 产品形态均为结晶粉末状实物产品，均为有机酸，均属于《战略性新兴产业分 关于安徽华恒生物科技股份有限公司向特定对象发行股票申请文件的第二轮审核问询函的回复\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### synthetic-biology-biomanufacturing-E-SB-COMP-301301-2025H1-234\n\n[川宁生物2025年半年度报告](https://static.cninfo.com.cn/finalpage/2025-08-26/1224569248.PDF)；2025-08-26；解析文本第234行。\n\n> （2）核心技术体系与未来战略聚焦 公司核心技术优势集中于其全资子公司锐康生物（川宁生物上海研究院）打造的萜烯 类、糖苷类、氨基酸衍生物类等高效底盘菌平台，和自动化高通量合成生物学菌种选育平 台。相关底盘菌平台实现了同类和衍生产品的高效开发；自动化高通量菌种选育平台整合 计算生物学菌种从头设计、自动化高通量菌种构建与筛选、多尺度发酵过程优化及大数据 分析与机器学习等平台，实现了“设计 -构建 -测试 -学习”的研发闭环，克服了传统生物育 种的局限，极大提升了研发交付效率。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### synthetic-biology-biomanufacturing-E-SB-COMP-301301-2025H1-324\n\n[川宁生物2025年半年度报告](https://static.cninfo.com.cn/finalpage/2025-08-26/1224569248.PDF)；2025-08-26；解析文本第324行。\n\n> 4）C1/C 2 技术平台。以甲醇为原料的单细胞蛋白已完成菌株开发、小试和机械搅拌罐 连续带放中试实验，现进一步开发新的配方以降本；同时，以甲醇为原料来生物合成小分 子化合物的研发也正在开展。以乙酸为发酵原料来生产单细胞蛋白和小分子的研发工作也 正按计划推进中。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### synthetic-biology-biomanufacturing-E-SB-COMP-688065-2025H1-221\n\n[凯赛生物2025年半年度报告](https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688065_20250816_HEM8.pdf)；2025-08-16；解析文本第221行。\n\n> (一) 主要业务、主要产品或服务情况 公司是一家以合成生物学等学科为基础，利用生物制造技术，从事新型生物基材料的研发、 生产及销售的高新技术企业，经过多年发展，公司已成为全球领先的利用生物制造规模化生产新 材料的企业之一。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### synthetic-biology-biomanufacturing-E-SB-COMP-688065-2025H1-335\n\n[凯赛生物2025年半年度报告](https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688065_20250816_HEM8.pdf)；2025-08-16；解析文本第335行。\n\n> 3、产业链优势 公司目前商业化产品主要聚焦聚酰胺产业链，包括为生物基聚酰胺及其单体生物法长链二元 酸和生物基戊二胺，是全球领先的利用生物制造规模化生产新型材料的企业之一。公司拥有从聚 酰胺单体（长链二元酸 /戊二胺）到聚酰胺再到聚酰胺改性复合材料的完整生产链条，核心原材料 由企业自主掌握。作为上海市合成生物产业协会副会长会员单位和上海市未来产业生物制造专家 委员会副主任委员单位，一方面，公司通过自主供应聚酰胺单体，能够确保聚酰胺产品的稳定供 应；另一方面，公司通过全产业链持续进行工艺优化，能够有效降低生产成本，提升产品品质， 保持自身产品竞争力优势。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n",
+      "sha256": "73e1694f405f59b8da0760dca7dedd38ff3282b82b839c432da13ba1e89186bf",
+      "tags": [
+        "synthetic-biology-biomanufacturing",
+        "companies"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:research",
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "title": "合成生物学与生物制造｜学术研究卡",
+      "sourceType": "research",
+      "text": "# 合成生物学与生物制造：学术研究卡\n\n书目与研究结论分开；metadata_only不进入专家证据检索。\n\n## Engineering Cellular Metabolism\n\nDOI：[10.1016/j.cell.2016.02.004](https://doi.org/10.1016/j.cell.2016.02.004)；2016-3；阅读：metadata_only。\n\n仅核实书目，尚未据此形成研究结论。\n\n适用边界：正文未阅读，不能用于支持具体技术结论。\n\n## A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging\n\nDOI：[10.35534/sbe.2023.10019](https://doi.org/10.35534/sbe.2023.10019)；2023；阅读：sections_reviewed。\n\n观点文章将滴度、生产强度、得率与微生物寿命、老化及过程稳定性联系起来，强调高密度细胞回用或固定化连续发酵的长期活性问题。\n\n适用边界：已读摘要及第1、3节相关段落；观点与所引案例并非对所有菌株的独立实验。市场规模预测未采纳为事实，案例放大状态不等于普遍量产。\n\n",
+      "sha256": "b2494d7a3eeb95cf0b479b5ac5b9a5aa2bc8e4b83c63d0db7c27e6f0a073fb47",
+      "tags": [
+        "synthetic-biology-biomanufacturing",
+        "research"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:patents",
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "title": "合成生物学与生物制造｜专利导航方法与缺口",
+      "sourceType": "ai_generated",
+      "text": "# 合成生物学与生物制造：专利导航深化\n\n本轮批量查询遭遇HTTP 500/503，未形成可验收的逐公司专利清单。以下是可复用检索与筛选计划，不是已完成的专利图谱。\n\n## synthetic-biology-biomanufacturing-Q1\n\n分类起点：C12N\n\n概念式：`(metabolic engineering OR engineered strain OR 代谢工程) AND (对应IPC/CPC分类)`\n\n筛选：菌株、序列、酶分别标注\n\n## synthetic-biology-biomanufacturing-Q2\n\n分类起点：C12P\n\n概念式：`(fermentation OR biosynthesis OR 生物合成) AND (对应IPC/CPC分类)`\n\n筛选：区分目标产物与下游用途\n\n## synthetic-biology-biomanufacturing-Q3\n\n分类起点：C12M\n\n概念式：`(bioreactor OR fermentation control OR 发酵控制) AND (对应IPC/CPC分类)`\n\n筛选：设备专利不自动证明菌种能力\n\n## 归并与统计\n\n申请人全称、历史名称与子公司关系分别核验；上市集团与科研院所不合并计数。公开申请和授权记录分别保存，法律有效性以官方登记为准。记录优先权、同族规则、去重键及排除理由。未完成全量检索前，不计算技术份额、增长趋势、引用中心性或空白区，也不作自由实施结论。\n",
+      "sha256": "a16229275cc2c9dc882d2203463a4b91b4b2012a6cb25fb85ed854b3425505e6",
+      "tags": [
+        "synthetic-biology-biomanufacturing",
+        "patents"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "industrial-machine-tools:core",
+      "industry_id": "industrial-machine-tools",
+      "title": "工业母机与高端数控｜技术原理与路线",
+      "sourceType": "ai_generated",
+      "text": "# 工业母机与高端数控：技术研究底座\n\n截至 2026-09-19。本说明为整理者综合分析，所列文献阅读范围分别披露；不是逐句均经文献认证的教科书。\n\n以金属切削机床、成形设备、数控系统、伺服、功能部件、刀具量仪及软件为范围。区分整机、控制器和零部件，不把五轴定位加工等同五轴联动。\n\n## 精度链从结构到工件\n\n机床结构、导轨、丝杠、轴承、伺服、反馈、刀具与工件装夹共同形成误差链。定位精度、重复定位、轮廓误差、工件尺寸和表面质量是不同指标。空载短时测量不能替代热稳态切削试验，编码器分辨率也不能直接写成整机加工精度。\n\n## 五轴联动的实际难点\n\n五轴涉及线性与旋转轴运动学、刀尖点控制RTCP、插补、奇异点和碰撞管理。3+2定位加工与同时五轴加工不同；自研数控系统、自研伺服与自制整机分别举证。比较国产替代应给出具体工件、材料、刀具、加工时间、精度及连续运行条件，而不是仅比较轴数。\n\n## 几何误差与热误差的区分\n\n几何标定用于识别轴线位置和姿态等误差，热误差随主轴、进给、环境和时间变化。补偿模型需核查训练与测试工况是否独立，对新速度、新负载、季节变化是否鲁棒。标定仪器的不确定度、坐标变换和测量路径影响结论，单次误差下降不能证明长期精度保持。\n\n## 切削过程限制名义性能\n\n主轴功率、扭矩和转速构成工作区，刀具—工件频响与切削系数影响再生颤振。高转速不等于高去除率，过度提高进给可能损害表面和刀具寿命。磨削还需关注烧伤、残余应力和表面完整性；刀具比较应固定材料、涂层、冷却和失效判据。\n\n## 产业化要看稳定服务能力\n\n整机销售、数控系统配套、功能部件外供和工艺服务应分列。样机验收与批量用户持续使用的证据不同。高端产品占比、关键部件采购依赖、维修响应、平均故障间隔与精度保持是评估路线的重要补充，订单或出货量不能单独替代技术性能证据。\n\n## 学术结果与专利检索\n\n研究优先阅读标定、热误差、颤振、插补和多轴运动控制，记录实验机型、测量设备、工件与独立验证。专利按机床结构、进给传动、控制算法、补偿与工艺分组。泛称“数控”的控制软件专利不能全部归为高端五轴，标题相似也不能证明权利要求覆盖同一实现。\n\n## 技术节点与可比指标\n\n|节点|范围/关键词|比较指标|\n|---|---|---|\n|高端数控机床|五轴、车铣复合、磨削、齿轮加工|按具体产品补证|\n|数控系统|控制器、实时系统、插补、智能数控|按具体产品补证|\n|伺服与驱动|伺服驱动、伺服电机|按具体产品补证|\n|主轴与转台|电主轴、转台、摆头|按具体产品补证|\n|功能部件|滚珠丝杠、导轨、轴承|按具体产品补证|\n|刀具与量仪|精密刀具、测量、在线检测|按具体产品补证|\n|工业软件|CAM、数字孪生、误差补偿、数据采集|按具体产品补证|\n|车削与车铣复合|车床、车削中心、多轴复合|圆度; 节拍; 精度保持|\n|成形机床|冲压、折弯、伺服压力机|重复精度; 能耗; 模具条件|\n|精密磨削|内外圆、齿轮、曲面磨削|表面完整性; 形貌; 粗糙度|\n|五轴联动|摆头、转台、RTCP、奇异点|轮廓精度; 联动误差|\n|热误差补偿|温度场、漂移、模型补偿|残余误差; 工况鲁棒性|\n|几何标定|激光干涉仪、球杆仪、R-test|体积误差; 测量不确定度|\n|颤振与过程稳定|频响、稳定叶瓣、切削力|极限切深; 刀具寿命|\n|滚珠丝杠与导轨|预紧、润滑、摩擦|反向间隙; 寿命; 刚度|\n|位置反馈|光栅尺、编码器、闭环|分辨率; 绝对精度; 带宽|\n|刀路与后处理|CAM、插补、前瞻、碰撞检查|节拍; 过切; 表面质量|\n|主轴轴承与动力学|高速主轴、动平衡、热伸长|转速; 扭矩; 振动; 热稳定|\n|工件与整机验收|切削试件、定位、重复定位|材料; 温度; 加工参数|\n\n## 学术来源与阅读范围\n\n- [Machine tool calibration: Measurement, modeling, and compensation of machine tool errors](https://doi.org/10.1016/j.ijmachtools.2023.104017)：metadata_only。正文未阅读，不能用于支持具体技术结论。\n- [Thermal issues in machine tools](https://doi.org/10.1016/j.cirp.2012.05.008)：metadata_only。正文未阅读，不能用于支持具体技术结论。\n- [Modeling and Compensation for Five-Axis Machine Tool Errors](https://doi.org/10.1115/imece1994-1134)：abstract_reviewed。历史方法样例；未阅读全文，不能用于代表当前性能上限。\n",
+      "sha256": "2702952e81f8a793f90a81aa8aa43718f83e8eb4c1ed928c035f4bcc187b0393",
+      "tags": [
+        "industrial-machine-tools",
+        "core"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "industrial-machine-tools:companies",
+      "industry_id": "industrial-machine-tools",
+      "title": "工业母机与高端数控｜上市公司证据",
+      "sourceType": "ai_generated",
+      "text": "# 工业母机与高端数控：公司技术证据与候选矩阵\n\n候选池不是完整上市公司名单；本轮不将缺少证据的公司升级。原有披露时点与当前经营状态不可混用。\n\n|代码|公司|技术节点|验证状态|原有阶段|\n|---|---|---|---|---|\n|300161|华中数控|cnc-system, servo, industrial-software|legacy_source_linked_not_reaudited|国产中高档数控系统规模应用/持续迭代|\n|000837|秦川机床|cnc-machine, tooling, linear-motion, cnc-system|legacy_source_linked_not_reaudited|核心机床+功能部件+高端产品产业化推进|\n|688305|科德数控|cnc-machine, cnc-system, servo|legacy_source_linked_not_reaudited|高端五轴等产品规模应用|\n|601882|海天精工|cnc-machine|candidate|待核验|\n|688697|纽威数控|cnc-machine|candidate|待核验|\n|688577|浙海德曼|cnc-lathe|candidate|待核验|\n|688558|国盛智科|cnc-machine|candidate|待核验|\n|002520|日发精机|cnc-machine|candidate|待核验|\n|000410|沈阳机床|cnc-machine|candidate|待核验|\n|002559|亚威股份|forming-machine|candidate|待核验|\n|300083|创世纪|cnc-machine|candidate|待核验|\n|002903|宇环数控|grinding-machine|candidate|待核验|\n|002248|华东数控|cnc-machine|candidate|待核验|\n|688308|欧科亿|tooling|candidate|待核验|\n|688059|华锐精密|tooling|candidate|待核验|\n\n## 本轮核查的来源摘录\n\n### industrial-machine-tools-E-IMT-COMP-300161-2025AR-350\n\n[华中数控2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-29/1225236346.PDF)；2026-04-29；解析文本第350行。\n\n> 公司作为国产中高档数控系统领域创新型企业，具备数控装置、伺服驱动、伺服电机全链条研发及 生产能力，经过多年发展，构建了深厚的技术壁垒与核心竞争优势。面向中高端制造市场，为五轴及以 上中高档数控机床、数控车床、车削中心、立式 /卧式加工中心、钻攻中心、各类专用机床等机型，提供 华中  8 型、 10  型高档数控系统；另一方面针对普及型数控车床、数控铣床等大众化应用场景，配套系列 化数控系统、伺服驱动及伺服电机。服务对象涵盖各类数控机床生产企业，并深度适配汽车制造、模具 加工、 3C  电子及高端重点等众多领域的加工需求，为其提供全方位数控系统配套及技术支持服务。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### industrial-machine-tools-E-IMT-COMP-000837-2024AR-3017\n\n[秦川机床2024年年度报告](https://static.cninfo.com.cn/finalpage/2025-04-15/1223095829.PDF)；2025-04-15；解析文本第3017行。\n\n> 依托陕西省智能机床创新中心，围绕“战略转型、产业升级、结构调整”的发展需要，聚焦“一个 核心三个领域”——即以数控系统为核心，以智能机床、智能制造、工业软件作为主攻的三个领域。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n",
+      "sha256": "4e92aab3e77286315da9fff6e7fafef7a764b138c86550f3df8d5b1884006cd5",
+      "tags": [
+        "industrial-machine-tools",
+        "companies"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "industrial-machine-tools:research",
+      "industry_id": "industrial-machine-tools",
+      "title": "工业母机与高端数控｜学术研究卡",
+      "sourceType": "research",
+      "text": "# 工业母机与高端数控：学术研究卡\n\n书目与研究结论分开；metadata_only不进入专家证据检索。\n\n## Machine tool calibration: Measurement, modeling, and compensation of machine tool errors\n\nDOI：[10.1016/j.ijmachtools.2023.104017](https://doi.org/10.1016/j.ijmachtools.2023.104017)；2023-4；阅读：metadata_only。\n\n仅核实书目，尚未据此形成研究结论。\n\n适用边界：正文未阅读，不能用于支持具体技术结论。\n\n## Thermal issues in machine tools\n\nDOI：[10.1016/j.cirp.2012.05.008](https://doi.org/10.1016/j.cirp.2012.05.008)；2012；阅读：metadata_only。\n\n仅核实书目，尚未据此形成研究结论。\n\n适用边界：正文未阅读，不能用于支持具体技术结论。\n\n## Modeling and Compensation for Five-Axis Machine Tool Errors\n\nDOI：[10.1115/imece1994-1134](https://doi.org/10.1115/imece1994-1134)；1994；阅读：abstract_reviewed。\n\n1994年会议论文提出五轴机床神经网络误差补偿，两阶段训练先用仿真、再用实际测量。摘要所述100μm至5μm是初步仿真可能结果，不能写成当前量产机床实测精度。\n\n适用边界：历史方法样例；未阅读全文，不能用于代表当前性能上限。\n\n",
+      "sha256": "1f0adad0590978436c817884d58817709f4c01caa8995c43ffa0c3363d320d81",
+      "tags": [
+        "industrial-machine-tools",
+        "research"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "industrial-machine-tools:patents",
+      "industry_id": "industrial-machine-tools",
+      "title": "工业母机与高端数控｜专利导航方法与缺口",
+      "sourceType": "ai_generated",
+      "text": "# 工业母机与高端数控：专利导航深化\n\n本轮批量查询遭遇HTTP 500/503，未形成可验收的逐公司专利清单。以下是可复用检索与筛选计划，不是已完成的专利图谱。\n\n## industrial-machine-tools-Q1\n\n分类起点：B23Q\n\n概念式：`(machine tool calibration OR thermal compensation OR 机床补偿) AND (对应IPC/CPC分类)`\n\n筛选：排除纯离线数值示例或标明仿真\n\n## industrial-machine-tools-Q2\n\n分类起点：G05B19\n\n概念式：`(CNC OR interpolation OR RTCP OR 数控插补) AND (对应IPC/CPC分类)`\n\n筛选：区分一般自动控制与机床\n\n## industrial-machine-tools-Q3\n\n分类起点：B23B, B23C, B24B\n\n概念式：`(turning OR milling OR grinding OR 车铣磨) AND (对应IPC/CPC分类)`\n\n筛选：按加工方法分别检索\n\n## 归并与统计\n\n申请人全称、历史名称与子公司关系分别核验；上市集团与科研院所不合并计数。公开申请和授权记录分别保存，法律有效性以官方登记为准。记录优先权、同族规则、去重键及排除理由。未完成全量检索前，不计算技术份额、增长趋势、引用中心性或空白区，也不作自由实施结论。\n",
+      "sha256": "57dc886a6cfa49085ded3b02663988f5257dd010abd00d8af0e72e4c2e12efd7",
+      "tags": [
+        "industrial-machine-tools",
+        "patents"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "smart-sensors-mems:core",
+      "industry_id": "smart-sensors-mems",
+      "title": "高端智能传感器与MEMS｜技术原理与路线",
+      "sourceType": "ai_generated",
+      "text": "# 高端智能传感器与MEMS：技术研究底座\n\n截至 2026-09-19。本说明为整理者综合分析，所列文献阅读范围分别披露；不是逐句均经文献认证的教科书。\n\n区分MEMS工艺平台、敏感元件、调理ASIC、封装校准、模组与系统。力、压力、惯性、声学、气体及红外分别建图；传统传感器不因小型化即称MEMS。\n\n## 测量链必须完整比较\n\n敏感元件把物理量转换为信号，调理电路、采样、校准、封装与算法决定最终输出。芯片、模组和系统的指标不能混用。分辨率、准确度、精密度、重复性、迟滞和漂移分别描述不同误差，比较前先统一量程、带宽、温度和供电条件。\n\n## 惯性器件看噪声与时间尺度\n\nMEMS陀螺依赖振动结构与科里奥利响应，模态匹配、真空度、正交误差和温度控制影响性能。零偏不稳定性、角随机游走、启动重复性和全温漂移不能互相替代。Allan方差得到的某一最优时间点指标不代表所有任务时长下的误差；IMU的系统表现还受轴间误差、安装和融合算法影响。\n\n## 气体与力觉有各自的失效机制\n\n电化学、半导体、催化和光学气体检测在选择性、功耗、寿命、湿度及交叉敏感方面存在权衡。六维力需要多轴标定与解耦，触觉阵列需要同时评估空间分辨、迟滞、串扰、耐久和覆盖曲面能力。单点灵敏度高不意味着整个阵列长期稳定，也不证明机器人控制性能提高。\n\n## MEMS工艺与封装不可分割\n\n微加工的深宽比、残余应力、释放和黏附影响器件一致性，封装应力、真空泄漏及材料热膨胀影响漂移与寿命。拥有晶圆线、采用外部代工和完成模组封装属于不同能力。公司所称IDM模式需要分项确认实际工艺、设计、封测边界，不能自动推断所有材料与设备自主。\n\n## 应用验证需要匹配环境\n\n消费、工业、汽车、医疗与航空的验证要求不同。获得质量管理体系认证不等于每个型号通过某个客户或场景验证；送样、设计导入、小批量及持续量产分开。汽车或机器人相关产品增长也不能用公司总收入替代。审阅学术样机时尤其注意实验室温湿度与真实污染、冲击、振动环境的差异。\n\n## 构建可推导的知识而非参数表\n\n研究卡保存敏感机理—结构—制程—封装—读出—校准—误差模型链条。专利按结构、制造、封装与补偿归类，并与公开论文的性能条件对齐。公司差异化只有在同口径产品或独立测量支持下才能成立；专利数量、单一峰值和营销形容词均不足以支持“领先”。\n\n## 技术节点与可比指标\n\n|节点|范围/关键词|比较指标|\n|---|---|---|\n|敏感材料|敏感膜、柔性材料、压阻/压电材料|按具体产品补证|\n|MEMS芯片|结构设计、MEMS工艺、ASIC协同|按具体产品补证|\n|封装与测试|晶圆级/器件封装、可靠性、标定|按具体产品补证|\n|力/压力传感|压力、应变、六维力、力矩|按具体产品补证|\n|惯性传感|陀螺、加速度计、IMU|按具体产品补证|\n|气体/化学传感|电化学、MOS、NDIR、PID|按具体产品补证|\n|柔性触觉|电子皮肤、柔性压力/应变|按具体产品补证|\n|多模态融合|传感融合、边缘计算、AI感知|按具体产品补证|\n|工业测量模组|状态监测、无线测量、工业协议|稳定性; 环境适应性|\n|红外探测|热电堆、热释电、微测辐射热计|噪声等效温差; 响应速度|\n|光学传感|光电探测、光谱、光学气体|检测限; 选择性; 光路稳定|\n|MEMS声学|电容麦克风、压电麦克风|信噪比; 声学过载; 功耗|\n|MEMS陀螺仪|科里奥利、模态匹配、闭环|零偏不稳定; 角随机游走|\n|MEMS加速度计|电容、压阻、谐振|噪声密度; 量程; 交叉轴|\n|读出与调理ASIC|电容读出、斩波、ADC|噪声; 功耗; 温漂|\n|微加工工艺|DRIE、SOI、表面/体硅加工|刻蚀一致性; 释放; 良率|\n|晶圆级封装|真空封装、键合、TSV|气密性; 封装应力; 成本|\n|校准与补偿|温度补偿、矩阵标定、老化|残差; 长期漂移; 批间差异|\n|气体敏感与抗干扰|催化、电化学、半导体、NDIR|选择性; 湿度; 寿命|\n|触觉阵列|压阻、电容、压电、解耦|迟滞; 串扰; 循环耐久|\n\n## 学术来源与阅读范围\n\n- [A sub-0.1°/h bias-instability MEMS gyroscope using resonant constant-frequency driving technique](https://doi.org/10.1109/sensors47087.2021.9639632)：abstract_reviewed。仅阅读公开摘要；未取得全温、长期老化、冲击或批次数据。此结果不能直接归属于芯动联科等上市公司，也不能证明量产级全环境指标。\n- [Multi-scale analysis of polysilicon MEMS sensors subject to accidental drops: Effect of packaging](https://doi.org/10.1016/j.microrel.2008.12.010)：metadata_only。正文未阅读，不能用于支持具体技术结论。\n",
+      "sha256": "8d82d9fce77479c87044537f1413a7254340da0da59226fdece1649cac4e2ea9",
+      "tags": [
+        "smart-sensors-mems",
+        "core"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "smart-sensors-mems:companies",
+      "industry_id": "smart-sensors-mems",
+      "title": "高端智能传感器与MEMS｜上市公司证据",
+      "sourceType": "ai_generated",
+      "text": "# 高端智能传感器与MEMS：公司技术证据与候选矩阵\n\n候选池不是完整上市公司名单；本轮不将缺少证据的公司升级。原有披露时点与当前经营状态不可混用。\n\n|代码|公司|技术节点|验证状态|原有阶段|\n|---|---|---|---|---|\n|300007|汉威科技|mems-chip, packaging, force-pressure, gas, flexible, inertial|legacy_source_linked_not_reaudited|多品类规模化+新型柔性/MEMS拓展|\n|688539|高华科技|force-pressure, packaging|legacy_source_linked_not_reaudited|高可靠/高精度传感器产业化|\n|688286|敏芯股份|mems-microphone, force-pressure, inertial|candidate|待核验|\n|002241|歌尔股份|mems-microphone|candidate|待核验|\n|300323|华灿光电|inertial|candidate|待核验|\n|688582|芯动联科|inertial|candidate|待核验|\n|301413|安培龙|force-pressure, force-pressure|candidate|待核验|\n|300354|东华测试|force-pressure|candidate|待核验|\n|688665|四方光电|gas|candidate|待核验|\n|300701|森霸传感|infrared|candidate|待核验|\n|300114|中航电测|force-pressure, force-pressure|candidate|待核验|\n|300667|必创科技|industrial-sensor|candidate|待核验|\n|300862|蓝盾光电|optical-sensor|candidate|待核验|\n|300112|万讯自控|industrial-sensor|candidate|待核验|\n\n## 本轮核查的来源摘录\n\n### smart-sensors-mems-E-SEN-COMP-300007-2025AR-152\n\n[汉威科技2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-18/1225118947.PDF)；2026-04-18；解析文本第152行。\n\n> 市场表现优异，销量实现稳步增长；同时在智能出行、智能穿戴等大消费领域，公司业务持续发力，继续保持高增长态 势；在人工智能领域，公司柔性传感电子皮肤入选 2025 年具身智能十大创新产品和技术，具身智能机器人相关电子皮肤 和触觉传感器等产品已小批量供货；公司持续深耕汽车电子领域相关产品，柔性传感器业务新增获得国际汽车行业认可 的 IATF 16949 认证，已具备“柔性+气体”传感车规产品的研发与生产能力，成功构建起“气体+柔性”两大车规级产品 体系，进一步巩固了公司在汽车传感供应链中的优势地位。嘉兴纳杰采用自有晶圆产线成熟 MEMS 制程的力敏应变片已向 国内六维力传感器客户送样，并在工业及智能汽车领域实现批量应用，市场需求和在手订单持续增长；IMU 惯性传感器 的性能指标满足人型机器人的技术要求，已向国内多家人型机器人企业送样，并获得少量订单。此外，苏州能斯达高标 准的工程技术中心和自动化产线已投入使用，在硬件方面进一步提升了公司在柔性感知领域的研发和生产能力，为公司 未来业务拓展和市场份额提升提供强有力的产能保障。未来，公司将继续深耕具身智能领域，推动传感器技术的创新与 应用，为智能机器人、智能制造等领域提供更高效、更精准的感知支持。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### smart-sensors-mems-E-SEN-COMP-300007-2025AR-154\n\n[汉威科技2025年年度报告](https://static.cninfo.com.cn/finalpage/2026-04-18/1225118947.PDF)；2026-04-18；解析文本第154行。\n\n> 报告期内，公司持续推进技术创新和产品升级，各业务领域取得重要进展。在气体传感器领域，燃气传感器、催化 传感器及红外光电传感器等产品的性能指标持续提升，关键参数接近国际先进水平，产品稳定性和可靠性得到显著增 强。在光学类产品方面，冷媒检测产品完成迭代升级并取得 UL、IEC 国际认证，为公司国际化布局与高端市场竞争奠定 坚实基础；激光甲烷产品成功构建了从核心器件到系统解决方案的完整链条，民用及工业场景产品实现批量交付；红外 甲烷传感器全面升级，低功耗红外甲烷传感器已进入规模化量产阶段。在 MEMS 传感器产品方面，公司通过优化自动化生 产工艺，实现产能和产品品质同步提升，其中，MEMS 酒精传感器完成优化并批量应用于消费电子市场，MEMS 湿度传感器 顺利进入冰箱等智能家电供应链。在家电领域，公司推出创新性宠物异味传感器，优化升级甲醛模组、空气盒子等产品 性能，并完成水质系列传感器的迭代升级，进一步强化了家电传感解决方案竞争优势。在汽车电子领域，公司持续加大 研发投入，拓展了多合一、压力、湿度传感器产品线，优化了空气质量传感器融合方案和仿生电子鼻解决方案，产品矩 阵日趋完善。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n### smart-sensors-mems-E-SEN-COMP-688539-2025H1-416\n\n[高华科技2025年半年度报告](https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-30/688539_20250830_2BSM.pdf)；2025-08-30；解析文本第416行。\n\n> （2）传感器网络系统 公司自主研发生产的传感器网络系统主要由多种传感器、采集器、网关、中继器、控制器等 硬件组成，同时嵌入了高华科技自主研发的系统软件。因此，传感器网络系统的销售形态为软件 与硬件相结合，具有实物销售形态。\n\n仅为来源披露/观点，不等于独立技术验证；不是原PDF页码，解析文本可能含断行。\n\n",
+      "sha256": "6af8909b33359b1e6a2fb152796aa25331e9b7daae539883c64fddb22038348e",
+      "tags": [
+        "smart-sensors-mems",
+        "companies"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "smart-sensors-mems:research",
+      "industry_id": "smart-sensors-mems",
+      "title": "高端智能传感器与MEMS｜学术研究卡",
+      "sourceType": "research",
+      "text": "# 高端智能传感器与MEMS：学术研究卡\n\n书目与研究结论分开；metadata_only不进入专家证据检索。\n\n## A sub-0.1°/h bias-instability MEMS gyroscope using resonant constant-frequency driving technique\n\nDOI：[10.1109/sensors47087.2021.9639632](https://doi.org/10.1109/sensors47087.2021.9639632)；2021-10-31；阅读：abstract_reviewed。\n\n会议论文摘要描述谐振恒频驱动与实时自动模态匹配；测试陀螺在给定结构和感测模态品质因数下报告零偏不稳定性0.09°/h、角随机游走0.0087°/√h。\n\n适用边界：仅阅读公开摘要；未取得全温、长期老化、冲击或批次数据。此结果不能直接归属于芯动联科等上市公司，也不能证明量产级全环境指标。\n\n## Multi-scale analysis of polysilicon MEMS sensors subject to accidental drops: Effect of packaging\n\nDOI：[10.1016/j.microrel.2008.12.010](https://doi.org/10.1016/j.microrel.2008.12.010)；2009-3；阅读：metadata_only。\n\n仅核实书目，尚未据此形成研究结论。\n\n适用边界：正文未阅读，不能用于支持具体技术结论。\n\n",
+      "sha256": "f3eb455a6a91e36d0d7d2762f5a78f2d7da3fd3ac4e0c1a93023bde12a35f4cc",
+      "tags": [
+        "smart-sensors-mems",
+        "research"
+      ],
+      "space_key": "technology-intelligence"
+    },
+    {
+      "logical_key": "smart-sensors-mems:patents",
+      "industry_id": "smart-sensors-mems",
+      "title": "高端智能传感器与MEMS｜专利导航方法与缺口",
+      "sourceType": "ai_generated",
+      "text": "# 高端智能传感器与MEMS：专利导航深化\n\n本轮批量查询遭遇HTTP 500/503，未形成可验收的逐公司专利清单。以下是可复用检索与筛选计划，不是已完成的专利图谱。\n\n## smart-sensors-mems-Q1\n\n分类起点：B81B, B81C\n\n概念式：`(MEMS OR micromachining OR wafer bonding) AND (对应IPC/CPC分类)`\n\n筛选：器件结构与制造工艺分组\n\n## smart-sensors-mems-Q2\n\n分类起点：G01C19\n\n概念式：`(MEMS gyroscope OR bias instability OR 陀螺) AND (对应IPC/CPC分类)`\n\n筛选：排除光纤/激光陀螺或作相邻路线\n\n## smart-sensors-mems-Q3\n\n分类起点：G01L, G01N\n\n概念式：`(pressure sensor OR gas sensor OR tactile array) AND (对应IPC/CPC分类)`\n\n筛选：按测量对象及机理二次筛选\n\n## 归并与统计\n\n申请人全称、历史名称与子公司关系分别核验；上市集团与科研院所不合并计数。公开申请和授权记录分别保存，法律有效性以官方登记为准。记录优先权、同族规则、去重键及排除理由。未完成全量检索前，不计算技术份额、增长趋势、引用中心性或空白区，也不作自由实施结论。\n",
+      "sha256": "09e3f6e7dd064f20d76a1356087a753d11adc38ba9dbd742045b04c24d484fc4",
+      "tags": [
+        "smart-sensors-mems",
+        "patents"
+      ],
+      "space_key": "technology-intelligence"
+    }
+  ],
+  "equipments": [
+    {
+      "logical_key": "commercial-space-satcom:core",
+      "name": "商业航天与卫星互联网｜技术原理与路线",
+      "type": "core_spec",
+      "slot": "core_spec",
+      "document_keys": [
+        "commercial-space-satcom:core"
+      ],
+      "expert_key": "industry-commercial-space-satcom",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "commercial-space-satcom:companies",
+      "name": "商业航天与卫星互联网｜上市公司证据",
+      "type": "product_capability",
+      "slot": "product_capability",
+      "document_keys": [
+        "commercial-space-satcom:companies"
+      ],
+      "expert_key": "industry-commercial-space-satcom",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "commercial-space-satcom:research",
+      "name": "商业航天与卫星互联网｜学术研究卡",
+      "type": "research",
+      "slot": "research",
+      "document_keys": [
+        "commercial-space-satcom:research"
+      ],
+      "expert_key": "industry-commercial-space-satcom",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "commercial-space-satcom:patents",
+      "name": "商业航天与卫星互联网｜专利导航方法与缺口",
+      "type": "supplement",
+      "slot": "supplement",
+      "document_keys": [
+        "commercial-space-satcom:patents"
+      ],
+      "expert_key": "industry-commercial-space-satcom",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "low-altitude-economy:core",
+      "name": "低空经济｜技术原理与路线",
+      "type": "core_spec",
+      "slot": "core_spec",
+      "document_keys": [
+        "low-altitude-economy:core"
+      ],
+      "expert_key": "industry-low-altitude-economy",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "low-altitude-economy:companies",
+      "name": "低空经济｜上市公司证据",
+      "type": "product_capability",
+      "slot": "product_capability",
+      "document_keys": [
+        "low-altitude-economy:companies"
+      ],
+      "expert_key": "industry-low-altitude-economy",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "low-altitude-economy:research",
+      "name": "低空经济｜学术研究卡",
+      "type": "research",
+      "slot": "research",
+      "document_keys": [
+        "low-altitude-economy:research"
+      ],
+      "expert_key": "industry-low-altitude-economy",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "low-altitude-economy:patents",
+      "name": "低空经济｜专利导航方法与缺口",
+      "type": "supplement",
+      "slot": "supplement",
+      "document_keys": [
+        "low-altitude-economy:patents"
+      ],
+      "expert_key": "industry-low-altitude-economy",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:core",
+      "name": "第三代/宽禁带半导体｜技术原理与路线",
+      "type": "core_spec",
+      "slot": "core_spec",
+      "document_keys": [
+        "wide-bandgap-semiconductor:core"
+      ],
+      "expert_key": "industry-wide-bandgap-semiconductor",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:companies",
+      "name": "第三代/宽禁带半导体｜上市公司证据",
+      "type": "product_capability",
+      "slot": "product_capability",
+      "document_keys": [
+        "wide-bandgap-semiconductor:companies"
+      ],
+      "expert_key": "industry-wide-bandgap-semiconductor",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:research",
+      "name": "第三代/宽禁带半导体｜学术研究卡",
+      "type": "research",
+      "slot": "research",
+      "document_keys": [
+        "wide-bandgap-semiconductor:research"
+      ],
+      "expert_key": "industry-wide-bandgap-semiconductor",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "wide-bandgap-semiconductor:patents",
+      "name": "第三代/宽禁带半导体｜专利导航方法与缺口",
+      "type": "supplement",
+      "slot": "supplement",
+      "document_keys": [
+        "wide-bandgap-semiconductor:patents"
+      ],
+      "expert_key": "industry-wide-bandgap-semiconductor",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "solid-state-battery:core",
+      "name": "固态电池与下一代电池材料｜技术原理与路线",
+      "type": "core_spec",
+      "slot": "core_spec",
+      "document_keys": [
+        "solid-state-battery:core"
+      ],
+      "expert_key": "industry-solid-state-battery",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "solid-state-battery:companies",
+      "name": "固态电池与下一代电池材料｜上市公司证据",
+      "type": "product_capability",
+      "slot": "product_capability",
+      "document_keys": [
+        "solid-state-battery:companies"
+      ],
+      "expert_key": "industry-solid-state-battery",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "solid-state-battery:research",
+      "name": "固态电池与下一代电池材料｜学术研究卡",
+      "type": "research",
+      "slot": "research",
+      "document_keys": [
+        "solid-state-battery:research"
+      ],
+      "expert_key": "industry-solid-state-battery",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "solid-state-battery:patents",
+      "name": "固态电池与下一代电池材料｜专利导航方法与缺口",
+      "type": "supplement",
+      "slot": "supplement",
+      "document_keys": [
+        "solid-state-battery:patents"
+      ],
+      "expert_key": "industry-solid-state-battery",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:core",
+      "name": "合成生物学与生物制造｜技术原理与路线",
+      "type": "core_spec",
+      "slot": "core_spec",
+      "document_keys": [
+        "synthetic-biology-biomanufacturing:core"
+      ],
+      "expert_key": "industry-synthetic-biology-biomanufacturing",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:companies",
+      "name": "合成生物学与生物制造｜上市公司证据",
+      "type": "product_capability",
+      "slot": "product_capability",
+      "document_keys": [
+        "synthetic-biology-biomanufacturing:companies"
+      ],
+      "expert_key": "industry-synthetic-biology-biomanufacturing",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:research",
+      "name": "合成生物学与生物制造｜学术研究卡",
+      "type": "research",
+      "slot": "research",
+      "document_keys": [
+        "synthetic-biology-biomanufacturing:research"
+      ],
+      "expert_key": "industry-synthetic-biology-biomanufacturing",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "synthetic-biology-biomanufacturing:patents",
+      "name": "合成生物学与生物制造｜专利导航方法与缺口",
+      "type": "supplement",
+      "slot": "supplement",
+      "document_keys": [
+        "synthetic-biology-biomanufacturing:patents"
+      ],
+      "expert_key": "industry-synthetic-biology-biomanufacturing",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "industrial-machine-tools:core",
+      "name": "工业母机与高端数控｜技术原理与路线",
+      "type": "core_spec",
+      "slot": "core_spec",
+      "document_keys": [
+        "industrial-machine-tools:core"
+      ],
+      "expert_key": "industry-industrial-machine-tools",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "industrial-machine-tools:companies",
+      "name": "工业母机与高端数控｜上市公司证据",
+      "type": "product_capability",
+      "slot": "product_capability",
+      "document_keys": [
+        "industrial-machine-tools:companies"
+      ],
+      "expert_key": "industry-industrial-machine-tools",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "industrial-machine-tools:research",
+      "name": "工业母机与高端数控｜学术研究卡",
+      "type": "research",
+      "slot": "research",
+      "document_keys": [
+        "industrial-machine-tools:research"
+      ],
+      "expert_key": "industry-industrial-machine-tools",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "industrial-machine-tools:patents",
+      "name": "工业母机与高端数控｜专利导航方法与缺口",
+      "type": "supplement",
+      "slot": "supplement",
+      "document_keys": [
+        "industrial-machine-tools:patents"
+      ],
+      "expert_key": "industry-industrial-machine-tools",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "smart-sensors-mems:core",
+      "name": "高端智能传感器与MEMS｜技术原理与路线",
+      "type": "core_spec",
+      "slot": "core_spec",
+      "document_keys": [
+        "smart-sensors-mems:core"
+      ],
+      "expert_key": "industry-smart-sensors-mems",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "smart-sensors-mems:companies",
+      "name": "高端智能传感器与MEMS｜上市公司证据",
+      "type": "product_capability",
+      "slot": "product_capability",
+      "document_keys": [
+        "smart-sensors-mems:companies"
+      ],
+      "expert_key": "industry-smart-sensors-mems",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "smart-sensors-mems:research",
+      "name": "高端智能传感器与MEMS｜学术研究卡",
+      "type": "research",
+      "slot": "research",
+      "document_keys": [
+        "smart-sensors-mems:research"
+      ],
+      "expert_key": "industry-smart-sensors-mems",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    },
+    {
+      "logical_key": "smart-sensors-mems:patents",
+      "name": "高端智能传感器与MEMS｜专利导航方法与缺口",
+      "type": "supplement",
+      "slot": "supplement",
+      "document_keys": [
+        "smart-sensors-mems:patents"
+      ],
+      "expert_key": "industry-smart-sensors-mems",
+      "applicableBusinessDomains": [
+        "industry_research"
+      ],
+      "applicableExpertCategories": [
+        "行业研究系列"
+      ],
+      "exportPolicy": "excerpt"
+    }
+  ],
+  "runtime_status": "prepared_not_imported"
+}

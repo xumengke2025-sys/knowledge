@@ -1,0 +1,4 @@
+interface:
+  display_name: "资料构建行业专家"
+  short_description: "将资料与学术研究适配行业专家、插件技能、知识库和知识装备，并分层验收"
+  default_prompt: "使用 $file-to-industry-expert 整理资料与学术研究，按目标系统现有契约准备或更新行业专家、插件技能及知识装备，并在本次授权范围内验证接入与专业推导。"

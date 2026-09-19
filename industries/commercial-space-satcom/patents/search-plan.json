@@ -1,0 +1,86 @@
+{
+  "industry_id": "commercial-space-satcom",
+  "as_of": "2026-09-19",
+  "queries": [
+    {
+      "query_id": "commercial-space-satcom-Q1",
+      "ipc_cpc_seed": [
+        "H04B7/185"
+      ],
+      "keywords": [
+        "satellite communication",
+        "non-terrestrial network",
+        "卫星通信"
+      ],
+      "conceptual_query": "(satellite communication OR non-terrestrial network OR 卫星通信) AND (对应IPC/CPC分类)",
+      "screening": "排除仅引用卫星作背景的地面网络",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "commercial-space-satcom-Q2",
+      "ipc_cpc_seed": [
+        "H01Q"
+      ],
+      "keywords": [
+        "phased array",
+        "beamforming",
+        "相控阵"
+      ],
+      "conceptual_query": "(phased array OR beamforming OR 相控阵) AND (对应IPC/CPC分类)",
+      "screening": "必须关联星载或卫星终端场景",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "commercial-space-satcom-Q3",
+      "ipc_cpc_seed": [
+        "B64G"
+      ],
+      "keywords": [
+        "spacecraft",
+        "reusable launch",
+        "航天器"
+      ],
+      "conceptual_query": "(spacecraft OR reusable launch OR 航天器) AND (对应IPC/CPC分类)",
+      "screening": "将运载与通信子库分别统计",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    }
+  ],
+  "scope": {
+    "jurisdiction": "CN first, international families as follow-up",
+    "publication_cutoff": "2026-09-19",
+    "unit": "publication initially; family grouping pending"
+  },
+  "attempts": [
+    {
+      "industry": "commercial-space-satcom",
+      "company_code": "300762",
+      "assignee_query": "上海瀚讯",
+      "keywords": "satellite",
+      "query_url": "https://patents.google.com/?q=(satellite)&assignee=上海瀚讯&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:23.104379+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "commercial-space-satcom",
+      "company_code": "600118",
+      "assignee_query": "中国空间技术研究院",
+      "keywords": "satellite",
+      "query_url": "https://patents.google.com/?q=(satellite)&assignee=中国空间技术研究院&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:23.107902+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "commercial-space-satcom",
+      "company_code": "688270",
+      "assignee_query": "臻镭",
+      "keywords": "radio frequency",
+      "query_url": "https://patents.google.com/?q=(radio frequency)&assignee=臻镭&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:23.106897+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "result": "批量检索失败；没有以失败结果推断专利不存在。"
+}

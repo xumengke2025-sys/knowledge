@@ -1,0 +1,72 @@
+{
+  "industry_id": "commercial-space-satcom",
+  "selection": "有目的的基础/机制样本，不是系统综述或最新文献全量覆盖。",
+  "papers": [
+    {
+      "id": "PAPER-7bae5aa365d7",
+      "doi": "10.1109/COMST.2020.3028247",
+      "title": "Satellite Communications in the New Space Era: A Survey and Future Challenges",
+      "authors": [
+        "Oltjon Kodheli",
+        "Eva Lagunas",
+        "Nicola Maturo",
+        "Shree Krishna Sharma",
+        "Bhavani Shankar",
+        "Jesus Fabian Mendoza Montoya",
+        "Juan Carlos Merlano Duncan",
+        "Danilo Spano",
+        "Symeon Chatzinotas",
+        "Steven Kisseleff",
+        "Jorge Querol",
+        "Lei Lei",
+        "Thang X. Vu",
+        "George Goussetis"
+      ],
+      "year": "2021",
+      "venue": [
+        "IEEE Communications Surveys &amp; Tutorials"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1109/COMST.2020.3028247",
+      "reading_status": "abstract_reviewed",
+      "summary": "综述从系统、空口、介质访问、网络及测试原型五个维度组织卫星通信研究，适合作为技术树的交叉检查框架。",
+      "limitations": "摘要层面；不是最新星座部署统计，也不证明某家上市公司的产品性能。",
+      "node_ids": [
+        "satcom-network"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.1109/COMST.2020.3028247",
+      "abstract_source": "https://openalex.org/W3089706104",
+      "quote": "Satellite communications (SatComs) have recently entered a period of renewed interest motivated by technological advances and nurtured through private investment and ventures. The present survey aims at capturing the state of the art in SatComs, while highlighting the",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "PAPER-0805106d2f0f",
+      "doi": "10.1109/mwc.003.2400195",
+      "title": "Enhancing LEO Mega-constellations with Inter-Satellite Links: Vision and Challenges",
+      "authors": [
+        "Chenyu Wu",
+        "Shuai Han",
+        "Qian Chen",
+        "Yu Wang",
+        "Weixiao Meng",
+        "Abderrahim Benslimane"
+      ],
+      "year": "2025-10",
+      "venue": [
+        "IEEE Wireless Communications"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1109/mwc.003.2400195",
+      "reading_status": "abstract_reviewed",
+      "summary": "文章讨论星间链路减少地面站依赖的潜力，并将系统设计、路由负载均衡与资源分配列为关键问题；包含机上连接的初步性能评价。",
+      "limitations": "未复核正文评价参数；不能将初步评价写成真实商业网络已实现的收益。",
+      "node_ids": [
+        "inter-satellite-link"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.1109/mwc.003.2400195",
+      "abstract_source": "https://openalex.org/W4410949446",
+      "quote": "Low earth orbit (LEO) satellites have been envisioned as a significant component of the sixth generation (6G) network architecture for achieving ubiquitous coverage and seamless access. However, the implementation of LEO satellites is largely restricted by the deployment",
+      "full_text_reviewed": false
+    }
+  ]
+}

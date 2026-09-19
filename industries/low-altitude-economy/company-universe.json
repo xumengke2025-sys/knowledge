@@ -18,7 +18,9 @@
         "LA-COMP-301091-2025AR"
       ],
       "summary": "公司年报将低空新基建、智能网联、低空运营纳入发展方向，并披露多地低空规划与基础设施相关业务。",
-      "caveat": "项目规划、建设交付和自营运营应分开统计。"
+      "caveat": "项目规划、建设交付和自营运营应分开统计。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "001696",
@@ -33,7 +35,9 @@
         "LA-COMP-001696-2025H1"
       ],
       "summary": "控股子公司宗申航发形成中小型航空活塞发动机产品线，并推进动力系统集成和适航认证。",
-      "caveat": "通航飞机与工业无人机的适航/客户要求不同，不能混用阶段。"
+      "caveat": "通航飞机与工业无人机的适航/客户要求不同，不能混用阶段。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "000099",
@@ -47,7 +51,9 @@
         "LA-COMP-000099-2024AR"
       ],
       "summary": "主营通航运营，并将应急救援、医疗救援、空中交通、物流运输视为低空经济的重要应用方向。",
-      "caveat": "运营企业与航空器制造企业的技术评价维度不同。"
+      "caveat": "运营企业与航空器制造企业的技术评价维度不同。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002085",
@@ -61,21 +67,23 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688631",
       "name": "莱斯信息",
       "exchange": "SSE STAR",
       "nodes": [
-        "air-traffic-management"
+        "traffic-management"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "000801",
@@ -89,7 +97,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "600038",
@@ -103,7 +112,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "600316",
@@ -117,7 +127,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688070",
@@ -131,7 +142,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002111",
@@ -145,7 +157,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300719",
@@ -159,21 +172,23 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300900",
       "name": "广联航空",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "airframe"
+        "aircraft"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002389",
@@ -187,7 +202,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688297",
@@ -201,7 +217,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "600990",
@@ -209,14 +226,15 @@
       "exchange": "SSE",
       "nodes": [
         "radar",
-        "air-traffic-management"
+        "traffic-management"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     }
   ],
   "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"

@@ -17,7 +17,9 @@
         "CS-COMP-300762-2025AR"
       ],
       "summary": "公司年报围绕卫星通信载荷、地面终端、低轨卫星互联网展开，强调商业航天高可靠与低成本并存的技术约束。",
-      "caveat": "具体星座批次、交付金额与客户集中度需按公告逐笔核验。"
+      "caveat": "具体星座批次、交付金额与客户集中度需按公告逐笔核验。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688270",
@@ -32,7 +34,9 @@
         "CS-COMP-688270-2025H1"
       ],
       "summary": "半年报覆盖射频收发芯片、电源管理芯片、T/R组件、射频微系统、抗辐照等技术，并将卫星互联网/卫星通信列为相关应用语境。",
-      "caveat": "需区分军工、卫星互联网及其他无线应用收入。"
+      "caveat": "需区分军工、卫星互联网及其他无线应用收入。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "600879",
@@ -48,28 +52,31 @@
         "CS-MKT-600879-2025"
       ],
       "summary": "上交所年报综述披露北斗卫星应用芯片项目通过验收，并突破激光链路在轨快速建链及稳链技术。",
-      "caveat": "交易所综述用于定位，详细产品与订单需回溯公司原始报告。"
+      "caveat": "交易所综述用于定位，详细产品与订单需回溯公司原始报告。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "600118",
       "name": "中国卫星",
       "exchange": "SSE",
       "nodes": [
-        "satellite-platform"
+        "satellite-manufacturing"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688523",
       "name": "航天环宇",
       "exchange": "SSE STAR",
       "nodes": [
-        "satellite-platform",
+        "satellite-manufacturing",
         "ground-test"
       ],
       "relevance_tier": "T3",
@@ -77,56 +84,60 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "001270",
       "name": "铖昌科技",
       "exchange": "SZSE",
       "nodes": [
-        "rf-chip"
+        "rf-chips"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688375",
       "name": "国博电子",
       "exchange": "SSE STAR",
       "nodes": [
-        "rf-chip"
+        "rf-chips"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688311",
       "name": "盟升电子",
       "exchange": "SSE STAR",
       "nodes": [
-        "terminal"
+        "ground-terminal"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300045",
       "name": "华力创通",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "terminal",
+        "ground-terminal",
         "navigation"
       ],
       "relevance_tier": "T3",
@@ -134,7 +145,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688568",
@@ -148,7 +160,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688066",
@@ -162,14 +175,15 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002465",
       "name": "海格通信",
       "exchange": "SZSE",
       "nodes": [
-        "terminal",
+        "ground-terminal",
         "navigation"
       ],
       "relevance_tier": "T3",
@@ -177,7 +191,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300101",
@@ -185,14 +200,15 @@
       "exchange": "SZSE ChiNext",
       "nodes": [
         "navigation",
-        "rf-chip"
+        "rf-chips"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300342",
@@ -206,14 +222,15 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002413",
       "name": "雷科防务",
       "exchange": "SZSE",
       "nodes": [
-        "rf-chip",
+        "rf-chips",
         "satellite-application"
       ],
       "relevance_tier": "T3",
@@ -221,7 +238,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     }
   ],
   "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"

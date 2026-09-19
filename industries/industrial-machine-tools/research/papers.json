@@ -1,0 +1,91 @@
+{
+  "industry_id": "industrial-machine-tools",
+  "selection": "有目的的基础/机制样本，不是系统综述或最新文献全量覆盖。",
+  "papers": [
+    {
+      "id": "PAPER-2b9b40c879e9",
+      "doi": "10.1016/j.ijmachtools.2023.104017",
+      "title": "Machine tool calibration: Measurement, modeling, and compensation of machine tool errors",
+      "authors": [
+        "Wei Gao",
+        "Soichi Ibaraki",
+        "M. Alkan Donmez",
+        "Daisuke Kono",
+        "J.R.R. Mayer",
+        "Yuan-Liu Chen",
+        "Károly Szipka",
+        "Andreas Archenti",
+        "Jean-Marc Linares",
+        "Norikazu Suzuki"
+      ],
+      "year": "2023-4",
+      "venue": [
+        "International Journal of Machine Tools and Manufacture"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1016/j.ijmachtools.2023.104017",
+      "reading_status": "metadata_only",
+      "summary": "仅核实书目，尚未据此形成研究结论。",
+      "limitations": "正文未阅读，不能用于支持具体技术结论。",
+      "node_ids": [],
+      "metadata_source": "https://api.crossref.org/works/10.1016/j.ijmachtools.2023.104017",
+      "abstract_source": null,
+      "quote": null,
+      "full_text_reviewed": false
+    },
+    {
+      "id": "PAPER-31c3ba4e5e7e",
+      "doi": "10.1016/j.cirp.2012.05.008",
+      "title": "Thermal issues in machine tools",
+      "authors": [
+        "Josef Mayr",
+        "Jerzy Jedrzejewski",
+        "Eckart Uhlmann",
+        "M. Alkan Donmez",
+        "Wolfgang Knapp",
+        "Frank Härtig",
+        "Klaus Wendt",
+        "Toshimichi Moriwaki",
+        "Paul Shore",
+        "Robert Schmitt",
+        "Christian Brecher",
+        "Timo Würz",
+        "Konrad Wegener"
+      ],
+      "year": "2012",
+      "venue": [
+        "CIRP Annals"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1016/j.cirp.2012.05.008",
+      "reading_status": "metadata_only",
+      "summary": "仅核实书目，尚未据此形成研究结论。",
+      "limitations": "正文未阅读，不能用于支持具体技术结论。",
+      "node_ids": [],
+      "metadata_source": "https://api.crossref.org/works/10.1016/j.cirp.2012.05.008",
+      "abstract_source": null,
+      "quote": null,
+      "full_text_reviewed": false
+    },
+    {
+      "id": "PAPER-284d9d82fbb4",
+      "doi": "10.1115/imece1994-1134",
+      "title": "Modeling and Compensation for Five-Axis Machine Tool Errors",
+      "authors": [
+        "S. C. Veldhuis",
+        "M. A. Elbestawi"
+      ],
+      "year": "1994",
+      "url": "https://doi.org/10.1115/imece1994-1134",
+      "publication_type": "proceedings-article",
+      "reading_status": "abstract_reviewed",
+      "summary": "1994年会议论文提出五轴机床神经网络误差补偿，两阶段训练先用仿真、再用实际测量。摘要所述100μm至5μm是初步仿真可能结果，不能写成当前量产机床实测精度。",
+      "limitations": "历史方法样例；未阅读全文，不能用于代表当前性能上限。",
+      "node_ids": [
+        "geometric-calibration"
+      ],
+      "quote": "Abstract A neural network based compensation strategy for five-axis machine tool error correction has been developed. It is capable of significantly reducing geometric, kinematic and thermal errors between the tool tip and the workpiece. The error prediction ability",
+      "full_text_reviewed": false
+    }
+  ]
+}

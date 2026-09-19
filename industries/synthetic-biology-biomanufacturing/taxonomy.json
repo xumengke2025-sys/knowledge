@@ -6,42 +6,251 @@
     {
       "id": "design",
       "name": "设计",
-      "description": "代谢网络、基因线路、计算生物学、AI设计"
+      "description": "代谢网络、基因线路、计算生物学、AI设计",
+      "parent_id": null
     },
     {
       "id": "build",
       "name": "构建",
-      "description": "基因编辑、DNA组装、底盘细胞/菌株构建"
+      "description": "基因编辑、DNA组装、底盘细胞/菌株构建",
+      "parent_id": null
     },
     {
       "id": "test",
       "name": "测试",
-      "description": "高通量筛选、组学、自动化实验"
+      "description": "高通量筛选、组学、自动化实验",
+      "parent_id": null
     },
     {
       "id": "learn",
       "name": "学习",
-      "description": "数据闭环、机器学习、模型优化"
+      "description": "数据闭环、机器学习、模型优化",
+      "parent_id": null
     },
     {
       "id": "fermentation",
       "name": "发酵与放大",
-      "description": "发酵工艺、过程控制、工程放大"
+      "description": "发酵工艺、过程控制、工程放大",
+      "parent_id": null
     },
     {
       "id": "separation",
       "name": "分离纯化",
-      "description": "提取、纯化、连续化工艺"
+      "description": "提取、纯化、连续化工艺",
+      "parent_id": null
     },
     {
       "id": "bio-based-chemicals",
       "name": "生物基化学品",
-      "description": "氨基酸、有机酸、二元酸等"
+      "description": "氨基酸、有机酸、二元酸等",
+      "parent_id": null
     },
     {
       "id": "bio-materials",
       "name": "生物基材料",
-      "description": "聚酰胺单体、生物基材料"
+      "description": "聚酰胺单体、生物基材料",
+      "parent_id": null
+    },
+    {
+      "id": "enzyme",
+      "parent_id": "build",
+      "name": "酶工程与生物催化",
+      "description": "定向进化、固定化、酶活",
+      "keywords": [
+        "定向进化",
+        "固定化",
+        "酶活"
+      ],
+      "comparison_metrics": [
+        "转化率",
+        "选择性",
+        "酶寿命"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "biopharma-fermentation",
+      "parent_id": "fermentation",
+      "name": "医药中间体发酵",
+      "description": "抗生素中间体、前体合成",
+      "keywords": [
+        "抗生素中间体",
+        "前体合成"
+      ],
+      "comparison_metrics": [
+        "杂质谱",
+        "效价",
+        "合规"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "vitamin-biomanufacturing",
+      "parent_id": "bio-based-chemicals",
+      "name": "维生素与营养品",
+      "description": "维生素、氨基酸、类胡萝卜素",
+      "keywords": [
+        "维生素",
+        "氨基酸",
+        "类胡萝卜素"
+      ],
+      "comparison_metrics": [
+        "纯度",
+        "批间一致性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "chassis",
+      "parent_id": "design",
+      "name": "底盘细胞",
+      "description": "大肠杆菌、酵母、谷氨酸棒杆菌",
+      "keywords": [
+        "大肠杆菌",
+        "酵母",
+        "谷氨酸棒杆菌"
+      ],
+      "comparison_metrics": [
+        "耐受性",
+        "遗传稳定性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "metabolic-model",
+      "parent_id": "design",
+      "name": "代谢模型与通量",
+      "description": "FBA、同位素示踪、组学",
+      "keywords": [
+        "FBA",
+        "同位素示踪",
+        "组学"
+      ],
+      "comparison_metrics": [
+        "预测误差",
+        "通量验证"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "gene-edit",
+      "parent_id": "build",
+      "name": "基因编辑与表达",
+      "description": "CRISPR、启动子、基因组整合",
+      "keywords": [
+        "CRISPR",
+        "启动子",
+        "基因组整合"
+      ],
+      "comparison_metrics": [
+        "编辑效率",
+        "表达稳定性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "screening",
+      "parent_id": "test",
+      "name": "高通量筛选",
+      "description": "微滴、自动化、表型筛选",
+      "keywords": [
+        "微滴",
+        "自动化",
+        "表型筛选"
+      ],
+      "comparison_metrics": [
+        "通量",
+        "假阳性",
+        "可重复性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "data-learning",
+      "parent_id": "learn",
+      "name": "数据与模型学习",
+      "description": "主动学习、蛋白设计、实验闭环",
+      "keywords": [
+        "主动学习",
+        "蛋白设计",
+        "实验闭环"
+      ],
+      "comparison_metrics": [
+        "外推误差",
+        "验证集"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "mass-transfer",
+      "parent_id": "fermentation",
+      "name": "传质与混合",
+      "description": "kLa、溶氧、剪切、补料",
+      "keywords": [
+        "kLa",
+        "溶氧",
+        "剪切",
+        "补料"
+      ],
+      "comparison_metrics": [
+        "氧转移",
+        "混合时间",
+        "产率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "downstream",
+      "parent_id": "separation",
+      "name": "下游工程",
+      "description": "膜分离、萃取、结晶、干燥",
+      "keywords": [
+        "膜分离",
+        "萃取",
+        "结晶",
+        "干燥"
+      ],
+      "comparison_metrics": [
+        "回收率",
+        "纯度",
+        "能耗"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "tea-lca",
+      "parent_id": "bio-materials",
+      "name": "经济与环境评价",
+      "description": "TEA、LCA、系统边界",
+      "keywords": [
+        "TEA",
+        "LCA",
+        "系统边界"
+      ],
+      "comparison_metrics": [
+        "最低售价",
+        "碳强度",
+        "敏感性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "scale-down",
+      "parent_id": "test",
+      "name": "缩小模型与稳健性",
+      "description": "梯度模拟、菌种稳定、污染控制",
+      "keywords": [
+        "梯度模拟",
+        "菌种稳定",
+        "污染控制"
+      ],
+      "comparison_metrics": [
+        "放大一致性",
+        "批次成功率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
     }
-  ]
+  ],
+  "scope": "覆盖DBTL、细胞工厂、酶催化、发酵放大、分离纯化和生物基产品。传统发酵与使用现代工程手段的合成生物路线分开标注，不能按“生物”名称归类。",
+  "schema_note": "扁平节点数组，以parent_id表达层级；研究用分类，不是官方分类标准。"
 }

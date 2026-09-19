@@ -1,0 +1,32 @@
+{
+  "industry_id": "wide-bandgap-semiconductor",
+  "selection": "有目的的基础/机制样本，不是系统综述或最新文献全量覆盖。",
+  "papers": [
+    {
+      "id": "PAPER-1064c4d1947b",
+      "doi": "10.1109/tpel.2017.2730260",
+      "title": "Characterisation and Modeling of Gallium Nitride Power Semiconductor Devices Dynamic On-State Resistance",
+      "authors": [
+        "Ke Li",
+        "Paul Leonard Evans",
+        "Christopher Mark Johnson"
+      ],
+      "year": "2018-6",
+      "venue": [
+        "IEEE Transactions on Power Electronics"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1109/tpel.2017.2730260",
+      "reading_status": "sections_reviewed",
+      "summary": "研究将GaN HEMT动态导通电阻与关态偏置电压、俘获和释放时间联系起来，使用测量电路与RC网络模型描述动态变化。公开正文包含20°C条件及不同商用器件测试，说明静态数据表不足以描述全部开关工况。",
+      "limitations": "已读摘要及测量、模型相关段落，未复算模型。结果限于器件和测试条件；不将文中一只SiC对照器件的表现推广为所有SiC器件不存在动态效应。",
+      "node_ids": [
+        "gan-hemt"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.1109/tpel.2017.2730260",
+      "abstract_source": "https://openalex.org/W2753630185",
+      "quote": "Gallium nitride high-electron-mobility transistors (GaN-HEMTs) suffer from trapping effects that increases device on-state resistance (RDS(on)) above its theoretical value. This increase is a function of the applied dc bias when the device is in its off state, and",
+      "full_text_reviewed": false
+    }
+  ]
+}

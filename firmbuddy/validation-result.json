@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "test_type": "actual_FirmBuddy_service_isolated_database",
+  "documents": 28,
+  "equipments": 28,
+  "experts": 7,
+  "pluginChecks": [
+    {
+      "industry": "commercial-space-satcom",
+      "query": "星间链路",
+      "hits": 1
+    },
+    {
+      "industry": "low-altitude-economy",
+      "query": "电芯",
+      "hits": 1
+    },
+    {
+      "industry": "wide-bandgap-semiconductor",
+      "query": "动态导通电阻",
+      "hits": 1
+    },
+    {
+      "industry": "solid-state-battery",
+      "query": "界面",
+      "hits": 3
+    },
+    {
+      "industry": "synthetic-biology-biomanufacturing",
+      "query": "发酵",
+      "hits": 4
+    },
+    {
+      "industry": "industrial-machine-tools",
+      "query": "仿真",
+      "hits": 1
+    },
+    {
+      "industry": "smart-sensors-mems",
+      "query": "零偏",
+      "hits": 1
+    }
+  ],
+  "knowledgeChecks": [
+    {
+      "industry": "commercial-space-satcom",
+      "query": "星间链路",
+      "hits": 3,
+      "citation": "KB:KD-mu8h00wi-e5y0:v1:KC-4dc085e81df2368580c1"
+    },
+    {
+      "industry": "low-altitude-economy",
+      "query": "电芯",
+      "hits": 3,
+      "citation": "KB:KD-mu8h00wv-o7my:v1:KC-d6e69f9b5f1ca941f79a"
+    },
+    {
+      "industry": "wide-bandgap-semiconductor",
+      "query": "动态导通电阻",
+      "hits": 3,
+      "citation": "KB:KD-mu8h00x9-7a88:v1:KC-004b03be3e845b922ba4"
+    },
+    {
+      "industry": "solid-state-battery",
+      "query": "界面",
+      "hits": 6,
+      "citation": "KB:KD-mu8h00xm-qjtt:v1:KC-63a1e7290795ea9458c8"
+    },
+    {
+      "industry": "synthetic-biology-biomanufacturing",
+      "query": "发酵",
+      "hits": 6,
+      "citation": "KB:KD-mu8h00y0-47nl:v1:KC-e46c4fc85fa3050200ad"
+    },
+    {
+      "industry": "industrial-machine-tools",
+      "query": "仿真",
+      "hits": 2,
+      "citation": "KB:KD-mu8h00yi-8y57:v1:KC-c5e533cd76013b3a3248"
+    },
+    {
+      "industry": "smart-sensors-mems",
+      "query": "零偏",
+      "hits": 3,
+      "citation": "KB:KD-mu8h00yp-tpfv:v1:KC-965d938d617857c93467"
+    }
+  ],
+  "idempotency": "passed",
+  "document_equipment_upgrade": "passed",
+  "historical_chunks": "retained",
+  "cas_conflict": "rejected",
+  "live_llm_answers": "not_run",
+  "production_import": "not_run"
+}

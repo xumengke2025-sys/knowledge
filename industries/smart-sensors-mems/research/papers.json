@@ -1,0 +1,60 @@
+{
+  "industry_id": "smart-sensors-mems",
+  "selection": "有目的的基础/机制样本，不是系统综述或最新文献全量覆盖。",
+  "papers": [
+    {
+      "id": "PAPER-878908ba7da5",
+      "doi": "10.1109/sensors47087.2021.9639632",
+      "title": "A sub-0.1°/h bias-instability MEMS gyroscope using resonant constant-frequency driving technique",
+      "authors": [
+        "Haibin Wu",
+        "Xudong Zheng",
+        "Yaojie Shen",
+        "Xuetong Wang",
+        "Zhonghe Jin",
+        "Zhipeng Ma"
+      ],
+      "year": "2021-10-31",
+      "venue": [
+        "2021 IEEE Sensors"
+      ],
+      "publication_type": "proceedings-article",
+      "url": "https://doi.org/10.1109/sensors47087.2021.9639632",
+      "reading_status": "abstract_reviewed",
+      "summary": "会议论文摘要描述谐振恒频驱动与实时自动模态匹配；测试陀螺在给定结构和感测模态品质因数下报告零偏不稳定性0.09°/h、角随机游走0.0087°/√h。",
+      "limitations": "仅阅读公开摘要；未取得全温、长期老化、冲击或批次数据。此结果不能直接归属于芯动联科等上市公司，也不能证明量产级全环境指标。",
+      "node_ids": [
+        "gyro"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.1109/sensors47087.2021.9639632",
+      "abstract_source": "https://openalex.org/W4200531404",
+      "quote": "The work illustrates a resonant constant-frequency (RCF) driving technique used in a MEMS gyroscope which has linear frequency-tuning triangular capacitors. Differing from that conventional driving technique where the gyroscope excitation frequency is time-varying, the RCF strategy assures that",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "PAPER-f173c02b4709",
+      "doi": "10.1016/j.microrel.2008.12.010",
+      "title": "Multi-scale analysis of polysilicon MEMS sensors subject to accidental drops: Effect of packaging",
+      "authors": [
+        "Aldo Ghisi",
+        "Fabio Fachin",
+        "Stefano Mariani",
+        "Sarah Zerbini"
+      ],
+      "year": "2009-3",
+      "venue": [
+        "Microelectronics Reliability"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1016/j.microrel.2008.12.010",
+      "reading_status": "metadata_only",
+      "summary": "仅核实书目，尚未据此形成研究结论。",
+      "limitations": "正文未阅读，不能用于支持具体技术结论。",
+      "node_ids": [],
+      "metadata_source": "https://api.crossref.org/works/10.1016/j.microrel.2008.12.010",
+      "abstract_source": null,
+      "quote": null,
+      "full_text_reviewed": false
+    }
+  ]
+}

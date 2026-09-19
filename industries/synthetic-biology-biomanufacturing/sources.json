@@ -21,7 +21,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202401/688639_20240124_UR0V.pdf",
-      "note": "合成生物研发平台、生物制造技术体系、专利与专精特新小巨人信息。"
+      "note": "合成生物研发平台、生物制造技术体系、专利与专精特新小巨人信息。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "6da278c70b079649184ae7583637ec22ae96b5aa49ea31cd136c89b42b0d5994"
     },
     {
       "id": "SB-COMP-301301-2025H1",
@@ -31,7 +33,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224569248.PDF",
-      "note": "DBTL、高通量菌种选育、AI/计算生物学、工程放大。"
+      "note": "DBTL、高通量菌种选育、AI/计算生物学、工程放大。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "8af6898870748ef7c4b760e4dcfca24c0f5f900abc2583030f4d692008956b41"
     },
     {
       "id": "SB-COMP-688065-2025H1",
@@ -41,7 +45,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688065_20250816_HEM8.pdf",
-      "note": "生物制造、长链二元酸、生物基材料等。"
+      "note": "生物制造、长链二元酸、生物基材料等。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "1db81828b917bf6b0714b4b9d1efdfa88a2914f85ca9fdee44a096e15fea01f9"
     }
   ]
 }

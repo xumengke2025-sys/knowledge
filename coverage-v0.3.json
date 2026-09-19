@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-09-19",
+  "industries": [
+    {
+      "industry_id": "commercial-space-satcom",
+      "industry": "商业航天与卫星互联网",
+      "companies": 15,
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 2,
+      "papers_reviewed": 2,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
+    },
+    {
+      "industry_id": "low-altitude-economy",
+      "industry": "低空经济",
+      "companies": 15,
+      "nodes": 20,
+      "reviewed_excerpts": 5,
+      "papers": 2,
+      "papers_reviewed": 2,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
+    },
+    {
+      "industry_id": "wide-bandgap-semiconductor",
+      "industry": "第三代/宽禁带半导体",
+      "companies": 15,
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 1,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
+    },
+    {
+      "industry_id": "solid-state-battery",
+      "industry": "固态电池与下一代电池材料",
+      "companies": 15,
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 2,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
+    },
+    {
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "industry": "合成生物学与生物制造",
+      "companies": 15,
+      "nodes": 20,
+      "reviewed_excerpts": 5,
+      "papers": 2,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
+    },
+    {
+      "industry_id": "industrial-machine-tools",
+      "industry": "工业母机与高端数控",
+      "companies": 15,
+      "nodes": 19,
+      "reviewed_excerpts": 2,
+      "papers": 3,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
+    },
+    {
+      "industry_id": "smart-sensors-mems",
+      "industry": "高端智能传感器与MEMS",
+      "companies": 14,
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 2,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
+    }
+  ],
+  "limitations": [
+    "非全量公司或专利图谱",
+    "学术文献为有目的样本，未系统综述",
+    "旧事实卡保留但不自动视为本轮复核",
+    "未导入生产FirmBuddy，未运行LLM问答"
+  ]
+}

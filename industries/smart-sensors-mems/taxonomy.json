@@ -6,42 +6,254 @@
     {
       "id": "sensing-material",
       "name": "敏感材料",
-      "description": "敏感膜、柔性材料、压阻/压电材料"
+      "description": "敏感膜、柔性材料、压阻/压电材料",
+      "parent_id": null
     },
     {
       "id": "mems-chip",
       "name": "MEMS芯片",
-      "description": "结构设计、MEMS工艺、ASIC协同"
+      "description": "结构设计、MEMS工艺、ASIC协同",
+      "parent_id": null
     },
     {
       "id": "packaging",
       "name": "封装与测试",
-      "description": "晶圆级/器件封装、可靠性、标定"
+      "description": "晶圆级/器件封装、可靠性、标定",
+      "parent_id": null
     },
     {
       "id": "force-pressure",
       "name": "力/压力传感",
-      "description": "压力、应变、六维力、力矩"
+      "description": "压力、应变、六维力、力矩",
+      "parent_id": null
     },
     {
       "id": "inertial",
       "name": "惯性传感",
-      "description": "陀螺、加速度计、IMU"
+      "description": "陀螺、加速度计、IMU",
+      "parent_id": null
     },
     {
       "id": "gas",
       "name": "气体/化学传感",
-      "description": "电化学、MOS、NDIR、PID"
+      "description": "电化学、MOS、NDIR、PID",
+      "parent_id": null
     },
     {
       "id": "flexible",
       "name": "柔性触觉",
-      "description": "电子皮肤、柔性压力/应变"
+      "description": "电子皮肤、柔性压力/应变",
+      "parent_id": null
     },
     {
       "id": "sensor-fusion",
       "name": "多模态融合",
-      "description": "传感融合、边缘计算、AI感知"
+      "description": "传感融合、边缘计算、AI感知",
+      "parent_id": null
+    },
+    {
+      "id": "industrial-sensor",
+      "parent_id": "sensor-fusion",
+      "name": "工业测量模组",
+      "description": "状态监测、无线测量、工业协议",
+      "keywords": [
+        "状态监测",
+        "无线测量",
+        "工业协议"
+      ],
+      "comparison_metrics": [
+        "稳定性",
+        "环境适应性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "infrared",
+      "parent_id": "sensing-material",
+      "name": "红外探测",
+      "description": "热电堆、热释电、微测辐射热计",
+      "keywords": [
+        "热电堆",
+        "热释电",
+        "微测辐射热计"
+      ],
+      "comparison_metrics": [
+        "噪声等效温差",
+        "响应速度"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "optical-sensor",
+      "parent_id": "sensing-material",
+      "name": "光学传感",
+      "description": "光电探测、光谱、光学气体",
+      "keywords": [
+        "光电探测",
+        "光谱",
+        "光学气体"
+      ],
+      "comparison_metrics": [
+        "检测限",
+        "选择性",
+        "光路稳定"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "mems-microphone",
+      "parent_id": "mems-chip",
+      "name": "MEMS声学",
+      "description": "电容麦克风、压电麦克风",
+      "keywords": [
+        "电容麦克风",
+        "压电麦克风"
+      ],
+      "comparison_metrics": [
+        "信噪比",
+        "声学过载",
+        "功耗"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "gyro",
+      "parent_id": "inertial",
+      "name": "MEMS陀螺仪",
+      "description": "科里奥利、模态匹配、闭环",
+      "keywords": [
+        "科里奥利",
+        "模态匹配",
+        "闭环"
+      ],
+      "comparison_metrics": [
+        "零偏不稳定",
+        "角随机游走"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "accelerometer",
+      "parent_id": "inertial",
+      "name": "MEMS加速度计",
+      "description": "电容、压阻、谐振",
+      "keywords": [
+        "电容",
+        "压阻",
+        "谐振"
+      ],
+      "comparison_metrics": [
+        "噪声密度",
+        "量程",
+        "交叉轴"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "asic",
+      "parent_id": "mems-chip",
+      "name": "读出与调理ASIC",
+      "description": "电容读出、斩波、ADC",
+      "keywords": [
+        "电容读出",
+        "斩波",
+        "ADC"
+      ],
+      "comparison_metrics": [
+        "噪声",
+        "功耗",
+        "温漂"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "micromachining",
+      "parent_id": "mems-chip",
+      "name": "微加工工艺",
+      "description": "DRIE、SOI、表面/体硅加工",
+      "keywords": [
+        "DRIE",
+        "SOI",
+        "表面/体硅加工"
+      ],
+      "comparison_metrics": [
+        "刻蚀一致性",
+        "释放",
+        "良率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "wafer-package",
+      "parent_id": "packaging",
+      "name": "晶圆级封装",
+      "description": "真空封装、键合、TSV",
+      "keywords": [
+        "真空封装",
+        "键合",
+        "TSV"
+      ],
+      "comparison_metrics": [
+        "气密性",
+        "封装应力",
+        "成本"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "calibration",
+      "parent_id": "packaging",
+      "name": "校准与补偿",
+      "description": "温度补偿、矩阵标定、老化",
+      "keywords": [
+        "温度补偿",
+        "矩阵标定",
+        "老化"
+      ],
+      "comparison_metrics": [
+        "残差",
+        "长期漂移",
+        "批间差异"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "gas-selectivity",
+      "parent_id": "gas",
+      "name": "气体敏感与抗干扰",
+      "description": "催化、电化学、半导体、NDIR",
+      "keywords": [
+        "催化",
+        "电化学",
+        "半导体",
+        "NDIR"
+      ],
+      "comparison_metrics": [
+        "选择性",
+        "湿度",
+        "寿命"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "tactile-array",
+      "parent_id": "flexible",
+      "name": "触觉阵列",
+      "description": "压阻、电容、压电、解耦",
+      "keywords": [
+        "压阻",
+        "电容",
+        "压电",
+        "解耦"
+      ],
+      "comparison_metrics": [
+        "迟滞",
+        "串扰",
+        "循环耐久"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
     }
-  ]
+  ],
+  "scope": "区分MEMS工艺平台、敏感元件、调理ASIC、封装校准、模组与系统。力、压力、惯性、声学、气体及红外分别建图；传统传感器不因小型化即称MEMS。",
+  "schema_note": "扁平节点数组，以parent_id表达层级；研究用分类，不是官方分类标准。"
 }

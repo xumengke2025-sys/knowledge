@@ -6,37 +6,261 @@
     {
       "id": "crystal-growth",
       "name": "晶体生长",
-      "description": "SiC/GaN晶体、长晶技术"
+      "description": "SiC/GaN晶体、长晶技术",
+      "parent_id": null
     },
     {
       "id": "substrate",
       "name": "衬底",
-      "description": "6/8/12英寸SiC衬底、GaN相关衬底"
+      "description": "6/8/12英寸SiC衬底、GaN相关衬底",
+      "parent_id": null
     },
     {
       "id": "epitaxy",
       "name": "外延",
-      "description": "SiC/GaN外延片与外延工艺"
+      "description": "SiC/GaN外延片与外延工艺",
+      "parent_id": null
     },
     {
       "id": "device",
       "name": "功率/射频器件",
-      "description": "SiC MOSFET、SBD、GaN HEMT"
+      "description": "SiC MOSFET、SBD、GaN HEMT",
+      "parent_id": null
     },
     {
       "id": "module",
       "name": "功率模块",
-      "description": "车规、工业、储能等功率模块"
+      "description": "车规、工业、储能等功率模块",
+      "parent_id": null
     },
     {
       "id": "equipment",
       "name": "制造装备",
-      "description": "长晶、切磨抛、外延、检测装备"
+      "description": "长晶、切磨抛、外延、检测装备",
+      "parent_id": null
     },
     {
       "id": "consumables",
       "name": "材料耗材",
-      "description": "高纯石墨、石英、陶瓷等"
+      "description": "高纯石墨、石英、陶瓷等",
+      "parent_id": null
+    },
+    {
+      "id": "test-equipment",
+      "parent_id": "equipment",
+      "name": "电学与缺陷检测",
+      "description": "晶圆测试、缺陷检测、可靠性测试",
+      "keywords": [
+        "晶圆测试",
+        "缺陷检测",
+        "可靠性测试"
+      ],
+      "comparison_metrics": [
+        "检测灵敏度",
+        "吞吐",
+        "覆盖率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "pvt",
+      "parent_id": "crystal-growth",
+      "name": "PVT升华长晶",
+      "description": "籽晶、温场、气相传输",
+      "keywords": [
+        "籽晶",
+        "温场",
+        "气相传输"
+      ],
+      "comparison_metrics": [
+        "位错密度",
+        "多型稳定",
+        "良率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "solution-growth",
+      "parent_id": "crystal-growth",
+      "name": "液相法长晶",
+      "description": "助熔剂、溶液生长",
+      "keywords": [
+        "助熔剂",
+        "溶液生长"
+      ],
+      "comparison_metrics": [
+        "缺陷",
+        "杂质",
+        "放大能力"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "wafer-processing",
+      "parent_id": "substrate",
+      "name": "切磨抛与表面处理",
+      "description": "切片、研磨、CMP、损伤去除",
+      "keywords": [
+        "切片",
+        "研磨",
+        "CMP",
+        "损伤去除"
+      ],
+      "comparison_metrics": [
+        "翘曲",
+        "厚度均匀性",
+        "粗糙度"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "conductive-sic",
+      "parent_id": "substrate",
+      "name": "导电SiC衬底",
+      "description": "n型、掺杂、功率器件",
+      "keywords": [
+        "n型",
+        "掺杂",
+        "功率器件"
+      ],
+      "comparison_metrics": [
+        "电阻率均匀性",
+        "基面位错"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "semi-insulating-sic",
+      "parent_id": "substrate",
+      "name": "半绝缘SiC衬底",
+      "description": "射频衬底、补偿",
+      "keywords": [
+        "射频衬底",
+        "补偿"
+      ],
+      "comparison_metrics": [
+        "电阻率",
+        "微波损耗"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "sic-epitaxy",
+      "parent_id": "epitaxy",
+      "name": "SiC同质外延",
+      "description": "CVD、掺杂、厚度控制",
+      "keywords": [
+        "CVD",
+        "掺杂",
+        "厚度控制"
+      ],
+      "comparison_metrics": [
+        "缺陷扩展",
+        "厚度与掺杂均匀性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "gan-epitaxy",
+      "parent_id": "epitaxy",
+      "name": "GaN异质外延",
+      "description": "GaN-on-Si、GaN-on-SiC",
+      "keywords": [
+        "GaN-on-Si",
+        "GaN-on-SiC"
+      ],
+      "comparison_metrics": [
+        "应力",
+        "位错",
+        "缓冲层漏电"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "sic-mosfet",
+      "parent_id": "device",
+      "name": "SiC MOSFET",
+      "description": "平面栅、沟槽栅、终端结构",
+      "keywords": [
+        "平面栅",
+        "沟槽栅",
+        "终端结构"
+      ],
+      "comparison_metrics": [
+        "比导通电阻",
+        "栅氧寿命",
+        "短路耐受"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "gan-hemt",
+      "parent_id": "device",
+      "name": "GaN HEMT",
+      "description": "p-GaN、MIS、级联",
+      "keywords": [
+        "p-GaN",
+        "MIS",
+        "级联"
+      ],
+      "comparison_metrics": [
+        "动态导通电阻",
+        "阈值稳定性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "schottky",
+      "parent_id": "device",
+      "name": "SiC肖特基二极管",
+      "description": "JBS、势垒、边缘终端",
+      "keywords": [
+        "JBS",
+        "势垒",
+        "边缘终端"
+      ],
+      "comparison_metrics": [
+        "漏电",
+        "正向压降",
+        "浪涌"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "advanced-package",
+      "parent_id": "module",
+      "name": "高温低寄生封装",
+      "description": "银烧结、双面散热、AMB",
+      "keywords": [
+        "银烧结",
+        "双面散热",
+        "AMB"
+      ],
+      "comparison_metrics": [
+        "热阻",
+        "寄生电感",
+        "功率循环"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "qualification",
+      "parent_id": "module",
+      "name": "应用与可靠性验证",
+      "description": "车规验证、栅偏压、温湿偏",
+      "keywords": [
+        "车规验证",
+        "栅偏压",
+        "温湿偏"
+      ],
+      "comparison_metrics": [
+        "样本数",
+        "应力条件",
+        "失效分布"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
     }
-  ]
+  ],
+  "scope": "以SiC功率器件和GaN功率/射频器件为主线，分别覆盖衬底、外延、器件、封装模块、装备和材料。硅基IGBT、LED业务作为相邻能力，不自动计入宽禁带收入。",
+  "schema_note": "扁平节点数组，以parent_id表达层级；研究用分类，不是官方分类标准。"
 }

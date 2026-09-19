@@ -6,37 +6,249 @@
     {
       "id": "cnc-machine",
       "name": "高端数控机床",
-      "description": "五轴、车铣复合、磨削、齿轮加工"
+      "description": "五轴、车铣复合、磨削、齿轮加工",
+      "parent_id": null
     },
     {
       "id": "cnc-system",
       "name": "数控系统",
-      "description": "控制器、实时系统、插补、智能数控"
+      "description": "控制器、实时系统、插补、智能数控",
+      "parent_id": null
     },
     {
       "id": "servo",
       "name": "伺服与驱动",
-      "description": "伺服驱动、伺服电机"
+      "description": "伺服驱动、伺服电机",
+      "parent_id": null
     },
     {
       "id": "spindle",
       "name": "主轴与转台",
-      "description": "电主轴、转台、摆头"
+      "description": "电主轴、转台、摆头",
+      "parent_id": null
     },
     {
       "id": "linear-motion",
       "name": "功能部件",
-      "description": "滚珠丝杠、导轨、轴承"
+      "description": "滚珠丝杠、导轨、轴承",
+      "parent_id": null
     },
     {
       "id": "tooling",
       "name": "刀具与量仪",
-      "description": "精密刀具、测量、在线检测"
+      "description": "精密刀具、测量、在线检测",
+      "parent_id": null
     },
     {
       "id": "industrial-software",
       "name": "工业软件",
-      "description": "CAM、数字孪生、误差补偿、数据采集"
+      "description": "CAM、数字孪生、误差补偿、数据采集",
+      "parent_id": null
+    },
+    {
+      "id": "cnc-lathe",
+      "parent_id": "cnc-machine",
+      "name": "车削与车铣复合",
+      "description": "车床、车削中心、多轴复合",
+      "keywords": [
+        "车床",
+        "车削中心",
+        "多轴复合"
+      ],
+      "comparison_metrics": [
+        "圆度",
+        "节拍",
+        "精度保持"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "forming-machine",
+      "parent_id": "cnc-machine",
+      "name": "成形机床",
+      "description": "冲压、折弯、伺服压力机",
+      "keywords": [
+        "冲压",
+        "折弯",
+        "伺服压力机"
+      ],
+      "comparison_metrics": [
+        "重复精度",
+        "能耗",
+        "模具条件"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "grinding-machine",
+      "parent_id": "cnc-machine",
+      "name": "精密磨削",
+      "description": "内外圆、齿轮、曲面磨削",
+      "keywords": [
+        "内外圆",
+        "齿轮",
+        "曲面磨削"
+      ],
+      "comparison_metrics": [
+        "表面完整性",
+        "形貌",
+        "粗糙度"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "five-axis",
+      "parent_id": "cnc-machine",
+      "name": "五轴联动",
+      "description": "摆头、转台、RTCP、奇异点",
+      "keywords": [
+        "摆头",
+        "转台",
+        "RTCP",
+        "奇异点"
+      ],
+      "comparison_metrics": [
+        "轮廓精度",
+        "联动误差"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "thermal-error",
+      "parent_id": "industrial-software",
+      "name": "热误差补偿",
+      "description": "温度场、漂移、模型补偿",
+      "keywords": [
+        "温度场",
+        "漂移",
+        "模型补偿"
+      ],
+      "comparison_metrics": [
+        "残余误差",
+        "工况鲁棒性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "geometric-calibration",
+      "parent_id": "tooling",
+      "name": "几何标定",
+      "description": "激光干涉仪、球杆仪、R-test",
+      "keywords": [
+        "激光干涉仪",
+        "球杆仪",
+        "R-test"
+      ],
+      "comparison_metrics": [
+        "体积误差",
+        "测量不确定度"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "chatter",
+      "parent_id": "industrial-software",
+      "name": "颤振与过程稳定",
+      "description": "频响、稳定叶瓣、切削力",
+      "keywords": [
+        "频响",
+        "稳定叶瓣",
+        "切削力"
+      ],
+      "comparison_metrics": [
+        "极限切深",
+        "刀具寿命"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "ball-screw",
+      "parent_id": "linear-motion",
+      "name": "滚珠丝杠与导轨",
+      "description": "预紧、润滑、摩擦",
+      "keywords": [
+        "预紧",
+        "润滑",
+        "摩擦"
+      ],
+      "comparison_metrics": [
+        "反向间隙",
+        "寿命",
+        "刚度"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "encoder",
+      "parent_id": "servo",
+      "name": "位置反馈",
+      "description": "光栅尺、编码器、闭环",
+      "keywords": [
+        "光栅尺",
+        "编码器",
+        "闭环"
+      ],
+      "comparison_metrics": [
+        "分辨率",
+        "绝对精度",
+        "带宽"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "cam",
+      "parent_id": "industrial-software",
+      "name": "刀路与后处理",
+      "description": "CAM、插补、前瞻、碰撞检查",
+      "keywords": [
+        "CAM",
+        "插补",
+        "前瞻",
+        "碰撞检查"
+      ],
+      "comparison_metrics": [
+        "节拍",
+        "过切",
+        "表面质量"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "spindle-bearing",
+      "parent_id": "spindle",
+      "name": "主轴轴承与动力学",
+      "description": "高速主轴、动平衡、热伸长",
+      "keywords": [
+        "高速主轴",
+        "动平衡",
+        "热伸长"
+      ],
+      "comparison_metrics": [
+        "转速",
+        "扭矩",
+        "振动",
+        "热稳定"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "acceptance",
+      "parent_id": "cnc-machine",
+      "name": "工件与整机验收",
+      "description": "切削试件、定位、重复定位",
+      "keywords": [
+        "切削试件",
+        "定位",
+        "重复定位"
+      ],
+      "comparison_metrics": [
+        "材料",
+        "温度",
+        "加工参数"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
     }
-  ]
+  ],
+  "scope": "以金属切削机床、成形设备、数控系统、伺服、功能部件、刀具量仪及软件为范围。区分整机、控制器和零部件，不把五轴定位加工等同五轴联动。",
+  "schema_note": "扁平节点数组，以parent_id表达层级；研究用分类，不是官方分类标准。"
 }

@@ -1,0 +1,86 @@
+{
+  "industry_id": "solid-state-battery",
+  "as_of": "2026-09-19",
+  "queries": [
+    {
+      "query_id": "solid-state-battery-Q1",
+      "ipc_cpc_seed": [
+        "H01M10/0562"
+      ],
+      "keywords": [
+        "solid electrolyte",
+        "all solid state",
+        "全固态"
+      ],
+      "conceptual_query": "(solid electrolyte OR all solid state OR 全固态) AND (对应IPC/CPC分类)",
+      "screening": "与凝胶、固液混合分别标记",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "solid-state-battery-Q2",
+      "ipc_cpc_seed": [
+        "H01M4"
+      ],
+      "keywords": [
+        "lithium metal",
+        "cathode coating",
+        "界面包覆"
+      ],
+      "conceptual_query": "(lithium metal OR cathode coating OR 界面包覆) AND (对应IPC/CPC分类)",
+      "screening": "必须关联固态电解质或固态电芯",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "solid-state-battery-Q3",
+      "ipc_cpc_seed": [
+        "H01M10"
+      ],
+      "keywords": [
+        "sulfide",
+        "oxide",
+        "halide electrolyte"
+      ],
+      "conceptual_query": "(sulfide OR oxide OR halide electrolyte) AND (对应IPC/CPC分类)",
+      "screening": "加入化学式同义词并去除纯液态体系",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    }
+  ],
+  "scope": {
+    "jurisdiction": "CN first, international families as follow-up",
+    "publication_cutoff": "2026-09-19",
+    "unit": "publication initially; family grouping pending"
+  },
+  "attempts": [
+    {
+      "industry": "solid-state-battery",
+      "company_code": "002074",
+      "assignee_query": "合肥国轩",
+      "keywords": "solid electrolyte",
+      "query_url": "https://patents.google.com/?q=(solid electrolyte)&assignee=合肥国轩&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:25.811110+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "solid-state-battery",
+      "company_code": "002460",
+      "assignee_query": "赣锋",
+      "keywords": "solid electrolyte",
+      "query_url": "https://patents.google.com/?q=(solid electrolyte)&assignee=赣锋&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:25.500027+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "solid-state-battery",
+      "company_code": "300750",
+      "assignee_query": "宁德时代",
+      "keywords": "solid electrolyte",
+      "query_url": "https://patents.google.com/?q=(solid electrolyte)&assignee=宁德时代&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:25.436379+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "result": "批量检索失败；没有以失败结果推断专利不存在。"
+}

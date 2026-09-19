@@ -19,7 +19,9 @@
         "SSB-COMP-002460-2025AR"
       ],
       "summary": "年报披露自研氧化物电解质、硫化物材料、固液电池以及面向低空等应用的电芯布局。",
-      "caveat": "不同电解质路线与不同电芯形态成熟度不一致，必须逐产品记录。"
+      "caveat": "不同电解质路线与不同电芯形态成熟度不一致，必须逐产品记录。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002074",
@@ -34,7 +36,9 @@
         "SSB-COMP-002074-2025AR"
       ],
       "summary": "2025年报披露将固态电池作为研发重点，并完成首条全固态电池中试线建设与投产。",
-      "caveat": "中试线投产不等于规模量产。"
+      "caveat": "中试线投产不等于规模量产。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300073",
@@ -51,14 +55,16 @@
         "SSB-COMP-300073-2025AR"
       ],
       "summary": "年报披露全固态用超高镍/富锂锰基材料20吨级以上批量供货，多款固态电解质进入头部客户批量验证。",
-      "caveat": "“材料供货”不能推定下游全固态电池已量产。"
+      "caveat": "“材料供货”不能推定下游全固态电池已量产。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300750",
       "name": "宁德时代",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "cell",
+        "cell-process",
         "solid-electrolyte"
       ],
       "relevance_tier": "T3",
@@ -66,49 +72,53 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300014",
       "name": "亿纬锂能",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "cell"
+        "cell-process"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300207",
       "name": "欣旺达",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "cell"
+        "cell-process"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688567",
       "name": "孚能科技",
       "exchange": "SSE STAR",
       "nodes": [
-        "cell"
+        "cell-process"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002812",
@@ -122,7 +132,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "603659",
@@ -137,7 +148,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688005",
@@ -151,7 +163,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "835185",
@@ -165,35 +178,38 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002709",
       "name": "天赐材料",
       "exchange": "SZSE",
       "nodes": [
-        "electrolyte"
+        "solid-electrolyte"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300037",
       "name": "新宙邦",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "electrolyte"
+        "solid-electrolyte"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300919",
@@ -207,7 +223,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688778",
@@ -221,7 +238,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     }
   ],
   "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"

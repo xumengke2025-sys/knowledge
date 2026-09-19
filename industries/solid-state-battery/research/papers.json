@@ -1,0 +1,57 @@
+{
+  "industry_id": "solid-state-battery",
+  "selection": "有目的的基础/机制样本，不是系统综述或最新文献全量覆盖。",
+  "papers": [
+    {
+      "id": "PAPER-f6f9a9ef910e",
+      "doi": "10.1038/nenergy.2016.141",
+      "title": "A solid future for battery development",
+      "authors": [
+        "Jürgen Janek",
+        "Wolfgang G. Zeier"
+      ],
+      "year": "2016-9-8",
+      "venue": [
+        "Nature Energy"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1038/nenergy.2016.141",
+      "reading_status": "metadata_only",
+      "summary": "仅核实书目，尚未据此形成研究结论。",
+      "limitations": "正文未阅读，不能用于支持具体技术结论。",
+      "node_ids": [],
+      "metadata_source": "https://api.crossref.org/works/10.1038/nenergy.2016.141",
+      "abstract_source": null,
+      "quote": null,
+      "full_text_reviewed": false
+    },
+    {
+      "id": "PAPER-f7ac83c94e69",
+      "doi": "10.1021/acs.chemrev.0c00101",
+      "title": "Interfaces and Interphases in All-Solid-State Batteries with Inorganic Solid Electrolytes",
+      "authors": [
+        "Abhik Banerjee",
+        "Xuefeng Wang",
+        "Chengcheng Fang",
+        "Erik A. Wu",
+        "Ying Shirley Meng"
+      ],
+      "year": "2020-6-30",
+      "venue": [
+        "Chemical Reviews"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1021/acs.chemrev.0c00101",
+      "reading_status": "abstract_reviewed",
+      "summary": "综述指出在已有高离子电导电解质的体系中，界面接触、晶界、化学和电化学反应等引起的阻抗可能限制效率、功率和循环。它强调界面组成、离子/电子性质、机械行为与表征的协同。",
+      "limitations": "仅通过OpenAlex重建并阅读摘要，出版社正文未取得；“瓶颈转向界面”不能推广为所有电解质的体相输运问题均已解决。",
+      "node_ids": [
+        "interface"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.1021/acs.chemrev.0c00101",
+      "abstract_source": "https://openalex.org/W3038591351",
+      "quote": "All-solid-state batteries (ASSBs) have attracted enormous attention as one of the critical future technologies for safe and high energy batteries. With the emergence of several highly conductive solid electrolytes in recent years, the bottleneck is no longer Li-ion",
+      "full_text_reviewed": false
+    }
+  ]
+}

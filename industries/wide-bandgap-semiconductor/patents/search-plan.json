@@ -1,0 +1,86 @@
+{
+  "industry_id": "wide-bandgap-semiconductor",
+  "as_of": "2026-09-19",
+  "queries": [
+    {
+      "query_id": "wide-bandgap-semiconductor-Q1",
+      "ipc_cpc_seed": [
+        "C30B"
+      ],
+      "keywords": [
+        "silicon carbide crystal growth",
+        "PVT",
+        "碳化硅长晶"
+      ],
+      "conceptual_query": "(silicon carbide crystal growth OR PVT OR 碳化硅长晶) AND (对应IPC/CPC分类)",
+      "screening": "区分粉料、单晶与外延",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "wide-bandgap-semiconductor-Q2",
+      "ipc_cpc_seed": [
+        "H01L29"
+      ],
+      "keywords": [
+        "SiC MOSFET",
+        "GaN HEMT",
+        "gate oxide"
+      ],
+      "conceptual_query": "(SiC MOSFET OR GaN HEMT OR gate oxide) AND (对应IPC/CPC分类)",
+      "screening": "历史分类与H10迁移并行",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    },
+    {
+      "query_id": "wide-bandgap-semiconductor-Q3",
+      "ipc_cpc_seed": [
+        "H01L21"
+      ],
+      "keywords": [
+        "SiC epitaxy",
+        "implantation",
+        "annealing"
+      ],
+      "conceptual_query": "(SiC epitaxy OR implantation OR annealing) AND (对应IPC/CPC分类)",
+      "screening": "工艺用途必须匹配材料体系",
+      "execution_status": "prepared_not_executed",
+      "classification_note": "起始分类需在目标数据库核查当前版本；不能直接当作数据库通用语法。"
+    }
+  ],
+  "scope": {
+    "jurisdiction": "CN first, international families as follow-up",
+    "publication_cutoff": "2026-09-19",
+    "unit": "publication initially; family grouping pending"
+  },
+  "attempts": [
+    {
+      "industry": "wide-bandgap-semiconductor",
+      "company_code": "300316",
+      "assignee_query": "浙江晶盛",
+      "keywords": "silicon carbide",
+      "query_url": "https://patents.google.com/?q=(silicon carbide)&assignee=浙江晶盛&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:25.085085+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "wide-bandgap-semiconductor",
+      "company_code": "600703",
+      "assignee_query": "湖南三安",
+      "keywords": "silicon carbide",
+      "query_url": "https://patents.google.com/?q=(silicon carbide)&assignee=湖南三安&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:37:25.435378+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "industry": "wide-bandgap-semiconductor",
+      "company_code": "688234",
+      "assignee_query": "Shandong Tianyue",
+      "keywords": "silicon carbide",
+      "query_url": "https://patents.google.com/?q=(silicon carbide)&assignee=Shandong Tianyue&country=CN&before=publication:20260920&num=5",
+      "retrieved_at": "2026-09-19T13:49:20.919769+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "result": "批量检索失败；没有以失败结果推断专利不存在。"
+}

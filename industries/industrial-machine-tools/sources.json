@@ -31,7 +31,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225236346.PDF",
-      "note": "华中10型、数控系统、伺服及创新平台；含专精特新子公司信息。"
+      "note": "华中10型、数控系统、伺服及创新平台；含专精特新子公司信息。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "f7d9555d632f4bba685ad908121e00e020d65e0d03bed9403451942343ffc45b"
     },
     {
       "id": "IMT-COMP-000837-2024AR",
@@ -41,7 +43,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2025-04-15/1223095829.PDF",
-      "note": "齿轮机床、五轴、刀具、机器人关节减速器、数控系统。"
+      "note": "齿轮机床、五轴、刀具、机器人关节减速器、数控系统。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "4b2d906745090848d84dca56f79daac40c07d9ed05651dddc1541ecd8ee91381"
     },
     {
       "id": "IMT-MKT-688305-2025",

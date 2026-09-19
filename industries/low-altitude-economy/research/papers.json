@@ -1,0 +1,58 @@
+{
+  "industry_id": "low-altitude-economy",
+  "selection": "有目的的基础/机制样本，不是系统综述或最新文献全量覆盖。",
+  "papers": [
+    {
+      "id": "PAPER-af73019c6997",
+      "doi": "10.1038/s41597-023-02180-5",
+      "title": "A battery dataset for electric vertical takeoff and landing aircraft",
+      "authors": [
+        "Alexander Bills",
+        "Shashank Sripad",
+        "Leif Fredericks",
+        "Matthew Guttenberg",
+        "Devin Charles",
+        "Evan Frank",
+        "Venkatasubramanian Viswanathan"
+      ],
+      "year": "2023-6-2",
+      "venue": [
+        "Scientific Data"
+      ],
+      "publication_type": "journal-article",
+      "url": "https://doi.org/10.1038/s41597-023-02180-5",
+      "reading_status": "sections_reviewed",
+      "summary": "研究提供22只电芯、合计21,392次充放电循环的eVTOL任务工况数据集。方法使用Sony-Murata VTC-6电芯，以高功率起飞、较低功率巡航和高功率着陆构造任务；以单变量方式改变功率、充电或冷却条件。",
+      "limitations": "已读摘要、背景与方法相关段落；没有下载并重新分析数据。单一电芯型号及有限样本，不能外推所有航空电池或直接支持适航结论。",
+      "node_ids": [
+        "battery"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.1038/s41597-023-02180-5",
+      "abstract_source": "https://openalex.org/W4379197289",
+      "quote": "Electric vertical takeoff and landing aircraft have a unique duty cycle characterized by high discharge currents at the beginning and end of the mission (corresponding to takeoff and landing of the aircraft) and a moderate power requirement between",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "PAPER-5ee7b957e5b5",
+      "doi": "10.20944/preprints202502.2173.v1",
+      "title": "A Review of Detect and Avoid Standards for Unmanned Aircraft Systems",
+      "authors": [
+        "Marcel Riedel"
+      ],
+      "year": "2025-2-27",
+      "venue": [],
+      "publication_type": "posted-content",
+      "url": "https://doi.org/10.20944/preprints202502.2173.v1",
+      "reading_status": "abstract_reviewed",
+      "summary": "预印本比较无人机探测与避让标准，区分保持安全间隔、碰撞规避、遭遇建模及系统/部件要求。",
+      "limitations": "2025-02-27的v1明确未同行评审；涉及国外标准的适用范围，不能当作中国民航现行强制要求。",
+      "node_ids": [
+        "detect-avoid"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.20944/preprints202502.2173.v1",
+      "abstract_source": "https://openalex.org/W4408087810",
+      "quote": "When operating an unmanned aircraft system within the specific category beyond Air Risk Class a or within the certified category, a detect and avoid system is required in order to mitigate the risk of colliding with manned aircraft.",
+      "full_text_reviewed": false
+    }
+  ]
+}

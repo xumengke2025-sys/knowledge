@@ -20,7 +20,9 @@
         "SEN-COMP-300007-2025AR"
       ],
       "summary": "公司产品覆盖气体、湿度、压力、流量、惯性、柔性等多类传感器，并布局MEMS与柔性电子。",
-      "caveat": "各传感器技术路线与下游市场完全不同，应按产品族拆分收入和成熟度。"
+      "caveat": "各传感器技术路线与下游市场完全不同，应按产品族拆分收入和成熟度。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688539",
@@ -35,7 +37,9 @@
         "SEN-COMP-688539-2025H1"
       ],
       "summary": "产品主要应用航天、航空、轨道交通、机械装备、能源等，对高可靠高精度要求较高。",
-      "caveat": "军用/航天场景与机器人消费场景的认证和成本结构差异很大。"
+      "caveat": "军用/航天场景与机器人消费场景的认证和成本结构差异很大。",
+      "verification_status": "legacy_source_linked_not_reaudited",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688286",
@@ -43,7 +47,7 @@
       "exchange": "SSE STAR",
       "nodes": [
         "mems-microphone",
-        "pressure",
+        "force-pressure",
         "inertial"
       ],
       "relevance_tier": "T3",
@@ -51,7 +55,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "002241",
@@ -65,7 +70,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300323",
@@ -79,7 +85,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688582",
@@ -93,50 +100,54 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "301413",
       "name": "安培龙",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "pressure",
-        "force"
+        "force-pressure",
+        "force-pressure"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300354",
       "name": "东华测试",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "force"
+        "force-pressure"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "688665",
       "name": "四方光电",
       "exchange": "SSE STAR",
       "nodes": [
-        "gas-sensor"
+        "gas"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300701",
@@ -150,22 +161,24 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300114",
       "name": "中航电测",
       "exchange": "SZSE ChiNext",
       "nodes": [
-        "force",
-        "weight"
+        "force-pressure",
+        "force-pressure"
       ],
       "relevance_tier": "T3",
       "verification_status": "candidate",
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300667",
@@ -179,7 +192,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300862",
@@ -193,7 +207,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     },
     {
       "code": "300112",
@@ -207,7 +222,8 @@
       "stage": "待核验",
       "evidence": [],
       "summary": "候选上市公司：基于产业链能力或公开市场线索进入核验池；在补足一手来源前不得作为确定事实训练。",
-      "caveat": "candidate 不等于已确认参与该行业。"
+      "caveat": "candidate 不等于已确认参与该行业。",
+      "verification_note": "公司节点为研究归类；candidate节点仅表示待核验方向。原有阶段未在本轮整体重新认证。"
     }
   ],
   "coverage_note": "Universe 分为 verified 与 candidate；candidate 只用于检索和补证，不直接作为专家事实。"

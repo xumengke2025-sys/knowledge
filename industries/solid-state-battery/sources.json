@@ -11,7 +11,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225059953.PDF",
-      "note": "氧化物/硫化物固体电解质、固液电池、电芯与应用。"
+      "note": "氧化物/硫化物固体电解质、固液电池、电芯与应用。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "3a76d5717483a4e3e556b5da40c45b8aa2b2ef5cce83473d59633875725236cd"
     },
     {
       "id": "SSB-COMP-002074-2025AR",
@@ -31,7 +33,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225057127.PDF",
-      "note": "全固态正极材料、固态电解质、批量供货/验证。"
+      "note": "全固态正极材料、固态电解质、批量供货/验证。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "d03d92cc83227d232255e3b3b04d0d2eb816d8a146c108a04bb024144f1725cf"
     }
   ]
 }

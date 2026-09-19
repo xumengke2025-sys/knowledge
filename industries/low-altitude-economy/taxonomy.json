@@ -6,37 +6,263 @@
     {
       "id": "aircraft",
       "name": "低空航空器",
-      "description": "无人机、eVTOL、通航飞机"
+      "description": "无人机、eVTOL、通航飞机",
+      "parent_id": null
     },
     {
       "id": "propulsion",
       "name": "航空动力",
-      "description": "活塞发动机、电推进、螺旋桨、热管理"
+      "description": "活塞发动机、电推进、螺旋桨、热管理",
+      "parent_id": null
     },
     {
       "id": "cnns",
       "name": "通导监",
-      "description": "通信、导航、监视、雷达、ADS-B"
+      "description": "通信、导航、监视、雷达、ADS-B",
+      "parent_id": null
     },
     {
       "id": "low-altitude-network",
       "name": "低空智联网",
-      "description": "5G/5G-A、卫星通信、多元融合感知"
+      "description": "5G/5G-A、卫星通信、多元融合感知",
+      "parent_id": null
     },
     {
       "id": "infrastructure",
       "name": "低空基础设施",
-      "description": "起降点、枢纽、测试基地、数字底座"
+      "description": "起降点、枢纽、测试基地、数字底座",
+      "parent_id": null
     },
     {
       "id": "traffic-management",
       "name": "低空交通管理",
-      "description": "空域、航路、飞行服务、UTM"
+      "description": "空域、航路、飞行服务、UTM",
+      "parent_id": null
     },
     {
       "id": "operations",
       "name": "运营与场景",
-      "description": "物流、医疗、应急、文旅、通航运营"
+      "description": "物流、医疗、应急、文旅、通航运营",
+      "parent_id": null
+    },
+    {
+      "id": "uav",
+      "parent_id": "aircraft",
+      "name": "工业无人机",
+      "description": "多旋翼、固定翼、垂直起降固定翼",
+      "keywords": [
+        "多旋翼",
+        "固定翼",
+        "垂直起降固定翼"
+      ],
+      "comparison_metrics": [
+        "有效载荷",
+        "续航",
+        "作业效率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "evtol",
+      "parent_id": "aircraft",
+      "name": "载人电动垂直起降",
+      "description": "多旋翼、复合翼、倾转旋翼",
+      "keywords": [
+        "多旋翼",
+        "复合翼",
+        "倾转旋翼"
+      ],
+      "comparison_metrics": [
+        "任务航程",
+        "备份能量",
+        "失效安全"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "avionics",
+      "parent_id": "cnns",
+      "name": "航电与飞控",
+      "description": "飞控计算机、余度控制、航姿系统",
+      "keywords": [
+        "飞控计算机",
+        "余度控制",
+        "航姿系统"
+      ],
+      "comparison_metrics": [
+        "完整性",
+        "故障检测覆盖"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "radar",
+      "parent_id": "cnns",
+      "name": "低空监视",
+      "description": "低慢小雷达、光电、ADS-B、多点定位",
+      "keywords": [
+        "低慢小雷达",
+        "光电",
+        "ADS-B",
+        "多点定位"
+      ],
+      "comparison_metrics": [
+        "探测概率",
+        "虚警率",
+        "盲区"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "ground-support",
+      "parent_id": "infrastructure",
+      "name": "地面保障",
+      "description": "消防、充换电、维修、地面测试",
+      "keywords": [
+        "消防",
+        "充换电",
+        "维修",
+        "地面测试"
+      ],
+      "comparison_metrics": [
+        "周转时间",
+        "故障处置能力"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "battery",
+      "parent_id": "propulsion",
+      "name": "航空电池",
+      "description": "高比能、高倍率、热失控防护",
+      "keywords": [
+        "高比能",
+        "高倍率",
+        "热失控防护"
+      ],
+      "comparison_metrics": [
+        "包级能量密度",
+        "寿命",
+        "低温功率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "electric-drive",
+      "parent_id": "propulsion",
+      "name": "电驱与螺旋桨",
+      "description": "电机、逆变器、变距桨",
+      "keywords": [
+        "电机",
+        "逆变器",
+        "变距桨"
+      ],
+      "comparison_metrics": [
+        "功重比",
+        "效率图",
+        "噪声"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "piston-engine",
+      "parent_id": "propulsion",
+      "name": "活塞与混合动力",
+      "description": "航空活塞发动机、增程",
+      "keywords": [
+        "航空活塞发动机",
+        "增程"
+      ],
+      "comparison_metrics": [
+        "耗油率",
+        "可靠性",
+        "适航范围"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "detect-avoid",
+      "parent_id": "traffic-management",
+      "name": "探测与避让",
+      "description": "DAA、冲突预测、航迹解脱",
+      "keywords": [
+        "DAA",
+        "冲突预测",
+        "航迹解脱"
+      ],
+      "comparison_metrics": [
+        "安全间隔",
+        "误警漏警"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "c2-link",
+      "parent_id": "cnns",
+      "name": "指挥控制链路",
+      "description": "C2、链路冗余、失链处置",
+      "keywords": [
+        "C2",
+        "链路冗余",
+        "失链处置"
+      ],
+      "comparison_metrics": [
+        "时延",
+        "覆盖",
+        "可用性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "airworthiness",
+      "parent_id": "aircraft",
+      "name": "适航与安全验证",
+      "description": "型号合格、生产许可、单机适航",
+      "keywords": [
+        "型号合格",
+        "生产许可",
+        "单机适航"
+      ],
+      "comparison_metrics": [
+        "审定对象",
+        "阶段",
+        "运行限制"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "weather",
+      "parent_id": "operations",
+      "name": "低空气象",
+      "description": "微尺度风场、阵风、结冰",
+      "keywords": [
+        "微尺度风场",
+        "阵风",
+        "结冰"
+      ],
+      "comparison_metrics": [
+        "可飞天气窗口",
+        "预警时效"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "vertiport",
+      "parent_id": "infrastructure",
+      "name": "起降场与航路",
+      "description": "净空、容量、地面风险",
+      "keywords": [
+        "净空",
+        "容量",
+        "地面风险"
+      ],
+      "comparison_metrics": [
+        "起降吞吐",
+        "应急备降覆盖"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
     }
-  ]
+  ],
+  "scope": "区分传统通航、工业无人机与载人eVTOL三类产品和运营体系。通导监、飞行服务、起降设施和零部件分别建图；军用无人机技术线索不自动等于民用低空商业化。",
+  "schema_note": "扁平节点数组，以parent_id表达层级；研究用分类，不是官方分类标准。"
 }

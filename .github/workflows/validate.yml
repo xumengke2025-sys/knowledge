@@ -16,3 +16,5 @@ jobs:
           python-version: '3.12'
       - name: Run repository quality gates
         run: python scripts/validate.py
+      - name: Validate seven-industry evidence and import bundle
+        run: python scripts/validate-upgrade.py

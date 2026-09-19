@@ -1,0 +1,252 @@
+[
+  {
+    "industry": "commercial-space-satcom",
+    "source_id": "CS-POL-001",
+    "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2025/art_e4f6b24e18b74a56bf60f6fcb78ef568.html",
+    "retrieval_url": "https://r.jina.ai/https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2025/art_e4f6b24e18b74a56bf60f6fcb78ef568.html",
+    "bytes": 10380,
+    "sha256": "23991682aef356c3e87d7c41a524ea2bbd64b04e8bcb459d421da0a361352d0f",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "commercial-space-satcom",
+    "source_id": "CS-POL-002",
+    "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20251226_10803077.shtml",
+    "retrieval_url": "https://r.jina.ai/https://big5.sse.com.cn/site/cht/www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20251226_10803077.shtml",
+    "bytes": 13383,
+    "sha256": "07233c5a20140e61b03458e72d546a767d3bda80ce6f5a38cffd63e8f406439a",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "commercial-space-satcom",
+    "source_id": "CS-COMP-300762-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225205348.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2026-04-28/1225205348.PDF",
+    "bytes": 395055,
+    "sha256": "b0842242f7351989fe6d2bf072dd4781a00c97dadd8155cd42e30e3cbf297d93",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "commercial-space-satcom",
+    "source_id": "CS-COMP-688270-2025H1",
+    "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-13/688270_20250813_Z35W.pdf",
+    "retrieval_url": "https://r.jina.ai/https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-13/688270_20250813_Z35W.pdf",
+    "bytes": 291165,
+    "sha256": "e6fff4fdf4ed36fe41f514406734ccd8456fccedc0355f4ba812f82ee3c812f3",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "commercial-space-satcom",
+    "source_id": "CS-MKT-600879-2025",
+    "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260430_10817333.shtml",
+    "retrieval_url": "https://r.jina.ai/https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260430_10817333.shtml",
+    "bytes": 14909,
+    "sha256": "65e84459478f48a78114b38a595acf4257bd3a1100dbed3788028cc1a4e9b1c4",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "industrial-machine-tools",
+    "source_id": "IMT-POL-001",
+    "url": "https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2025/art_e3ce3beceebe4e73bea38e97d2cd570c.html",
+    "retrieval_url": "https://r.jina.ai/https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2025/art_e3ce3beceebe4e73bea38e97d2cd570c.html",
+    "bytes": 16372,
+    "sha256": "76490c25fcac8013520dd351f3e15ffb7c9be6f399008924ebb791dd1deba2e1",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "industrial-machine-tools",
+    "source_id": "IMT-POL-002",
+    "url": "https://www.miit.gov.cn/jgsj/zbys/wjfb/art/2026/art_c1f820627d654bdabcf98487d4ce4b38.html",
+    "retrieval_url": "https://r.jina.ai/https://www.miit.gov.cn/jgsj/zbys/wjfb/art/2026/art_c1f820627d654bdabcf98487d4ce4b38.html",
+    "bytes": 4769,
+    "sha256": "f8f688ebccf307ead775b316c6894b553ff0467cefab06695554181118713b6e",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "industrial-machine-tools",
+    "source_id": "IMT-COMP-300161-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225236346.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2026-04-29/1225236346.PDF",
+    "bytes": 515225,
+    "sha256": "f7d9555d632f4bba685ad908121e00e020d65e0d03bed9403451942343ffc45b",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "industrial-machine-tools",
+    "source_id": "IMT-COMP-000837-2024AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-04-15/1223095829.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2025-04-15/1223095829.PDF",
+    "bytes": 475587,
+    "sha256": "4b2d906745090848d84dca56f79daac40c07d9ed05651dddc1541ecd8ee91381",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "industrial-machine-tools",
+    "source_id": "IMT-MKT-688305-2025",
+    "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260430_10817331.shtml",
+    "retrieval_url": "https://r.jina.ai/https://big5.sse.com.cn/site/cht/www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260430_10817331.shtml",
+    "bytes": 23205,
+    "sha256": "7c546585a6b6d5ce66fcc1cdab199149f000a58b9517fad74299c00d0a31a7f1",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "low-altitude-economy",
+    "source_id": "LA-POL-001",
+    "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/yj/art/2026/art_d1cb1667897e4c999a303d110b6691dc.html",
+    "retrieval_url": "https://r.jina.ai/https://www.miit.gov.cn/zwgk/zcwj/wjfb/yj/art/2026/art_d1cb1667897e4c999a303d110b6691dc.html",
+    "bytes": 8508,
+    "sha256": "7cb59be433b487c35560943ca79ddd145054a3b407d5478b2eb5e9af63d767f3",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "low-altitude-economy",
+    "source_id": "LA-COMP-301091-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-04-24/1225172005.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2026-04-24/1225172005.PDF",
+    "bytes": 474626,
+    "sha256": "242138c735bc729a839dcd15fa00bfb5721135fe2ab934bfca38f21a9fd09a1c",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "low-altitude-economy",
+    "source_id": "LA-COMP-001696-2025H1",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224565164.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2025-08-26/1224565164.PDF",
+    "bytes": 350176,
+    "sha256": "edd115f95d1f20ca360451d845100a8b0ef9bb200b91d25ac5d90fb2c5351953",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "low-altitude-economy",
+    "source_id": "LA-COMP-000099-2024AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-03-18/1222821612.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2025-03-18/1222821612.PDF",
+    "bytes": 397380,
+    "sha256": "37cdf9b703c9fd2a93ee96b2be6f55dc49d776a9b6111ac051a4a78944be413a",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "smart-sensors-mems",
+    "source_id": "SEN-POL-001",
+    "url": "https://www.miit.gov.cn/gyhxxhb/jgsj/gxjss/gzdt/art/2025/art_3e12635bcb8142be9816179bc225c442.html",
+    "retrieval_url": "https://r.jina.ai/https://www.miit.gov.cn/gyhxxhb/jgsj/gxjss/gzdt/art/2025/art_3e12635bcb8142be9816179bc225c442.html",
+    "bytes": 1443,
+    "sha256": "7a450af59e080aa341f5f120fcbc94f35cd1ec574426b56730c87ca7b19f2647",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "smart-sensors-mems",
+    "source_id": "SEN-POL-002",
+    "url": "https://nmca.miit.gov.cn/zwgk/zcwj/zcjd/art/2026/art_b39c514e3c0345f0aad01630dea29587.html",
+    "retrieval_url": "https://r.jina.ai/https://nmca.miit.gov.cn/zwgk/zcwj/zcjd/art/2026/art_b39c514e3c0345f0aad01630dea29587.html",
+    "bytes": 5788,
+    "sha256": "be45157e466547140c0c79b343e53e7199c14b620be3450d52dcaef45eb229a0",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "smart-sensors-mems",
+    "source_id": "SEN-COMP-300007-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225118947.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2026-04-18/1225118947.PDF",
+    "bytes": 554938,
+    "sha256": "c144feea3f801bdfdf4f5ad3d27d3efc7b2afed79bbdab83f132084c2e7dcd5b",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "smart-sensors-mems",
+    "source_id": "SEN-COMP-688539-2025H1",
+    "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-30/688539_20250830_2BSM.pdf",
+    "retrieval_url": "https://r.jina.ai/https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-30/688539_20250830_2BSM.pdf",
+    "bytes": 446241,
+    "sha256": "a6233b504f4e5e2b1bf116fd33a02e9f76cdce3a506cb556736a5fda6590f59b",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "solid-state-battery",
+    "source_id": "SSB-COMP-002460-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225059953.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2026-03-31/1225059953.PDF",
+    "bytes": 620163,
+    "sha256": "3a76d5717483a4e3e556b5da40c45b8aa2b2ef5cce83473d59633875725236cd",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "solid-state-battery",
+    "source_id": "SSB-COMP-002074-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225241936.PDF",
+    "status": "failed",
+    "error": "HTTP Error 422: Unprocessable Entity"
+  },
+  {
+    "industry": "solid-state-battery",
+    "source_id": "SSB-COMP-300073-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225057127.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2026-03-31/1225057127.PDF",
+    "bytes": 450928,
+    "sha256": "d03d92cc83227d232255e3b3b04d0d2eb816d8a146c108a04bb024144f1725cf",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "synthetic-biology-biomanufacturing",
+    "source_id": "SB-POL-001",
+    "url": "https://www.miit.gov.cn/xwfb/szyw/art/2025/art_eda75ac8785146fe855056118a98beca.html",
+    "retrieval_url": "https://r.jina.ai/https://www.miit.gov.cn/xwfb/szyw/art/2025/art_eda75ac8785146fe855056118a98beca.html",
+    "bytes": 61845,
+    "sha256": "566dd09410c48ea5d2982883ebabea3478eae9f4cbbfe396186a99fe0404f8f3",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "synthetic-biology-biomanufacturing",
+    "source_id": "SB-COMP-688639-2024QA",
+    "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202401/688639_20240124_UR0V.pdf",
+    "retrieval_url": "https://r.jina.ai/https://static.sse.com.cn/stock/disclosure/announcement/c/202401/688639_20240124_UR0V.pdf",
+    "bytes": 76230,
+    "sha256": "6da278c70b079649184ae7583637ec22ae96b5aa49ea31cd136c89b42b0d5994",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "synthetic-biology-biomanufacturing",
+    "source_id": "SB-COMP-301301-2025H1",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224569248.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2025-08-26/1224569248.PDF",
+    "bytes": 391208,
+    "sha256": "8af6898870748ef7c4b760e4dcfca24c0f5f900abc2583030f4d692008956b41",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "synthetic-biology-biomanufacturing",
+    "source_id": "SB-COMP-688065-2025H1",
+    "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688065_20250816_HEM8.pdf",
+    "retrieval_url": "https://r.jina.ai/https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-16/688065_20250816_HEM8.pdf",
+    "bytes": 368704,
+    "sha256": "1db81828b917bf6b0714b4b9d1efdfa88a2914f85ca9fdee44a096e15fea01f9",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "wide-bandgap-semiconductor",
+    "source_id": "WBG-MKT-001",
+    "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20250430_10778299.shtml",
+    "retrieval_url": "https://r.jina.ai/https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20250430_10778299.shtml",
+    "bytes": 18674,
+    "sha256": "bc1863e93bae83744589747aa0893c16d88ddd9daead7084b739a6f12a223354",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "wide-bandgap-semiconductor",
+    "source_id": "WBG-COMP-300316-2025AR",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-04-11/1225095476.PDF",
+    "retrieval_url": "https://r.jina.ai/https://static.cninfo.com.cn/finalpage/2026-04-11/1225095476.PDF",
+    "bytes": 415355,
+    "sha256": "b9a96e4abcc841e75bd8dc66a22f1c7da00fdc52d2a45c5342611b0cf10974a8",
+    "status": "retrieved_requires_content_review"
+  },
+  {
+    "industry": "wide-bandgap-semiconductor",
+    "source_id": "WBG-COMP-600703-2024ESG",
+    "url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-02/600703_20250802_YRAF.pdf",
+    "retrieval_url": "https://r.jina.ai/https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-02/600703_20250802_YRAF.pdf",
+    "bytes": 157418,
+    "sha256": "d8cf8736491b0dfb4442c006f24c8751d00f87a35e3524bf6ca5e711d18d9120",
+    "status": "retrieved_requires_content_review"
+  }
+]

@@ -21,7 +21,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2026-04-24/1225172005.PDF",
-      "note": "低空新基建、交通数智化、低空运营。"
+      "note": "低空新基建、交通数智化、低空运营。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "242138c735bc729a839dcd15fa00bfb5721135fe2ab934bfca38f21a9fd09a1c"
     },
     {
       "id": "LA-COMP-001696-2025H1",
@@ -31,7 +33,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224565164.PDF",
-      "note": "航空活塞发动机、动力系统集成与适航。"
+      "note": "航空活塞发动机、动力系统集成与适航。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "edd115f95d1f20ca360451d845100a8b0ef9bb200b91d25ac5d90fb2c5351953"
     },
     {
       "id": "LA-COMP-000099-2024AR",
@@ -41,7 +45,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2025-03-18/1222821612.PDF",
-      "note": "通航运营、应急/医疗救援、空中交通与物流等场景。"
+      "note": "通航运营、应急/医疗救援、空中交通与物流等场景。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "37cdf9b703c9fd2a93ee96b2be6f55dc49d776a9b6111ac051a4a78944be413a"
     }
   ]
 }

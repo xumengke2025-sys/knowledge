@@ -11,7 +11,9 @@
       "type": "exchange_summary",
       "grade": "A",
       "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20250430_10778299.shtml",
-      "note": "天岳先进12英寸碳化硅衬底、科创板专精特新覆盖。"
+      "note": "天岳先进12英寸碳化硅衬底、科创板专精特新覆盖。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "bc1863e93bae83744589747aa0893c16d88ddd9daead7084b739a6f12a223354"
     },
     {
       "id": "WBG-COMP-300316-2025AR",
@@ -21,7 +23,9 @@
       "type": "listed_company_filing",
       "grade": "A",
       "url": "https://static.cninfo.com.cn/finalpage/2026-04-11/1225095476.PDF",
-      "note": "8英寸/12英寸SiC、半导体装备和耗材。"
+      "note": "8英寸/12英寸SiC、半导体装备和耗材。",
+      "retrieval_status": "selected_passages_reviewed",
+      "retrieved_text_sha256": "b9a96e4abcc841e75bd8dc66a22f1c7da00fdc52d2a45c5342611b0cf10974a8"
     },
     {
       "id": "WBG-COMP-600703-2024ESG",

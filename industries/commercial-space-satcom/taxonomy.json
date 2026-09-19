@@ -6,42 +6,257 @@
     {
       "id": "satellite-manufacturing",
       "name": "卫星制造",
-      "description": "平台、结构、电源、热控、星载计算"
+      "description": "平台、结构、电源、热控、星载计算",
+      "parent_id": null
     },
     {
       "id": "payload-communication",
       "name": "通信载荷",
-      "description": "相控阵、基带、射频、星间链路"
+      "description": "相控阵、基带、射频、星间链路",
+      "parent_id": null
     },
     {
       "id": "rf-chips",
       "name": "射频与微系统",
-      "description": "射频收发、T/R组件、抗辐照、电源管理"
+      "description": "射频收发、T/R组件、抗辐照、电源管理",
+      "parent_id": null
     },
     {
       "id": "ground-terminal",
       "name": "地面终端",
-      "description": "用户终端、网关站、卫星地面站"
+      "description": "用户终端、网关站、卫星地面站",
+      "parent_id": null
     },
     {
       "id": "satcom-network",
       "name": "卫星通信网络",
-      "description": "低轨星座、天地融合、手机直连卫星"
+      "description": "低轨星座、天地融合、手机直连卫星",
+      "parent_id": null
     },
     {
       "id": "satellite-operation",
       "name": "卫星运营",
-      "description": "转发器、通信服务、网络运营"
+      "description": "转发器、通信服务、网络运营",
+      "parent_id": null
     },
     {
       "id": "ttc",
       "name": "测运控",
-      "description": "遥测、遥控、数传、测控"
+      "description": "遥测、遥控、数传、测控",
+      "parent_id": null
     },
     {
       "id": "launch",
       "name": "商业发射",
-      "description": "运载火箭、可复用火箭、发射服务"
+      "description": "运载火箭、可复用火箭、发射服务",
+      "parent_id": null
+    },
+    {
+      "id": "satellite-component",
+      "parent_id": "satellite-manufacturing",
+      "name": "星务与部组件",
+      "description": "星载计算机、姿轨控、星敏感器、电源与热控",
+      "keywords": [
+        "星载计算机",
+        "姿轨控",
+        "星敏感器",
+        "电源与热控"
+      ],
+      "comparison_metrics": [
+        "在轨寿命",
+        "功耗",
+        "抗辐照等级"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "ground-test",
+      "parent_id": "satellite-manufacturing",
+      "name": "地面测试",
+      "description": "热真空、振动、EMC、整星测试",
+      "keywords": [
+        "热真空",
+        "振动",
+        "EMC",
+        "整星测试"
+      ],
+      "comparison_metrics": [
+        "试验条件",
+        "故障覆盖率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "navigation",
+      "parent_id": "ground-terminal",
+      "name": "导航增强与终端",
+      "description": "GNSS、北斗、PPP、RTK",
+      "keywords": [
+        "GNSS",
+        "北斗",
+        "PPP",
+        "RTK"
+      ],
+      "comparison_metrics": [
+        "定位精度",
+        "收敛时间",
+        "可用性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "satellite-application",
+      "parent_id": "satellite-operation",
+      "name": "遥感与数据服务",
+      "description": "SAR、光学遥感、数据处理",
+      "keywords": [
+        "SAR",
+        "光学遥感",
+        "数据处理"
+      ],
+      "comparison_metrics": [
+        "重访周期",
+        "分辨率",
+        "服务收入"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "phased-array",
+      "parent_id": "payload-communication",
+      "name": "相控阵天线",
+      "description": "波束赋形、移相器、幅相校准",
+      "keywords": [
+        "波束赋形",
+        "移相器",
+        "幅相校准"
+      ],
+      "comparison_metrics": [
+        "EIRP",
+        "G/T",
+        "扫描范围",
+        "旁瓣"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "digital-payload",
+      "parent_id": "payload-communication",
+      "name": "数字透明与再生载荷",
+      "description": "信道化、星上交换、软件定义载荷",
+      "keywords": [
+        "信道化",
+        "星上交换",
+        "软件定义载荷"
+      ],
+      "comparison_metrics": [
+        "吞吐",
+        "功耗",
+        "可重构能力"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "inter-satellite-link",
+      "parent_id": "satcom-network",
+      "name": "星间链路",
+      "description": "激光通信、捕获跟踪瞄准、RF星间链路",
+      "keywords": [
+        "激光通信",
+        "捕获跟踪瞄准",
+        "RF星间链路"
+      ],
+      "comparison_metrics": [
+        "捕获时间",
+        "误码率",
+        "链路可用性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "handover",
+      "parent_id": "satcom-network",
+      "name": "移动性与切换",
+      "description": "多普勒预补偿、波束切换、星地切换",
+      "keywords": [
+        "多普勒预补偿",
+        "波束切换",
+        "星地切换"
+      ],
+      "comparison_metrics": [
+        "中断时长",
+        "切换失败率"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "ntn",
+      "parent_id": "satcom-network",
+      "name": "非地面网络融合",
+      "description": "3GPP NTN、窄带物联网、直连手机",
+      "keywords": [
+        "3GPP NTN",
+        "窄带物联网",
+        "直连手机"
+      ],
+      "comparison_metrics": [
+        "终端功率",
+        "覆盖",
+        "协议兼容性"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "feeder-link",
+      "parent_id": "ground-terminal",
+      "name": "馈电链路与网关",
+      "description": "Ka/Ku、网关分集、雨衰补偿",
+      "keywords": [
+        "Ka/Ku",
+        "网关分集",
+        "雨衰补偿"
+      ],
+      "comparison_metrics": [
+        "链路裕量",
+        "可用度"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "space-debris",
+      "parent_id": "satellite-operation",
+      "name": "空间可持续性",
+      "description": "碰撞规避、离轨、空间态势感知",
+      "keywords": [
+        "碰撞规避",
+        "离轨",
+        "空间态势感知"
+      ],
+      "comparison_metrics": [
+        "离轨时间",
+        "失效处置能力"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
+    },
+    {
+      "id": "rocket-engine",
+      "parent_id": "launch",
+      "name": "火箭发动机与重复使用",
+      "description": "液氧甲烷、液氧煤油、变推力、再点火",
+      "keywords": [
+        "液氧甲烷",
+        "液氧煤油",
+        "变推力",
+        "再点火"
+      ],
+      "comparison_metrics": [
+        "重复点火次数",
+        "寿命",
+        "回收后检测"
+      ],
+      "knowledge_kind": "editorial_taxonomy"
     }
-  ]
+  ],
+  "scope": "以大陆上市公司相关的卫星平台、通信载荷、地面设备、网络运营和商业发射供应链为边界。导航和遥感是相邻应用，不因同属航天自动计入卫星互联网收入；研究院、集团与上市子公司的专利分别核验。",
+  "schema_note": "扁平节点数组，以parent_id表达层级；研究用分类，不是官方分类标准。"
 }

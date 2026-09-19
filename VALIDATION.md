@@ -1,3 +1,5 @@
+> v0.2历史记录。当前版本请参阅 QUALITY-V0.3.md 与 firmbuddy/IMPORT-V0.3.md。
+
 # 验证说明
 
 运行：

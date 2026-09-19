@@ -1,17 +1,25 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "as_of": "2026-09-19",
   "purpose": "FirmBuddy先进科技行业专家训练与知识装备",
   "industries": [
     {
       "industry_id": "commercial-space-satcom",
       "companies_total": 15,
-      "companies_verified": 3,
       "companies_candidate": 12,
       "fact_cards": 5,
       "sources": 5,
       "representative_patents": 0,
-      "depth": "medium_seed"
+      "depth": "technical_dossier_with_research_samples",
+      "companies_legacy_source_linked": 3,
+      "companies_verified": 0,
+      "verification_note": "旧来源关联尚未逐公司整体重核；本轮摘录核查数量独立统计。",
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 2,
+      "papers_reviewed": 2,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
     },
     {
       "industry_id": "embodied-intelligence",
@@ -26,62 +34,111 @@
     {
       "industry_id": "industrial-machine-tools",
       "companies_total": 15,
-      "companies_verified": 3,
       "companies_candidate": 12,
       "fact_cards": 4,
       "sources": 5,
       "representative_patents": 0,
-      "depth": "medium_seed"
+      "depth": "technical_dossier_with_research_samples",
+      "companies_legacy_source_linked": 3,
+      "companies_verified": 0,
+      "verification_note": "旧来源关联尚未逐公司整体重核；本轮摘录核查数量独立统计。",
+      "nodes": 19,
+      "reviewed_excerpts": 2,
+      "papers": 3,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
     },
     {
       "industry_id": "low-altitude-economy",
       "companies_total": 15,
-      "companies_verified": 3,
       "companies_candidate": 12,
       "fact_cards": 4,
       "sources": 4,
       "representative_patents": 0,
-      "depth": "medium_seed"
+      "depth": "technical_dossier_with_research_samples",
+      "companies_legacy_source_linked": 3,
+      "companies_verified": 0,
+      "verification_note": "旧来源关联尚未逐公司整体重核；本轮摘录核查数量独立统计。",
+      "nodes": 20,
+      "reviewed_excerpts": 5,
+      "papers": 2,
+      "papers_reviewed": 2,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
     },
     {
       "industry_id": "smart-sensors-mems",
       "companies_total": 14,
-      "companies_verified": 2,
       "companies_candidate": 12,
       "fact_cards": 3,
       "sources": 4,
       "representative_patents": 0,
-      "depth": "medium_seed"
+      "depth": "technical_dossier_with_research_samples",
+      "companies_legacy_source_linked": 2,
+      "companies_verified": 0,
+      "verification_note": "旧来源关联尚未逐公司整体重核；本轮摘录核查数量独立统计。",
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 2,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
     },
     {
       "industry_id": "solid-state-battery",
       "companies_total": 15,
-      "companies_verified": 3,
       "companies_candidate": 12,
       "fact_cards": 4,
       "sources": 3,
       "representative_patents": 0,
-      "depth": "medium_seed"
+      "depth": "technical_dossier_with_research_samples",
+      "companies_legacy_source_linked": 3,
+      "companies_verified": 0,
+      "verification_note": "旧来源关联尚未逐公司整体重核；本轮摘录核查数量独立统计。",
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 2,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
     },
     {
       "industry_id": "synthetic-biology-biomanufacturing",
       "companies_total": 15,
-      "companies_verified": 3,
       "companies_candidate": 12,
       "fact_cards": 4,
       "sources": 4,
       "representative_patents": 0,
-      "depth": "medium_seed"
+      "depth": "technical_dossier_with_research_samples",
+      "companies_legacy_source_linked": 3,
+      "companies_verified": 0,
+      "verification_note": "旧来源关联尚未逐公司整体重核；本轮摘录核查数量独立统计。",
+      "nodes": 20,
+      "reviewed_excerpts": 5,
+      "papers": 2,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
     },
     {
       "industry_id": "wide-bandgap-semiconductor",
       "companies_total": 15,
-      "companies_verified": 3,
       "companies_candidate": 12,
       "fact_cards": 4,
       "sources": 3,
       "representative_patents": 0,
-      "depth": "medium_seed"
+      "depth": "technical_dossier_with_research_samples",
+      "companies_legacy_source_linked": 3,
+      "companies_verified": 0,
+      "verification_note": "旧来源关联尚未逐公司整体重核；本轮摘录核查数量独立统计。",
+      "nodes": 20,
+      "reviewed_excerpts": 3,
+      "papers": 1,
+      "papers_reviewed": 1,
+      "patent_landscape_complete": false,
+      "live_expert_test": "not_run"
     }
-  ]
+  ],
+  "claim": "seven-industry-research-and-integration-preparation-not-exhaustive"
 }

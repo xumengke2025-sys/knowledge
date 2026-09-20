@@ -18,8 +18,10 @@ for iid in IDS:
  assert any("企业快速研判手册" in x for x in pack["knowledge_scope"])
  assert set(pack["expert_profile"]["tools"])==tools
 bundle=load(R/"firmbuddy/import-bundle.json");assert str(bundle["version"]).startswith(("0.5.","0.6."))
-assert len(bundle["documents"])==52,(len(bundle["documents"]),len(bundle["equipments"]))
-assert len(bundle["equipments"])==52
+# v0.5 validates a required compatibility floor. Later additive versions may
+# append documents/equipment and must not fail this historical contract.
+assert len(bundle["documents"])>=52,(len(bundle["documents"]),len(bundle["equipments"]))
+assert len(bundle["equipments"])>=52
 docs={d["logical_key"]:d for d in bundle["documents"]}; eq={e["logical_key"]:e for e in bundle["equipments"]}
 for iid in IDS:
  for suffix,typ in [("benchmark","core_spec"),("playbook","supplement")]:
@@ -29,4 +31,4 @@ for iid in IDS:
 runtime=load(R/"firmbuddy/runtime-company-intelligence.json")
 assert REQUIRED_RUNTIME<=set(runtime["read_only_tools"])
 cov=load(R/"coverage-v0.5.json");assert cov["documents"]==52 and cov["equipments"]==52 and cov["experts"]==8
-print("PASS",json.dumps({"industries":8,"documents":52,"equipments":52,"runtime_tools":len(runtime["read_only_tools"])},ensure_ascii=False))
+print("PASS",json.dumps({"industries":8,"documents":len(bundle["documents"]),"equipments":len(bundle["equipments"]),"runtime_tools":len(runtime["read_only_tools"])},ensure_ascii=False))

@@ -9,7 +9,7 @@ for iid in IDS:
  d=R/"industries"/iid
  bench=load(d/"benchmark.json"); radar=load(d/"radar-sources.json"); pack=load(d/"expert-pack.json")
  play=(d/"company-assessment-playbook.md").read_text(encoding="utf-8")
- assert bench["version"] in ["0.5.0","0.5.1"] and len(bench["dimensions"])>=7
+ assert bench["version"] in ["0.5.0","0.5.1","0.5.2"] and len(bench["dimensions"])>=7
  assert all(x["metrics"] for x in bench["dimensions"])
  assert radar["version"]=="0.5.0" and len(radar["signal_types"])>=8
  assert "moss_company_get_patents" in play and "benchmark" in play.lower()

@@ -1,48 +1,45 @@
 {
   "industry_id": "smart-sensors-mems",
-  "from_date": "2026-01-22",
+  "from_date": "2026-01-23",
   "attempts": [
     {
       "channel": "openalex",
       "query": "MEMS gyroscope bias instability Allan variance packaging reliability",
-      "ok": true,
-      "count": 7,
-      "url": "https://api.openalex.org/works?search=MEMS+gyroscope+bias+instability+Allan+variance+packaging+reliability&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "channel": "crossref",
       "query": "MEMS gyroscope bias instability Allan variance packaging reliability",
       "ok": true,
       "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=MEMS+gyroscope+bias+instability+Allan+variance+packaging+reliability&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "url": "https://api.crossref.org/works?query.title=MEMS+gyroscope+bias+instability+Allan+variance+packaging+reliability&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     },
     {
       "channel": "openalex",
       "query": "force torque sensor hysteresis temperature drift tactile sensor",
-      "ok": true,
-      "count": 8,
-      "url": "https://api.openalex.org/works?search=force+torque+sensor+hysteresis+temperature+drift+tactile+sensor&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "channel": "crossref",
       "query": "force torque sensor hysteresis temperature drift tactile sensor",
       "ok": true,
       "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=force+torque+sensor+hysteresis+temperature+drift+tactile+sensor&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "url": "https://api.crossref.org/works?query.title=force+torque+sensor+hysteresis+temperature+drift+tactile+sensor&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     },
     {
       "channel": "openalex",
+      "query": "智能传感器 MEMS 陀螺 压力 六维力 校准 温漂",
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "channel": "crossref",
       "query": "智能传感器 MEMS 陀螺 压力 六维力 校准 温漂",
       "ok": true,
       "count": 0,
-      "url": "https://api.openalex.org/works?search=%E6%99%BA%E8%83%BD%E4%BC%A0%E6%84%9F%E5%99%A8+MEMS+%E9%99%80%E8%9E%BA+%E5%8E%8B%E5%8A%9B+%E5%85%AD%E7%BB%B4%E5%8A%9B+%E6%A0%A1%E5%87%86+%E6%B8%A9%E6%BC%82&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
-    },
-    {
-      "channel": "crossref",
-      "query": "智能传感器 MEMS 陀螺 压力 六维力 校准 温漂",
-      "ok": true,
-      "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=%E6%99%BA%E8%83%BD%E4%BC%A0%E6%84%9F%E5%99%A8+MEMS+%E9%99%80%E8%9E%BA+%E5%8E%8B%E5%8A%9B+%E5%85%AD%E7%BB%B4%E5%8A%9B+%E6%A0%A1%E5%87%86+%E6%B8%A9%E6%BC%82&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "url": "https://api.crossref.org/works?query.title=%E6%99%BA%E8%83%BD%E4%BC%A0%E6%84%9F%E5%99%A8+MEMS+%E9%99%80%E8%9E%BA+%E5%8E%8B%E5%8A%9B+%E5%85%AD%E7%BB%B4%E5%8A%9B+%E6%A0%A1%E5%87%86+%E6%B8%A9%E6%BC%82&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     }
   ]
 }

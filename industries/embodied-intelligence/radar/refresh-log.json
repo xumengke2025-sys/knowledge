@@ -1,48 +1,46 @@
 {
   "industry_id": "embodied-intelligence",
-  "from_date": "2026-01-22",
+  "from_date": "2026-01-23",
   "attempts": [
     {
       "channel": "openalex",
       "query": "具身智能 VLA world model robot learning humanoid",
-      "ok": true,
-      "count": 2,
-      "url": "https://api.openalex.org/works?search=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD+VLA+world+model+robot+learning+humanoid&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "ok": false,
+      "error": "HTTP Error 504: Gateway Timeout"
     },
     {
       "channel": "crossref",
       "query": "具身智能 VLA world model robot learning humanoid",
       "ok": true,
-      "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD+VLA+world+model+robot+learning+humanoid&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "count": 0,
+      "url": "https://api.crossref.org/works?query.title=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD+VLA+world+model+robot+learning+humanoid&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     },
     {
       "channel": "openalex",
       "query": "dexterous manipulation tactile whole-body control",
       "ok": true,
-      "count": 8,
-      "url": "https://api.openalex.org/works?search=dexterous+manipulation+tactile+whole-body+control&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "count": 5,
+      "url": "https://api.openalex.org/works?search=dexterous+manipulation+tactile+whole-body+control&filter=from_publication_date%3A2026-01-23&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
     },
     {
       "channel": "crossref",
       "query": "dexterous manipulation tactile whole-body control",
       "ok": true,
       "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=dexterous+manipulation+tactile+whole-body+control&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "url": "https://api.crossref.org/works?query.title=dexterous+manipulation+tactile+whole-body+control&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     },
     {
       "channel": "openalex",
       "query": "人形机器人 评测 标准 灵巧操作 具身智能",
-      "ok": true,
-      "count": 8,
-      "url": "https://api.openalex.org/works?search=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA+%E8%AF%84%E6%B5%8B+%E6%A0%87%E5%87%86+%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C+%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "channel": "crossref",
       "query": "人形机器人 评测 标准 灵巧操作 具身智能",
       "ok": true,
-      "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA+%E8%AF%84%E6%B5%8B+%E6%A0%87%E5%87%86+%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C+%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "count": 1,
+      "url": "https://api.crossref.org/works?query.title=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA+%E8%AF%84%E6%B5%8B+%E6%A0%87%E5%87%86+%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C+%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     }
   ]
 }

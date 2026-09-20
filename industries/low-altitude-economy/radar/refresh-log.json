@@ -1,48 +1,46 @@
 {
   "industry_id": "low-altitude-economy",
-  "from_date": "2026-01-22",
+  "from_date": "2026-01-23",
   "attempts": [
     {
       "channel": "openalex",
       "query": "eVTOL distributed electric propulsion battery duty cycle",
-      "ok": true,
-      "count": 8,
-      "url": "https://api.openalex.org/works?search=eVTOL+distributed+electric+propulsion+battery+duty+cycle&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "channel": "crossref",
       "query": "eVTOL distributed electric propulsion battery duty cycle",
       "ok": true,
       "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=eVTOL+distributed+electric+propulsion+battery+duty+cycle&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "url": "https://api.crossref.org/works?query.title=eVTOL+distributed+electric+propulsion+battery+duty+cycle&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     },
     {
       "channel": "openalex",
       "query": "detect and avoid UTM low altitude weather vertiport",
-      "ok": true,
-      "count": 8,
-      "url": "https://api.openalex.org/works?search=detect+and+avoid+UTM+low+altitude+weather+vertiport&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "channel": "crossref",
       "query": "detect and avoid UTM low altitude weather vertiport",
       "ok": true,
       "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=detect+and+avoid+UTM+low+altitude+weather+vertiport&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "url": "https://api.crossref.org/works?query.title=detect+and+avoid+UTM+low+altitude+weather+vertiport&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     },
     {
       "channel": "openalex",
       "query": "低空经济 适航 eVTOL 通导监 飞行服务",
       "ok": true,
-      "count": 5,
-      "url": "https://api.openalex.org/works?search=%E4%BD%8E%E7%A9%BA%E7%BB%8F%E6%B5%8E+%E9%80%82%E8%88%AA+eVTOL+%E9%80%9A%E5%AF%BC%E7%9B%91+%E9%A3%9E%E8%A1%8C%E6%9C%8D%E5%8A%A1&filter=from_publication_date%3A2026-01-22&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
+      "count": 2,
+      "url": "https://api.openalex.org/works?search=%E4%BD%8E%E7%A9%BA%E7%BB%8F%E6%B5%8E+%E9%80%82%E8%88%AA+eVTOL+%E9%80%9A%E5%AF%BC%E7%9B%91+%E9%A3%9E%E8%A1%8C%E6%9C%8D%E5%8A%A1&filter=from_publication_date%3A2026-01-23&sort=publication_date%3Adesc%2Crelevance_score%3Adesc&per_page=8"
     },
     {
       "channel": "crossref",
       "query": "低空经济 适航 eVTOL 通导监 飞行服务",
       "ok": true,
-      "count": 8,
-      "url": "https://api.crossref.org/works?query.bibliographic=%E4%BD%8E%E7%A9%BA%E7%BB%8F%E6%B5%8E+%E9%80%82%E8%88%AA+eVTOL+%E9%80%9A%E5%AF%BC%E7%9B%91+%E9%A3%9E%E8%A1%8C%E6%9C%8D%E5%8A%A1&filter=from-pub-date%3A2026-01-22&rows=8&sort=published&order=desc"
+      "count": 0,
+      "url": "https://api.crossref.org/works?query.title=%E4%BD%8E%E7%A9%BA%E7%BB%8F%E6%B5%8E+%E9%80%82%E8%88%AA+eVTOL+%E9%80%9A%E5%AF%BC%E7%9B%91+%E9%A3%9E%E8%A1%8C%E6%9C%8D%E5%8A%A1&filter=from-pub-date%3A2026-01-23%2Cuntil-pub-date%3A2026-09-20&rows=8&sort=score&order=desc"
     }
   ]
 }

@@ -27,7 +27,7 @@ jobs:
           base64 -d .bootstrap-v06/payload.b64 > /tmp/v06-overlay.tar.gz
           tar -xzf /tmp/v06-overlay.tar.gz -C .
           python scripts/apply-v06.py
-          echo 'v0.6 publish after all historical validators became extension-safe'
+          echo 'v0.6 publish excluding unrelated workflow mutation'
           python scripts/validate.py
           python scripts/validate-upgrade.py
           python scripts/validate-academic.py
@@ -38,6 +38,10 @@ jobs:
           python scripts/validate-v06.py
           rm -rf .bootstrap-v06
           rm -f scripts/apply-v06.py
+          # The v0.6 payload may carry a validation workflow copy, but the
+          # release artifact does not require workflow mutation. Keep the
+          # repository workflow unchanged so the scoped token can publish.
+          git checkout HEAD -- .github/workflows/validate.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A

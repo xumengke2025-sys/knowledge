@@ -23,3 +23,12 @@ jobs:
 
       - name: Validate v0.5 expert operating system
         run: python scripts/validate-v05.py
+
+      - name: Validate v0.5.1 industry maturity and finance depth
+        run: python scripts/validate-depth.py
+
+      - name: Validate academic radar candidate quality
+        run: python scripts/validate-radar.py
+
+      - name: Validate v0.5.2 radar runtime contract
+        run: python scripts/validate-radar-runtime.py

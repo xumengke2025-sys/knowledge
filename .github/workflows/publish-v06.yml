@@ -6,6 +6,8 @@ on:
       - '.github/workflows/publish-v06.yml'
       - '.bootstrap-v06/**'
       - 'scripts/validate-v05.py'
+      - 'scripts/validate-depth.py'
+      - 'scripts/validate-radar-runtime.py'
 permissions:
   contents: write
 jobs:
@@ -25,7 +27,7 @@ jobs:
           base64 -d .bootstrap-v06/payload.b64 > /tmp/v06-overlay.tar.gz
           tar -xzf /tmp/v06-overlay.tar.gz -C .
           python scripts/apply-v06.py
-          echo 'v0.6 publish with extension-safe v0.5 contract'
+          echo 'v0.6 publish after all historical validators became extension-safe'
           python scripts/validate.py
           python scripts/validate-upgrade.py
           python scripts/validate-academic.py

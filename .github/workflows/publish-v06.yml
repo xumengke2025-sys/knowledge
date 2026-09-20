@@ -23,6 +23,7 @@ jobs:
           base64 -d .bootstrap-v06/payload.b64 > /tmp/v06-overlay.tar.gz
           tar -xzf /tmp/v06-overlay.tar.gz -C .
           python scripts/apply-v06.py
+          echo 'v0.6 retry after version-guard fix'
           python scripts/validate.py
           python scripts/validate-upgrade.py
           python scripts/validate-academic.py

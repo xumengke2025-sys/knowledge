@@ -1,0 +1,79 @@
+{
+  "version": "0.5.1",
+  "industry_id": "wide-bandgap-semiconductor",
+  "signals": [
+    {
+      "signal_id": "wide-bandgap-semiconductor-F01",
+      "name": "资本开支与折旧",
+      "fields": [
+        "固定资产",
+        "在建工程",
+        "折旧"
+      ],
+      "interpretation": "反映长晶、外延、晶圆和器件产能扩张。",
+      "pitfall": "高CAPEX在低利用率阶段会压低盈利。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "wide-bandgap-semiconductor-F02",
+      "name": "研发投入",
+      "fields": [
+        "研发费用",
+        "研发项目"
+      ],
+      "interpretation": "观察大尺寸、缺陷、器件结构和可靠性持续迭代。",
+      "pitfall": "研发项目数量不能代替工程良率。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "wide-bandgap-semiconductor-F03",
+      "name": "存货与跌价",
+      "fields": [
+        "原材料",
+        "半成品",
+        "库存",
+        "跌价准备"
+      ],
+      "interpretation": "观察技术迭代、价格下降和良率问题。",
+      "pitfall": "库存增加可能来自备货或产品淘汰。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "wide-bandgap-semiconductor-F04",
+      "name": "毛利与良率线索",
+      "fields": [
+        "毛利率",
+        "成本结构",
+        "价格变化"
+      ],
+      "interpretation": "结合产品结构推断良率/规模效应，但不直接反推具体良率。",
+      "pitfall": "毛利还受价格和产品组合影响。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "wide-bandgap-semiconductor-F05",
+      "name": "产能利用",
+      "fields": [
+        "产量",
+        "销量",
+        "产能",
+        "利用率（如披露）"
+      ],
+      "interpretation": "验证扩产是否转化为有效出货。",
+      "pitfall": "规划产能和设计产能不等于实际良品。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "wide-bandgap-semiconductor-F06",
+      "name": "客户认证与应收",
+      "fields": [
+        "客户验证",
+        "应收",
+        "合同资产"
+      ],
+      "interpretation": "观察车规/工业验证后的商业兑现。",
+      "pitfall": "认证通过不等于立刻大规模收入。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

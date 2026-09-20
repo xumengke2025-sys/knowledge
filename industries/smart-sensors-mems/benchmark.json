@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "industry_id": "smart-sensors-mems",
   "industry": "高端智能传感器与MEMS",
   "as_of": "2026-09-20",
@@ -681,6 +681,50 @@
         "第三方测试",
         "企业宣传仅作线索"
       ]
+    }
+  ],
+  "maturity_model": [
+    {
+      "stage_id": "SEN-M0",
+      "name": "MEMS结构/敏感材料设计",
+      "evidence_required": "仿真、流片前设计或材料级原理验证。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SEN-M1",
+      "name": "裸芯片/工程样片",
+      "evidence_required": "完成流片和基础电学/机械性能测试。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SEN-M2",
+      "name": "封装模组与标定",
+      "evidence_required": "形成封装、ASIC、补偿、校准后的工程样品。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SEN-M3",
+      "name": "客户验证",
+      "evidence_required": "在目标温度、振动、介质或系统环境中送样验证。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SEN-M4",
+      "name": "资格/认证通过",
+      "evidence_required": "满足车规、高可靠、行业或客户特定认证要求。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SEN-M5",
+      "name": "小批量",
+      "evidence_required": "出现稳定批次交付和一致性/良率数据。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SEN-M6",
+      "name": "规模量产与现场可靠性",
+      "evidence_required": "持续量产、现场失效率和长期漂移控制形成闭环。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
     }
   ]
 }

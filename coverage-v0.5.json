@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "as_of": "2026-09-20",
   "industries": [
     {
@@ -8,7 +8,9 @@
       "benchmark_dimensions": 8,
       "radar_sources": 5,
       "benchmark_equipment": "embodied-intelligence:benchmark",
-      "playbook_equipment": "embodied-intelligence:playbook"
+      "playbook_equipment": "embodied-intelligence:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 6
     },
     {
       "industry_id": "commercial-space-satcom",
@@ -16,7 +18,9 @@
       "benchmark_dimensions": 7,
       "radar_sources": 4,
       "benchmark_equipment": "commercial-space-satcom:benchmark",
-      "playbook_equipment": "commercial-space-satcom:playbook"
+      "playbook_equipment": "commercial-space-satcom:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 6
     },
     {
       "industry_id": "low-altitude-economy",
@@ -24,7 +28,9 @@
       "benchmark_dimensions": 8,
       "radar_sources": 5,
       "benchmark_equipment": "low-altitude-economy:benchmark",
-      "playbook_equipment": "low-altitude-economy:playbook"
+      "playbook_equipment": "low-altitude-economy:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 6
     },
     {
       "industry_id": "wide-bandgap-semiconductor",
@@ -32,7 +38,9 @@
       "benchmark_dimensions": 7,
       "radar_sources": 4,
       "benchmark_equipment": "wide-bandgap-semiconductor:benchmark",
-      "playbook_equipment": "wide-bandgap-semiconductor:playbook"
+      "playbook_equipment": "wide-bandgap-semiconductor:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 6
     },
     {
       "industry_id": "solid-state-battery",
@@ -40,7 +48,9 @@
       "benchmark_dimensions": 8,
       "radar_sources": 3,
       "benchmark_equipment": "solid-state-battery:benchmark",
-      "playbook_equipment": "solid-state-battery:playbook"
+      "playbook_equipment": "solid-state-battery:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 6
     },
     {
       "industry_id": "synthetic-biology-biomanufacturing",
@@ -48,7 +58,9 @@
       "benchmark_dimensions": 8,
       "radar_sources": 5,
       "benchmark_equipment": "synthetic-biology-biomanufacturing:benchmark",
-      "playbook_equipment": "synthetic-biology-biomanufacturing:playbook"
+      "playbook_equipment": "synthetic-biology-biomanufacturing:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 6
     },
     {
       "industry_id": "industrial-machine-tools",
@@ -56,7 +68,9 @@
       "benchmark_dimensions": 8,
       "radar_sources": 5,
       "benchmark_equipment": "industrial-machine-tools:benchmark",
-      "playbook_equipment": "industrial-machine-tools:playbook"
+      "playbook_equipment": "industrial-machine-tools:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 7
     },
     {
       "industry_id": "smart-sensors-mems",
@@ -64,7 +78,9 @@
       "benchmark_dimensions": 8,
       "radar_sources": 5,
       "benchmark_equipment": "smart-sensors-mems:benchmark",
-      "playbook_equipment": "smart-sensors-mems:playbook"
+      "playbook_equipment": "smart-sensors-mems:playbook",
+      "maturity_stages": 7,
+      "financial_technology_signals": 6
     }
   ],
   "documents": 52,

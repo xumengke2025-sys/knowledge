@@ -1,0 +1,77 @@
+{
+  "version": "0.5.1",
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "signals": [
+    {
+      "signal_id": "synthetic-biology-biomanufacturing-F01",
+      "name": "研发与菌株平台",
+      "fields": [
+        "研发费用",
+        "研发人员",
+        "平台项目"
+      ],
+      "interpretation": "观察DBTL、酶工程、底盘细胞等持续积累。",
+      "pitfall": "平台能力不等于每个产品成功。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "synthetic-biology-biomanufacturing-F02",
+      "name": "原料与能源成本",
+      "fields": [
+        "糖源/碳源",
+        "能源",
+        "辅料成本"
+      ],
+      "interpretation": "决定发酵路线与化学路线竞争力。",
+      "pitfall": "原料短期价格波动与工艺改进要区分。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "synthetic-biology-biomanufacturing-F03",
+      "name": "产能与利用率",
+      "fields": [
+        "发酵罐/产线产能",
+        "固定资产",
+        "在建工程"
+      ],
+      "interpretation": "验证放大和商业化进程。",
+      "pitfall": "设计产能不等于稳定产量。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "synthetic-biology-biomanufacturing-F04",
+      "name": "存货/周转",
+      "fields": [
+        "原料",
+        "在产品",
+        "成品",
+        "库存周转"
+      ],
+      "interpretation": "结合发酵周期、保质期和需求判断。",
+      "pitfall": "高库存可能来自战略备货或销售压力。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "synthetic-biology-biomanufacturing-F05",
+      "name": "毛利与产品结构",
+      "fields": [
+        "分产品收入/毛利"
+      ],
+      "interpretation": "观察高附加值新品是否兑现。",
+      "pitfall": "产品价格周期会掩盖工艺改善。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "synthetic-biology-biomanufacturing-F06",
+      "name": "环保/下游成本",
+      "fields": [
+        "环保支出",
+        "三废处理",
+        "分离纯化成本线索"
+      ],
+      "interpretation": "评估全流程经济性，而非只看上游滴度。",
+      "pitfall": "高滴度不一定带来低单位成本。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "version": "0.5.1",
+  "industry_id": "solid-state-battery",
+  "signals": [
+    {
+      "signal_id": "solid-state-battery-F01",
+      "name": "研发投入",
+      "fields": [
+        "研发费用",
+        "研发项目",
+        "资本化"
+      ],
+      "interpretation": "观察材料、电芯和工艺路线投入持续性。",
+      "pitfall": "研发强度不等于路线已胜出。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "solid-state-battery-F02",
+      "name": "中试/量产建设",
+      "fields": [
+        "在建工程",
+        "固定资产",
+        "设备预付款"
+      ],
+      "interpretation": "识别从实验室向连续制造的准备。",
+      "pitfall": "中试线投产不等于量产线经济性。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "solid-state-battery-F03",
+      "name": "材料存货",
+      "fields": [
+        "锂盐",
+        "正负极",
+        "固态电解质",
+        "在产品"
+      ],
+      "interpretation": "观察试制和备货，同时关注技术迭代带来的减值。",
+      "pitfall": "存货上升不能自动视为订单。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "solid-state-battery-F04",
+      "name": "客户验证/合同",
+      "fields": [
+        "送样",
+        "验证",
+        "定点",
+        "合同负债"
+      ],
+      "interpretation": "判断技术从样品向商业化推进。",
+      "pitfall": "定点/验证不等于终端大规模装车。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "solid-state-battery-F05",
+      "name": "毛利/成本",
+      "fields": [
+        "材料成本",
+        "电芯成本",
+        "毛利率"
+      ],
+      "interpretation": "关注固态工艺新增成本和规模降本。",
+      "pitfall": "未单独披露固态业务时不拆算毛利。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "solid-state-battery-F06",
+      "name": "现金流与融资",
+      "fields": [
+        "经营/投资现金流",
+        "融资"
+      ],
+      "interpretation": "判断长研发与重资产扩产的资金承载。",
+      "pitfall": "资金充足不证明技术成熟。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

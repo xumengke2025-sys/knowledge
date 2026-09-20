@@ -1,0 +1,78 @@
+{
+  "version": "0.5.1",
+  "industry_id": "low-altitude-economy",
+  "signals": [
+    {
+      "signal_id": "low-altitude-economy-F01",
+      "name": "研发与适航投入",
+      "fields": [
+        "研发费用",
+        "试验费",
+        "认证/审定相关投入"
+      ],
+      "interpretation": "识别从原型向审定阶段的真实投入强度。",
+      "pitfall": "高投入不等于适航通过。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "low-altitude-economy-F02",
+      "name": "合同负债/预收",
+      "fields": [
+        "合同负债",
+        "预收款",
+        "订单披露"
+      ],
+      "interpretation": "观察客户意向是否转为可执行合同。",
+      "pitfall": "框架协议和意向订单要剔除。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "low-altitude-economy-F03",
+      "name": "存货与在制机",
+      "fields": [
+        "原材料",
+        "在产品",
+        "库存商品"
+      ],
+      "interpretation": "识别试制、备产和未交付航空器。",
+      "pitfall": "审定未完成前的大量备产可能增加风险。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "low-altitude-economy-F04",
+      "name": "产能与固定资产",
+      "fields": [
+        "在建工程",
+        "固定资产",
+        "产线"
+      ],
+      "interpretation": "观察生产许可之后的批产准备。",
+      "pitfall": "生产能力不能替代适航和需求。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "low-altitude-economy-F05",
+      "name": "运营收入",
+      "fields": [
+        "通航",
+        "无人机/eVTOL运营",
+        "基础设施/平台收入"
+      ],
+      "interpretation": "区分制造、平台项目和运营商业模式。",
+      "pitfall": "示范项目收入不代表常态化载客经济性。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "low-altitude-economy-F06",
+      "name": "现金流与续航",
+      "fields": [
+        "经营现金流",
+        "融资现金流",
+        "现金储备"
+      ],
+      "interpretation": "判断长审定周期下的资金承载。",
+      "pitfall": "融资能力与技术可行性独立判断。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

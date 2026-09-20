@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "industry_id": "wide-bandgap-semiconductor",
   "industry": "第三代/宽禁带半导体",
   "as_of": "2026-09-20",
@@ -565,6 +565,50 @@
         "第三方测试",
         "企业宣传仅作线索"
       ]
+    }
+  ],
+  "maturity_model": [
+    {
+      "stage_id": "WBG-M0",
+      "name": "材料/器件实验室",
+      "evidence_required": "晶体、外延、器件结构或工艺在实验室验证。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "WBG-M1",
+      "name": "工程样片",
+      "evidence_required": "形成可重复晶圆/器件样片，有缺陷、参数和批次数据。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "WBG-M2",
+      "name": "中试线/小规模制造",
+      "evidence_required": "完成工艺窗口和初步良率验证，可连续生产工程批。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "WBG-M3",
+      "name": "客户送样与资格验证",
+      "evidence_required": "进入下游模块/系统客户验证，开始可靠性和应用认证。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "WBG-M4",
+      "name": "产品发布/批量供货",
+      "evidence_required": "形成明确产品型号和批量交付，但利用率与良率仍需观察。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "WBG-M5",
+      "name": "重点应用重复订单",
+      "evidence_required": "车规/工业等客户重复订单、产品代际和可靠性数据稳定。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "WBG-M6",
+      "name": "稳定规模制造",
+      "evidence_required": "晶圆/器件/模块良率、利用率、成本和现金回报形成持续验证。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
     }
   ]
 }

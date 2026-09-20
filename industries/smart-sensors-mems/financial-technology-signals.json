@@ -1,0 +1,78 @@
+{
+  "version": "0.5.1",
+  "industry_id": "smart-sensors-mems",
+  "signals": [
+    {
+      "signal_id": "smart-sensors-mems-F01",
+      "name": "研发与流片",
+      "fields": [
+        "研发费用",
+        "流片/NRE",
+        "研发人员"
+      ],
+      "interpretation": "观察MEMS结构、ASIC和算法持续投入。",
+      "pitfall": "研发费用不能直接推出量产能力。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "smart-sensors-mems-F02",
+      "name": "制造模式",
+      "fields": [
+        "自有产线/代工",
+        "固定资产",
+        "委外成本"
+      ],
+      "interpretation": "判断IDM与fabless模式下产能和供应风险。",
+      "pitfall": "资产轻不等于技术弱，需看工艺控制和供应商。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "smart-sensors-mems-F03",
+      "name": "存货/减值",
+      "fields": [
+        "晶圆",
+        "芯片",
+        "模组",
+        "库存商品"
+      ],
+      "interpretation": "观察批次备货和产品迭代减值。",
+      "pitfall": "消费电子波动与工业长周期不同。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "smart-sensors-mems-F04",
+      "name": "毛利/产品组合",
+      "fields": [
+        "分产品收入",
+        "毛利率"
+      ],
+      "interpretation": "判断高性能/高可靠产品是否形成溢价。",
+      "pitfall": "客户结构和封装成本会显著影响。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "smart-sensors-mems-F05",
+      "name": "客户集中",
+      "fields": [
+        "前五客户",
+        "应收",
+        "验证周期"
+      ],
+      "interpretation": "判断design-in粘性与集中风险。",
+      "pitfall": "进入客户BOM不等于全生命周期持续供货。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "smart-sensors-mems-F06",
+      "name": "质量与售后",
+      "fields": [
+        "质保",
+        "退换",
+        "召回/质量披露"
+      ],
+      "interpretation": "辅助判断量产可靠性。",
+      "pitfall": "公开数据有限时必须保持unknown。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

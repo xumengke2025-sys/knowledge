@@ -1,0 +1,79 @@
+{
+  "version": "0.5.1",
+  "industry_id": "embodied-intelligence",
+  "signals": [
+    {
+      "signal_id": "embodied-intelligence-F01",
+      "name": "研发投入与人员",
+      "fields": [
+        "研发费用",
+        "研发人员",
+        "资本化研发"
+      ],
+      "interpretation": "判断模型/控制/执行器/传感等长期能力投入是否持续；需与具体研发项目和人员结构交叉。",
+      "pitfall": "高研发只能证明投入，不能直接证明技术领先。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "embodied-intelligence-F02",
+      "name": "存货与备货",
+      "fields": [
+        "原材料",
+        "在产品",
+        "库存商品",
+        "跌价准备"
+      ],
+      "interpretation": "结合交付阶段判断供应链备货、样机/小批量积压或产品迭代淘汰风险。",
+      "pitfall": "存货上升既可能是备货，也可能是需求不足。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "embodied-intelligence-F03",
+      "name": "在建工程与设备",
+      "fields": [
+        "在建工程",
+        "固定资产",
+        "机器设备",
+        "产线建设"
+      ],
+      "interpretation": "用于判断执行器/关节/整机制造从样机向批量的产能准备。",
+      "pitfall": "产线建成不等于良率、利用率和订单。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "embodied-intelligence-F04",
+      "name": "产品收入与毛利",
+      "fields": [
+        "分产品/分行业收入",
+        "毛利率"
+      ],
+      "interpretation": "观察机器人相关业务是否从研发支出转成独立经营贡献。",
+      "pitfall": "若未单独披露，不做收入拆分猜测。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "embodied-intelligence-F05",
+      "name": "现金流与应收",
+      "fields": [
+        "经营现金流",
+        "应收账款",
+        "合同资产"
+      ],
+      "interpretation": "验证批量交付是否形成回款及客户验收。",
+      "pitfall": "收入确认与现金回收节奏可能不同。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "embodied-intelligence-F06",
+      "name": "客户集中与验证",
+      "fields": [
+        "前五客户",
+        "重大合同",
+        "客户验证披露"
+      ],
+      "interpretation": "判断客户验证是否具有可复制性。",
+      "pitfall": "单一大客户订单不能自动外推行业渗透。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

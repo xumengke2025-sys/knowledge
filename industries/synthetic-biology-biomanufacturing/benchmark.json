@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "industry_id": "synthetic-biology-biomanufacturing",
   "industry": "合成生物学与生物制造",
   "as_of": "2026-09-20",
@@ -609,6 +609,50 @@
         "第三方测试",
         "企业宣传仅作线索"
       ]
+    }
+  ],
+  "maturity_model": [
+    {
+      "stage_id": "SB-M0",
+      "name": "设计与菌株构建",
+      "evidence_required": "代谢路径/蛋白设计、基因编辑与实验室菌株构建。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SB-M1",
+      "name": "摇瓶/微型高通量验证",
+      "evidence_required": "完成初步滴度、得率、生产强度筛选。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SB-M2",
+      "name": "实验室/小型发酵罐",
+      "evidence_required": "验证传质、补料、稳定性和下游初步路线。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SB-M3",
+      "name": "中试放大",
+      "evidence_required": "在更大规模验证kLa、混合、热量、泡沫、污染和批间一致性。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SB-M4",
+      "name": "示范线/客户样品",
+      "evidence_required": "建立示范或试生产，产品进入客户测试/注册/认证（如适用）。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SB-M5",
+      "name": "商业化生产",
+      "evidence_required": "稳定商业批次和销售形成，利用率、成本和下游回收成为核心。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
+    },
+    {
+      "stage_id": "SB-M6",
+      "name": "多批次/多产线复制",
+      "evidence_required": "工艺在不同批次/基地/原料条件下保持稳定，经济性与LCA得到持续验证。",
+      "anti_inference": "不得从上一阶段单一信号自动升级到本阶段；需主体、产品和时点一致的新增证据。"
     }
   ]
 }

@@ -1,0 +1,90 @@
+{
+  "version": "0.5.1",
+  "industry_id": "industrial-machine-tools",
+  "signals": [
+    {
+      "signal_id": "industrial-machine-tools-F01",
+      "name": "订单/合同负债",
+      "fields": [
+        "订单",
+        "合同负债",
+        "预收款"
+      ],
+      "interpretation": "观察需求与交付节奏。",
+      "pitfall": "订单口径需区分已签、意向和框架。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "industrial-machine-tools-F02",
+      "name": "存货",
+      "fields": [
+        "在制整机",
+        "零部件",
+        "库存商品"
+      ],
+      "interpretation": "与生产周期和订单交付对照。",
+      "pitfall": "高库存也可能反映需求疲弱。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "industrial-machine-tools-F03",
+      "name": "应收账款",
+      "fields": [
+        "应收",
+        "账龄",
+        "坏账"
+      ],
+      "interpretation": "判断客户验收和回款质量。",
+      "pitfall": "高端装备长验收周期需区别正常账期。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "industrial-machine-tools-F04",
+      "name": "研发投入",
+      "fields": [
+        "数控系统",
+        "五轴",
+        "主轴",
+        "软件等项目"
+      ],
+      "interpretation": "判断核心能力持续性。",
+      "pitfall": "研发费用不能替代实际加工精度。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "industrial-machine-tools-F05",
+      "name": "固定资产/产线",
+      "fields": [
+        "加工设备",
+        "装配测试能力",
+        "在建工程"
+      ],
+      "interpretation": "观察核心部件自制和产能升级。",
+      "pitfall": "自制率高不必然意味着成本更低。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "industrial-machine-tools-F06",
+      "name": "毛利/产品结构",
+      "fields": [
+        "高端机型收入占比",
+        "毛利率"
+      ],
+      "interpretation": "观察高端化是否形成经营贡献。",
+      "pitfall": "行业周期、规模和出口结构会影响毛利。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "industrial-machine-tools-F07",
+      "name": "售后与质量",
+      "fields": [
+        "质保费用",
+        "售后服务",
+        "退换/故障信息"
+      ],
+      "interpretation": "间接观察长期可靠性。",
+      "pitfall": "会计披露通常不足，需结合客户/产品证据。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

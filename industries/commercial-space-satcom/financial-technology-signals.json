@@ -1,0 +1,76 @@
+{
+  "version": "0.5.1",
+  "industry_id": "commercial-space-satcom",
+  "signals": [
+    {
+      "signal_id": "commercial-space-satcom-F01",
+      "name": "研发与型号项目",
+      "fields": [
+        "研发费用",
+        "资本化开发",
+        "型号/项目投入"
+      ],
+      "interpretation": "观察关键型号持续性和技术平台复用。",
+      "pitfall": "单个项目投入不能代表可规模复用。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "commercial-space-satcom-F02",
+      "name": "存货/在制品",
+      "fields": [
+        "存货",
+        "在产品",
+        "合同履约成本"
+      ],
+      "interpretation": "反映星箭/载荷长周期生产和验收节奏。",
+      "pitfall": "高存货也可能来自延期或验收阻塞。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "commercial-space-satcom-F03",
+      "name": "合同资产与应收",
+      "fields": [
+        "合同资产",
+        "应收账款",
+        "账龄"
+      ],
+      "interpretation": "判断项目验收和回款质量。",
+      "pitfall": "军工/政府客户账期与商业客户不同。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "commercial-space-satcom-F04",
+      "name": "固定资产/产线",
+      "fields": [
+        "固定资产",
+        "在建工程",
+        "专用设备"
+      ],
+      "interpretation": "识别批产、总装测试和发射保障能力建设。",
+      "pitfall": "产线投资不等于发射频率或订单。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "commercial-space-satcom-F05",
+      "name": "收入结构",
+      "fields": [
+        "卫星/载荷/终端/发射/服务收入"
+      ],
+      "interpretation": "区分一次性交付与持续运营收入。",
+      "pitfall": "遥感、北斗、军工电子不能自动计入卫星互联网。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    },
+    {
+      "signal_id": "commercial-space-satcom-F06",
+      "name": "补助与现金流",
+      "fields": [
+        "政府补助",
+        "经营现金流",
+        "融资现金流"
+      ],
+      "interpretation": "判断商业模式是否过度依赖非经常性资金。",
+      "pitfall": "补助不是技术失败证据，也不能替代客户收入。",
+      "evidence_rule": "财务指标只用于交叉验证技术产业化，不单独证明技术先进性。"
+    }
+  ]
+}

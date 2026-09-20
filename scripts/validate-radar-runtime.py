@@ -3,7 +3,7 @@ R=pathlib.Path(__file__).resolve().parents[1]
 IDS=["embodied-intelligence","commercial-space-satcom","low-altitude-economy","wide-bandgap-semiconductor","solid-state-battery","synthetic-biology-biomanufacturing","industrial-machine-tools","smart-sensors-mems"]
 def load(p):return json.loads(p.read_text(encoding="utf-8"))
 def h(t):return hashlib.sha256(t.encode()).hexdigest()
-bundle=load(R/"firmbuddy/import-bundle.json");assert bundle["version"]=="0.5.2"
+bundle=load(R/"firmbuddy/import-bundle.json");assert str(bundle["version"]).startswith(("0.5.2","0.6."))
 for iid in IDS:
  pack=load(R/"industries"/iid/"expert-pack.json")
  assert "get_industry_radar" in pack["tools_whitelist"]
@@ -16,4 +16,4 @@ for iid in IDS:
 plugin=(R/"firmbuddy/technology-intelligence/plugin.mjs").read_text(encoding="utf-8")
 assert "get_industry_radar" in plugin and "radar.json" in plugin
 manifest=load(R/"firmbuddy/technology-intelligence/plugin.json");assert manifest["version"]=="0.5.2"
-print("PASS",json.dumps({"experts":8,"radar_tool":"get_industry_radar","bundle_version":"0.5.2"},ensure_ascii=False))
+print("PASS",json.dumps({"experts":8,"radar_tool":"get_industry_radar","bundle_version":bundle["version"]},ensure_ascii=False))

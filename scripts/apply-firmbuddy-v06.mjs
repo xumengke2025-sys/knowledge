@@ -43,6 +43,7 @@ write(personasPath,Array.isArray(catalog)?personas:{...catalog,personas});
 const vendor=path.join(app,'vendor/knowledge-v06');
 write(path.join(vendor,'import-bundle.json'),bundle);
 fs.copyFileSync(path.join(knowledgeRoot,'firmbuddy/import-knowledge.mjs'),path.join(vendor,'import-knowledge.mjs'));
+fs.copyFileSync(path.join(knowledgeRoot,'scripts/accept-firmbuddy-v06.mjs'),path.join(app,'scripts/accept-knowledge-v06.mjs'));
 copyDir(path.join(knowledgeRoot,'firmbuddy/technology-intelligence'),path.join(app,'plugins/technology-intelligence'));
 
 const index=prepared.experts.map(x=>({logical_key:x.logical_key,name:x.profile.name}));

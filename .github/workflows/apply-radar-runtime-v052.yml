@@ -37,3 +37,5 @@ jobs:
           git commit -m "feat: wire industry radar into expert runtime"
           git pull --rebase origin main
           git push origin HEAD:main
+
+# rerun: 2

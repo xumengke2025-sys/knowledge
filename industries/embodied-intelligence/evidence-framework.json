@@ -1,0 +1,242 @@
+{
+  "version": "0.6.0",
+  "industry_id": "embodied-intelligence",
+  "industry": "具身智能与人形机器人",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "人工智能 具身智能通用性能要求与测试方法",
+      "standard_or_plan_id": "20262629-Z-469",
+      "status": "制定中",
+      "authority": "国家标准委/TC28",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=51C733602C145302E06397BE0A0ACC0E",
+      "expert_use": "系统级性能、任务成功、泛化、评测条件"
+    },
+    {
+      "title": "人工智能 具身智能大模型系统技术要求",
+      "standard_or_plan_id": "20252044-Z-469",
+      "status": "登记项目",
+      "authority": "国家标准委/TC28",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=37FC03D2E14F6322E06397BE0A0AA17F",
+      "expert_use": "具身大模型系统能力、接口与工程要求"
+    },
+    {
+      "title": "人工智能 具身智能操作系统技术要求",
+      "standard_or_plan_id": "20262626-Z-469",
+      "status": "制定中",
+      "authority": "国家标准委/TC28",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=51C733602C115302E06397BE0A0ACC0E",
+      "expert_use": "操作系统、实时性、接口与资源管理"
+    },
+    {
+      "title": "人工智能 具身智能灵巧操作要求",
+      "standard_or_plan_id": "20263054-Z-469",
+      "status": "制定中",
+      "authority": "国家标准委/TC28",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=52DF1D7A4A83D870E06397BE0A0AB2DE",
+      "expert_use": "灵巧手、操作任务与评测"
+    },
+    {
+      "title": "人工智能 具身智能数据生成技术要求",
+      "standard_or_plan_id": "20263053-Z-469",
+      "status": "制定中",
+      "authority": "国家标准委/TC28",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=52DF0802B9FED2E0E06397BE0A0A5574",
+      "expert_use": "训练数据采集、生成、质量与治理"
+    },
+    {
+      "title": "人形机器人安全要求 第4部分：公共服务领域",
+      "standard_or_plan_id": "20262891-T-604",
+      "status": "制定中",
+      "authority": "全国机器人标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=529F2216CC2CD483E06397BE0A0A4F73",
+      "expert_use": "公共服务场景安全与风险边界"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "中国电子技术标准化研究院",
+      "role": "标准/评测",
+      "focus": "具身智能标准体系、评测与数据治理",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院自动化研究所",
+      "role": "基础研究/机器人智能",
+      "focus": "机器人学习、感知、控制与具身智能",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "上海人工智能实验室",
+      "role": "基础模型/机器人智能",
+      "focus": "多模态、大模型、具身智能研究与评测",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京智源人工智能研究院",
+      "role": "基础模型",
+      "focus": "多模态/通用智能及具身方向",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京人形机器人创新中心",
+      "role": "整机/平台",
+      "focus": "人形机器人整机、训练与场景验证",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "国家地方共建人形机器人创新中心",
+      "role": "整机/标准",
+      "focus": "整机、安全和产业化验证",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "上海交通大学",
+      "role": "机器人/控制",
+      "focus": "机器人操作、控制、感知与系统工程",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京航空航天大学",
+      "role": "机器人/控制",
+      "focus": "机器人系统、控制、仿真与安全",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "清华大学",
+      "role": "机器人/AI",
+      "focus": "机器人学习、感知、控制与具身智能",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "vision language action robot learning humanoid manipulation",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "world model embodied intelligence robot planning",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "dexterous manipulation tactile sensing humanoid",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "whole body control humanoid locomotion MPC",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "sim2real robot learning data generation",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "embodied intelligence benchmark generalization safety",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "模型/策略是否在真实机器人闭环部署",
+    "任务成功率是否在统一任务集重复测试",
+    "执行器持续扭矩/温升/寿命是否披露测试条件",
+    "灵巧手自由度是否对应独立驱动与闭环力控",
+    "训练数据规模是否说明机器人/任务异构度",
+    "安全与跌倒/碰撞恢复是否经过第三方或标准化测试"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "version": "0.6.0",
+  "industry_id": "wide-bandgap-semiconductor",
+  "industry": "第三代/宽禁带半导体",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "SiC MOSFET可靠性试验方法 第1部分：偏置温度不稳定性",
+      "standard_or_plan_id": "GB/T 48164.1-2026",
+      "status": "即将实施",
+      "authority": "国家标准委/工信部",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=FcgVxFEcxPg%3D&mode=p",
+      "expert_use": "SiC MOSFET BTI可靠性"
+    },
+    {
+      "title": "GaN晶体管可靠性试验方法（感性负载开关应力）",
+      "standard_or_plan_id": "GB/T 48168-2026",
+      "status": "即将实施",
+      "authority": "国家标准委/工信部",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=5A13050B02F6303FE06397BE0A0ADA7D",
+      "expert_use": "GaN动态开关可靠性"
+    },
+    {
+      "title": "用于HEMT功率器件的硅衬底氮化镓外延片",
+      "standard_or_plan_id": "计划",
+      "status": "制定中",
+      "authority": "全国半导体设备和材料标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=499844A51B07182AE06397BE0A0A0D4B",
+      "expert_use": "GaN-on-Si外延片材料与质量"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "中国科学院微电子研究所",
+      "role": "器件/工艺",
+      "focus": "SiC/GaN器件、工艺与可靠性",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院半导体研究所",
+      "role": "材料/器件",
+      "focus": "宽禁带半导体材料与器件",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "电子科技大学",
+      "role": "功率器件",
+      "focus": "GaN/SiC功率电子与可靠性",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "西安电子科技大学",
+      "role": "宽禁带器件",
+      "focus": "GaN/SiC器件、射频与可靠性",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "南京大学",
+      "role": "GaN材料/器件",
+      "focus": "氮化镓材料与器件",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "东南大学",
+      "role": "功率电子/器件",
+      "focus": "SiC/GaN器件及系统应用",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "工业和信息化部电子第五研究所",
+      "role": "可靠性/测试",
+      "focus": "半导体器件可靠性与标准",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "SiC MOSFET gate oxide reliability BTI TDDB",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "SiC substrate basal plane dislocation micropipe yield",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "GaN HEMT dynamic on resistance trapping reliability",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "SiC trench MOSFET short circuit avalanche reliability",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "wide bandgap power module silver sinter double sided cooling",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "GaN on Si epitaxy buffer stress breakdown",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "公司位于晶体/衬底/外延/器件/模块/装备哪一环",
+    "大尺寸样片是否已经稳定量产并有良率/客户验证",
+    "SiC器件是否提供BTI/短路/雪崩/功率循环数据",
+    "GaN动态Ron测试条件是否明确",
+    "模块性能是否区分芯片能力与封装/散热贡献",
+    "装备收入是否能拆分对应SiC/GaN而非泛半导体"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

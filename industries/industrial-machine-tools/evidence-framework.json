@@ -1,0 +1,208 @@
+{
+  "version": "0.6.0",
+  "industry_id": "industrial-machine-tools",
+  "industry": "工业母机与高端数控",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "机床数控系统 可靠性测试与评定",
+      "standard_or_plan_id": "GB/T 32245-2015",
+      "status": "现行",
+      "authority": "全国机床数控系统标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=71F772D80957D3A7E05397BE0A0AB82A",
+      "expert_use": "数控系统可靠性测试与评定"
+    },
+    {
+      "title": "机床数控系统 使用与维护规范",
+      "standard_or_plan_id": "GB/T 39127-2020",
+      "status": "现行",
+      "authority": "全国机床数控系统标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=B187EEDE6C1316D1E05397BE0A0A3342",
+      "expert_use": "数控系统使用、维护、故障与运行条件"
+    },
+    {
+      "title": "机床数控系统 编程代码",
+      "standard_or_plan_id": "GB/T 38267-2019",
+      "status": "现行",
+      "authority": "全国机床数控系统标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=996A838ABFC18372E05397BE0A0AD949",
+      "expert_use": "数控系统编程接口与兼容性"
+    },
+    {
+      "title": "五轴联动激光加工机床 精度检验",
+      "standard_or_plan_id": "20256791-T-604",
+      "status": "制定中",
+      "authority": "全国特种加工机床标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=37FC59CC6D8B7EA7E06397BE0A0ADBFC",
+      "expert_use": "几何、定位、加工及RTCP精度"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "华中科技大学",
+      "role": "数控/加工",
+      "focus": "数控系统、智能制造、加工与误差控制",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京航空航天大学",
+      "role": "数控/制造",
+      "focus": "数控系统、五轴加工与制造系统",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "大连理工大学",
+      "role": "机床/制造",
+      "focus": "机床动力学、加工与精密制造",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "上海交通大学",
+      "role": "制造/加工",
+      "focus": "高端制造、精密加工与机床",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "西安交通大学",
+      "role": "制造/机床",
+      "focus": "机床、主轴与智能制造",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "国家机床质量监督检验中心",
+      "role": "检测/标准",
+      "focus": "机床与数控系统测试评价",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "five axis machine tool volumetric error calibration RTCP",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "machine tool thermal error compensation spindle heat",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "machining chatter stability lobe five axis milling",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "CNC interpolation contour error servo control",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "machine tool spindle dynamics bearing thermal deformation",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "digital twin machining tool wear online measurement",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "公司核心能力在整机、数控系统、伺服、主轴、丝杠还是刀具",
+    "五轴能力是否披露RTCP/定位/工作精度及标准",
+    "精度数据是否区分几何、热、动态和加工误差",
+    "数控系统可靠性是否有MTBF/故障数据和测试口径",
+    "核心部件自研是否有量产和装机证据",
+    "高端应用是否有航空航天/复杂曲面等真实工件验证"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

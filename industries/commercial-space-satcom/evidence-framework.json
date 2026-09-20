@@ -1,0 +1,196 @@
+{
+  "version": "0.6.0",
+  "industry_id": "commercial-space-satcom",
+  "industry": "商业航天与卫星互联网",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "基于低轨卫星互联网的航空监视技术要求",
+      "standard_or_plan_id": "20264606-Z-469",
+      "status": "制定中",
+      "authority": "全国宇航技术及其应用标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=5A4E35E2306DA6D6E06397BE0A0A8154",
+      "expert_use": "低轨卫星互联网承载航空监视、链路与系统要求"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "中国星网网络应用研究院",
+      "role": "卫星互联网应用",
+      "focus": "星地网络、行业应用与标准",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国星网网络系统研究院",
+      "role": "卫星网络系统",
+      "focus": "星座网络、系统架构与标准",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院空天信息创新研究院",
+      "role": "遥感/通信/空天信息",
+      "focus": "卫星遥感、通信与空天信息系统",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院微小卫星创新研究院",
+      "role": "卫星平台",
+      "focus": "微小卫星与星座系统",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国空间技术研究院",
+      "role": "卫星平台/载荷",
+      "focus": "卫星平台、通信载荷与总体设计",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京邮电大学",
+      "role": "通信网络",
+      "focus": "NTN、移动通信与卫星互联网",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "西安电子科技大学",
+      "role": "天线/通信",
+      "focus": "相控阵、射频、卫星通信",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "哈尔滨工业大学",
+      "role": "航天系统",
+      "focus": "卫星总体、控制、空间技术",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "LEO satellite internet NTN handover routing",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "inter satellite link optical communication LEO",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "satellite phased array beam hopping gateway diversity",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "regenerative payload software defined satellite",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "LEO mega constellation latency availability",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "reusable launch vehicle methane engine relight",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "公司技术属于卫星平台、载荷、终端、网络还是发射",
+    "是否有在轨验证而非仅地面样机",
+    "吞吐/时延/EIRP/G/T是否说明链路预算条件",
+    "星间链路是否有捕获跟踪与在轨链路证据",
+    "火箭是否有复飞而非仅回收",
+    "订单是否明确对应商业航天而非军工/北斗共用业务"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

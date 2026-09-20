@@ -1,0 +1,184 @@
+{
+  "version": "0.6.0",
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "industry": "合成生物学与生物制造",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "生物制造 术语",
+      "standard_or_plan_id": "20264400-T-339",
+      "status": "制定中",
+      "authority": "工业和信息化部",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=5A7BE53EF2E37FC1E06397BE0A0A306E",
+      "expert_use": "生物制造基础、研发、生产、产品服务与质量安全术语"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "中国科学院天津工业生物技术研究所",
+      "role": "工业生物技术",
+      "focus": "底盘细胞、代谢工程、产业生物制造",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院深圳先进技术研究院合成生物学研究所",
+      "role": "合成生物",
+      "focus": "DBTL、自动化、生物设计",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "清华大学",
+      "role": "合成生物/代谢工程",
+      "focus": "代谢工程、合成生物与生物制造",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院微生物研究所",
+      "role": "微生物/代谢",
+      "focus": "微生物资源、代谢与工程",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京化工大学",
+      "role": "生物化工",
+      "focus": "发酵、分离、过程放大",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "华东理工大学",
+      "role": "生物过程工程",
+      "focus": "发酵、反应器与下游工程",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "synthetic biology DBTL automation strain engineering",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "metabolic engineering genome scale model industrial strain",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "high throughput screening enzyme engineering biomanufacturing",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "fermentation scale up oxygen transfer mixing kLa",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "continuous fermentation robustness contamination biomanufacturing",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "techno economic analysis biomanufacturing LCA",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "公司优势来自菌株、酶、发酵还是下游纯化",
+    "实验室滴度是否已跨越到工业罐体稳定表现",
+    "Titer/Rate/Yield是否同时披露并说明底物/培养条件",
+    "菌株知识产权与工艺诀窍是否能区分",
+    "扩产是否有产能利用率/批次稳定/质量一致性",
+    "生物基标签是否真正具有成本或性能优势"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

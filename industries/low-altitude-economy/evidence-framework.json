@@ -1,0 +1,222 @@
+{
+  "version": "0.6.0",
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "正常类多旋翼无人驾驶航空器系统（不载人）适航标准",
+      "standard_or_plan_id": "AC-21-AA-2026-46",
+      "status": "有效",
+      "authority": "中国民航局",
+      "url": "https://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260417_230569.html",
+      "expert_use": "正常类多旋翼无人机适航要求"
+    },
+    {
+      "title": "低空经济 术语",
+      "standard_or_plan_id": "20264043-T-424",
+      "status": "制定中",
+      "authority": "市场监管总局/中国标准化研究院",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=5833F214F6AD480BE06397BE0A0A20CC",
+      "expert_use": "产业边界与术语统一"
+    },
+    {
+      "title": "低空经济气象基础设施建设规范 起降场",
+      "standard_or_plan_id": "项目",
+      "status": "制定中",
+      "authority": "中国气象局",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=446C3B80BD77D177E06397BE0A0AEF33",
+      "expert_use": "起降场气象基础设施与运行条件"
+    },
+    {
+      "title": "低空无人驾驶航空器飞行气象条件",
+      "standard_or_plan_id": "项目",
+      "status": "制定中",
+      "authority": "中国气象局",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=447713C83DA88DBFE06397BE0A0A197E",
+      "expert_use": "低空飞行气象安全条件"
+    },
+    {
+      "title": "民用轻小型旋翼无人机降落伞系统通用要求",
+      "standard_or_plan_id": "GB/T 47581-2026",
+      "status": "即将实施",
+      "authority": "国家标准委",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=52AF72FB02B4403AE06397BE0A0AD6A8",
+      "expert_use": "应急降落与安全冗余"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "中国民航科学技术研究院",
+      "role": "适航/运行",
+      "focus": "低空运行、适航与安全",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国航空综合技术研究所",
+      "role": "标准/适航",
+      "focus": "航空标准、验证与测试",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京航空航天大学",
+      "role": "航空器/飞控",
+      "focus": "eVTOL、无人机、飞控与空域",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "西北工业大学",
+      "role": "航空器/动力",
+      "focus": "无人机、航空器总体与动力",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "南京航空航天大学",
+      "role": "航空器/控制",
+      "focus": "无人机、电推进与飞控",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国气象局气象探测中心",
+      "role": "低空气象",
+      "focus": "低空观测与气象保障",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国民航大学",
+      "role": "空管/运行",
+      "focus": "空中交通管理与运行安全",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "eVTOL distributed electric propulsion battery duty cycle",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "urban air mobility vertiport operations safety",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "detect and avoid UAS non cooperative traffic",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "low altitude meteorology urban canyon UAV",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "U-space UTM low altitude traffic management",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "eVTOL noise certification battery thermal runaway",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "产品属于航空器、动力、航电、基础设施还是运营",
+    "适航处于申请/审定/取证哪一阶段",
+    "航程指标是否说明载荷、储备和气象条件",
+    "电池/动力是否满足航空任务功率与热安全",
+    "低空平台是否真正连接监视/C2/气象而非单纯软件",
+    "运营收入与设备/建设收入是否分开"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

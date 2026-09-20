@@ -1,0 +1,216 @@
+{
+  "version": "0.6.0",
+  "industry_id": "solid-state-battery",
+  "industry": "固态电池与下一代电池材料",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "电动汽车用固态电池 第1部分：术语和分类",
+      "standard_or_plan_id": "GB/T 48093.1-2026",
+      "status": "即将实施",
+      "authority": "全国汽车标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=5A13050B0294303FE06397BE0A0ADA7D",
+      "expert_use": "固态电池术语、分类和口径"
+    },
+    {
+      "title": "电动汽车用固态电池 第2部分：性能规范",
+      "standard_or_plan_id": "20262376-T-339",
+      "status": "制定中",
+      "authority": "全国汽车标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=511EE6179A2A9C3BE06397BE0A0AEB63",
+      "expert_use": "电芯性能与测试"
+    },
+    {
+      "title": "电动汽车用固态电池 第3部分：安全规范",
+      "standard_or_plan_id": "20262375-T-339",
+      "status": "制定中",
+      "authority": "全国汽车标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=3CF095A6DC597C4DE06397BE0A0AA6DB",
+      "expert_use": "安全要求与试验"
+    },
+    {
+      "title": "电动汽车用固态电池 第4部分：寿命规范",
+      "standard_or_plan_id": "20262374-T-339",
+      "status": "制定中",
+      "authority": "全国汽车标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=511EE7410E4A9DF5E06397BE0A0A6059",
+      "expert_use": "寿命与循环评价"
+    },
+    {
+      "title": "电动汽车固态电池用固体电解质技术规范",
+      "standard_or_plan_id": "GB/Z 214-2026",
+      "status": "现行",
+      "authority": "全国汽车标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=581F1A468C4D7218E06397BE0A0AD7F9",
+      "expert_use": "固体电解质材料技术规范"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "中国汽车技术研究中心",
+      "role": "标准/测试",
+      "focus": "固态电池国家标准、测试与评价",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院物理研究所",
+      "role": "电池基础研究",
+      "focus": "固态电解质、锂金属与界面",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "中国科学院青岛生物能源与过程研究所",
+      "role": "固态电池",
+      "focus": "固态电解质与电芯工程化",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "清华大学",
+      "role": "电池材料/界面",
+      "focus": "固态电池、电化学与界面",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京理工大学",
+      "role": "动力电池",
+      "focus": "固态电池与安全",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "国联汽车动力电池研究院",
+      "role": "产业研发/测试",
+      "focus": "动力电池共性技术、固态电池",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "all solid state battery sulfide electrolyte interface pressure",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "halide solid electrolyte high voltage cathode compatibility",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "LLZO lithium metal interface dendrite critical current density",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "solid state battery chemo mechanical degradation stack pressure",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "dry process solid state battery manufacturing scale up",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "solid electrolyte air stability moisture H2S",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "路线属于硫化物/氧化物/卤化物/聚合物还是混合固液",
+    "数据是材料半电池还是Ah级全电池",
+    "离子电导率是否绑定温度/致密度/测量方法",
+    "循环寿命是否说明面容量、堆压、温度和截止条件",
+    "中试线是否披露良率/节拍/水氧控制",
+    "客户验证与材料供货是否被误写成整车量产"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

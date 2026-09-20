@@ -1,0 +1,230 @@
+{
+  "version": "0.6.0",
+  "industry_id": "smart-sensors-mems",
+  "industry": "高端智能传感器与MEMS",
+  "as_of": "2026-09-20",
+  "purpose": "行业专家证据框架：把标准、科研机构、动态检索和企业核查问题变成运行时判断依据。",
+  "standards": [
+    {
+      "title": "微机电系统（MEMS）技术 陀螺仪",
+      "standard_or_plan_id": "GB/T 42597-2023",
+      "status": "现行",
+      "authority": "全国微机电技术标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=FC816D04FECD62EBE05397BE0A0AD5FA",
+      "expert_use": "MEMS陀螺技术要求与测试"
+    },
+    {
+      "title": "半导体器件 第14-4部分：半导体传感器 半导体加速度计",
+      "standard_or_plan_id": "GB/T 20521.4-2025",
+      "status": "现行",
+      "authority": "全国半导体器件标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=473EBB99D69C455EE06397BE0A0ABB9A",
+      "expert_use": "加速度计测试与产品要求"
+    },
+    {
+      "title": "MEMS硅压阻温压复合压力传感器芯片",
+      "standard_or_plan_id": "GB/T 47562-2026",
+      "status": "现行",
+      "authority": "全国微机电技术标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=511EBC5967779318E06397BE0A0AFBD5",
+      "expert_use": "压力传感芯片技术规范"
+    },
+    {
+      "title": "MEMS磁场传感器技术规范",
+      "standard_or_plan_id": "GB/T 47563-2026",
+      "status": "现行",
+      "authority": "全国微机电技术标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=511EBC5967799318E06397BE0A0AFBD5",
+      "expert_use": "磁传感器规范"
+    },
+    {
+      "title": "车规级MEMS半导体气体传感器技术规范",
+      "standard_or_plan_id": "GB/T 47753-2026",
+      "status": "即将实施",
+      "authority": "全国微机电技术标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=55B3892F96FD336AE06397BE0A0A4BF9",
+      "expert_use": "车规气体传感器性能与可靠性"
+    },
+    {
+      "title": "MEMS技术 硅通孔三维结构可靠性评价要求",
+      "standard_or_plan_id": "GB/T 47725-2026",
+      "status": "即将实施",
+      "authority": "全国微机电技术标准化技术委员会",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=52AF72FB01D7403AE06397BE0A0AD6A8",
+      "expert_use": "MEMS/微系统封装与三维结构可靠性"
+    }
+  ],
+  "research_institutions": [
+    {
+      "name": "中国科学院上海微系统与信息技术研究所",
+      "role": "MEMS工艺/器件",
+      "focus": "MEMS传感器、微加工与集成",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "东南大学",
+      "role": "MEMS/惯性",
+      "focus": "MEMS传感器与微系统",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "清华大学",
+      "role": "微纳/传感",
+      "focus": "微纳器件、传感与系统",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "北京大学",
+      "role": "微纳/传感",
+      "focus": "MEMS、微纳器件与传感",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "电子科技大学",
+      "role": "MEMS/微电子",
+      "focus": "传感器、惯性与微系统",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "工业和信息化部电子第五研究所",
+      "role": "可靠性/测试",
+      "focus": "传感器可靠性、标准与测试",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    },
+    {
+      "name": "上海微技术工业研究院",
+      "role": "MEMS制造",
+      "focus": "MEMS工艺平台与产业化",
+      "use": "用于追踪论文、标准、项目和科研成果；机构成果不自动归给上市公司。"
+    }
+  ],
+  "radar_query_pack": [
+    {
+      "query": "MEMS gyroscope bias instability angle random walk mode matching",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "MEMS accelerometer noise density scale factor temperature drift",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "MEMS pressure sensor temperature compensation packaging stress",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "six axis force torque sensor calibration cross coupling",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "flexible tactile sensor hysteresis drift durability e skin",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    },
+    {
+      "query": "MEMS packaging wafer level reliability shock vibration",
+      "channels": [
+        "OpenAlex",
+        "Crossref",
+        "Semantic Scholar",
+        "arXiv/ChinaXiv",
+        "PubScholar"
+      ],
+      "purpose": "发现综述、经典、前沿论文及作者/机构关系"
+    }
+  ],
+  "company_runtime_questions": [
+    "传感原理和MEMS结构属于哪一类",
+    "零偏/噪声/灵敏度/线性度是否带温度和带宽条件",
+    "标定与温漂补偿是否有全温数据",
+    "封装应力/冲击/振动/寿命是否有可靠性证据",
+    "六维力是否有串扰与过载能力数据",
+    "柔性触觉是否有迟滞、漂移、循环寿命与阵列一致性"
+  ],
+  "evidence_upgrade_rules": [
+    {
+      "from": "radar_candidate",
+      "to": "stable_industry_knowledge",
+      "requirements": [
+        "原始来源可访问",
+        "落到taxonomy节点",
+        "说明测试/实验条件",
+        "至少完成摘要或相关章节复核",
+        "与既有机制/benchmark的变化点明确"
+      ],
+      "prohibited": [
+        "仅媒体转载",
+        "单篇预印本直接宣布路线胜出"
+      ]
+    },
+    {
+      "from": "company_claim",
+      "to": "confirmed_company_fact",
+      "requirements": [
+        "主体锁定",
+        "法定披露/标准测试/可核查官方材料",
+        "时点明确",
+        "产品或技术节点明确"
+      ],
+      "prohibited": [
+        "把行业论文归给企业",
+        "把集团技术自动归给上市主体"
+      ]
+    },
+    {
+      "from": "patent_signal",
+      "to": "technology_evidence",
+      "requirements": [
+        "申请人归一",
+        "同族口径",
+        "法律状态",
+        "摘要/权利要求相关性",
+        "技术节点映射"
+      ],
+      "prohibited": [
+        "专利件数直接排名"
+      ]
+    }
+  ],
+  "runtime_source_priority": [
+    "国家/行业标准与监管",
+    "同行评议论文/科研机构原始成果",
+    "交易所/年报/企业官方技术资料",
+    "MOSS专利/财务/新闻/产业链",
+    "高质量行业机构",
+    "媒体仅用于发现"
+  ]
+}

@@ -28,6 +28,7 @@ jobs:
           git add industries/*/radar radar/academic-refresh-summary.json firmbuddy/technology-intelligence/data/radar.json
           git diff --cached --quiet && exit 0
           git commit -m "data: refresh academic radar candidates"
+          git pull --rebase origin main
           git push origin HEAD:main
 
 # rerun: clean-2

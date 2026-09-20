@@ -1,7 +1,7 @@
 {
   "name": "technology-intelligence",
-  "version": "0.3.0",
-  "description": "七行业技术框架、研究工作技能与可追溯证据；与M12知识装备分层使用",
+  "version": "0.5.2",
+  "description": "八行业技术框架、研究工作技能、可追溯证据与前沿Radar；与M12知识装备分层使用",
   "entry": "plugin.mjs",
   "enabled": true
 }

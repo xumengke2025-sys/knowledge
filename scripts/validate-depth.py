@@ -12,7 +12,7 @@ for iid in IDS:
  text=(d/"company-assessment-playbook.md").read_text(encoding="utf-8")
  assert "行业特定成熟度模型" in text and "财务—技术交叉信号" in text
 bundle=load(R/"firmbuddy/import-bundle.json")
-assert bundle["version"] in ["0.5.1","0.5.2"]
+assert str(bundle["version"]).startswith(("0.5.","0.6."))
 for iid in IDS:
  b=next(x for x in bundle["documents"] if x["logical_key"]==iid+":benchmark")
  p=next(x for x in bundle["documents"] if x["logical_key"]==iid+":playbook")

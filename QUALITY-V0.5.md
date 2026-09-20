@@ -40,3 +40,8 @@
 ## v0.5.1 行业化深化
 - 8行业均新增行业特定成熟度模型，避免用同一“研发/验证/量产”口径跨行业误判。
 - 8行业均新增财务—技术交叉信号，用研发、存货、在建工程、应收、毛利、现金流等验证产业化，但禁止以财务单独证明技术先进性。
+
+## v0.5.2 Radar运行时接入
+- technology-intelligence插件增加get_industry_radar，只读返回近期candidate前沿信号。
+- 8位专家均加入Radar工具和Radar研判协议；candidate未二次核验前不得升级为稳定知识或企业事实。
+- Playbook成为装备内容，因此Radar使用规则随专家Loadout进入FirmBuddy。

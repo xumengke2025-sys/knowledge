@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.2",
   "as_of": "2026-09-20",
   "layers": [
     {
@@ -22,10 +22,13 @@
         "OpenAlex",
         "Crossref",
         "Semantic Scholar Academic Graph",
+        "arXiv",
         "PubScholar",
-        "ChinaXiv"
+        "ChinaXiv",
+        "PubMed/PMC",
+        "Europe PMC"
       ],
-      "use": "机制、综述、前沿研究、作者/机构/引用网络"
+      "use": "机制、综述、前沿研究、预印本、作者/机构/引用网络、开放全文与生命科学实体"
     },
     {
       "layer": "patent",
@@ -49,7 +52,9 @@
       "layer": "research_institution",
       "sources": [
         "中国科学院机构知识库/PubScholar",
+        "ChinaXiv",
         "高校实验室/国家实验室",
+        "国家自然科学基金相关公开成果/项目",
         "国家科技项目公开信息"
       ],
       "use": "科研团队、研究方向和工程验证"
@@ -66,24 +71,59 @@
   ],
   "known_open_interfaces": [
     {
-      "name": "Crossref REST API",
-      "url": "https://api.crossref.org/",
-      "note": "无需注册即可检索书目元数据"
-    },
-    {
       "name": "OpenAlex API/Content",
       "url": "https://api.openalex.org/",
-      "note": "论文/作者/机构/引用图谱；开放全文可通过content接口发现"
+      "note": "论文/作者/机构/主题/引用网络；支持按发布日期过滤、开放获取与全文发现"
+    },
+    {
+      "name": "Crossref REST API",
+      "url": "https://api.crossref.org/",
+      "note": "DOI、作者、期刊、日期、基金、许可与引用元数据校验"
     },
     {
       "name": "Semantic Scholar Academic Graph API",
       "url": "https://api.semanticscholar.org/api-docs/",
-      "note": "引用、参考文献和作者网络"
+      "note": "引用、参考文献、作者与论文关系网络"
+    },
+    {
+      "name": "arXiv API",
+      "url": "https://info.arxiv.org/help/api/index.html",
+      "note": "计算机、物理、数学等预印本前沿发现；预印本需独立标注"
+    },
+    {
+      "name": "PubScholar",
+      "url": "https://pubscholar.cn/",
+      "note": "中国科学院公益学术资源平台；用于中文论文、机构成果与开放全文发现"
+    },
+    {
+      "name": "ChinaXiv",
+      "url": "https://www.chinaxiv.org/",
+      "note": "中国科学院文献情报中心预印本平台；前沿快，但未经严格同行评议"
+    },
+    {
+      "name": "PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/tools/oai/",
+      "note": "生命科学开放全文XML/元数据；遵循文章具体许可"
+    },
+    {
+      "name": "Europe PMC REST API",
+      "url": "https://europepmc.org/RestfulWebService",
+      "note": "生命科学论文、预印本、引用、开放全文链接和相关元数据"
     },
     {
       "name": "CNIPA重点产业专利信息服务平台",
       "url": "https://chinaip.cnipa.gov.cn/",
-      "note": "重点产业专利导航和统计分析"
+      "note": "中国重点产业专利导航、分类与统计分析"
+    },
+    {
+      "name": "WIPO PATENTSCOPE",
+      "url": "https://patentscope.wipo.int/",
+      "note": "PCT与全球专利文本/专利族线索"
+    },
+    {
+      "name": "EPO Espacenet",
+      "url": "https://worldwide.espacenet.com/",
+      "note": "全球专利族、引用与法律状态交叉核验"
     }
   ]
 }

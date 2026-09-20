@@ -119,7 +119,7 @@ def merge(records):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument("--days",type=int,default=240);ap.add_argument("--limit-per-query",type=int,default=8)
     args=ap.parse_args()
-    today=dt.date.today();from_date=(today-dt.timedelta(days=args.days)).isoformat();summary={"as_of":today.isoformat(),"from_date":from_date,"industries":[]}
+    today=dt.date.today();from_date=(today-dt.timedelta(days=args.days)).isoformat();summary={"as_of":today.isoformat(),"from_date":from_date,"industries":[]};all_radar={}
     for iid in INDUSTRIES:
         src=json.loads((ROOT/"industries"/iid/"radar-sources.json").read_text(encoding="utf-8"))
         packs=[x for x in src.get("industry_specific",[]) if x.get("channel")=="academic_query_pack"]
@@ -145,8 +145,8 @@ def main():
         outdir=ROOT/"industries"/iid/"radar";outdir.mkdir(parents=True,exist_ok=True)
         (outdir/"inbox-academic.jsonl").write_text("\n".join(json.dumps(x,ensure_ascii=False) for x in items)+("\n" if items else ""),encoding="utf-8")
         (outdir/"refresh-log.json").write_text(json.dumps({"industry_id":iid,"from_date":from_date,"attempts":attempts},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-        summary["industries"].append({"industry_id":iid,"queries":len(queries),"candidates":len(items),"successful_requests":sum(a["ok"] for a in attempts),"failed_requests":sum(not a["ok"] for a in attempts)})
+        all_radar[iid]=items\n        summary["industries"].append({"industry_id":iid,"queries":len(queries),"candidates":len(items),"successful_requests":sum(a["ok"] for a in attempts),"failed_requests":sum(not a["ok"] for a in attempts)})
     rd=ROOT/"radar";rd.mkdir(exist_ok=True)
-    (rd/"academic-refresh-summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    (rd/"academic-refresh-summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")\n    pr=ROOT/"firmbuddy"/"technology-intelligence"/"data";pr.mkdir(parents=True,exist_ok=True)\n    (pr/"radar.json").write_text(json.dumps({"version":"0.5.2","as_of":today.isoformat(),"from_date":from_date,"industries":all_radar},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(summary,ensure_ascii=False))
 if __name__=="__main__":main()

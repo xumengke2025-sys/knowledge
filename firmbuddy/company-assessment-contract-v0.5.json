@@ -1,0 +1,166 @@
+{
+  "version": "0.5.2",
+  "as_of": "2026-09-20",
+  "purpose": "FirmBuddy行业专家对具体企业进行快速科技情报研判的统一输出契约",
+  "subject": {
+    "required": [
+      "company_name",
+      "subject_lock_status",
+      "as_of"
+    ],
+    "fields": {
+      "company_name": "企业名称",
+      "security_code": "证券代码，可选",
+      "credit_code": "MOSS锁定后统一社会信用代码，可选",
+      "subject_lock_status": "locked/ambiguous/not_found/unavailable",
+      "as_of": "分析截止日期"
+    }
+  },
+  "sections": [
+    {
+      "id": "industry_mapping",
+      "required": true,
+      "fields": [
+        "industry_id",
+        "taxonomy_nodes",
+        "role_in_value_chain"
+      ],
+      "rule": "只能映射到有证据的技术节点；概念归属不等于全部主营业务。"
+    },
+    {
+      "id": "quick_conclusion",
+      "required": true,
+      "fields": [
+        "technology_position",
+        "maturity_summary",
+        "confirmed_strengths",
+        "critical_unknowns"
+      ],
+      "rule": "先给可执行快速结论，事实/推断/未知分开。"
+    },
+    {
+      "id": "technology_routes",
+      "required": true,
+      "fields": [
+        "route",
+        "products_or_projects",
+        "maturity_stage",
+        "evidence",
+        "counterevidence"
+      ],
+      "rule": "成熟度按行业专属7级模型逐路线判断。"
+    },
+    {
+      "id": "benchmark_comparison",
+      "required": true,
+      "fields": [
+        "dimension",
+        "company_value_or_evidence",
+        "comparison_basis",
+        "comparability",
+        "interpretation"
+      ],
+      "rule": "comparability不是comparable时不得给领先/落后结论。"
+    },
+    {
+      "id": "patent_profile",
+      "required": true,
+      "fields": [
+        "assignee_scope",
+        "technology_clusters",
+        "representative_patents",
+        "family_or_legal_status_gaps"
+      ],
+      "rule": "不以专利件数直接排名；标题只初筛。"
+    },
+    {
+      "id": "financial_cross_checks",
+      "required": true,
+      "fields": [
+        "signal",
+        "financial_fact",
+        "technology_interpretation",
+        "pitfall"
+      ],
+      "rule": "财务只做产业化交叉验证，不证明技术先进性。"
+    },
+    {
+      "id": "recent_changes",
+      "required": true,
+      "fields": [
+        "event_date",
+        "event",
+        "source",
+        "taxonomy_impact",
+        "verification_status"
+      ],
+      "rule": "企业事实优先运行时一手来源；Radar candidate单独标识。"
+    },
+    {
+      "id": "relative_position",
+      "required": true,
+      "fields": [
+        "peer_or_route",
+        "basis",
+        "conclusion",
+        "limitations"
+      ],
+      "rule": "只在对象、指标、测试条件和时点可比时做定性相对位置。"
+    },
+    {
+      "id": "evidence_gaps",
+      "required": true,
+      "fields": [
+        "missing_fact",
+        "why_it_matters",
+        "preferred_source",
+        "would_change_conclusion_if"
+      ],
+      "rule": "至少列出会实质改变结论的缺口。"
+    },
+    {
+      "id": "sources",
+      "required": true,
+      "fields": [
+        "source_id_or_tool",
+        "source_type",
+        "date",
+        "url_or_record_id",
+        "citation"
+      ],
+      "rule": "不得声称调用未实际调用的数据源。"
+    }
+  ],
+  "evidence_labels": [
+    "fact",
+    "company_claim",
+    "academic_evidence",
+    "radar_candidate",
+    "inference",
+    "unknown"
+  ],
+  "confidence_policy": {
+    "allowed": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ],
+    "rule": "按单条结论标记，禁止用一个综合分数伪装成企业整体技术实力概率。"
+  },
+  "runtime_requirements": {
+    "company_facts": "优先FirmBuddy MOSS/交易所/公告/财务/专利运行时工具",
+    "stable_industry_knowledge": "Knowledge Equipment",
+    "frontier_signals": "get_industry_radar；candidate_only",
+    "subject_rule": "MOSS get_*前先锁定主体；ambiguous时不得猜测"
+  },
+  "prohibited": [
+    "用知识库历史案例替代当前企业事实",
+    "把论文实验结果直接归给企业",
+    "把规划产能/建成产能/产量/销量/良率混为一谈",
+    "用专利件数直接给技术排名",
+    "把新闻转载数量当多源证据",
+    "把Radar候选写成稳定行业结论",
+    "输出投资评级、成交概率或商机触发结论"
+  ]
+}

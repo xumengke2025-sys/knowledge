@@ -1,0 +1,42 @@
+name: Publish v0.6 evidence framework
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-v06.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore v0.6 overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          base64 -d .bootstrap-v06/payload.b64 > /tmp/v06-overlay.tar.gz
+          tar -xzf /tmp/v06-overlay.tar.gz -C .
+          python scripts/apply-v06.py
+          python scripts/validate.py
+          python scripts/validate-upgrade.py
+          python scripts/validate-academic.py
+          python scripts/validate-v05.py
+          python scripts/validate-depth.py
+          python scripts/validate-radar.py
+          python scripts/validate-radar-runtime.py
+          python scripts/validate-v06.py
+          rm -rf .bootstrap-v06
+          rm -f .github/workflows/publish-v06.yml
+          rm -f scripts/apply-v06.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "feat: add v0.6 standards research and evidence framework"
+          git push origin HEAD:main

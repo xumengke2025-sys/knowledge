@@ -27,6 +27,9 @@ jobs:
       - name: Validate committed SecEmp candidate and paper_text outputs
         run: python scripts/validate-secemp-outputs.py
 
+      - name: Validate SecEmp academic promotion v0.8
+        run: python scripts/validate-secemp-academic-v08.py
+
       - name: Validate v0.5 expert operating system
         run: python scripts/validate-v05.py
 

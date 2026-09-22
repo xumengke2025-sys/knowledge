@@ -18,7 +18,7 @@
     "q-bio.QM",
     "q-bio.GN"
   ],
-  "min_score": 5,
+  "min_score": 4,
   "term_groups": [
     {
       "node_ids": [
@@ -130,6 +130,74 @@
         {
           "term": "life cycle assessment biomanufacturing",
           "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "design",
+        "build",
+        "test",
+        "learn"
+      ],
+      "terms": [
+        {
+          "term": "synthetic biology",
+          "weight": 2
+        },
+        {
+          "term": "design build test learn synthetic biology",
+          "weight": 2
+        },
+        {
+          "term": "biofoundry",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "fermentation",
+        "bio-based-chemicals",
+        "bio-materials"
+      ],
+      "terms": [
+        {
+          "term": "biomanufacturing",
+          "weight": 2
+        },
+        {
+          "term": "microbial cell factory",
+          "weight": 2
+        },
+        {
+          "term": "metabolic engineering",
+          "weight": 2
+        },
+        {
+          "term": "microbial production",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "fermentation",
+        "mass-transfer",
+        "downstream"
+      ],
+      "terms": [
+        {
+          "term": "bioprocess engineering",
+          "weight": 2
+        },
+        {
+          "term": "industrial fermentation",
+          "weight": 2
+        },
+        {
+          "term": "bioreactor scale up",
+          "weight": 2
         }
       ]
     }

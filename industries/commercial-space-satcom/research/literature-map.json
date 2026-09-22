@@ -47,6 +47,7 @@
     ]
   },
   "reading_status_counts": {
-    "abstract_reviewed": 9
+    "abstract_reviewed": 8,
+    "sections_reviewed": 1
   }
 }

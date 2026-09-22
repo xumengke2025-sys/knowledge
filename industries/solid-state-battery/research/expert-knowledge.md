@@ -153,3 +153,29 @@
 - SSB-P09 [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。综述中的策略成熟度不同，应区分实验室涂层、原位界面与可规模制造方案。
 - SSB-P10 [Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential](https://arxiv.org/abs/2510.09861)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。核心证据仍来自结构建模、DFT和分子动力学体系；模拟精度、训练域与实验结构质量决定外推能力，不能据此直接证明材料在全电池中的界面稳定、循环或制造可行性。
 - SSB-P11 [A Pre-trained Deep Potential Model for Sulfide Solid Electrolytes with Broad Coverage and High Accuracy](https://arxiv.org/abs/2406.18263)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。模型覆盖范围仍由训练元素、构型和下游微调数据决定；复现实验电导不等于可预测界面副反应、机械失效、全电池循环和制造窗口。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### SSB-P10｜Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential
+
+**已复核章节**：ordered-structure enumeration/ranking workflow；finite-temperature CHGNet fine-tuning；benchmark against DFT/SevenNet/experiment；Li diffusion and ionic conductivity analysis；summary
+
+**方法/模型**：从实验精修但含部分占位的LYC/LYB结构出发，先枚举有序构型并用机器学习势排序，再用DFT确认低能结构；随后通过逐步加入不同温度MD轨迹对应的DFT数据，迭代微调CHGNet，并用于更长时间尺度的Li扩散模拟。
+
+**实验/数据条件**：预训练CHGNet在高温NpT下出现体积偏差甚至不稳定；研究构建200K/400K/600K/800K逐级模型，并用独立0-800K结构测试集评估能量、力、应力误差，同时比较体积、活化能和室温离子电导与DFT、SevenNet和实验数据。
+
+**基线**：pretrained CHGNet；SevenNet；DFT/AIMD；published experimental structure and conductivity data
+
+**指标**：energy MAE；force MAE；stress MAE；volume deviation；simulation stability；activation energy；room-temperature ionic conductivity
+
+**关键发现**：面向具体卤化物体系的有限温度微调显著修复了通用势在高温结构空间中的失效；600K微调模型在精度与稳定性之间取得较好平衡，并可用于跨LYCB组分的长时间动力学；模型能够把高成本第一性原理计算扩展到更大的结构/成分空间
+
+**局限**：可信度受训练化学空间和有限温度构型覆盖约束，通用模型需要体系特定微调；研究聚焦体相结构与离子输运，不能证明电极界面稳定、循环寿命、机械可靠性和制造可行性
+
+**专家继续追问**：训练集是否覆盖企业目标成分与温度窗口；是否有未见成分独立验证和不确定性估计；计算电导与实验电导偏差如何；是否进一步进入界面/全电池和工艺验证
+
+**不能据此推出**：ML势准确预测体相离子电导即可证明材料适合全固态量产；模拟筛选速度提升等同材料研发周期和商业化周期按同比例缩短
+
+**SecEmp正文锚点**：76b22e77060614245f5adbf3e6b6ef6ba65b263a9b01b3bc4303a36493c214b7

@@ -153,3 +153,29 @@
 - SEN-P08 [Hydrogel-based pressure sensors for electronic skin systems](https://doi.org/10.1016/j.matt.2025.101992)；abstract_reviewed。柔性材料的实验室循环和生物相容性不能自动代表工业封装与机器人寿命。
 - SEN-P09 [Nonlinear Dynamical System Model for Drive Mode Amplitude Instabilities in MEMS Gyroscopes](https://arxiv.org/abs/2002.02234)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结论针对特定陀螺结构、寄生模态和共振条件；不能推广为所有MEMS陀螺的主要误差来源，实际稳定性还受温度、封装、真空和电子读出影响。
 - SEN-P10 [Optomechanical Inertial Sensors](https://arxiv.org/abs/2005.03456)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。对象为光机惯性传感路线，并非传统电容式MEMS陀螺/加速度计；模拟可达噪声底和谐振器表征不能直接等同完整传感器在封装、温漂和系统集成后的长期性能。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### SEN-P09｜Nonlinear Dynamical System Model for Drive Mode Amplitude Instabilities in MEMS Gyroscopes
+
+**已复核章节**：measured amplitude response / sensor characterization；nonlinear two-mode model and parameter identification；IV Results；V Conclusion
+
+**方法/模型**：针对MEMS陀螺驱动模态与寄生模态的非线性耦合建立两自由度模型，并通过不同输入电压下的频率扫频响应提取参数；先分析稳态解，再用瞬态频率扫频解释稳态模型无法描述的分支跳变。
+
+**实验/数据条件**：使用未封装传感器进行电学表征，比较正/反向扫频和不同驱动幅值；高幅值下出现双稳态、迟滞和跳变，模型将其解释为3:1内部共振下的模态间能量转移。
+
+**基线**：measured PLL/frequency sweep response；steady-state nonlinear model；transient coupled-mode simulation
+
+**指标**：amplitude response；frequency sweep hysteresis；mode frequency relation；branch stability / transition behavior
+
+**关键发现**：单纯稳态模型能给出解分支但不能解释真实扫频中的分支选择与跳变；加入瞬态动力学后可复现实测迟滞和大幅调制区域；设计上需要管理寄生模态与主模态频率关系，而不只是提升单一Q值
+
+**局限**：测试对象是未封装器件且聚焦特定3:1耦合，不能代表所有MEMS陀螺失效机制；尚未把封装应力、温漂、长期老化和系统级bias稳定性纳入同一验证
+
+**专家继续追问**：寄生模态频率分布与工艺波动如何；封装后共振耦合是否变化；温度/老化是否推动模态进入危险比值；瞬态扫频和长期bias稳定性是否有量产统计
+
+**不能据此推出**：识别一个3:1内部共振机制即可解释所有陀螺稳定性问题；未封装样片的动力学改善可直接等同封装产品长期精度改善
+
+**SecEmp正文锚点**：49fc31baa1ec77bc1aa29945204138f6c1d1eaa76b2fd181ed6f003604b1df48

@@ -149,3 +149,29 @@
 - CS-P07 [Resource Allocation Techniques in Multibeam Satellites: Conventional Methods vs. AI/ML Approaches](https://onlinelibrary.wiley.com/doi/10.1002/sat.1548)；abstract_reviewed。优化算法结果高度依赖流量、信道和约束假设，不应直接写成在轨吞吐提升。
 - CS-P08 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://arxiv.org/abs/2412.00820)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。属于综述/前沿讨论，不能据此证明具体星座、终端或运营商已经实现相同能力；不同轨道、频段、星座密度和协议版本下约束不同。
 - CS-P09 [UAV Communications in Integrated Terrestrial and Non-terrestrial Networks](https://arxiv.org/abs/2208.02683)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结果建立在特定城市、sub-6GHz、用户密度、星座密度和最低仰角假设上；不能直接外推为任意地区、频段或商业星座都能获得同等覆盖与容量收益。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### CS-P09｜UAV Communications in Integrated Terrestrial and Non-terrestrial Networks
+
+**已复核章节**：II System Model；III Evaluation Methodology；IV Numerical Results；V Conclusion
+
+**方法/模型**：构建地面蜂窝TN与600 km LEO NTN联合网络模型，比较UAV继续使用TN与将UAV流量卸载到NTN两种模式，并分别评估上下行。
+
+**实验/数据条件**：研究采用sub-6 GHz、城市地面用户与150 m高度UAV场景；集成方案中GUE留在TN、UAV统一卸载到NTN，考察卫星仰角、频率复用和UAV密度等因素。
+
+**基线**：standalone terrestrial network；TN with interference relief；integrated TN-NTN with UAV offloading
+
+**指标**：downlink SINR；outage probability；uplink signal quality；per-user data rate；command-and-control rate
+
+**关键发现**：在研究假设下，UAV卸载至NTN可显著减少空中用户中断并缓解对地面用户的上行干扰；服务收益依赖足够的LEO星座密度/最低仰角和UAV渗透率；当UAV数量下降时，单位用户可用速率上升
+
+**局限**：统一把所有UAV卸载到NTN是简化策略，论文明确将按高度与负载的动态卸载留作后续研究；传播、星座、频谱和城市模型均是特定假设，结果不应直接外推到任意商用星座
+
+**专家继续追问**：星座轨道高度和最低仰角是多少；频谱/带宽与终端功率条件是什么；真实切换与波束移动是否纳入；动态卸载还是固定卸载；高负载下中断率与吞吐如何
+
+**不能据此推出**：存在NTN覆盖即可保证城市UAV稳定宽带；论文中的中断率改善可直接代表某运营商真实网络表现
+
+**SecEmp正文锚点**：5a7239e5515dd7644dd32ac4982e33da3f0aaf9cb517a83e339c2d47a13e2ff2

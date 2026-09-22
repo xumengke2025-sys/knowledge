@@ -166,3 +166,29 @@
 - SB-P07 [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)；sections_reviewed。观点和案例并非对所有菌株的独立实验，市场预测不应作为事实。
 - SB-P08 [GenAI-Net: A Generative AI Framework for Automated Biomolecular Network Design](https://arxiv.org/abs/2601.17582)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。摘要主要证明计算设计与仿真搜索能力；生成的反应网络能满足模型目标不等于可在真实底盘细胞中构建、稳定表达、放大生产或满足经济性。
 - SB-P09 [ART: A machine learning Automated Recommendation Tool for synthetic biology](https://arxiv.org/abs/1911.11091)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。推荐质量依赖已有训练数据、目标函数和模型假设；在具体项目中有效不能保证迁移到其他底盘、产物或放大环境，预测高产也不等于工业发酵稳定和经济可行。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### SB-P09｜ART: A machine learning Automated Recommendation Tool for synthetic biology
+
+**已复核章节**：2 Methods / key capabilities；2.2 predictive model and optimization；3 Results and discussion；experimental metabolic-engineering examples and failure case
+
+**方法/模型**：ART用机器学习/贝叶斯集成从输入组学或工程变量预测产量，再通过类似Bayesian optimization的目标函数在预测均值与不确定性之间权衡，给出下一轮应构建的菌株/输入建议。
+
+**实验/数据条件**：论文既使用模拟数据，也使用多个真实代谢工程项目数据；案例覆盖可再生燃料、无啤酒花风味啤酒和脂肪酸等，并专门讨论训练样本不足或工程控制不准确时模型假设失效的情况。
+
+**基线**：simulated data ground truth；existing engineered strain data / previous DBTL observations
+
+**指标**：predictive accuracy/error；prediction uncertainty；target product response；recommendation improvement across DBTL iterations
+
+**关键发现**：不确定性不仅用于报告置信度，还参与探索-利用权衡和下一轮实验推荐；在部分真实项目中模型能够指导工程选择；当训练数据过少或实验手段无法准确实现目标输入时，预测能力会显著下降，说明AI不能脱离实验可控性
+
+**局限**：有效性依赖输入变量能否表示关键生物状态、训练数据规模和噪声、以及实验系统能否实现推荐条件；实验室菌株优化结果不能直接外推到发酵放大、长期遗传稳定性和经济性
+
+**专家继续追问**：每轮DBTL实际样本量是多少；模型是否输出不确定性并驱动探索；推荐条件能否在实验中准确实现；跨底盘/产物迁移表现如何；放大后产率、滴度、生产强度是否保持
+
+**不能据此推出**：AI推荐出高产候选即可证明工业菌株成功；模型在一个代谢工程项目有效即可无条件迁移到其他底盘与产物
+
+**SecEmp正文锚点**：1139692b4f7731a6b970e3e80bdcf4a12cd794cf64294ba706e28b57a2c87c68

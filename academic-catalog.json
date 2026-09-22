@@ -1,5 +1,5 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "as_of": "2026-09-22",
   "purpose": "FirmBuddy industry expert academic knowledge equipment",
   "industries": [
@@ -11,7 +11,9 @@
       "reviewed_papers": 10,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "embodied-intelligence:academic",
-      "equipment_key": "embodied-intelligence:academic"
+      "equipment_key": "embodied-intelligence:academic",
+      "section_reviewed_papers": 1,
+      "secemp_section_reviewed_papers": 1
     },
     {
       "industry_id": "commercial-space-satcom",
@@ -21,7 +23,9 @@
       "reviewed_papers": 9,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "commercial-space-satcom:academic",
-      "equipment_key": "commercial-space-satcom:academic"
+      "equipment_key": "commercial-space-satcom:academic",
+      "section_reviewed_papers": 1,
+      "secemp_section_reviewed_papers": 1
     },
     {
       "industry_id": "low-altitude-economy",
@@ -31,7 +35,9 @@
       "reviewed_papers": 9,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "low-altitude-economy:academic",
-      "equipment_key": "low-altitude-economy:academic"
+      "equipment_key": "low-altitude-economy:academic",
+      "section_reviewed_papers": 2,
+      "secemp_section_reviewed_papers": 1
     },
     {
       "industry_id": "wide-bandgap-semiconductor",
@@ -41,7 +47,9 @@
       "reviewed_papers": 9,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "wide-bandgap-semiconductor:academic",
-      "equipment_key": "wide-bandgap-semiconductor:academic"
+      "equipment_key": "wide-bandgap-semiconductor:academic",
+      "section_reviewed_papers": 2,
+      "secemp_section_reviewed_papers": 1
     },
     {
       "industry_id": "solid-state-battery",
@@ -51,7 +59,9 @@
       "reviewed_papers": 10,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "solid-state-battery:academic",
-      "equipment_key": "solid-state-battery:academic"
+      "equipment_key": "solid-state-battery:academic",
+      "section_reviewed_papers": 1,
+      "secemp_section_reviewed_papers": 1
     },
     {
       "industry_id": "synthetic-biology-biomanufacturing",
@@ -61,7 +71,9 @@
       "reviewed_papers": 8,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "synthetic-biology-biomanufacturing:academic",
-      "equipment_key": "synthetic-biology-biomanufacturing:academic"
+      "equipment_key": "synthetic-biology-biomanufacturing:academic",
+      "section_reviewed_papers": 3,
+      "secemp_section_reviewed_papers": 1
     },
     {
       "industry_id": "industrial-machine-tools",
@@ -71,7 +83,9 @@
       "reviewed_papers": 8,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "industrial-machine-tools:academic",
-      "equipment_key": "industrial-machine-tools:academic"
+      "equipment_key": "industrial-machine-tools:academic",
+      "section_reviewed_papers": 1,
+      "secemp_section_reviewed_papers": 1
     },
     {
       "industry_id": "smart-sensors-mems",
@@ -81,7 +95,9 @@
       "reviewed_papers": 10,
       "secemp_reviewed_papers": 2,
       "equipment_document_key": "smart-sensors-mems:academic",
-      "equipment_key": "smart-sensors-mems:academic"
+      "equipment_key": "smart-sensors-mems:academic",
+      "section_reviewed_papers": 1,
+      "secemp_section_reviewed_papers": 1
     }
   ]
 }

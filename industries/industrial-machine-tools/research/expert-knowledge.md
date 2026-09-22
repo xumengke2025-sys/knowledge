@@ -149,3 +149,29 @@
 - IMT-P07 [Reliability analysis and enhancement of machining accuracy for machine tools under dual geometric and thermally-induced error constraints](https://doi.org/10.1016/j.aei.2025.103583)；abstract_reviewed。模型结论受误差分布和工况假设影响，不能替代整机验收数据。
 - IMT-P08 [Robust Parametrization of a Model Predictive Controller for a CNC Machining Center Using Bayesian Optimization](https://arxiv.org/abs/2010.06869)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。摘要中的主要比较基于加工中心仿真研究；鲁棒参数优于手工整定不等于已在所有机床、切削工况和真实生产线上获得相同收益。
 - IMT-P09 [Data-Driven Temperature Modelling of Machine Tools by Neural Networks: A Benchmark](https://arxiv.org/abs/2510.03261)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。训练数据主要来自有限元生成，准确预测温度/热流场不等于最终空间误差补偿准确；传感器布点、真实热源变化、结构老化和跨机型迁移仍需实机验证。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### IMT-P09｜Data-Driven Temperature Modelling of Machine Tools by Neural Networks: A Benchmark
+
+**已复核章节**：feature/node selection strategy；NN benchmark setup；Results and Discussion；generalised temperature/heat-flux predictors
+
+**方法/模型**：用FEM生成不同初始条件下的机床温度场/热流数据，先按Pearson相关性移除高度冗余节点，再比较RNN、GRU、LSTM、BiLSTM、Transformer和TCN等时序模型；同时区分专用模型与跨工况generalised模型。
+
+**实验/数据条件**：模型统一训练30个epoch，使用AdamW、序列长度10、batch 32；generalised实验基于12组FEM仿真做leave-one-out交叉验证，每次把一组未见初始条件留作测试。
+
+**基线**：RNN；GRU；LSTM；BiLSTM；Transformer；TCN；ANSYS/FEM reference field
+
+**指标**：MSE；standard deviation across runs；number of retained sensor nodes；generalisation error on held-out initial conditions
+
+**关键发现**：对温度场预测，部分时序架构在跨初始条件下表现稳定；热流的跨工况泛化明显更难，某些独特初始条件导致所有架构误差上升；相关性筛点说明减少传感节点与保持场重构精度可同时优化
+
+**局限**：训练与测试主体仍来自FEM而非长期真实机床数据；从温度/热流预测到最终TCP/工件误差补偿仍隔着结构模型、环境变化与实机闭环
+
+**专家继续追问**：模型是否用真实机床跨季节/跨负载数据验证；预测场如何映射为TCP或工件补偿量；传感器数量削减后鲁棒性如何；异常初始条件/热源变化是否触发模型失效
+
+**不能据此推出**：FEM上的低MSE直接等于真实机床热误差补偿精度；某一网络在benchmark最佳即可说明跨机型普遍最佳
+
+**SecEmp正文锚点**：8a043e92322a6c188495b6afd4a1f6259336b8b69c0bc683dfd367dad52924e9

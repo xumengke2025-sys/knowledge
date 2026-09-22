@@ -150,3 +150,29 @@
 - WBG-P07 [Conventional, wide-bandgap, and hybrid power converters: A comprehensive review](https://doi.org/10.1016/j.rser.2025.115419)；abstract_reviewed。系统级收益必须在同一拓扑、负载和冷却条件下比较。
 - WBG-P08 [Epitaxial high-K AlBN barrier GaN HEMTs](https://arxiv.org/abs/2502.19315)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。属于初步器件实现，长沟道结构、接触电阻和特定材料体系限制可比性；不能把单器件结果外推为量产GaN功率/射频器件的综合性能优势。
 - WBG-P09 [Injection-Limited and Space-Charge-Limited Conduction in Wide Bandgap Semiconductors with Velocity Saturation Effect](https://arxiv.org/abs/2308.00955)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。主要是理论/模型工作，示例结构与参数不能替代真实器件的陷阱、界面、几何、温度和可靠性测试；模型中的高场机制也不能直接转化为某家企业器件性能。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### WBG-P08｜Epitaxial high-K AlBN barrier GaN HEMTs
+
+**已复核章节**：heterostructure characterization；HEMT device process flow；electrical characteristics；C-V dielectric extraction
+
+**方法/模型**：在SiC衬底上外延AlBN/GaN异质结构，使用Hall、器件I-V和MIS C-V测试表征2DEG与介电性质；从3英寸晶圆中心切取样片制造HEMT，采用ICP隔离、合金源漏接触和Ni/Au栅极。
+
+**实验/数据条件**：约7% B的AlBN势垒、2.2 nm AlBN与2 nm GaN cap；源漏Ta/Al/Ni/Au堆栈在830°C氮气中退火65秒，电学和C-V测试用于提取接触、电流、跨导与介电参数。
+
+**基线**：AlN dielectric constant/reference barrier behavior；self-consistent Schrödinger-Poisson C-V calculation
+
+**指标**：2DEG density/mobility；contact resistance；on/off ratio；threshold voltage；subthreshold slope；transconductance；on-resistance；saturation current density；relative dielectric constant
+
+**关键发现**：AlBN/GaN界面可形成极化诱导2DEG并实现超薄势垒HEMT；样品展示清晰电流饱和与可观跨导；当前器件性能明显受接触电阻限制，说明材料势垒优势尚未完全转化为器件性能
+
+**局限**：论文属于初步器件实现，长沟道、小样片和接触电阻限制可比性；未建立量产良率、长期可靠性、动态Ron、高温或高压寿命证据
+
+**专家继续追问**：接触电阻能否进一步降低且具批次一致性；高温/高压/动态应力下性能如何；外延厚度与B组分均匀性怎样；晶圆级良率与可靠性数据是否存在
+
+**不能据此推出**：高介电常数势垒即可保证商业GaN器件更低损耗/更高可靠性；中心小样片结果代表整片3英寸乃至大尺寸晶圆量产一致性
+
+**SecEmp正文锚点**：25110897d0e5f9b1a2de8cd8cc143c8f1ae4a2001e7e73a40b87ae0cf46cfb18

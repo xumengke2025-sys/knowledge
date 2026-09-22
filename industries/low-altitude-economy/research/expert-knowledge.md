@@ -149,3 +149,29 @@
 - LA-P07 [Research advances in electrical propulsion systems for electric vertical take-off and landing aircrafts: A comprehensive review](https://doi.org/10.7527/S1000-6893.2025.32000)；abstract_reviewed。综述中的机型参数来自不同公开口径，不能无条件横向排名。
 - LA-P08 [eVTOL Aircraft Energy Overhead Estimation under Conflict Resolution in High-Density Airspaces](https://arxiv.org/abs/2604.06093)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结论来自特定冲突解脱算法、交通密度与物理功率模型；给出的储备比例不能直接作为不同机型、航路、气象或适航规则下的统一设计值。
 - LA-P09 [Throughput Maximizing Takeoff Scheduling for eVTOL Vehicles in On-Demand Urban Air Mobility Systems](https://arxiv.org/abs/2503.17313)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。吞吐最优性质依赖足够大的车队及特定网络对称性，案例城市与需求模型也影响结果；不能直接转化为现实城市起降场吞吐或商业运营效率。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### LA-P08｜eVTOL Aircraft Energy Overhead Estimation under Conflict Resolution in High-Density Airspaces
+
+**已复核章节**：II eVTOL Energy Consumption Model and Model Scope；III Conflict Resolution and Simulation Framework；V/VI Results and reserve estimation；VI-B Limitations
+
+**方法/模型**：将基于航空器部件/动量理论的eVTOL巡航功率模型与MVP战术冲突解脱算法、交通级仿真组合，用冲突场景与无冲突基线的相对能耗差计算deconfliction overhead，并进一步训练预测模型估计任务开始时的能耗增量范围。
+
+**实验/数据条件**：基线机型为Joby S4级六旋翼倾转构型，最大起飞质量2177 kg、电池136 kWh；自由飞行圆形空域中系统改变并发航空器密度并生成大量航段样本。
+
+**基线**：conflict-free trajectory energy；MVP conflict-resolution trajectory energy
+
+**指标**：relative energy overhead；median/P95/tail overhead；prediction interval coverage；RMSE/MAE for prediction model
+
+**关键发现**：大多数研究场景的中位能耗增量较低，但高密度持续冲突产生明显长尾；储备能量不能只看平均值，需要关注高分位和初始拥堵状态；相对能耗增量比绝对能耗对功率模型系统偏差更稳健
+
+**局限**：论文明确说明功率模型尚未由飞行试验验证，绝对能耗需谨慎解释；自由飞行扇区和MVP算法属于研究设定，不能直接替代真实航路、气象、适航和运营规则
+
+**专家继续追问**：企业航程/储备能量是否考虑交通冲突和备降；能源模型是否有真实飞行数据校准；高密度P95/P99能耗增量是多少；调度、气象和冲突算法改变后结论是否稳定
+
+**不能据此推出**：4-5%的研究储备比例可作为所有eVTOL机型统一工程标准；仿真中MVP能耗较低即可证明真实城市高密度运行经济性成立
+
+**SecEmp正文锚点**：b85f61d97c6bce90dbc29eb3d1f32349da71f4afda692ccc5128498d8f156704

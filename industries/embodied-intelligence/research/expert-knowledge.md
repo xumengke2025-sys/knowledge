@@ -154,3 +154,29 @@
 - EI-P08 [Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications](https://doi.org/10.1109/ACCESS.2025.3609980)；abstract_reviewed。系统综述并不代表其中所有模型在统一硬件和统一基准下可直接横向排名。
 - EI-P09 [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](https://arxiv.org/abs/2502.19645)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结论来自OpenVLA及LIBERO、ALOHA等特定基准和机器人设置；摘要中的成功率与吞吐提升不能直接外推到其他VLA、本体、任务分布或量产实时控制。
 - EI-P10 [Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos](https://arxiv.org/abs/2510.21571)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。人类手部运动到机器人动作的映射、数据处理管线和目标平台都会影响迁移效果；摘要中的规模效应与零样本结果不能理解为任意机器人无需适配即可工作。
+
+## SecEmp 深读证据卡（sections_reviewed）
+
+> 仅列出已完成章节级复核的论文。SecEmp paper_text 提供正文版本锚点；研究结论由已审阅章节形成，不使用机器关键词命中代替阅读。
+
+### EI-P09｜Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success
+
+**已复核章节**：V-A LIBERO Experimental Setup；V-B/V-C LIBERO performance and inference efficiency；VI-A ALOHA Experimental Setup；VI-C/VI-D ALOHA performance and inference efficiency；VIII Limitations
+
+**方法/模型**：比较VLA微调中的并行/自回归解码、动作分块、离散/连续动作表示以及L1回归/扩散目标；OpenVLA作为统一底座，尽量通过受控实验拆分设计因素。
+
+**实验/数据条件**：LIBERO包含4个task suite，每个suite 10个任务、500条专家演示；OpenVLA采用LoRA微调。真实机器人部分使用双臂ALOHA、3路相机、14维关节状态，控制频率25 Hz，且与OpenVLA预训练分布存在明显本体、视角、状态输入和控制频率差异。
+
+**基线**：base OpenVLA fine-tuning；Diffusion Policy；Octo；DiT Policy；Seer；MDT；pi0；RDT-1B；ACT
+
+**指标**：task success rate；action generation throughput；latency；control frequency
+
+**关键发现**：并行解码与action chunking同时改善推理效率和任务表现；连续动作表示优于离散动作方案；L1目标在研究设置中可接近扩散式任务表现但训练和推理更简单；真实ALOHA结果表明适配方案可支持高频双臂控制，但结论依赖特定数据和硬件
+
+**局限**：训练演示通常每个任务采用一致策略，真正多峰动作分布仍可能使L1回归受限；主要实验集中于OpenVLA、LIBERO和ALOHA，不能视为所有VLA与机器人本体的普遍规律
+
+**专家继续追问**：目标机器人与底座预训练数据的分布差距有多大；动作表示、chunk长度和控制频率是什么；推理硬件、端到端延迟和真实闭环成功率是多少；是否存在多策略/多峰动作任务以及失败模式
+
+**不能据此推出**：采用OpenVLA/OFT思路即可在任意机器人上获得相同成功率；论文中的吞吐提升可直接等同量产系统端到端实时性
+
+**SecEmp正文锚点**：4e14656c1e09c5794e630dff1ad7eb0dfd6c2cafaa19c647a1495af17042fe74

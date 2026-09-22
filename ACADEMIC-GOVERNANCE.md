@@ -1,4 +1,4 @@
-# 学术知识治理（v0.8）
+# 学术知识治理（v0.9）
 
 日期：2026-09-22
 
@@ -37,6 +37,14 @@ v0.8 增加 `sources/secemp-arxiv/reviewed-v08.json` 作为稳定学术知识的
 其中 `paper_text` 机器预审只用于判断是否值得继续阅读、是否存在方法/实验/结果/局限章节，以及有哪些指标/基线信号；它本身不构成 `sections_reviewed`。v0.8 本轮 16 篇 SecEmp 论文均只晋级为 `abstract_reviewed`。
 
 每个新机制至少需要两篇复核论文共同支持，并必须包含：关键变量、需要补证的证据、专家使用方法和明确的错误外推边界。
+
+## Section Review 晋级（v0.9）
+
+`sources/secemp-arxiv/section-reviewed-v09.json` 是章节级阅读深度的显式白名单。进入该清单前，论文必须已经是稳定 `academic-papers` 对象，并具有 SecEmp `paper_text` 版本锚点；进入后才允许升级为 `sections_reviewed`。
+
+章节复核必须至少保存：已读章节、方法/模型、实验或数据条件、基线、指标、关键发现、局限、专家继续追问项和不能据此推出的结论。只检测到 Method/Results 章节标题、关键词或指标名称，不构成章节复核。
+
+v0.9 仍不自动使用 `full_text_reviewed`。完整阅读全文并系统复核方法、结果、补充材料和局限后，才允许进入该状态。
 
 ## 阅读状态
 

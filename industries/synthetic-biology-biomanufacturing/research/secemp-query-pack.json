@@ -1,0 +1,147 @@
+{
+  "version": "0.7.0",
+  "industry_id": "synthetic-biology-biomanufacturing",
+  "industry": "合成生物学与生物制造",
+  "source_dataset": "secemp9/arxiv-complete",
+  "source_configs": [
+    "metadata",
+    "paper_text"
+  ],
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "preferred_categories": [
+    "q-bio.BM",
+    "q-bio.MN",
+    "q-bio.QM",
+    "q-bio.GN"
+  ],
+  "min_score": 5,
+  "term_groups": [
+    {
+      "node_ids": [
+        "design",
+        "metabolic-model",
+        "data-learning"
+      ],
+      "terms": [
+        {
+          "term": "metabolic engineering model",
+          "weight": 2
+        },
+        {
+          "term": "genome scale metabolic model",
+          "weight": 2
+        },
+        {
+          "term": "machine learning synthetic biology",
+          "weight": 1
+        },
+        {
+          "term": "protein design biomanufacturing",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "build",
+        "gene-edit",
+        "chassis"
+      ],
+      "terms": [
+        {
+          "term": "synthetic biology chassis",
+          "weight": 2
+        },
+        {
+          "term": "crispr metabolic engineering",
+          "weight": 2
+        },
+        {
+          "term": "pathway engineering microorganism",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "test",
+        "screening",
+        "learn"
+      ],
+      "terms": [
+        {
+          "term": "high throughput screening synthetic biology",
+          "weight": 2
+        },
+        {
+          "term": "design build test learn",
+          "weight": 2
+        },
+        {
+          "term": "automation biofoundry",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "fermentation",
+        "mass-transfer",
+        "scale-down"
+      ],
+      "terms": [
+        {
+          "term": "fermentation scale-up",
+          "weight": 2
+        },
+        {
+          "term": "bioreactor oxygen transfer",
+          "weight": 2
+        },
+        {
+          "term": "scale down model fermentation",
+          "weight": 1
+        },
+        {
+          "term": "industrial biomanufacturing scale",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "separation",
+        "downstream",
+        "tea-lca"
+      ],
+      "terms": [
+        {
+          "term": "bioprocess downstream purification",
+          "weight": 2
+        },
+        {
+          "term": "techno economic analysis biomanufacturing",
+          "weight": 2
+        },
+        {
+          "term": "life cycle assessment biomanufacturing",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "negative_terms": [
+    "synthetic aperture radar"
+  ],
+  "promotion_gate": [
+    "metadata命中后先做主题相关性复核",
+    "至少abstract_reviewed后才能支持摘要明确表达的方向性判断",
+    "机制结论需记录实验/方法条件和外推边界",
+    "高价值结论优先读取paper_text并与正式发表版本/其他来源交叉核验",
+    "论文证据不能替代上市公司披露或企业运行时事实"
+  ]
+}

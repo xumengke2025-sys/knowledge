@@ -1,6 +1,6 @@
-# 学术知识治理（v0.4）
+# 学术知识治理（v0.7）
 
-日期：2026-09-20
+日期：2026-09-22
 
 ## 目标
 
@@ -13,6 +13,18 @@
 3. `literature-map.json`：综述/经典/前沿及机制—论文映射。
 4. `frontier-topics.json`：持续监测主题和检索式，不自动把新论文写成知识事实。
 5. `expert-knowledge.md`：真正进入 FirmBuddy Knowledge Equipment 的可读知识文档。
+
+## SecEmp arXiv 主语料层
+
+`secemp9/arxiv-complete` 自 v0.7 起作为历史全量 arXiv 主语料源：
+
+- `metadata` 用于行业候选发现，不因为命中就提升为稳定知识；
+- `paper_text` 只对高价值候选按 `paper_id` 读取，用于方法、实验、指标、局限和失败模式复核；
+- `versions` 用于需要时核对版本；
+- `latex/pdf/source` 不是默认研究路径，不批量下载进仓库；
+- SecEmp 为一次性快照，现有 OpenAlex/Crossref Radar 继续承担增量发现。
+
+每个行业通过 `research/secemp-query-pack.json` 把关键词、arXiv 分类和现有 taxonomy 节点绑定。流水线输出的 `arxiv-candidates.jsonl` 均为候选池，不自动写入 `academic-papers.jsonl`、`mechanisms.jsonl` 或 FirmBuddy 稳定装备。机器对 `paper_text` 的章节识别、术语命中或结构化预审也不自动改变 `reading_status`。
 
 ## 阅读状态
 

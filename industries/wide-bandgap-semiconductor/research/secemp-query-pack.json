@@ -1,0 +1,150 @@
+{
+  "version": "0.7.0",
+  "industry_id": "wide-bandgap-semiconductor",
+  "industry": "第三代/宽禁带半导体",
+  "source_dataset": "secemp9/arxiv-complete",
+  "source_configs": [
+    "metadata",
+    "paper_text"
+  ],
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "preferred_categories": [
+    "cond-mat.mtrl-sci",
+    "physics.app-ph",
+    "cond-mat.mes-hall"
+  ],
+  "min_score": 5,
+  "term_groups": [
+    {
+      "node_ids": [
+        "crystal-growth",
+        "pvt",
+        "solution-growth"
+      ],
+      "terms": [
+        {
+          "term": "silicon carbide crystal growth",
+          "weight": 2
+        },
+        {
+          "term": "sic pvt growth",
+          "weight": 2
+        },
+        {
+          "term": "gallium nitride bulk growth",
+          "weight": 1
+        },
+        {
+          "term": "wide bandgap crystal growth",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "substrate",
+        "wafer-processing",
+        "sic-epitaxy",
+        "gan-epitaxy"
+      ],
+      "terms": [
+        {
+          "term": "sic substrate defect",
+          "weight": 2
+        },
+        {
+          "term": "silicon carbide epitaxy",
+          "weight": 2
+        },
+        {
+          "term": "gan epitaxy",
+          "weight": 1
+        },
+        {
+          "term": "sic wafer polishing",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "sic-mosfet",
+        "gan-hemt",
+        "schottky",
+        "device"
+      ],
+      "terms": [
+        {
+          "term": "sic mosfet reliability",
+          "weight": 2
+        },
+        {
+          "term": "gan hemt reliability",
+          "weight": 2
+        },
+        {
+          "term": "sic schottky diode",
+          "weight": 1
+        },
+        {
+          "term": "wide bandgap power device",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "advanced-package",
+        "module"
+      ],
+      "terms": [
+        {
+          "term": "sic power module packaging",
+          "weight": 2
+        },
+        {
+          "term": "gan power module packaging",
+          "weight": 2
+        },
+        {
+          "term": "high temperature power packaging",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "qualification",
+        "test-equipment"
+      ],
+      "terms": [
+        {
+          "term": "sic device reliability test",
+          "weight": 2
+        },
+        {
+          "term": "gan device degradation",
+          "weight": 2
+        },
+        {
+          "term": "power cycling sic module",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "negative_terms": [
+    "battery cathode"
+  ],
+  "promotion_gate": [
+    "metadata命中后先做主题相关性复核",
+    "至少abstract_reviewed后才能支持摘要明确表达的方向性判断",
+    "机制结论需记录实验/方法条件和外推边界",
+    "高价值结论优先读取paper_text并与正式发表版本/其他来源交叉核验",
+    "论文证据不能替代上市公司披露或企业运行时事实"
+  ]
+}

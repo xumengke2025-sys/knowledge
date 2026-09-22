@@ -1,0 +1,146 @@
+{
+  "version": "0.7.0",
+  "industry_id": "industrial-machine-tools",
+  "industry": "工业母机与高端数控",
+  "source_dataset": "secemp9/arxiv-complete",
+  "source_configs": [
+    "metadata",
+    "paper_text"
+  ],
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "preferred_categories": [
+    "eess.SY",
+    "cs.RO",
+    "cs.LG",
+    "physics.app-ph"
+  ],
+  "min_score": 5,
+  "term_groups": [
+    {
+      "node_ids": [
+        "five-axis",
+        "cnc-machine",
+        "cnc-system"
+      ],
+      "terms": [
+        {
+          "term": "five-axis machining",
+          "weight": 2
+        },
+        {
+          "term": "five axis cnc",
+          "weight": 2
+        },
+        {
+          "term": "computer numerical control machining",
+          "weight": 1
+        },
+        {
+          "term": "cnc interpolation",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "thermal-error",
+        "geometric-calibration"
+      ],
+      "terms": [
+        {
+          "term": "machine tool thermal error",
+          "weight": 2
+        },
+        {
+          "term": "machine tool geometric error",
+          "weight": 2
+        },
+        {
+          "term": "cnc volumetric error compensation",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "chatter",
+        "spindle",
+        "spindle-bearing"
+      ],
+      "terms": [
+        {
+          "term": "machining chatter stability",
+          "weight": 2
+        },
+        {
+          "term": "milling stability lobe",
+          "weight": 2
+        },
+        {
+          "term": "machine tool spindle dynamics",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "servo",
+        "encoder",
+        "linear-motion"
+      ],
+      "terms": [
+        {
+          "term": "cnc servo control",
+          "weight": 2
+        },
+        {
+          "term": "machine tool feed drive",
+          "weight": 2
+        },
+        {
+          "term": "linear motor machine tool",
+          "weight": 1
+        },
+        {
+          "term": "precision encoder cnc",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "cam",
+        "tooling",
+        "acceptance"
+      ],
+      "terms": [
+        {
+          "term": "toolpath optimization machining",
+          "weight": 2
+        },
+        {
+          "term": "machining surface quality prediction",
+          "weight": 2
+        },
+        {
+          "term": "machine tool accuracy test",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "negative_terms": [
+    "medical spindle cell"
+  ],
+  "promotion_gate": [
+    "metadata命中后先做主题相关性复核",
+    "至少abstract_reviewed后才能支持摘要明确表达的方向性判断",
+    "机制结论需记录实验/方法条件和外推边界",
+    "高价值结论优先读取paper_text并与正式发表版本/其他来源交叉核验",
+    "论文证据不能替代上市公司披露或企业运行时事实"
+  ]
+}

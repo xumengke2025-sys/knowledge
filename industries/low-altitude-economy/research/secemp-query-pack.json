@@ -1,0 +1,154 @@
+{
+  "version": "0.7.0",
+  "industry_id": "low-altitude-economy",
+  "industry": "低空经济",
+  "source_dataset": "secemp9/arxiv-complete",
+  "source_configs": [
+    "metadata",
+    "paper_text"
+  ],
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "preferred_categories": [
+    "cs.RO",
+    "eess.SY",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "min_score": 5,
+  "term_groups": [
+    {
+      "node_ids": [
+        "evtol",
+        "aircraft",
+        "electric-drive"
+      ],
+      "terms": [
+        {
+          "term": "evtol",
+          "weight": 2
+        },
+        {
+          "term": "electric vertical takeoff",
+          "weight": 2
+        },
+        {
+          "term": "distributed electric propulsion aircraft",
+          "weight": 1
+        },
+        {
+          "term": "urban air mobility",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "traffic-management",
+        "low-altitude-network",
+        "c2-link"
+      ],
+      "terms": [
+        {
+          "term": "unmanned traffic management",
+          "weight": 2
+        },
+        {
+          "term": "utm drone",
+          "weight": 2
+        },
+        {
+          "term": "low altitude communication network",
+          "weight": 1
+        },
+        {
+          "term": "uav command and control link",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "detect-avoid",
+        "radar",
+        "cnns"
+      ],
+      "terms": [
+        {
+          "term": "detect and avoid uav",
+          "weight": 2
+        },
+        {
+          "term": "drone sense and avoid",
+          "weight": 2
+        },
+        {
+          "term": "low altitude radar",
+          "weight": 1
+        },
+        {
+          "term": "uav surveillance",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "airworthiness",
+        "weather"
+      ],
+      "terms": [
+        {
+          "term": "evtol airworthiness",
+          "weight": 2
+        },
+        {
+          "term": "uav airworthiness",
+          "weight": 2
+        },
+        {
+          "term": "urban air mobility safety",
+          "weight": 1
+        },
+        {
+          "term": "low altitude weather",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "battery",
+        "propulsion",
+        "piston-engine"
+      ],
+      "terms": [
+        {
+          "term": "aviation battery electric aircraft",
+          "weight": 2
+        },
+        {
+          "term": "hybrid electric aircraft propulsion",
+          "weight": 2
+        },
+        {
+          "term": "uav propulsion efficiency",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "negative_terms": [
+    "underwater vehicle"
+  ],
+  "promotion_gate": [
+    "metadata命中后先做主题相关性复核",
+    "至少abstract_reviewed后才能支持摘要明确表达的方向性判断",
+    "机制结论需记录实验/方法条件和外推边界",
+    "高价值结论优先读取paper_text并与正式发表版本/其他来源交叉核验",
+    "论文证据不能替代上市公司披露或企业运行时事实"
+  ]
+}

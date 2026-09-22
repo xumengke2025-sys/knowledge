@@ -1,0 +1,53 @@
+name: Apply SecEmp academic compiler v0.8
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sources/secemp-arxiv/reviewed-v08.json'
+      - 'scripts/apply-secemp-academic-v08.py'
+      - '.github/workflows/apply-secemp-academic-v08.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: secemp-academic-v08-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile reviewed SecEmp papers into stable academic equipment
+        run: python scripts/apply-secemp-academic-v08.py
+
+      - name: Validate academic contracts before persist
+        run: python scripts/validate-academic.py
+
+      - name: Persist deterministic generated academic outputs
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Rebase by regeneration, not by merging generated JSON/Markdown.
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/apply-secemp-academic-v08.py
+          python scripts/validate-academic.py
+
+          git add             industries/*/research/academic-papers.jsonl             industries/*/research/mechanisms.jsonl             industries/*/research/literature-map.json             industries/*/research/frontier-topics.json             industries/*/research/evaluation-academic.jsonl             industries/*/research/expert-knowledge.md             academic-catalog.json             firmbuddy/import-bundle.json
+
+          git diff --cached --quiet && exit 0
+          git commit -m "data: compile reviewed SecEmp papers into expert knowledge"
+          git push origin HEAD:main

@@ -5,6 +5,11 @@ import pathlib
 
 R = pathlib.Path(__file__).resolve().parents[1]
 REVIEW = json.loads((R / "sources/secemp-arxiv/reviewed-v08.json").read_text(encoding="utf-8"))
+V09 = R / "sources/secemp-arxiv/section-reviewed-v09.json"
+V09_IDS = set()
+if V09.exists():
+    v09 = json.loads(V09.read_text(encoding="utf-8"))
+    V09_IDS = {x["id"] for x in v09.get("papers", [])}
 IDS = list(REVIEW["industries"])
 
 def jsonl(path):
@@ -27,8 +32,15 @@ for iid in IDS:
 
     for src in additions["papers"]:
         p = papers[src["id"]]
-        assert p == src, (iid, src["id"], "stable paper differs from reviewed manifest")
-        assert p["reading_status"] == "abstract_reviewed", (iid, p["id"], "SecEmp paper over-promoted")
+        for k, v in src.items():
+            if k == "reading_status" and src["id"] in V09_IDS:
+                assert p.get(k) in {"abstract_reviewed", "sections_reviewed"}, (iid, src["id"], "invalid review-depth upgrade")
+            else:
+                assert p.get(k) == v, (iid, src["id"], k, "v0.8 field drift")
+        if src["id"] in V09_IDS:
+            assert p["reading_status"] == "sections_reviewed", (iid, p["id"], "v0.9 section review missing")
+        else:
+            assert p["reading_status"] == "abstract_reviewed", (iid, p["id"], "unexpected review-depth change")
         assert p["source_dataset"] == "secemp9/arxiv-complete"
         assert p["secemp_paper_text_available"] is True
         assert p["summary"] and p["limitations"]
@@ -45,7 +57,7 @@ for iid in IDS:
         reviewed_mechanisms += 1
 
 catalog = json.loads((R / "academic-catalog.json").read_text(encoding="utf-8"))
-assert catalog["version"] == "0.8.0"
+assert catalog["version"] in {"0.8.0", "0.9.0"}
 assert catalog["as_of"] == "2026-09-22"
 assert len(catalog["industries"]) == 8
 assert sum(x["secemp_reviewed_papers"] for x in catalog["industries"]) == reviewed_papers

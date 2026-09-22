@@ -1,5 +1,7 @@
 # 科技情报构建方法
 
+> **说明（2026-09-22）**：本文件保留为“基础科技情报/事实治理”子规范。新建 FirmBuddy 专家的完整最新版方法请使用 [`methodology/EXPERT-BUILD-METHODOLOGY-V1.0.md`](methodology/EXPERT-BUILD-METHODOLOGY-V1.0.md)，其中已整合 Academic v0.9、Radar、Benchmark、Evidence Framework、运行时企业取数、Expert Pack、Knowledge Equipment、导入与验收。
+
 ## 1. 分层事实模型
 
 ### 行业事实

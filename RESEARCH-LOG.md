@@ -26,3 +26,9 @@
 - 每行业新增 1 个跨论文机制，共 8 个；当前 academic-catalog 为 76 篇研究卡、57 个机制单元。
 - 新增确定性编译器，自动重建 literature-map、frontier-topics、evaluation-academic、expert-knowledge 与 FirmBuddy academic 装备。
 - 新增 v0.8 专项验证，检查论文晋级边界、多论文支持链和 FirmBuddy 装备一致性。
+
+## 2026-09-22 v0.9.0
+- 8 行业各选择 1 篇高价值 SecEmp 论文完成章节级复核，共 8 篇升级为 `sections_reviewed`。
+- 新增 `paper-section-notes.jsonl` 和 `section-reviewed-v09.json`，记录方法、实验条件、基线、指标、局限、专家追问和禁止外推。
+- FirmBuddy 8 个 academic 装备新增 SecEmp 深读证据卡，并保持正文 SHA256/阅读状态一致。
+- 新增 v0.9 确定性编译器和专项验证，同时使 v0.8 门禁支持合法的更高阅读深度升级。

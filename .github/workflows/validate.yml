@@ -24,6 +24,9 @@ jobs:
       - name: Validate v0.7 SecEmp arXiv source contracts
         run: python scripts/validate-secemp-arxiv.py
 
+      - name: Validate committed SecEmp candidate and paper_text outputs
+        run: python scripts/validate-secemp-outputs.py
+
       - name: Validate v0.5 expert operating system
         run: python scripts/validate-v05.py
 

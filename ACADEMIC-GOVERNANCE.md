@@ -1,4 +1,4 @@
-# 学术知识治理（v0.7）
+# 学术知识治理（v0.8）
 
 日期：2026-09-22
 
@@ -25,6 +25,18 @@
 - SecEmp 为一次性快照，现有 OpenAlex/Crossref Radar 继续承担增量发现。
 
 每个行业通过 `research/secemp-query-pack.json` 把关键词、arXiv 分类和现有 taxonomy 节点绑定。流水线输出的 `arxiv-candidates.jsonl` 均为候选池，不自动写入 `academic-papers.jsonl`、`mechanisms.jsonl` 或 FirmBuddy 稳定装备。机器对 `paper_text` 的章节识别、术语命中或结构化预审也不自动改变 `reading_status`。
+
+## SecEmp 稳定知识晋级清单
+
+v0.8 增加 `sources/secemp-arxiv/reviewed-v08.json` 作为稳定学术知识的显式白名单。只有经过明确复核并写入该清单的论文，才允许由 `scripts/apply-secemp-academic-v08.py` 进入 `academic-papers.jsonl`、`mechanisms.jsonl` 和 FirmBuddy academic 装备。
+
+晋级顺序固定为：
+
+`arxiv-candidates.jsonl → paper-evidence-candidates.jsonl → reviewed-v08.json → academic-papers.jsonl → mechanisms.jsonl → expert-knowledge.md`
+
+其中 `paper_text` 机器预审只用于判断是否值得继续阅读、是否存在方法/实验/结果/局限章节，以及有哪些指标/基线信号；它本身不构成 `sections_reviewed`。v0.8 本轮 16 篇 SecEmp 论文均只晋级为 `abstract_reviewed`。
+
+每个新机制至少需要两篇复核论文共同支持，并必须包含：关键变量、需要补证的证据、专家使用方法和明确的错误外推边界。
 
 ## 阅读状态
 

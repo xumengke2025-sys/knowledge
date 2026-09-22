@@ -1,0 +1,58 @@
+{
+  "version": "0.7.1",
+  "as_of": "2026-09-22T02:36:18.601628+00:00",
+  "dataset": "secemp9/arxiv-complete",
+  "top_per_industry": 8,
+  "unique_papers_requested": 64,
+  "paper_text_rows_found": 41,
+  "industries": [
+    {
+      "industry_id": "embodied-intelligence",
+      "records": 8,
+      "paper_text_available": 8,
+      "output": "industries/embodied-intelligence/research/paper-evidence-candidates.jsonl"
+    },
+    {
+      "industry_id": "commercial-space-satcom",
+      "records": 8,
+      "paper_text_available": 8,
+      "output": "industries/commercial-space-satcom/research/paper-evidence-candidates.jsonl"
+    },
+    {
+      "industry_id": "low-altitude-economy",
+      "records": 8,
+      "paper_text_available": 7,
+      "output": "industries/low-altitude-economy/research/paper-evidence-candidates.jsonl"
+    },
+    {
+      "industry_id": "wide-bandgap-semiconductor",
+      "records": 8,
+      "paper_text_available": 3,
+      "output": "industries/wide-bandgap-semiconductor/research/paper-evidence-candidates.jsonl"
+    },
+    {
+      "industry_id": "solid-state-battery",
+      "records": 8,
+      "paper_text_available": 4,
+      "output": "industries/solid-state-battery/research/paper-evidence-candidates.jsonl"
+    },
+    {
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "records": 8,
+      "paper_text_available": 5,
+      "output": "industries/synthetic-biology-biomanufacturing/research/paper-evidence-candidates.jsonl"
+    },
+    {
+      "industry_id": "industrial-machine-tools",
+      "records": 8,
+      "paper_text_available": 4,
+      "output": "industries/industrial-machine-tools/research/paper-evidence-candidates.jsonl"
+    },
+    {
+      "industry_id": "smart-sensors-mems",
+      "records": 8,
+      "paper_text_available": 2,
+      "output": "industries/smart-sensors-mems/research/paper-evidence-candidates.jsonl"
+    }
+  ]
+}

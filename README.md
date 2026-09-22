@@ -1,5 +1,9 @@
 # FirmBuddy 先进科技行业知识库
 
+## v0.8 SecEmp 学术知识编译层
+
+2026-09-22 将 SecEmp 从“论文候选与正文预审”推进到“专家长期知识编译”：新增 reviewed 白名单、确定性编译器和质量门禁。本轮每个行业晋级 2 篇摘要已复核论文，共 16 篇，并新增 8 个由至少两篇论文共同支持的机制单元；当前 academic-catalog 共 76 篇研究卡、57 个机制。FirmBuddy 的 8 个 academic Knowledge Equipment 已同步重编译。详见 `QUALITY-V0.8.md`。
+
 ## v0.7 SecEmp arXiv 学术主语料层
 
 2026-09-22 接入 `secemp9/arxiv-complete` 作为历史全量 arXiv 主语料底座：使用 metadata 构造 8 行业候选池，对高价值论文按 `paper_id` 读取 `paper_text` 做方法、实验、指标、局限与失败模式复核。仓库不复制约 16TB 原始语料；SecEmp 是一次性快照，OpenAlex/Crossref Radar 继续负责增量论文发现。详见 `sources/secemp-arxiv/README.md`、`ACADEMIC-GOVERNANCE.md` 与 `QUALITY-V0.7.md`。
@@ -11,9 +15,9 @@
 
 面向 **中国大陆上市公司** 的科技情报与行业专家训练底座，服务于 FirmBuddy 的「知识库—专家」体系。
 
-> 当前版本：**v0.7.0（SecEmp arXiv 学术主语料层）**  
+> 当前版本：**v0.8.0（SecEmp 学术知识编译层）**  
 > 截止日期：2026-09-22  
-> 本次深化：**全量学术候选发现 + 按需全文复核 + 专家知识晋级**。
+> 本次深化：**全量学术候选发现 + paper_text 预审 + reviewed 白名单 + 专家知识编译**。
 
 新增139个技术树节点的完整定义（含保留节点）、42个技术机制/条件专题、24条本轮核查摘录，以及14篇学术文献记录，其中9篇已读摘要或部分正文。公司池沿用104条行业内公司记录，并未宣称新增104家验证公司。
 

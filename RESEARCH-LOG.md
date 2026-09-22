@@ -19,3 +19,10 @@
 - 为8行业新增taxonomy对齐的SecEmp查询包，并增加metadata候选发现、按ID获取 `paper_text`、机器预审与质量校验脚本。
 - 新增CI：PR使用SecEmp sample做远程读取烟测；主分支相关变更、月度计划或手动执行可构建8行业候选池。
 - 保留OpenAlex/Crossref作为快照后的增量学术Radar；候选论文不自动晋级稳定知识。
+
+## 2026-09-22 v0.8.0
+- 新增 SecEmp 稳定知识晋级白名单 `sources/secemp-arxiv/reviewed-v08.json`。
+- 8 行业共晋级 16 篇 `abstract_reviewed` SecEmp 论文；paper_text 仅作为机器预审，不越级标记为正文已读。
+- 每行业新增 1 个跨论文机制，共 8 个；当前 academic-catalog 为 76 篇研究卡、57 个机制单元。
+- 新增确定性编译器，自动重建 literature-map、frontier-topics、evaluation-academic、expert-knowledge 与 FirmBuddy academic 装备。
+- 新增 v0.8 专项验证，检查论文晋级边界、多论文支持链和 FirmBuddy 装备一致性。

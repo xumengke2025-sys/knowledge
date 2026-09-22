@@ -110,6 +110,15 @@ def score_expr(pack: dict[str, Any], has_categories: bool) -> str:
         )
     return " + ".join(parts) if parts else "0"
 
+def term_filter_expr(pack: dict[str, Any]) -> str:
+    parts = []
+    for t in normalized_terms(pack):
+        q = sql_quote(t["term"])
+        parts.append(
+            f"(contains(lower(coalesce(title,'')), {q}) OR contains(lower(coalesce(abstract,'')), {q}))"
+        )
+    return "(" + " OR ".join(parts) + ")" if parts else "false"
+
 def match_nodes(row: dict[str, Any], pack: dict[str, Any]) -> list[str]:
     text = ((row.get("title") or "") + " " + (row.get("abstract") or "")).lower()
     nodes: list[str] = []
@@ -125,6 +134,7 @@ def discover(industry_id: str, limit: int, source: str, out: pathlib.Path | None
         raise SystemExit("source must be metadata or sample")
     has_categories = source == "metadata"
     score = score_expr(pack, has_categories)
+    term_filter = term_filter_expr(pack)
     min_score = int(pack.get("min_score", 4))
     table = f"{HF_ROOT}/{source}/*.parquet"
     if source == "metadata":
@@ -144,7 +154,7 @@ def discover(industry_id: str, limit: int, source: str, out: pathlib.Path | None
     sql = f"""
     SELECT {columns}, ({score})::INTEGER AS relevance_score
     FROM {sql_quote(table)}
-    WHERE ({score}) >= {min_score}
+    WHERE {term_filter} AND ({score}) >= {min_score}
     ORDER BY relevance_score DESC, coalesce(latest_version_date, DATE '1900-01-01') DESC, paper_id DESC
     LIMIT {int(limit)}
     """
@@ -162,9 +172,12 @@ def discover(industry_id: str, limit: int, source: str, out: pathlib.Path | None
         for k, v in list(r.items()):
             if isinstance(v, (dt.date, dt.datetime)):
                 r[k] = v.isoformat()
+        nodes = match_nodes(r, pack)
+        if not nodes:
+            continue
         r.update({
             "industry_id": industry_id,
-            "taxonomy_node_ids": match_nodes(r, pack),
+            "taxonomy_node_ids": nodes,
             "source_dataset": DATASET,
             "source_config": source,
             "dataset_snapshot": SNAPSHOT,

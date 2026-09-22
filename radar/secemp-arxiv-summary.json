@@ -1,0 +1,61 @@
+{
+  "version": "0.7.0",
+  "as_of": "2026-09-22",
+  "dataset": "secemp9/arxiv-complete",
+  "dataset_snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "source_config": "metadata",
+  "industries": [
+    {
+      "industry_id": "embodied-intelligence",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/embodied-intelligence/research/arxiv-candidates.jsonl"
+    },
+    {
+      "industry_id": "commercial-space-satcom",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/commercial-space-satcom/research/arxiv-candidates.jsonl"
+    },
+    {
+      "industry_id": "low-altitude-economy",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/low-altitude-economy/research/arxiv-candidates.jsonl"
+    },
+    {
+      "industry_id": "wide-bandgap-semiconductor",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/wide-bandgap-semiconductor/research/arxiv-candidates.jsonl"
+    },
+    {
+      "industry_id": "solid-state-battery",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/solid-state-battery/research/arxiv-candidates.jsonl"
+    },
+    {
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/synthetic-biology-biomanufacturing/research/arxiv-candidates.jsonl"
+    },
+    {
+      "industry_id": "industrial-machine-tools",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/industrial-machine-tools/research/arxiv-candidates.jsonl"
+    },
+    {
+      "industry_id": "smart-sensors-mems",
+      "source": "metadata",
+      "candidates": 120,
+      "output": "/home/runner/work/knowledge/knowledge/industries/smart-sensors-mems/research/arxiv-candidates.jsonl"
+    }
+  ],
+  "notice": "候选池不是稳定知识；必须经人工/模型复核后才能提升 reading_status 或进入 mechanisms。"
+}

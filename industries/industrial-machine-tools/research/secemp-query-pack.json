@@ -240,14 +240,6 @@
       ],
       "terms": [
         {
-          "term": "machine tool",
-          "weight": 2
-        },
-        {
-          "term": "cnc machining",
-          "weight": 2
-        },
-        {
           "term": "numerical control machine",
           "weight": 2
         },
@@ -274,10 +266,6 @@
         },
         {
           "term": "cutting force machining",
-          "weight": 2
-        },
-        {
-          "term": "surface roughness machining",
           "weight": 2
         }
       ]

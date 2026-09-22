@@ -236,15 +236,7 @@
       ],
       "terms": [
         {
-          "term": "silicon carbide",
-          "weight": 1
-        },
-        {
           "term": "sic semiconductor",
-          "weight": 2
-        },
-        {
-          "term": "wide bandgap semiconductor",
           "weight": 2
         },
         {
@@ -260,14 +252,6 @@
         "device"
       ],
       "terms": [
-        {
-          "term": "sic mosfet",
-          "weight": 2
-        },
-        {
-          "term": "gan hemt",
-          "weight": 2
-        },
         {
           "term": "algan gan hemt",
           "weight": 2

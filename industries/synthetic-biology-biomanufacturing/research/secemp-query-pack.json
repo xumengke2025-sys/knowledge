@@ -227,43 +227,13 @@
     },
     {
       "node_ids": [
-        "design",
-        "build",
-        "test",
-        "learn"
-      ],
-      "terms": [
-        {
-          "term": "synthetic biology",
-          "weight": 2
-        },
-        {
-          "term": "design build test learn synthetic biology",
-          "weight": 2
-        },
-        {
-          "term": "biofoundry",
-          "weight": 2
-        }
-      ]
-    },
-    {
-      "node_ids": [
         "fermentation",
         "bio-based-chemicals",
         "bio-materials"
       ],
       "terms": [
         {
-          "term": "biomanufacturing",
-          "weight": 2
-        },
-        {
           "term": "microbial cell factory",
-          "weight": 2
-        },
-        {
-          "term": "metabolic engineering",
           "weight": 2
         },
         {

@@ -203,30 +203,6 @@
     },
     {
       "node_ids": [
-        "solid-electrolyte",
-        "cell-validation"
-      ],
-      "terms": [
-        {
-          "term": "solid-state battery",
-          "weight": 2
-        },
-        {
-          "term": "all-solid-state battery",
-          "weight": 2
-        },
-        {
-          "term": "solid electrolyte",
-          "weight": 1
-        },
-        {
-          "term": "solid state lithium battery",
-          "weight": 2
-        }
-      ]
-    },
-    {
-      "node_ids": [
         "li-metal",
         "interface",
         "cell-validation"
@@ -234,10 +210,6 @@
       "terms": [
         {
           "term": "lithium metal solid state battery",
-          "weight": 2
-        },
-        {
-          "term": "dendrite solid electrolyte",
           "weight": 2
         },
         {

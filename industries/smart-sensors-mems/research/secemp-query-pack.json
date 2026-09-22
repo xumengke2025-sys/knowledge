@@ -204,43 +204,6 @@
           "weight": 2
         }
       ]
-    },
-    {
-      "node_ids": [
-        "mems-chip",
-        "industrial-sensor"
-      ],
-      "terms": [
-        {
-          "term": "mems sensor",
-          "weight": 2
-        },
-        {
-          "term": "microelectromechanical sensor",
-          "weight": 2
-        },
-        {
-          "term": "microelectromechanical systems",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "node_ids": [
-        "inertial",
-        "gyro",
-        "accelerometer"
-      ],
-      "terms": [
-        {
-          "term": "inertial sensor",
-          "weight": 1
-        },
-        {
-          "term": "inertial measurement unit mems",
-          "weight": 2
-        }
-      ]
     }
   ],
   "negative_terms": [

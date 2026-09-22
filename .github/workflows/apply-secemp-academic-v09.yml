@@ -1,0 +1,50 @@
+name: Apply SecEmp section review v0.9
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sources/secemp-arxiv/section-reviewed-v09.json'
+      - 'scripts/apply-secemp-academic-v09.py'
+      - 'scripts/validate-secemp-academic-v09.py'
+      - '.github/workflows/apply-secemp-academic-v09.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: secemp-academic-v09-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply section-reviewed academic upgrades
+        run: python scripts/apply-secemp-academic-v09.py
+      - name: Validate academic contracts
+        run: |
+          python scripts/validate-academic.py
+          python scripts/validate-secemp-academic-v09.py
+      - name: Persist deterministic v0.9 outputs
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/apply-secemp-academic-v09.py
+          python scripts/validate-academic.py
+          python scripts/validate-secemp-academic-v09.py
+          git add             industries/*/research/academic-papers.jsonl             industries/*/research/paper-section-notes.jsonl             industries/*/research/literature-map.json             industries/*/research/expert-knowledge.md             academic-catalog.json             firmbuddy/import-bundle.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: promote SecEmp section-reviewed papers into expert knowledge"
+          git push origin HEAD:main

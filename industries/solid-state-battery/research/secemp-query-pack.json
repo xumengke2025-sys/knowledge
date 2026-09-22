@@ -11,7 +11,7 @@
     "metadata": "2026-08-30",
     "files": "2026-09-05"
   },
-  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "purpose": "从SecEmp arXiv全量快照中构造高召回、taxonomy对齐的行业学术候选池；技术词命中为硬门槛，arXiv分类只参与排序，候选不直接进入稳定知识。",
   "preferred_categories": [
     "cond-mat.mtrl-sci",
     "physics.chem-ph"
@@ -35,6 +35,18 @@
         {
           "term": "thiophosphate electrolyte",
           "weight": 1
+        },
+        {
+          "term": "sulfide electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "thiophosphate",
+          "weight": 2
+        },
+        {
+          "term": "argyrodite",
+          "weight": 2
         }
       ]
     },
@@ -55,6 +67,18 @@
         {
           "term": "oxide solid electrolyte battery",
           "weight": 1
+        },
+        {
+          "term": "garnet electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "llzo",
+          "weight": 1
+        },
+        {
+          "term": "oxide solid electrolyte",
+          "weight": 2
         }
       ]
     },
@@ -70,6 +94,18 @@
         },
         {
           "term": "chloride solid electrolyte battery",
+          "weight": 2
+        },
+        {
+          "term": "halide electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "chloride electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "fluoride solid electrolyte",
           "weight": 2
         }
       ]
@@ -96,6 +132,26 @@
         {
           "term": "critical current density solid electrolyte",
           "weight": 1
+        },
+        {
+          "term": "solid-state battery interface",
+          "weight": 2
+        },
+        {
+          "term": "interfacial impedance",
+          "weight": 2
+        },
+        {
+          "term": "lithium metal solid state",
+          "weight": 2
+        },
+        {
+          "term": "dendrite solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "stack pressure",
+          "weight": 2
         }
       ]
     },
@@ -122,6 +178,26 @@
         {
           "term": "solid state battery scale-up",
           "weight": 1
+        },
+        {
+          "term": "solid-state battery",
+          "weight": 2
+        },
+        {
+          "term": "all-solid-state battery",
+          "weight": 2
+        },
+        {
+          "term": "solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "solid state cell",
+          "weight": 2
+        },
+        {
+          "term": "dry electrode",
+          "weight": 2
         }
       ]
     },

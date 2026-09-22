@@ -11,7 +11,7 @@
     "metadata": "2026-08-30",
     "files": "2026-09-05"
   },
-  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "purpose": "从SecEmp arXiv全量快照中构造高召回、taxonomy对齐的行业学术候选池；技术词命中为硬门槛，arXiv分类只参与排序，候选不直接进入稳定知识。",
   "preferred_categories": [
     "cs.RO",
     "eess.SY",
@@ -42,6 +42,18 @@
         {
           "term": "urban air mobility",
           "weight": 1
+        },
+        {
+          "term": "electric vertical takeoff and landing",
+          "weight": 2
+        },
+        {
+          "term": "advanced air mobility",
+          "weight": 2
+        },
+        {
+          "term": "electric aircraft",
+          "weight": 2
         }
       ]
     },
@@ -67,6 +79,18 @@
         {
           "term": "uav command and control link",
           "weight": 1
+        },
+        {
+          "term": "uav traffic management",
+          "weight": 2
+        },
+        {
+          "term": "urban air traffic",
+          "weight": 2
+        },
+        {
+          "term": "low altitude traffic",
+          "weight": 2
         }
       ]
     },
@@ -92,6 +116,22 @@
         {
           "term": "uav surveillance",
           "weight": 1
+        },
+        {
+          "term": "detect-and-avoid",
+          "weight": 2
+        },
+        {
+          "term": "sense and avoid",
+          "weight": 2
+        },
+        {
+          "term": "drone radar",
+          "weight": 2
+        },
+        {
+          "term": "uav collision avoidance",
+          "weight": 2
         }
       ]
     },
@@ -116,6 +156,18 @@
         {
           "term": "low altitude weather",
           "weight": 1
+        },
+        {
+          "term": "airworthiness certification",
+          "weight": 2
+        },
+        {
+          "term": "evtol safety",
+          "weight": 2
+        },
+        {
+          "term": "uav safety",
+          "weight": 2
         }
       ]
     },
@@ -137,6 +189,18 @@
         {
           "term": "uav propulsion efficiency",
           "weight": 1
+        },
+        {
+          "term": "electric aircraft battery",
+          "weight": 2
+        },
+        {
+          "term": "electric propulsion aircraft",
+          "weight": 2
+        },
+        {
+          "term": "hybrid electric propulsion",
+          "weight": 2
         }
       ]
     }

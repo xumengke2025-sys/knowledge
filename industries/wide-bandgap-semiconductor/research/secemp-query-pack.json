@@ -17,7 +17,7 @@
     "physics.app-ph",
     "cond-mat.mes-hall"
   ],
-  "min_score": 5,
+  "min_score": 4,
   "term_groups": [
     {
       "node_ids": [
@@ -132,6 +132,56 @@
         },
         {
           "term": "power cycling sic module",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "crystal-growth",
+        "substrate",
+        "device"
+      ],
+      "terms": [
+        {
+          "term": "silicon carbide",
+          "weight": 1
+        },
+        {
+          "term": "sic semiconductor",
+          "weight": 2
+        },
+        {
+          "term": "wide bandgap semiconductor",
+          "weight": 2
+        },
+        {
+          "term": "gallium nitride power",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "sic-mosfet",
+        "gan-hemt",
+        "device"
+      ],
+      "terms": [
+        {
+          "term": "sic mosfet",
+          "weight": 2
+        },
+        {
+          "term": "gan hemt",
+          "weight": 2
+        },
+        {
+          "term": "algan gan hemt",
+          "weight": 2
+        },
+        {
+          "term": "sic power electronics",
           "weight": 1
         }
       ]

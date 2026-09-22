@@ -86,10 +86,41 @@ jobs:
         run: python scripts/secemp-paper-text-triage.py --top-per-industry "$TRIAGE_TOP_PER_INDUSTRY"
       - name: Persist candidate pools and evidence triage
         run: |
+          set -euo pipefail
+          SNAPSHOT_DIR="$(mktemp -d)"
+          mkdir -p "$SNAPSHOT_DIR/industries" "$SNAPSHOT_DIR/radar"
+
+          # Preserve only generated SecEmp outputs before syncing to the latest main.
+          for f in industries/*/research/arxiv-candidates.jsonl industries/*/research/paper-evidence-candidates.jsonl; do
+            [ -f "$f" ] || continue
+            mkdir -p "$SNAPSHOT_DIR/$(dirname "$f")"
+            cp "$f" "$SNAPSHOT_DIR/$f"
+          done
+          cp radar/secemp-arxiv-summary.json "$SNAPSHOT_DIR/radar/"
+          cp radar/secemp-paper-text-triage-summary.json "$SNAPSHOT_DIR/radar/"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add industries/*/research/arxiv-candidates.jsonl industries/*/research/paper-evidence-candidates.jsonl radar/secemp-arxiv-summary.json radar/secemp-paper-text-triage-summary.json
-          git diff --cached --quiet && exit 0
-          git commit -m "data: refresh SecEmp arXiv candidate pools"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          # Generated data is authoritative for this run. Rebase is intentionally
+          # avoided because JSONL candidate pools are regenerated wholesale and
+          # produce content conflicts when an older refresh lands first.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp -R "$SNAPSHOT_DIR/industries/." industries/
+            cp -R "$SNAPSHOT_DIR/radar/." radar/
+
+            git add industries/*/research/arxiv-candidates.jsonl industries/*/research/paper-evidence-candidates.jsonl radar/secemp-arxiv-summary.json radar/secemp-paper-text-triage-summary.json
+            if git diff --cached --quiet; then
+              exit 0
+            fi
+            git commit -m "data: refresh SecEmp arXiv candidate pools"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Push raced with another main update; reapplying generated outputs (attempt $attempt/3)."
+          done
+          echo "Failed to persist SecEmp outputs after 3 attempts." >&2
+          exit 1

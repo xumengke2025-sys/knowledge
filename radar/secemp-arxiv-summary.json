@@ -29,31 +29,31 @@
     {
       "industry_id": "wide-bandgap-semiconductor",
       "source": "metadata",
-      "candidates": 120,
+      "candidates": 8,
       "output": "/home/runner/work/knowledge/knowledge/industries/wide-bandgap-semiconductor/research/arxiv-candidates.jsonl"
     },
     {
       "industry_id": "solid-state-battery",
       "source": "metadata",
-      "candidates": 120,
+      "candidates": 13,
       "output": "/home/runner/work/knowledge/knowledge/industries/solid-state-battery/research/arxiv-candidates.jsonl"
     },
     {
       "industry_id": "synthetic-biology-biomanufacturing",
       "source": "metadata",
-      "candidates": 120,
+      "candidates": 1,
       "output": "/home/runner/work/knowledge/knowledge/industries/synthetic-biology-biomanufacturing/research/arxiv-candidates.jsonl"
     },
     {
       "industry_id": "industrial-machine-tools",
       "source": "metadata",
-      "candidates": 120,
+      "candidates": 1,
       "output": "/home/runner/work/knowledge/knowledge/industries/industrial-machine-tools/research/arxiv-candidates.jsonl"
     },
     {
       "industry_id": "smart-sensors-mems",
       "source": "metadata",
-      "candidates": 120,
+      "candidates": 39,
       "output": "/home/runner/work/knowledge/knowledge/industries/smart-sensors-mems/research/arxiv-candidates.jsonl"
     }
   ],

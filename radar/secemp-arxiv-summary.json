@@ -29,7 +29,7 @@
     {
       "industry_id": "wide-bandgap-semiconductor",
       "source": "metadata",
-      "candidates": 8,
+      "candidates": 120,
       "output": "/home/runner/work/knowledge/knowledge/industries/wide-bandgap-semiconductor/research/arxiv-candidates.jsonl"
     },
     {

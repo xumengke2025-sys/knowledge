@@ -135,7 +135,7 @@
 **禁止外推**：模型能高精度预测离子电导，不能直接推出该材料具备优良界面稳定性、循环寿命或量产可制造性。
 
 **主要学术支持**：
-- SSB-P10 [Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential](https://arxiv.org/abs/2510.09861)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。通过微调通用机器学习原子间势，对卤化物固态电解质的结构、能量和锂离子动力学进行近DFT精度模拟，并探索成分对相稳定性与离子电导的影响，展示ML势在扩大复杂固态电解质计算筛选范围上的潜力。
+- SSB-P10 [Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential](https://arxiv.org/abs/2510.09861)；sections_reviewed；SecEmp正文已完成章节复核。通过微调通用机器学习原子间势，对卤化物固态电解质的结构、能量和锂离子动力学进行近DFT精度模拟，并探索成分对相稳定性与离子电导的影响，展示ML势在扩大复杂固态电解质计算筛选范围上的潜力。
 - SSB-P11 [A Pre-trained Deep Potential Model for Sulfide Solid Electrolytes with Broad Coverage and High Accuracy](https://arxiv.org/abs/2406.18263)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。构建面向硫化物固态电解质的预训练深度势模型，覆盖多元素和非平衡构型，并通过迁移、蒸馏与持续学习降低新体系模拟成本；摘要强调模型可用于更大化学空间的离子输运预测。
 
 ## 文献索引
@@ -151,7 +151,7 @@
 - SSB-P07 [Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction](https://www.nature.com/articles/s41563-024-02094-6)；abstract_reviewed。机制来自LLZO体系，材料缺陷化学和操作条件改变时主导机制可能变化。
 - SSB-P08 [Advancing high-voltage halide-based solid-state batteries: Interfacial challenges, material innovations, and applications](https://doi.org/10.1016/j.ensm.2024.103980)；abstract_reviewed。卤化物路线的材料稳定性与制造环境需要结合具体化学体系评价。
 - SSB-P09 [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。综述中的策略成熟度不同，应区分实验室涂层、原位界面与可规模制造方案。
-- SSB-P10 [Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential](https://arxiv.org/abs/2510.09861)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。核心证据仍来自结构建模、DFT和分子动力学体系；模拟精度、训练域与实验结构质量决定外推能力，不能据此直接证明材料在全电池中的界面稳定、循环或制造可行性。
+- SSB-P10 [Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential](https://arxiv.org/abs/2510.09861)；sections_reviewed；SecEmp正文已完成章节复核。核心证据仍来自结构建模、DFT和分子动力学体系；模拟精度、训练域与实验结构质量决定外推能力，不能据此直接证明材料在全电池中的界面稳定、循环或制造可行性。
 - SSB-P11 [A Pre-trained Deep Potential Model for Sulfide Solid Electrolytes with Broad Coverage and High Accuracy](https://arxiv.org/abs/2406.18263)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。模型覆盖范围仍由训练元素、构型和下游微调数据决定；复现实验电导不等于可预测界面副反应、机械失效、全电池循环和制造窗口。
 
 ## SecEmp 深读证据卡（sections_reviewed）

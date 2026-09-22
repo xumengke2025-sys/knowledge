@@ -136,7 +136,7 @@
 **禁止外推**：更高Q值或更低理论噪声底，不能直接推出传感器具有更好的全工况精度和长期稳定性。
 
 **主要学术支持**：
-- SEN-P09 [Nonlinear Dynamical System Model for Drive Mode Amplitude Instabilities in MEMS Gyroscopes](https://arxiv.org/abs/2002.02234)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。通过两个非线性耦合机械模态解释MEMS陀螺驱动模态幅值不稳定，摘要指出3:1内部共振可引起模态间能量转移，并需要从稳态模型扩展到瞬态仿真才能解释测得的迟滞与动态行为。
+- SEN-P09 [Nonlinear Dynamical System Model for Drive Mode Amplitude Instabilities in MEMS Gyroscopes](https://arxiv.org/abs/2002.02234)；sections_reviewed；SecEmp正文已完成章节复核。通过两个非线性耦合机械模态解释MEMS陀螺驱动模态幅值不稳定，摘要指出3:1内部共振可引起模态间能量转移，并需要从稳态模型扩展到瞬态仿真才能解释测得的迟滞与动态行为。
 - SEN-P10 [Optomechanical Inertial Sensors](https://arxiv.org/abs/2005.03456)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。分析紧凑型单片光机惯性传感器的基础噪声极限、灵敏度与带宽权衡，并结合机械谐振器表征讨论高mQ结构对低频加速度测量能力的支撑。
 
 ## 文献索引
@@ -151,7 +151,7 @@
 - SEN-P06 [Research Progress of MEMS Gas Sensors: A Comprehensive Review of Sensing Materials](https://doi.org/10.3390/s24248125)；abstract_reviewed。材料响应度不能脱离湿度、温度、交叉气体和长期漂移评价。
 - SEN-P07 [Assessing the accuracy of human-inspired electronic skin: A systematic review](https://doi.org/10.1016/j.biosx.2024.100553)；abstract_reviewed。人皮肤对照和不同实验平台的测量定义并不完全一致。
 - SEN-P08 [Hydrogel-based pressure sensors for electronic skin systems](https://doi.org/10.1016/j.matt.2025.101992)；abstract_reviewed。柔性材料的实验室循环和生物相容性不能自动代表工业封装与机器人寿命。
-- SEN-P09 [Nonlinear Dynamical System Model for Drive Mode Amplitude Instabilities in MEMS Gyroscopes](https://arxiv.org/abs/2002.02234)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结论针对特定陀螺结构、寄生模态和共振条件；不能推广为所有MEMS陀螺的主要误差来源，实际稳定性还受温度、封装、真空和电子读出影响。
+- SEN-P09 [Nonlinear Dynamical System Model for Drive Mode Amplitude Instabilities in MEMS Gyroscopes](https://arxiv.org/abs/2002.02234)；sections_reviewed；SecEmp正文已完成章节复核。结论针对特定陀螺结构、寄生模态和共振条件；不能推广为所有MEMS陀螺的主要误差来源，实际稳定性还受温度、封装、真空和电子读出影响。
 - SEN-P10 [Optomechanical Inertial Sensors](https://arxiv.org/abs/2005.03456)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。对象为光机惯性传感路线，并非传统电容式MEMS陀螺/加速度计；模拟可达噪声底和谐振器表征不能直接等同完整传感器在封装、温漂和系统集成后的长期性能。
 
 ## SecEmp 深读证据卡（sections_reviewed）

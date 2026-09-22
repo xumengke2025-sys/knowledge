@@ -134,7 +134,7 @@
 
 **主要学术支持**：
 - IMT-P08 [Robust Parametrization of a Model Predictive Controller for a CNC Machining Center Using Bayesian Optimization](https://arxiv.org/abs/2010.06869)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。使用贝叶斯优化自动整定CNC加工中心模型预测控制器，并通过对仿真模型引入模型—真实对象偏差来寻找更鲁棒的参数，体现数据驱动优化不仅追求名义最优，还需显式考虑模型失配和实时约束。
-- IMT-P09 [Data-Driven Temperature Modelling of Machine Tools by Neural Networks: A Benchmark](https://arxiv.org/abs/2510.03261)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。比较多类时间序列神经网络对机床温度与热流场的预测，尝试从直接预测单一热误差转向预测可供下游补偿模块使用的完整场信息，并关注模型对未见初始条件的泛化。
+- IMT-P09 [Data-Driven Temperature Modelling of Machine Tools by Neural Networks: A Benchmark](https://arxiv.org/abs/2510.03261)；sections_reviewed；SecEmp正文已完成章节复核。比较多类时间序列神经网络对机床温度与热流场的预测，尝试从直接预测单一热误差转向预测可供下游补偿模块使用的完整场信息，并关注模型对未见初始条件的泛化。
 
 ## 文献索引
 
@@ -148,7 +148,7 @@
 - IMT-P06 [Validating real time compensation: A thermal test piece for 5-axis machine tools to separate thermal errors in Z-direction](https://doi.org/10.1016/j.precisioneng.2024.08.014)；abstract_reviewed。试件验证范围不能覆盖所有姿态、负载和环境条件。
 - IMT-P07 [Reliability analysis and enhancement of machining accuracy for machine tools under dual geometric and thermally-induced error constraints](https://doi.org/10.1016/j.aei.2025.103583)；abstract_reviewed。模型结论受误差分布和工况假设影响，不能替代整机验收数据。
 - IMT-P08 [Robust Parametrization of a Model Predictive Controller for a CNC Machining Center Using Bayesian Optimization](https://arxiv.org/abs/2010.06869)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。摘要中的主要比较基于加工中心仿真研究；鲁棒参数优于手工整定不等于已在所有机床、切削工况和真实生产线上获得相同收益。
-- IMT-P09 [Data-Driven Temperature Modelling of Machine Tools by Neural Networks: A Benchmark](https://arxiv.org/abs/2510.03261)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。训练数据主要来自有限元生成，准确预测温度/热流场不等于最终空间误差补偿准确；传感器布点、真实热源变化、结构老化和跨机型迁移仍需实机验证。
+- IMT-P09 [Data-Driven Temperature Modelling of Machine Tools by Neural Networks: A Benchmark](https://arxiv.org/abs/2510.03261)；sections_reviewed；SecEmp正文已完成章节复核。训练数据主要来自有限元生成，准确预测温度/热流场不等于最终空间误差补偿准确；传感器布点、真实热源变化、结构老化和跨机型迁移仍需实机验证。
 
 ## SecEmp 深读证据卡（sections_reviewed）
 

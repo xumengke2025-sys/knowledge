@@ -134,7 +134,7 @@
 **禁止外推**：更高介电常数、更宽禁带或更高理论击穿场，不能直接推出实际MOSFET/HEMT具有更低损耗或更高可靠性。
 
 **主要学术支持**：
-- WBG-P08 [Epitaxial high-K AlBN barrier GaN HEMTs](https://arxiv.org/abs/2502.19315)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。研究AlBN/GaN异质结及高介电常数势垒在HEMT中的实现，摘要报告了2DEG、器件电流和跨导等初步结果，同时明确当前样品性能受接触电阻限制，说明材料/势垒创新仍需经过接触与器件工艺才能兑现。
+- WBG-P08 [Epitaxial high-K AlBN barrier GaN HEMTs](https://arxiv.org/abs/2502.19315)；sections_reviewed；SecEmp正文已完成章节复核。研究AlBN/GaN异质结及高介电常数势垒在HEMT中的实现，摘要报告了2DEG、器件电流和跨导等初步结果，同时明确当前样品性能受接触电阻限制，说明材料/势垒创新仍需经过接触与器件工艺才能兑现。
 - WBG-P09 [Injection-Limited and Space-Charge-Limited Conduction in Wide Bandgap Semiconductors with Velocity Saturation Effect](https://arxiv.org/abs/2308.00955)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。建立同时考虑接触注入、空间电荷、散射与速度饱和的宽禁带半导体载流子输运模型，并以GaN与SiC为例讨论高场下不同导电机制的转换，提示高压器件分析不能只使用低场或理想欧姆假设。
 
 ## 文献索引
@@ -148,7 +148,7 @@
 - WBG-P05 [Degradation mechanism and reliability tests for silicon carbide power MOSFETs: challenges and progress](https://doi.org/10.1016/j.chip.2025.100188)；abstract_reviewed。寿命与退化参数依赖应力条件，不能把单一加速测试结果当成实际车辆寿命。
 - WBG-P06 [Silicon carbide MOSFETs: A critical review of applications, technological advancements, and future perspectives](https://doi.org/10.1016/j.micrna.2025.208126)；abstract_reviewed。宏观综述不能直接用于公司间技术实力排名。
 - WBG-P07 [Conventional, wide-bandgap, and hybrid power converters: A comprehensive review](https://doi.org/10.1016/j.rser.2025.115419)；abstract_reviewed。系统级收益必须在同一拓扑、负载和冷却条件下比较。
-- WBG-P08 [Epitaxial high-K AlBN barrier GaN HEMTs](https://arxiv.org/abs/2502.19315)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。属于初步器件实现，长沟道结构、接触电阻和特定材料体系限制可比性；不能把单器件结果外推为量产GaN功率/射频器件的综合性能优势。
+- WBG-P08 [Epitaxial high-K AlBN barrier GaN HEMTs](https://arxiv.org/abs/2502.19315)；sections_reviewed；SecEmp正文已完成章节复核。属于初步器件实现，长沟道结构、接触电阻和特定材料体系限制可比性；不能把单器件结果外推为量产GaN功率/射频器件的综合性能优势。
 - WBG-P09 [Injection-Limited and Space-Charge-Limited Conduction in Wide Bandgap Semiconductors with Velocity Saturation Effect](https://arxiv.org/abs/2308.00955)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。主要是理论/模型工作，示例结构与参数不能替代真实器件的陷阱、界面、几何、温度和可靠性测试；模型中的高场机制也不能直接转化为某家企业器件性能。
 
 ## SecEmp 深读证据卡（sections_reviewed）

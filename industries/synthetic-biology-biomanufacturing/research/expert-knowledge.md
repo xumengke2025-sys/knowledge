@@ -151,7 +151,7 @@
 
 **主要学术支持**：
 - SB-P08 [GenAI-Net: A Generative AI Framework for Automated Biomolecular Network Design](https://arxiv.org/abs/2601.17582)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。提出生成式AI驱动的生物分子反应网络设计框架，由智能体提出反应网络并通过用户目标定义的仿真评价进行迭代，可从期望动力学行为反向生成多种候选网络与可复用结构。
-- SB-P09 [ART: A machine learning Automated Recommendation Tool for synthetic biology](https://arxiv.org/abs/1911.11091)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。以机器学习和概率建模对下一轮应构建的菌株进行推荐，并同时给出产量预测的不确定性；摘要显示该方法可用于仿真数据和多个真实代谢工程项目，体现ML在DBTL循环中从预测走向实验优先级排序的作用。
+- SB-P09 [ART: A machine learning Automated Recommendation Tool for synthetic biology](https://arxiv.org/abs/1911.11091)；sections_reviewed；SecEmp正文已完成章节复核。以机器学习和概率建模对下一轮应构建的菌株进行推荐，并同时给出产量预测的不确定性；摘要显示该方法可用于仿真数据和多个真实代谢工程项目，体现ML在DBTL循环中从预测走向实验优先级排序的作用。
 
 ## 文献索引
 
@@ -165,7 +165,7 @@
 - SB-P06 [A roadmap for metagenomic enzyme discovery](https://doi.org/10.1039/d1np00006c)；sections_reviewed。计算预测只能形成候选，不能替代功能表达和生化实验。
 - SB-P07 [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)；sections_reviewed。观点和案例并非对所有菌株的独立实验，市场预测不应作为事实。
 - SB-P08 [GenAI-Net: A Generative AI Framework for Automated Biomolecular Network Design](https://arxiv.org/abs/2601.17582)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。摘要主要证明计算设计与仿真搜索能力；生成的反应网络能满足模型目标不等于可在真实底盘细胞中构建、稳定表达、放大生产或满足经济性。
-- SB-P09 [ART: A machine learning Automated Recommendation Tool for synthetic biology](https://arxiv.org/abs/1911.11091)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。推荐质量依赖已有训练数据、目标函数和模型假设；在具体项目中有效不能保证迁移到其他底盘、产物或放大环境，预测高产也不等于工业发酵稳定和经济可行。
+- SB-P09 [ART: A machine learning Automated Recommendation Tool for synthetic biology](https://arxiv.org/abs/1911.11091)；sections_reviewed；SecEmp正文已完成章节复核。推荐质量依赖已有训练数据、目标函数和模型假设；在具体项目中有效不能保证迁移到其他底盘、产物或放大环境，预测高产也不等于工业发酵稳定和经济可行。
 
 ## SecEmp 深读证据卡（sections_reviewed）
 

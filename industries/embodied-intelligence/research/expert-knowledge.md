@@ -137,7 +137,7 @@
 **禁止外推**：使用更大的VLA或更多预训练数据，不能直接推出目标机器人无需适配即可获得更高成功率。
 
 **主要学术支持**：
-- EI-P09 [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](https://arxiv.org/abs/2502.19645)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。系统比较VLA微调中的动作解码、动作表示与学习目标，并在OpenVLA上形成OFT适配方案；摘要显示并行解码、动作分块和连续动作表示可同时影响控制成功率与推理吞吐，说明VLA落地效果高度依赖适配方法，而不只是底座模型本身。
+- EI-P09 [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](https://arxiv.org/abs/2502.19645)；sections_reviewed；SecEmp正文已完成章节复核。系统比较VLA微调中的动作解码、动作表示与学习目标，并在OpenVLA上形成OFT适配方案；摘要显示并行解码、动作分块和连续动作表示可同时影响控制成功率与推理吞吐，说明VLA落地效果高度依赖适配方法，而不只是底座模型本身。
 - EI-P10 [Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos](https://arxiv.org/abs/2510.21571)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。把无标注第一视角人类手部活动视频转换为与机器人VLA训练对齐的数据格式，并构造百万级episode预训练数据；摘要表明大规模人类视频预训练配合少量真实机器人微调，可提升新物体和真实操作任务上的泛化。
 
 ## 文献索引
@@ -152,7 +152,7 @@
 - EI-P06 [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://arxiv.org/abs/2304.13705)；abstract_reviewed。少量演示下的高成功率属于特定任务和硬件设置，不能外推到开放环境、不同手爪或长时任务。
 - EI-P07 [Survey of Vision-Language-Action Models for Embodied Manipulation](https://arxiv.org/abs/2508.15201)；abstract_reviewed。综述用于分类和识别共性挑战，不应用其二手总结替代具体论文或企业产品证据。
 - EI-P08 [Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications](https://doi.org/10.1109/ACCESS.2025.3609980)；abstract_reviewed。系统综述并不代表其中所有模型在统一硬件和统一基准下可直接横向排名。
-- EI-P09 [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](https://arxiv.org/abs/2502.19645)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结论来自OpenVLA及LIBERO、ALOHA等特定基准和机器人设置；摘要中的成功率与吞吐提升不能直接外推到其他VLA、本体、任务分布或量产实时控制。
+- EI-P09 [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](https://arxiv.org/abs/2502.19645)；sections_reviewed；SecEmp正文已完成章节复核。结论来自OpenVLA及LIBERO、ALOHA等特定基准和机器人设置；摘要中的成功率与吞吐提升不能直接外推到其他VLA、本体、任务分布或量产实时控制。
 - EI-P10 [Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos](https://arxiv.org/abs/2510.21571)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。人类手部运动到机器人动作的映射、数据处理管线和目标平台都会影响迁移效果；摘要中的规模效应与零样本结果不能理解为任意机器人无需适配即可工作。
 
 ## SecEmp 深读证据卡（sections_reviewed）

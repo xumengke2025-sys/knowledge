@@ -134,7 +134,7 @@
 
 **主要学术支持**：
 - CS-P08 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://arxiv.org/abs/2412.00820)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。从6G演进视角梳理NTN的无线资源管理、移动性管理和动态网络切片，并把波束赋形、切换和星间传输列为关键挑战，说明大覆盖只是入口，持续服务还依赖动态资源与移动性管理。
-- CS-P09 [UAV Communications in Integrated Terrestrial and Non-terrestrial Networks](https://arxiv.org/abs/2208.02683)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。研究地面蜂窝网络与LEO NTN联合为城市地面用户和无人机提供连接，摘要中的仿真表明在特定星座密度、仰角和业务假设下，将无人机流量卸载到NTN可显著降低空中用户的中断并改善共存地面用户体验。
+- CS-P09 [UAV Communications in Integrated Terrestrial and Non-terrestrial Networks](https://arxiv.org/abs/2208.02683)；sections_reviewed；SecEmp正文已完成章节复核。研究地面蜂窝网络与LEO NTN联合为城市地面用户和无人机提供连接，摘要中的仿真表明在特定星座密度、仰角和业务假设下，将无人机流量卸载到NTN可显著降低空中用户的中断并改善共存地面用户体验。
 
 ## 文献索引
 
@@ -148,7 +148,7 @@
 - CS-P06 [Multi-layer NTN architectures toward 6G: The ITA-NTN view](https://doi.org/10.1016/j.comnet.2024.110725)；abstract_reviewed。体系架构综述不能用来证明特定星座采用相同分层方案。
 - CS-P07 [Resource Allocation Techniques in Multibeam Satellites: Conventional Methods vs. AI/ML Approaches](https://onlinelibrary.wiley.com/doi/10.1002/sat.1548)；abstract_reviewed。优化算法结果高度依赖流量、信道和约束假设，不应直接写成在轨吞吐提升。
 - CS-P08 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://arxiv.org/abs/2412.00820)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。属于综述/前沿讨论，不能据此证明具体星座、终端或运营商已经实现相同能力；不同轨道、频段、星座密度和协议版本下约束不同。
-- CS-P09 [UAV Communications in Integrated Terrestrial and Non-terrestrial Networks](https://arxiv.org/abs/2208.02683)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结果建立在特定城市、sub-6GHz、用户密度、星座密度和最低仰角假设上；不能直接外推为任意地区、频段或商业星座都能获得同等覆盖与容量收益。
+- CS-P09 [UAV Communications in Integrated Terrestrial and Non-terrestrial Networks](https://arxiv.org/abs/2208.02683)；sections_reviewed；SecEmp正文已完成章节复核。结果建立在特定城市、sub-6GHz、用户密度、星座密度和最低仰角假设上；不能直接外推为任意地区、频段或商业星座都能获得同等覆盖与容量收益。
 
 ## SecEmp 深读证据卡（sections_reviewed）
 

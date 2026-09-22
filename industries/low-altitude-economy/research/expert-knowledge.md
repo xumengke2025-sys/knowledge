@@ -133,7 +133,7 @@
 **禁止外推**：单机能完成某航程，不能直接推出同一机型在高密度城市网络中也能维持相同航程和运营吞吐。
 
 **主要学术支持**：
-- LA-P08 [eVTOL Aircraft Energy Overhead Estimation under Conflict Resolution in High-Density Airspaces](https://arxiv.org/abs/2604.06093)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。把eVTOL功率模型与高密度空域交通仿真结合，研究战术冲突解脱带来的额外能耗；摘要显示大多数场景能耗增量较小，但高密度多机冲突存在明显长尾，提示储备能量应与空域运行状态联动。
+- LA-P08 [eVTOL Aircraft Energy Overhead Estimation under Conflict Resolution in High-Density Airspaces](https://arxiv.org/abs/2604.06093)；sections_reviewed；SecEmp正文已完成章节复核。把eVTOL功率模型与高密度空域交通仿真结合，研究战术冲突解脱带来的额外能耗；摘要显示大多数场景能耗增量较小，但高密度多机冲突存在明显长尾，提示储备能量应与空域运行状态联动。
 - LA-P09 [Throughput Maximizing Takeoff Scheduling for eVTOL Vehicles in On-Demand Urban Air Mobility Systems](https://arxiv.org/abs/2503.17313)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。提出面向按需UAM的冲突无关起飞调度策略，把出行请求服务、车辆再平衡、安全间隔和能源约束共同纳入系统调度；摘要强调吞吐极限与车队规模、网络结构和调度策略存在耦合。
 
 ## 文献索引
@@ -147,7 +147,7 @@
 - LA-P05 [Evaluation of collision detection and avoidance methods for urban air mobility through simulation](https://doi.org/10.1007/s13272-024-00789-9)；abstract_reviewed。仿真交通密度、传感器和飞行器模型会显著影响结果，不能直接当作真实城市空域安全水平。
 - LA-P06 [Recent advancements and challenges for eVTOL aircraft aerodynamic noise in Urban Air Mobility](https://doi.org/10.1016/j.paerosci.2026.101184)；abstract_reviewed。声学预测与实飞社区噪声感知不是同一指标；认证方法仍在演进。
 - LA-P07 [Research advances in electrical propulsion systems for electric vertical take-off and landing aircrafts: A comprehensive review](https://doi.org/10.7527/S1000-6893.2025.32000)；abstract_reviewed。综述中的机型参数来自不同公开口径，不能无条件横向排名。
-- LA-P08 [eVTOL Aircraft Energy Overhead Estimation under Conflict Resolution in High-Density Airspaces](https://arxiv.org/abs/2604.06093)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结论来自特定冲突解脱算法、交通密度与物理功率模型；给出的储备比例不能直接作为不同机型、航路、气象或适航规则下的统一设计值。
+- LA-P08 [eVTOL Aircraft Energy Overhead Estimation under Conflict Resolution in High-Density Airspaces](https://arxiv.org/abs/2604.06093)；sections_reviewed；SecEmp正文已完成章节复核。结论来自特定冲突解脱算法、交通密度与物理功率模型；给出的储备比例不能直接作为不同机型、航路、气象或适航规则下的统一设计值。
 - LA-P09 [Throughput Maximizing Takeoff Scheduling for eVTOL Vehicles in On-Demand Urban Air Mobility Systems](https://arxiv.org/abs/2503.17313)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。吞吐最优性质依赖足够大的车队及特定网络对称性，案例城市与需求模型也影响结果；不能直接转化为现实城市起降场吞吐或商业运营效率。
 
 ## SecEmp 深读证据卡（sections_reviewed）

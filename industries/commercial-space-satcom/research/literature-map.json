@@ -1,19 +1,21 @@
 {
   "industry_id": "commercial-space-satcom",
   "industry": "商业航天与卫星互联网",
-  "as_of": "2026-09-20",
-  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "as_of": "2026-09-22",
+  "scope_note": "curated academic evidence for expert reasoning; SecEmp v0.8 adds reviewed abstracts and paper_text triage but is not a systematic literature review",
   "review_and_survey": [
     "CS-P01",
     "CS-P03",
     "CS-P04",
     "CS-P05",
     "CS-P06",
-    "CS-P07"
+    "CS-P07",
+    "CS-P08"
   ],
   "landmark_or_foundational": [],
   "frontier_or_method": [
-    "CS-P02"
+    "CS-P02",
+    "CS-P09"
   ],
   "mechanism_to_papers": {
     "CS-M01": [
@@ -38,9 +40,13 @@
     ],
     "CS-M06": [
       "CS-P01"
+    ],
+    "CS-M07": [
+      "CS-P08",
+      "CS-P09"
     ]
   },
   "reading_status_counts": {
-    "abstract_reviewed": 7
+    "abstract_reviewed": 9
   }
 }

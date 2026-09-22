@@ -1,8 +1,8 @@
 {
   "industry_id": "synthetic-biology-biomanufacturing",
   "industry": "合成生物学与生物制造",
-  "as_of": "2026-09-20",
-  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "as_of": "2026-09-22",
+  "scope_note": "curated academic evidence for expert reasoning; SecEmp v0.8 adds reviewed abstracts and paper_text triage but is not a systematic literature review",
   "review_and_survey": [
     "SB-P01",
     "SB-P02",
@@ -15,7 +15,11 @@
     "SB-P01",
     "SB-P07"
   ],
-  "frontier_or_method": [],
+  "frontier_or_method": [
+    "SB-P07",
+    "SB-P08",
+    "SB-P09"
+  ],
   "mechanism_to_papers": {
     "SB-M01": [
       "SB-P02",
@@ -42,11 +46,15 @@
     ],
     "SB-M07": [
       "SB-P05"
+    ],
+    "SB-M08": [
+      "SB-P08",
+      "SB-P09"
     ]
   },
   "reading_status_counts": {
     "metadata_only": 1,
-    "abstract_reviewed": 4,
+    "abstract_reviewed": 6,
     "sections_reviewed": 2
   }
 }

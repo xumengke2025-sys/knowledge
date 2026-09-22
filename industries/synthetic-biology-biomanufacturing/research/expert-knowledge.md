@@ -1,14 +1,15 @@
 # 合成生物学与生物制造｜学术机制与研究证据
 
-> 用途：FirmBuddy 行业专家的 `research` 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
+> 用途：FirmBuddy 行业专家的 research 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
 > 边界：学术结果不能单独证明某家上市公司已量产、已获订单或具备同等性能；涉及公司事实仍需回到法定披露/公司证据装备。
 
 ## 使用规则
 
 1. 先定位技术节点，再解释机制；性能数字必须带测试条件。
 2. 综述用于建立问题框架，单篇实验用于解释特定机制；两者不能替代公司产业化证据。
-3. `metadata_only` 文献只能做检索线索，不得支持技术结论。
-4. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
+3. metadata_only 文献只能做检索线索，不得支持技术结论。
+4. abstract_reviewed 只支持摘要明确表达的方向性结论；SecEmp paper_text 机器预审不等于 sections_reviewed。
+5. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
 
 ## SB-M01｜DBTL的价值来自闭环速度和信息质量，不是自动化设备数量
 
@@ -25,9 +26,9 @@
 **禁止外推**：有自动化移液和高通量仪器不等于形成自主DBTL。
 
 **主要学术支持**：
-- `SB-P02` [Automating the design-build-test-learn cycle towards next-generation bacterial cell factories](https://doi.org/10.1016/j.nbt.2023.01.002)；abstract_reviewed。讨论自动化、机器学习、多组学和biofoundry如何加速DBTL循环和细胞工厂优化。
-- `SB-P03` [Technologies for design-build-test-learn automation and computational modelling across the synthetic biology workflow: a review](https://doi.org/10.1007/s13721-024-00455-4)；abstract_reviewed。覆盖数据标准、建模仿真、遗传设计、机器学习、实验自动化和DBTL工作流互操作。
-- `SB-P04` [Physical Laboratory Automation in Synthetic Biology](https://doi.org/10.1021/acssynbio.3c00345)；abstract_reviewed。梳理合成生物实验物理自动化，强调DBTL模块间连接、标准化和可重复性。
+- SB-P02 [Automating the design-build-test-learn cycle towards next-generation bacterial cell factories](https://doi.org/10.1016/j.nbt.2023.01.002)；abstract_reviewed。讨论自动化、机器学习、多组学和biofoundry如何加速DBTL循环和细胞工厂优化。
+- SB-P03 [Technologies for design-build-test-learn automation and computational modelling across the synthetic biology workflow: a review](https://doi.org/10.1007/s13721-024-00455-4)；abstract_reviewed。覆盖数据标准、建模仿真、遗传设计、机器学习、实验自动化和DBTL工作流互操作。
+- SB-P04 [Physical Laboratory Automation in Synthetic Biology](https://doi.org/10.1021/acssynbio.3c00345)；abstract_reviewed。梳理合成生物实验物理自动化，强调DBTL模块间连接、标准化和可重复性。
 
 ## SB-M02｜代谢工程本质是碳流、能量和辅因子在生长与产物之间重分配
 
@@ -44,7 +45,7 @@
 **禁止外推**：单一滴度高不等于单位原料成本和发酵节拍更优。
 
 **主要学术支持**：
-- `SB-P01` [Engineering Cellular Metabolism](https://doi.org/10.1016/j.cell.2016.02.004)；metadata_only。经典代谢工程综述，用于建立宿主、代谢通路和细胞工厂工程化的基础框架。
+- SB-P01 [Engineering Cellular Metabolism](https://doi.org/10.1016/j.cell.2016.02.004)；metadata_only。经典代谢工程综述，用于建立宿主、代谢通路和细胞工厂工程化的基础框架。
 
 ## SB-M03｜菌株性能的工业化瓶颈常在遗传稳定性和环境鲁棒性
 
@@ -61,8 +62,8 @@
 **禁止外推**：摇瓶或微孔板高产不能直接推出万吨级发酵稳定。
 
 **主要学术支持**：
-- `SB-P05` [Synthetic biology approaches and bioseparations in syngas fermentation](https://doi.org/10.1016/j.tibtech.2024.07.008)；abstract_reviewed。把菌株改造、遗传稳定性、反应器和多级分离放在同一合成气发酵链条中讨论。
-- `SB-P07` [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)；sections_reviewed。把工业发酵中的长期活性、细胞老化、连续发酵稳定性与生产强度联系起来。
+- SB-P05 [Synthetic biology approaches and bioseparations in syngas fermentation](https://doi.org/10.1016/j.tibtech.2024.07.008)；abstract_reviewed。把菌株改造、遗传稳定性、反应器和多级分离放在同一合成气发酵链条中讨论。
+- SB-P07 [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)；sections_reviewed。把工业发酵中的长期活性、细胞老化、连续发酵稳定性与生产强度联系起来。
 
 ## SB-M04｜发酵放大不是体积线性放大，而是传质、混合和热量约束改变
 
@@ -79,8 +80,8 @@
 **禁止外推**：实验室发酵罐指标不能按体积比例直接推万吨产能。
 
 **主要学术支持**：
-- `SB-P05` [Synthetic biology approaches and bioseparations in syngas fermentation](https://doi.org/10.1016/j.tibtech.2024.07.008)；abstract_reviewed。把菌株改造、遗传稳定性、反应器和多级分离放在同一合成气发酵链条中讨论。
-- `SB-P07` [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)；sections_reviewed。把工业发酵中的长期活性、细胞老化、连续发酵稳定性与生产强度联系起来。
+- SB-P05 [Synthetic biology approaches and bioseparations in syngas fermentation](https://doi.org/10.1016/j.tibtech.2024.07.008)；abstract_reviewed。把菌株改造、遗传稳定性、反应器和多级分离放在同一合成气发酵链条中讨论。
+- SB-P07 [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)；sections_reviewed。把工业发酵中的长期活性、细胞老化、连续发酵稳定性与生产强度联系起来。
 
 ## SB-M05｜高通量筛选只有与测量质量和目标函数一致时才有价值
 
@@ -97,8 +98,8 @@
 **禁止外推**：筛选规模大不等于有效菌株发现效率高。
 
 **主要学术支持**：
-- `SB-P02` [Automating the design-build-test-learn cycle towards next-generation bacterial cell factories](https://doi.org/10.1016/j.nbt.2023.01.002)；abstract_reviewed。讨论自动化、机器学习、多组学和biofoundry如何加速DBTL循环和细胞工厂优化。
-- `SB-P03` [Technologies for design-build-test-learn automation and computational modelling across the synthetic biology workflow: a review](https://doi.org/10.1007/s13721-024-00455-4)；abstract_reviewed。覆盖数据标准、建模仿真、遗传设计、机器学习、实验自动化和DBTL工作流互操作。
+- SB-P02 [Automating the design-build-test-learn cycle towards next-generation bacterial cell factories](https://doi.org/10.1016/j.nbt.2023.01.002)；abstract_reviewed。讨论自动化、机器学习、多组学和biofoundry如何加速DBTL循环和细胞工厂优化。
+- SB-P03 [Technologies for design-build-test-learn automation and computational modelling across the synthetic biology workflow: a review](https://doi.org/10.1007/s13721-024-00455-4)；abstract_reviewed。覆盖数据标准、建模仿真、遗传设计、机器学习、实验自动化和DBTL工作流互操作。
 
 ## SB-M06｜酶发现是‘计算候选→表达→活性→工艺适配’的多级漏斗
 
@@ -115,7 +116,7 @@
 **禁止外推**：计算模型预测高分不能直接写成已获得工业酶。
 
 **主要学术支持**：
-- `SB-P06` [A roadmap for metagenomic enzyme discovery](https://doi.org/10.1039/d1np00006c)；sections_reviewed。系统比较序列、系统发育、序列相似网络、结构和机器学习等酶发现路径，并强调实验验证。
+- SB-P06 [A roadmap for metagenomic enzyme discovery](https://doi.org/10.1039/d1np00006c)；sections_reviewed。系统比较序列、系统发育、序列相似网络、结构和机器学习等酶发现路径，并强调实验验证。
 
 ## SB-M07｜下游分离常决定生物制造能否达到经济性
 
@@ -132,55 +133,36 @@
 **禁止外推**：“生物路线”不自动意味着低成本或低碳。
 
 **主要学术支持**：
-- `SB-P05` [Synthetic biology approaches and bioseparations in syngas fermentation](https://doi.org/10.1016/j.tibtech.2024.07.008)；abstract_reviewed。把菌株改造、遗传稳定性、反应器和多级分离放在同一合成气发酵链条中讨论。
+- SB-P05 [Synthetic biology approaches and bioseparations in syngas fermentation](https://doi.org/10.1016/j.tibtech.2024.07.008)；abstract_reviewed。把菌株改造、遗传稳定性、反应器和多级分离放在同一合成气发酵链条中讨论。
 
-## 论文清单与阅读边界
+## SB-M08｜AI正在把DBTL从经验搜索转成候选生成与实验优先级排序，但实验反馈仍是最终闭环
 
-### SB-P01｜Engineering Cellular Metabolism
-- 年份：2016；类型：journal-review；阅读状态：`metadata_only`
-- 标识：10.1016/j.cell.2016.02.004
-- 研究卡：经典代谢工程综述，用于建立宿主、代谢通路和细胞工厂工程化的基础框架。
-- 局限：本次未重新取得摘要/全文，不用于支持具体性能数值。
-- 技术节点：metabolic-model, chassis
+**技术节点**：design, build, test, learn, data-learning
 
-### SB-P02｜Automating the design-build-test-learn cycle towards next-generation bacterial cell factories
-- 年份：2023；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.nbt.2023.01.002
-- 研究卡：讨论自动化、机器学习、多组学和biofoundry如何加速DBTL循环和细胞工厂优化。
-- 局限：自动化平台能力不等于每种宿主和产物都能获得同等提升。
-- 技术节点：design, build, test, learn
+**机制**：生成式模型可以从目标行为产生候选生物网络，机器学习推荐器可以根据历史实验选择下一轮菌株，从而减少盲目组合搜索。但这类方法的有效性由训练数据、目标函数、不确定性估计和真实实验反馈共同决定；计算候选必须回到构建、测试和放大验证。
 
-### SB-P03｜Technologies for design-build-test-learn automation and computational modelling across the synthetic biology workflow: a review
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1007/s13721-024-00455-4
-- 研究卡：覆盖数据标准、建模仿真、遗传设计、机器学习、实验自动化和DBTL工作流互操作。
-- 局限：技术组件较广，实际落地仍取决于数据标准和实验平台连接。
-- 技术节点：design, learn, screening
+**应观察变量**：候选空间大小；每轮实验数量；预测误差与不确定性；有效候选命中率；DBTL轮次；跨底盘迁移表现；湿实验验证比例
 
-### SB-P04｜Physical Laboratory Automation in Synthetic Biology
-- 年份：2023；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1021/acssynbio.3c00345
-- 研究卡：梳理合成生物实验物理自动化，强调DBTL模块间连接、标准化和可重复性。
-- 局限：自动化覆盖某个环节不代表形成端到端自主biofoundry。
-- 技术节点：build, test, screening
+**补证重点**：真实实验而非纯仿真验证；失败候选与负样本；跨项目/底盘外推；下一轮推荐是否提升收敛速度；放大条件下性能保持
 
-### SB-P05｜Synthetic biology approaches and bioseparations in syngas fermentation
-- 年份：2025；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.tibtech.2024.07.008
-- 研究卡：把菌株改造、遗传稳定性、反应器和多级分离放在同一合成气发酵链条中讨论。
-- 局限：特定乙酸菌和合成气体系的经验不能直接外推到糖基发酵或所有产物。
-- 技术节点：fermentation, downstream, gene-edit
+**专家如何使用**：评价AI+合成生物平台时，不只看生成模型或自动化设备数量，要看是否真实缩短DBTL轮次、减少实验数量并在湿实验和放大阶段保持有效。
 
-### SB-P06｜A roadmap for metagenomic enzyme discovery
-- 年份：2021；类型：journal-review；阅读状态：`sections_reviewed`
-- 标识：10.1039/d1np00006c
-- 研究卡：系统比较序列、系统发育、序列相似网络、结构和机器学习等酶发现路径，并强调实验验证。
-- 局限：计算预测只能形成候选，不能替代功能表达和生化实验。
-- 技术节点：enzyme, data-learning
+**禁止外推**：AI能生成符合仿真目标的网络或预测高产菌株，不能直接推出该方案可稳定构建、工业放大或达到目标成本。
 
-### SB-P07｜A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging
-- 年份：2023；类型：perspective；阅读状态：`sections_reviewed`
-- 标识：10.35534/sbe.2023.10019
-- 研究卡：把工业发酵中的长期活性、细胞老化、连续发酵稳定性与生产强度联系起来。
-- 局限：观点和案例并非对所有菌株的独立实验，市场预测不应作为事实。
-- 技术节点：fermentation, scale-down
+**主要学术支持**：
+- SB-P08 [GenAI-Net: A Generative AI Framework for Automated Biomolecular Network Design](https://arxiv.org/abs/2601.17582)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。提出生成式AI驱动的生物分子反应网络设计框架，由智能体提出反应网络并通过用户目标定义的仿真评价进行迭代，可从期望动力学行为反向生成多种候选网络与可复用结构。
+- SB-P09 [ART: A machine learning Automated Recommendation Tool for synthetic biology](https://arxiv.org/abs/1911.11091)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。以机器学习和概率建模对下一轮应构建的菌株进行推荐，并同时给出产量预测的不确定性；摘要显示该方法可用于仿真数据和多个真实代谢工程项目，体现ML在DBTL循环中从预测走向实验优先级排序的作用。
+
+## 文献索引
+
+> 下列文献均保留阅读状态；未进入机制支持链的论文仍只作为检索/补证线索。
+
+- SB-P01 [Engineering Cellular Metabolism](https://doi.org/10.1016/j.cell.2016.02.004)；metadata_only。本次未重新取得摘要/全文，不用于支持具体性能数值。
+- SB-P02 [Automating the design-build-test-learn cycle towards next-generation bacterial cell factories](https://doi.org/10.1016/j.nbt.2023.01.002)；abstract_reviewed。自动化平台能力不等于每种宿主和产物都能获得同等提升。
+- SB-P03 [Technologies for design-build-test-learn automation and computational modelling across the synthetic biology workflow: a review](https://doi.org/10.1007/s13721-024-00455-4)；abstract_reviewed。技术组件较广，实际落地仍取决于数据标准和实验平台连接。
+- SB-P04 [Physical Laboratory Automation in Synthetic Biology](https://doi.org/10.1021/acssynbio.3c00345)；abstract_reviewed。自动化覆盖某个环节不代表形成端到端自主biofoundry。
+- SB-P05 [Synthetic biology approaches and bioseparations in syngas fermentation](https://doi.org/10.1016/j.tibtech.2024.07.008)；abstract_reviewed。特定乙酸菌和合成气体系的经验不能直接外推到糖基发酵或所有产物。
+- SB-P06 [A roadmap for metagenomic enzyme discovery](https://doi.org/10.1039/d1np00006c)；sections_reviewed。计算预测只能形成候选，不能替代功能表达和生化实验。
+- SB-P07 [A Perspective in Future Biomanufacturing: Challenges in Industrial Fermentation—Understanding and Controlling Microbial Lifespan and Aging](https://doi.org/10.35534/sbe.2023.10019)；sections_reviewed。观点和案例并非对所有菌株的独立实验，市场预测不应作为事实。
+- SB-P08 [GenAI-Net: A Generative AI Framework for Automated Biomolecular Network Design](https://arxiv.org/abs/2601.17582)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。摘要主要证明计算设计与仿真搜索能力；生成的反应网络能满足模型目标不等于可在真实底盘细胞中构建、稳定表达、放大生产或满足经济性。
+- SB-P09 [ART: A machine learning Automated Recommendation Tool for synthetic biology](https://arxiv.org/abs/1911.11091)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。推荐质量依赖已有训练数据、目标函数和模型假设；在具体项目中有效不能保证迁移到其他底盘、产物或放大环境，预测高产也不等于工业发酵稳定和经济可行。

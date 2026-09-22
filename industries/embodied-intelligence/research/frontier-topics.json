@@ -1,7 +1,7 @@
 {
   "industry_id": "embodied-intelligence",
   "industry": "具身智能与人形机器人",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-22",
   "topics": [
     {
       "topic_id": "F-EI-M01",
@@ -10,7 +10,7 @@
         "data-simulation",
         "brain-cognition"
       ],
-      "monitor_query": "具身智能与人形机器人 数据规模不是唯一变量 异构性与动作空间决定跨本体迁移 review OR benchmark OR reliability",
+      "monitor_query": "具身智能与人形机器人 数据规模不是唯一变量：异构性与动作空间决定跨本体迁移 review OR benchmark OR reliability",
       "watch_for": [
         "new review",
         "open benchmark/dataset",
@@ -93,6 +93,23 @@
         "testing-manufacturing"
       ],
       "monitor_query": "具身智能与人形机器人 端侧部署的硬约束是延迟、内存、功耗与控制频率 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-EI-M07",
+      "topic": "VLA落地性能高度依赖数据接口与适配方案，而不只是底座模型规模",
+      "node_ids": [
+        "brain-cognition",
+        "data-simulation",
+        "motion-control"
+      ],
+      "monitor_query": "具身智能与人形机器人 VLA落地性能高度依赖数据接口与适配方案，而不只是底座模型规模 review OR benchmark OR reliability",
       "watch_for": [
         "new review",
         "open benchmark/dataset",

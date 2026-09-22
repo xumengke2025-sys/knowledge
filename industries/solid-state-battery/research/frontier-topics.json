@@ -1,7 +1,7 @@
 {
   "industry_id": "solid-state-battery",
   "industry": "固态电池与下一代电池材料",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-22",
   "topics": [
     {
       "topic_id": "F-SSB-M01",
@@ -96,6 +96,24 @@
         "cell-validation"
       ],
       "monitor_query": "固态电池与下一代电池材料 实验室单层扣式结果到多层电芯之间存在制造放大鸿沟 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SSB-M07",
+      "topic": "机器学习势能面可扩大固态电解质筛选空间，但可信度受训练域和实验闭环约束",
+      "node_ids": [
+        "sulfide-electrolyte",
+        "halide-electrolyte",
+        "solid-electrolyte",
+        "cell-validation"
+      ],
+      "monitor_query": "固态电池与下一代电池材料 机器学习势能面可扩大固态电解质筛选空间，但可信度受训练域和实验闭环约束 review OR benchmark OR reliability",
       "watch_for": [
         "new review",
         "open benchmark/dataset",

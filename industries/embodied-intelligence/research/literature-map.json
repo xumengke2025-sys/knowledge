@@ -1,15 +1,22 @@
 {
   "industry_id": "embodied-intelligence",
   "industry": "具身智能与人形机器人",
-  "as_of": "2026-09-20",
-  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "as_of": "2026-09-22",
+  "scope_note": "curated academic evidence for expert reasoning; SecEmp v0.8 adds reviewed abstracts and paper_text triage but is not a systematic literature review",
   "review_and_survey": [
     "EI-P07",
     "EI-P08"
   ],
   "landmark_or_foundational": [],
   "frontier_or_method": [
-    "EI-P04"
+    "EI-P01",
+    "EI-P02",
+    "EI-P03",
+    "EI-P04",
+    "EI-P05",
+    "EI-P06",
+    "EI-P09",
+    "EI-P10"
   ],
   "mechanism_to_papers": {
     "EI-M01": [
@@ -38,9 +45,13 @@
     "EI-M06": [
       "EI-P07",
       "EI-P08"
+    ],
+    "EI-M07": [
+      "EI-P09",
+      "EI-P10"
     ]
   },
   "reading_status_counts": {
-    "abstract_reviewed": 8
+    "abstract_reviewed": 10
   }
 }

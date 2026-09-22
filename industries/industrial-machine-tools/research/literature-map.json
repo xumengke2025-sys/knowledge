@@ -1,8 +1,8 @@
 {
   "industry_id": "industrial-machine-tools",
   "industry": "工业母机与高端数控",
-  "as_of": "2026-09-20",
-  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "as_of": "2026-09-22",
+  "scope_note": "curated academic evidence for expert reasoning; SecEmp v0.8 adds reviewed abstracts and paper_text triage but is not a systematic literature review",
   "review_and_survey": [
     "IMT-P01",
     "IMT-P02",
@@ -13,7 +13,9 @@
   "frontier_or_method": [
     "IMT-P05",
     "IMT-P06",
-    "IMT-P07"
+    "IMT-P07",
+    "IMT-P08",
+    "IMT-P09"
   ],
   "mechanism_to_papers": {
     "IMT-M01": [
@@ -38,10 +40,14 @@
     "IMT-M06": [
       "IMT-P06",
       "IMT-P07"
+    ],
+    "IMT-M07": [
+      "IMT-P08",
+      "IMT-P09"
     ]
   },
   "reading_status_counts": {
     "metadata_only": 1,
-    "abstract_reviewed": 6
+    "abstract_reviewed": 8
   }
 }

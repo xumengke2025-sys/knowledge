@@ -1,14 +1,15 @@
 # 固态电池与下一代电池材料｜学术机制与研究证据
 
-> 用途：FirmBuddy 行业专家的 `research` 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
+> 用途：FirmBuddy 行业专家的 research 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
 > 边界：学术结果不能单独证明某家上市公司已量产、已获订单或具备同等性能；涉及公司事实仍需回到法定披露/公司证据装备。
 
 ## 使用规则
 
 1. 先定位技术节点，再解释机制；性能数字必须带测试条件。
 2. 综述用于建立问题框架，单篇实验用于解释特定机制；两者不能替代公司产业化证据。
-3. `metadata_only` 文献只能做检索线索，不得支持技术结论。
-4. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
+3. metadata_only 文献只能做检索线索，不得支持技术结论。
+4. abstract_reviewed 只支持摘要明确表达的方向性结论；SecEmp paper_text 机器预审不等于 sections_reviewed。
+5. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
 
 ## SSB-M01｜高离子电导是必要条件，但材料路线选择还受稳定窗口和可制造性约束
 
@@ -25,9 +26,9 @@
 **禁止外推**：单个电导率数值不能证明最适合量产。
 
 **主要学术支持**：
-- `SSB-P05` [Diffusion mechanisms of fast lithium-ion conductors](https://doi.org/10.1038/s41578-024-00715-9)；abstract_reviewed。从结构、缺陷和扩散机制解释无机超离子导体的高锂离子电导来源。
-- `SSB-P08` [Advancing high-voltage halide-based solid-state batteries: Interfacial challenges, material innovations, and applications](https://doi.org/10.1016/j.ensm.2024.103980)；abstract_reviewed。聚焦卤化物固态电解质的高电压正极界面反应、机械失效和离子/电子输运。
-- `SSB-P09` [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。系统讨论硫化物体系正负极界面的脱粘、化学退化、枝晶和多种界面工程策略。
+- SSB-P05 [Diffusion mechanisms of fast lithium-ion conductors](https://doi.org/10.1038/s41578-024-00715-9)；abstract_reviewed。从结构、缺陷和扩散机制解释无机超离子导体的高锂离子电导来源。
+- SSB-P08 [Advancing high-voltage halide-based solid-state batteries: Interfacial challenges, material innovations, and applications](https://doi.org/10.1016/j.ensm.2024.103980)；abstract_reviewed。聚焦卤化物固态电解质的高电压正极界面反应、机械失效和离子/电子输运。
+- SSB-P09 [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。系统讨论硫化物体系正负极界面的脱粘、化学退化、枝晶和多种界面工程策略。
 
 ## SSB-M02｜固固界面是电化学、机械接触和副反应的耦合边界
 
@@ -44,9 +45,9 @@
 **禁止外推**：有界面涂层不等于长期循环和低压力同时成立。
 
 **主要学术支持**：
-- `SSB-P02` [Interfaces and Interphases in All-Solid-State Batteries with Inorganic Solid Electrolytes](https://doi.org/10.1021/acs.chemrev.0c00101)；abstract_reviewed。综述固态电池中的界面接触、晶界、化学/电化学反应与阻抗，强调界面组成、机械和离子电子性质耦合。
-- `SSB-P03` [Interface design for all-solid-state lithium batteries](https://doi.org/10.1038/s41586-023-06653-w)；abstract_reviewed。通过锂侧和高镍正极侧的界面层设计同时抑制枝晶并降低界面阻抗，展示双界面协同设计思路。
-- `SSB-P09` [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。系统讨论硫化物体系正负极界面的脱粘、化学退化、枝晶和多种界面工程策略。
+- SSB-P02 [Interfaces and Interphases in All-Solid-State Batteries with Inorganic Solid Electrolytes](https://doi.org/10.1021/acs.chemrev.0c00101)；abstract_reviewed。综述固态电池中的界面接触、晶界、化学/电化学反应与阻抗，强调界面组成、机械和离子电子性质耦合。
+- SSB-P03 [Interface design for all-solid-state lithium batteries](https://doi.org/10.1038/s41586-023-06653-w)；abstract_reviewed。通过锂侧和高镍正极侧的界面层设计同时抑制枝晶并降低界面阻抗，展示双界面协同设计思路。
+- SSB-P09 [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。系统讨论硫化物体系正负极界面的脱粘、化学退化、枝晶和多种界面工程策略。
 
 ## SSB-M03｜枝晶不只来自机械刺穿，也可能来自电化学还原与局部电流集中
 
@@ -63,8 +64,8 @@
 **禁止外推**：提高电解质硬度不能自动消除所有枝晶。
 
 **主要学术支持**：
-- `SSB-P03` [Interface design for all-solid-state lithium batteries](https://doi.org/10.1038/s41586-023-06653-w)；abstract_reviewed。通过锂侧和高镍正极侧的界面层设计同时抑制枝晶并降低界面阻抗，展示双界面协同设计思路。
-- `SSB-P07` [Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction](https://www.nature.com/articles/s41563-024-02094-6)；abstract_reviewed。用固态NMR/MRI区分界面非均匀镀锂与电解质内部还原引发的两类枝晶机制。
+- SSB-P03 [Interface design for all-solid-state lithium batteries](https://doi.org/10.1038/s41586-023-06653-w)；abstract_reviewed。通过锂侧和高镍正极侧的界面层设计同时抑制枝晶并降低界面阻抗，展示双界面协同设计思路。
+- SSB-P07 [Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction](https://www.nature.com/articles/s41563-024-02094-6)；abstract_reviewed。用固态NMR/MRI区分界面非均匀镀锂与电解质内部还原引发的两类枝晶机制。
 
 ## SSB-M04｜堆压通过接触、锂蠕变和裂纹演化改变电化学性能
 
@@ -81,7 +82,7 @@
 **禁止外推**：高压力下长循环不能直接代表车用电池包可实现。
 
 **主要学术支持**：
-- `SSB-P04` [External-pressure–electrochemistry coupling in solid-state lithium metal batteries](https://doi.org/10.1038/s41578-024-00669-y)；abstract_reviewed。系统解释制造压力和工作堆压如何影响电解质、电极、固固接触、锂蠕变、枝晶和循环。
+- SSB-P04 [External-pressure–electrochemistry coupling in solid-state lithium metal batteries](https://doi.org/10.1038/s41578-024-00669-y)；abstract_reviewed。系统解释制造压力和工作堆压如何影响电解质、电极、固固接触、锂蠕变、枝晶和循环。
 
 ## SSB-M05｜硅负极和锂金属负极的失效机制不同，不能混为“高能量密度负极”
 
@@ -98,8 +99,8 @@
 **禁止外推**：不能用同一个“固态负极”成熟度覆盖两种路线。
 
 **主要学术支持**：
-- `SSB-P06` [Chemo-mechanical failure mechanisms of the silicon anode in solid-state batteries](https://doi.org/10.1038/s41563-023-01792-x)；abstract_reviewed。结合表征与模拟揭示硅负极在固态体系中的界面副反应、空洞和机械应力失效。
-- `SSB-P07` [Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction](https://www.nature.com/articles/s41563-024-02094-6)；abstract_reviewed。用固态NMR/MRI区分界面非均匀镀锂与电解质内部还原引发的两类枝晶机制。
+- SSB-P06 [Chemo-mechanical failure mechanisms of the silicon anode in solid-state batteries](https://doi.org/10.1038/s41563-023-01792-x)；abstract_reviewed。结合表征与模拟揭示硅负极在固态体系中的界面副反应、空洞和机械应力失效。
+- SSB-P07 [Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction](https://www.nature.com/articles/s41563-024-02094-6)；abstract_reviewed。用固态NMR/MRI区分界面非均匀镀锂与电解质内部还原引发的两类枝晶机制。
 
 ## SSB-M06｜实验室单层扣式结果到多层电芯之间存在制造放大鸿沟
 
@@ -116,70 +117,39 @@
 **禁止外推**：中试设备建成不等于电芯已进入规模量产。
 
 **主要学术支持**：
-- `SSB-P04` [External-pressure–electrochemistry coupling in solid-state lithium metal batteries](https://doi.org/10.1038/s41578-024-00669-y)；abstract_reviewed。系统解释制造压力和工作堆压如何影响电解质、电极、固固接触、锂蠕变、枝晶和循环。
-- `SSB-P09` [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。系统讨论硫化物体系正负极界面的脱粘、化学退化、枝晶和多种界面工程策略。
+- SSB-P04 [External-pressure–electrochemistry coupling in solid-state lithium metal batteries](https://doi.org/10.1038/s41578-024-00669-y)；abstract_reviewed。系统解释制造压力和工作堆压如何影响电解质、电极、固固接触、锂蠕变、枝晶和循环。
+- SSB-P09 [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。系统讨论硫化物体系正负极界面的脱粘、化学退化、枝晶和多种界面工程策略。
 
-## 论文清单与阅读边界
+## SSB-M07｜机器学习势能面可扩大固态电解质筛选空间，但可信度受训练域和实验闭环约束
 
-### SSB-P01｜A solid future for battery development
-- 年份：2016；类型：perspective；阅读状态：`metadata_only`
-- 标识：10.1038/nenergy.2016.141
-- 研究卡：经典综述性文章用于梳理固态电池路线的早期问题框架。
-- 局限：本次未重新阅读全文，不用于支持具体性能数值。
-- 技术节点：solid-electrolyte
+**技术节点**：sulfide-electrolyte, halide-electrolyte, solid-electrolyte, cell-validation
 
-### SSB-P02｜Interfaces and Interphases in All-Solid-State Batteries with Inorganic Solid Electrolytes
-- 年份：2020；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1021/acs.chemrev.0c00101
-- 研究卡：综述固态电池中的界面接触、晶界、化学/电化学反应与阻抗，强调界面组成、机械和离子电子性质耦合。
-- 局限：不能把“界面是瓶颈”理解为体相离子输运已对所有材料完全解决。
-- 技术节点：interface, solid-electrolyte
+**机制**：机器学习原子间势可以把接近第一性原理精度的结构与动力学计算扩展到更大成分和时间尺度，用于探索相稳定、离子迁移和成分优化。但模型只在训练元素、构型与物理状态覆盖范围内可靠，最终仍需与实验结构、电导和电芯条件形成闭环。
 
-### SSB-P03｜Interface design for all-solid-state lithium batteries
-- 年份：2023；类型：journal-article；阅读状态：`abstract_reviewed`
-- 标识：10.1038/s41586-023-06653-w
-- 研究卡：通过锂侧和高镍正极侧的界面层设计同时抑制枝晶并降低界面阻抗，展示双界面协同设计思路。
-- 局限：单一材料体系的低压力性能不能直接外推到其他电解质和厚电极。
-- 技术节点：interface, li-metal, coating
+**应观察变量**：训练元素/构型覆盖；能量与力误差；外推不确定性；模拟温度；预测离子电导；实验复现误差；下游微调数据量
 
-### SSB-P04｜External-pressure–electrochemistry coupling in solid-state lithium metal batteries
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1038/s41578-024-00669-y
-- 研究卡：系统解释制造压力和工作堆压如何影响电解质、电极、固固接触、锂蠕变、枝晶和循环。
-- 局限：不同材料体系对压力敏感度不同，不能给出一个通用最优堆压。
-- 技术节点：interface, cell-process, li-metal
+**补证重点**：训练/测试化学空间是否隔离；对未见成分的验证；与实验电导和结构交叉验证；模型失效/不确定性分析；从材料到全电池的额外验证
 
-### SSB-P05｜Diffusion mechanisms of fast lithium-ion conductors
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1038/s41578-024-00715-9
-- 研究卡：从结构、缺陷和扩散机制解释无机超离子导体的高锂离子电导来源。
-- 局限：高室温离子电导不等于完整电池界面稳定或可制造。
-- 技术节点：solid-electrolyte, sulfide-electrolyte, oxide-electrolyte, halide-electrolyte
+**专家如何使用**：企业或研究机构宣称“AI筛材料”时，要区分计算加速、材料发现和电芯验证三个层级，追问模型训练域、实验闭环和是否进入实际电池测试。
 
-### SSB-P06｜Chemo-mechanical failure mechanisms of the silicon anode in solid-state batteries
-- 年份：2024；类型：journal-article；阅读状态：`abstract_reviewed`
-- 标识：10.1038/s41563-023-01792-x
-- 研究卡：结合表征与模拟揭示硅负极在固态体系中的界面副反应、空洞和机械应力失效。
-- 局限：结果与特定Si/LPSCl体系相关，不能直接代表所有硅负极和固态电解质。
-- 技术节点：silicon-anode, interface
+**禁止外推**：模型能高精度预测离子电导，不能直接推出该材料具备优良界面稳定性、循环寿命或量产可制造性。
 
-### SSB-P07｜Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction
-- 年份：2025；类型：journal-article；阅读状态：`abstract_reviewed`
-- 标识：10.1038/s41563-024-02094-6
-- 研究卡：用固态NMR/MRI区分界面非均匀镀锂与电解质内部还原引发的两类枝晶机制。
-- 局限：机制来自LLZO体系，材料缺陷化学和操作条件改变时主导机制可能变化。
-- 技术节点：li-metal, oxide-electrolyte, interface
+**主要学术支持**：
+- SSB-P10 [Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential](https://arxiv.org/abs/2510.09861)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。通过微调通用机器学习原子间势，对卤化物固态电解质的结构、能量和锂离子动力学进行近DFT精度模拟，并探索成分对相稳定性与离子电导的影响，展示ML势在扩大复杂固态电解质计算筛选范围上的潜力。
+- SSB-P11 [A Pre-trained Deep Potential Model for Sulfide Solid Electrolytes with Broad Coverage and High Accuracy](https://arxiv.org/abs/2406.18263)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。构建面向硫化物固态电解质的预训练深度势模型，覆盖多元素和非平衡构型，并通过迁移、蒸馏与持续学习降低新体系模拟成本；摘要强调模型可用于更大化学空间的离子输运预测。
 
-### SSB-P08｜Advancing high-voltage halide-based solid-state batteries: Interfacial challenges, material innovations, and applications
-- 年份：2025；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.ensm.2024.103980
-- 研究卡：聚焦卤化物固态电解质的高电压正极界面反应、机械失效和离子/电子输运。
-- 局限：卤化物路线的材料稳定性与制造环境需要结合具体化学体系评价。
-- 技术节点：halide-electrolyte, interface, cathode
+## 文献索引
 
-### SSB-P09｜Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces
-- 年份：2025；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.ensm.2025.104640
-- 研究卡：系统讨论硫化物体系正负极界面的脱粘、化学退化、枝晶和多种界面工程策略。
-- 局限：综述中的策略成熟度不同，应区分实验室涂层、原位界面与可规模制造方案。
-- 技术节点：sulfide-electrolyte, interface
+> 下列文献均保留阅读状态；未进入机制支持链的论文仍只作为检索/补证线索。
+
+- SSB-P01 [A solid future for battery development](https://doi.org/10.1038/nenergy.2016.141)；metadata_only。本次未重新阅读全文，不用于支持具体性能数值。
+- SSB-P02 [Interfaces and Interphases in All-Solid-State Batteries with Inorganic Solid Electrolytes](https://doi.org/10.1021/acs.chemrev.0c00101)；abstract_reviewed。不能把“界面是瓶颈”理解为体相离子输运已对所有材料完全解决。
+- SSB-P03 [Interface design for all-solid-state lithium batteries](https://doi.org/10.1038/s41586-023-06653-w)；abstract_reviewed。单一材料体系的低压力性能不能直接外推到其他电解质和厚电极。
+- SSB-P04 [External-pressure–electrochemistry coupling in solid-state lithium metal batteries](https://doi.org/10.1038/s41578-024-00669-y)；abstract_reviewed。不同材料体系对压力敏感度不同，不能给出一个通用最优堆压。
+- SSB-P05 [Diffusion mechanisms of fast lithium-ion conductors](https://doi.org/10.1038/s41578-024-00715-9)；abstract_reviewed。高室温离子电导不等于完整电池界面稳定或可制造。
+- SSB-P06 [Chemo-mechanical failure mechanisms of the silicon anode in solid-state batteries](https://doi.org/10.1038/s41563-023-01792-x)；abstract_reviewed。结果与特定Si/LPSCl体系相关，不能直接代表所有硅负极和固态电解质。
+- SSB-P07 [Dendrite formation in solid-state batteries arising from lithium plating and electrolyte reduction](https://www.nature.com/articles/s41563-024-02094-6)；abstract_reviewed。机制来自LLZO体系，材料缺陷化学和操作条件改变时主导机制可能变化。
+- SSB-P08 [Advancing high-voltage halide-based solid-state batteries: Interfacial challenges, material innovations, and applications](https://doi.org/10.1016/j.ensm.2024.103980)；abstract_reviewed。卤化物路线的材料稳定性与制造环境需要结合具体化学体系评价。
+- SSB-P09 [Interface Compatibility in Sulfide-Based All-Solid-State Batteries: Challenges and Strategies at the Electrode–Electrolyte Interfaces](https://doi.org/10.1016/j.ensm.2025.104640)；abstract_reviewed。综述中的策略成熟度不同，应区分实验室涂层、原位界面与可规模制造方案。
+- SSB-P10 [Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential](https://arxiv.org/abs/2510.09861)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。核心证据仍来自结构建模、DFT和分子动力学体系；模拟精度、训练域与实验结构质量决定外推能力，不能据此直接证明材料在全电池中的界面稳定、循环或制造可行性。
+- SSB-P11 [A Pre-trained Deep Potential Model for Sulfide Solid Electrolytes with Broad Coverage and High Accuracy](https://arxiv.org/abs/2406.18263)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。模型覆盖范围仍由训练元素、构型和下游微调数据决定；复现实验电导不等于可预测界面副反应、机械失效、全电池循环和制造窗口。

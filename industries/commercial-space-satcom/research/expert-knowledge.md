@@ -1,14 +1,15 @@
 # 商业航天与卫星互联网｜学术机制与研究证据
 
-> 用途：FirmBuddy 行业专家的 `research` 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
+> 用途：FirmBuddy 行业专家的 research 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
 > 边界：学术结果不能单独证明某家上市公司已量产、已获订单或具备同等性能；涉及公司事实仍需回到法定披露/公司证据装备。
 
 ## 使用规则
 
 1. 先定位技术节点，再解释机制；性能数字必须带测试条件。
 2. 综述用于建立问题框架，单篇实验用于解释特定机制；两者不能替代公司产业化证据。
-3. `metadata_only` 文献只能做检索线索，不得支持技术结论。
-4. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
+3. metadata_only 文献只能做检索线索，不得支持技术结论。
+4. abstract_reviewed 只支持摘要明确表达的方向性结论；SecEmp paper_text 机器预审不等于 sections_reviewed。
+5. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
 
 ## CS-M01｜链路预算是卫星通信性能判断的第一层约束
 
@@ -25,7 +26,7 @@
 **禁止外推**：峰值射频参数不能直接等同用户吞吐或网络覆盖。
 
 **主要学术支持**：
-- `CS-P01` [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)；abstract_reviewed。从系统、空口、介质访问、网络与原型等维度梳理新航天卫星通信，是构建卫星互联网技术树的基础综述。
+- CS-P01 [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)；abstract_reviewed。从系统、空口、介质访问、网络与原型等维度梳理新航天卫星通信，是构建卫星互联网技术树的基础综述。
 
 ## CS-M02｜LEO降低传播距离，但引入多普勒、切换和拓扑变化
 
@@ -42,9 +43,9 @@
 **禁止外推**：“轨道更低”不等于所有业务端到端时延必然更低。
 
 **主要学术支持**：
-- `CS-P01` [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)；abstract_reviewed。从系统、空口、介质访问、网络与原型等维度梳理新航天卫星通信，是构建卫星互联网技术树的基础综述。
-- `CS-P03` [Revolutionizing Future Connectivity: A Contemporary Survey on AI-Empowered Satellite-Based Non-Terrestrial Networks in 6G](https://doi.org/10.1109/COMST.2023.3347145)；abstract_reviewed。系统梳理卫星NTN中的多普勒、切换、频谱共享、资源分配及AI辅助优化。
-- `CS-P05` [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://doi.org/10.1016/j.eng.2025.05.013)；abstract_reviewed。聚焦接入管理、卫星移动性、网络切片、波束赋形、切换和星间传输。
+- CS-P01 [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)；abstract_reviewed。从系统、空口、介质访问、网络与原型等维度梳理新航天卫星通信，是构建卫星互联网技术树的基础综述。
+- CS-P03 [Revolutionizing Future Connectivity: A Contemporary Survey on AI-Empowered Satellite-Based Non-Terrestrial Networks in 6G](https://doi.org/10.1109/COMST.2023.3347145)；abstract_reviewed。系统梳理卫星NTN中的多普勒、切换、频谱共享、资源分配及AI辅助优化。
+- CS-P05 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://doi.org/10.1016/j.eng.2025.05.013)；abstract_reviewed。聚焦接入管理、卫星移动性、网络切片、波束赋形、切换和星间传输。
 
 ## CS-M03｜星间链路把星座从转发系统变成动态空间网络
 
@@ -61,8 +62,8 @@
 **禁止外推**：“有激光通信终端”不能直接推出星座已具备稳定网络化路由。
 
 **主要学术支持**：
-- `CS-P02` [Enhancing LEO Mega-Constellations with Inter-Satellite Links: Vision and Challenges](https://arxiv.org/abs/2406.05078)；abstract_reviewed。讨论星间链路降低对地面站依赖的价值，以及系统设计、路由、负载均衡和资源分配挑战。
-- `CS-P05` [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://doi.org/10.1016/j.eng.2025.05.013)；abstract_reviewed。聚焦接入管理、卫星移动性、网络切片、波束赋形、切换和星间传输。
+- CS-P02 [Enhancing LEO Mega-Constellations with Inter-Satellite Links: Vision and Challenges](https://arxiv.org/abs/2406.05078)；abstract_reviewed。讨论星间链路降低对地面站依赖的价值，以及系统设计、路由、负载均衡和资源分配挑战。
+- CS-P05 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://doi.org/10.1016/j.eng.2025.05.013)；abstract_reviewed。聚焦接入管理、卫星移动性、网络切片、波束赋形、切换和星间传输。
 
 ## CS-M04｜Beam hopping与数字载荷本质是有限星上资源的时空调度
 
@@ -79,7 +80,7 @@
 **禁止外推**：仿真中的资源优化收益不能直接当作星上业务增收。
 
 **主要学术支持**：
-- `CS-P07` [Resource Allocation Techniques in Multibeam Satellites: Conventional Methods vs. AI/ML Approaches](https://onlinelibrary.wiley.com/doi/10.1002/sat.1548)；abstract_reviewed。围绕多波束卫星的功率、带宽、波束宽度和beam hopping资源分配进行综述。
+- CS-P07 [Resource Allocation Techniques in Multibeam Satellites: Conventional Methods vs. AI/ML Approaches](https://onlinelibrary.wiley.com/doi/10.1002/sat.1548)；abstract_reviewed。围绕多波束卫星的功率、带宽、波束宽度和beam hopping资源分配进行综述。
 
 ## CS-M05｜NTN标准化解决互通，不自动解决卫星物理层和网络经济性
 
@@ -96,9 +97,9 @@
 **禁止外推**：“支持NTN协议”不等于已实现广域稳定直连服务。
 
 **主要学术支持**：
-- `CS-P03` [Revolutionizing Future Connectivity: A Contemporary Survey on AI-Empowered Satellite-Based Non-Terrestrial Networks in 6G](https://doi.org/10.1109/COMST.2023.3347145)；abstract_reviewed。系统梳理卫星NTN中的多普勒、切换、频谱共享、资源分配及AI辅助优化。
-- `CS-P04` [Role and Evolution of Non-Terrestrial Networks Toward 6G Systems](https://doi.org/10.1109/ACCESS.2024.3389459)；abstract_reviewed。围绕3GPP Rel-17/18及6G演进讨论NTN架构、接口、协议和业务要求。
-- `CS-P05` [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://doi.org/10.1016/j.eng.2025.05.013)；abstract_reviewed。聚焦接入管理、卫星移动性、网络切片、波束赋形、切换和星间传输。
+- CS-P03 [Revolutionizing Future Connectivity: A Contemporary Survey on AI-Empowered Satellite-Based Non-Terrestrial Networks in 6G](https://doi.org/10.1109/COMST.2023.3347145)；abstract_reviewed。系统梳理卫星NTN中的多普勒、切换、频谱共享、资源分配及AI辅助优化。
+- CS-P04 [Role and Evolution of Non-Terrestrial Networks Toward 6G Systems](https://doi.org/10.1109/ACCESS.2024.3389459)；abstract_reviewed。围绕3GPP Rel-17/18及6G演进讨论NTN架构、接口、协议和业务要求。
+- CS-P05 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://doi.org/10.1016/j.eng.2025.05.013)；abstract_reviewed。聚焦接入管理、卫星移动性、网络切片、波束赋形、切换和星间传输。
 
 ## CS-M06｜商业火箭的技术成功与可复用经济性是两套证据
 
@@ -115,55 +116,36 @@
 **禁止外推**：一次成功回收不能直接证明单位成本显著下降。
 
 **主要学术支持**：
-- `CS-P01` [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)；abstract_reviewed。从系统、空口、介质访问、网络与原型等维度梳理新航天卫星通信，是构建卫星互联网技术树的基础综述。
+- CS-P01 [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)；abstract_reviewed。从系统、空口、介质访问、网络与原型等维度梳理新航天卫星通信，是构建卫星互联网技术树的基础综述。
 
-## 论文清单与阅读边界
+## CS-M07｜NTN的有效服务能力取决于移动性和资源调度，覆盖范围不能替代连续性与容量
 
-### CS-P01｜Satellite Communications in the New Space Era: A Survey and Future Challenges
-- 年份：2021；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1109/COMST.2020.3028247
-- 研究卡：从系统、空口、介质访问、网络与原型等维度梳理新航天卫星通信，是构建卫星互联网技术树的基础综述。
-- 局限：综述时点较早，不代表2026年的星座部署、终端成本或商业份额。
-- 技术节点：satcom-network, payload-communication
+**技术节点**：satcom-network, ntn, handover
 
-### CS-P02｜Enhancing LEO Mega-Constellations with Inter-Satellite Links: Vision and Challenges
-- 年份：2025；类型：journal-article；阅读状态：`abstract_reviewed`
-- 标识：arXiv:2406.05078
-- 研究卡：讨论星间链路降低对地面站依赖的价值，以及系统设计、路由、负载均衡和资源分配挑战。
-- 局限：初步性能评价不能直接转化为商业网络已经实现的时延或成本收益。
-- 技术节点：inter-satellite-link, satcom-network
+**机制**：LEO卫星移动、波束切换和用户流量变化使NTN成为持续重配置的动态网络。资源管理、移动性管理、切片与地面网络协同共同决定中断率、吞吐和服务连续性；单纯扩大几何覆盖并不会自动形成可用容量。
 
-### CS-P03｜Revolutionizing Future Connectivity: A Contemporary Survey on AI-Empowered Satellite-Based Non-Terrestrial Networks in 6G
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1109/COMST.2023.3347145
-- 研究卡：系统梳理卫星NTN中的多普勒、切换、频谱共享、资源分配及AI辅助优化。
-- 局限：AI方法多基于模型和仿真，需与真实星座、标准版本和终端约束分开。
-- 技术节点：ntn, handover, satcom-network
+**应观察变量**：切换频率与失败率；最低仰角；星座密度；用户/业务密度；资源利用率；中断概率；端到端吞吐
 
-### CS-P04｜Role and Evolution of Non-Terrestrial Networks Toward 6G Systems
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1109/ACCESS.2024.3389459
-- 研究卡：围绕3GPP Rel-17/18及6G演进讨论NTN架构、接口、协议和业务要求。
-- 局限：标准演进描述不能被当作某运营商或芯片已经支持全部功能。
-- 技术节点：ntn, ground-terminal
+**补证重点**：动态移动场景而非静态覆盖图；真实或高保真流量模型；不同星座密度/仰角敏感性；TN-NTN联合调度策略；协议版本与终端能力
 
-### CS-P05｜Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions
-- 年份：2025；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.eng.2025.05.013
-- 研究卡：聚焦接入管理、卫星移动性、网络切片、波束赋形、切换和星间传输。
-- 局限：研究方向不等于部署成熟度；需区分协议研究、原型和商用网络。
-- 技术节点：ntn, handover, inter-satellite-link
+**专家如何使用**：评价卫星互联网或手机直连卫星时，把“能覆盖”拆成接入、保持、切换、容量和业务连续性五层，不用覆盖面积替代网络可用性。
 
-### CS-P06｜Multi-layer NTN architectures toward 6G: The ITA-NTN view
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.comnet.2024.110725
-- 研究卡：讨论地面与非地面多层网络协同，为理解GEO/MEO/LEO/HAPS的网络层次与资源协同提供框架。
-- 局限：体系架构综述不能用来证明特定星座采用相同分层方案。
-- 技术节点：ntn, satcom-network
+**禁止外推**：卫星可见或协议支持NTN，不能直接推出用户在高负载和移动场景下可获得稳定连续服务。
 
-### CS-P07｜Resource Allocation Techniques in Multibeam Satellites: Conventional Methods vs. AI/ML Approaches
-- 年份：2025；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1002/sat.1548
-- 研究卡：围绕多波束卫星的功率、带宽、波束宽度和beam hopping资源分配进行综述。
-- 局限：优化算法结果高度依赖流量、信道和约束假设，不应直接写成在轨吞吐提升。
-- 技术节点：phased-array, digital-payload
+**主要学术支持**：
+- CS-P08 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://arxiv.org/abs/2412.00820)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。从6G演进视角梳理NTN的无线资源管理、移动性管理和动态网络切片，并把波束赋形、切换和星间传输列为关键挑战，说明大覆盖只是入口，持续服务还依赖动态资源与移动性管理。
+- CS-P09 [UAV Communications in Integrated Terrestrial and Non-terrestrial Networks](https://arxiv.org/abs/2208.02683)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。研究地面蜂窝网络与LEO NTN联合为城市地面用户和无人机提供连接，摘要中的仿真表明在特定星座密度、仰角和业务假设下，将无人机流量卸载到NTN可显著降低空中用户的中断并改善共存地面用户体验。
+
+## 文献索引
+
+> 下列文献均保留阅读状态；未进入机制支持链的论文仍只作为检索/补证线索。
+
+- CS-P01 [Satellite Communications in the New Space Era: A Survey and Future Challenges](https://doi.org/10.1109/COMST.2020.3028247)；abstract_reviewed。综述时点较早，不代表2026年的星座部署、终端成本或商业份额。
+- CS-P02 [Enhancing LEO Mega-Constellations with Inter-Satellite Links: Vision and Challenges](https://arxiv.org/abs/2406.05078)；abstract_reviewed。初步性能评价不能直接转化为商业网络已经实现的时延或成本收益。
+- CS-P03 [Revolutionizing Future Connectivity: A Contemporary Survey on AI-Empowered Satellite-Based Non-Terrestrial Networks in 6G](https://doi.org/10.1109/COMST.2023.3347145)；abstract_reviewed。AI方法多基于模型和仿真，需与真实星座、标准版本和终端约束分开。
+- CS-P04 [Role and Evolution of Non-Terrestrial Networks Toward 6G Systems](https://doi.org/10.1109/ACCESS.2024.3389459)；abstract_reviewed。标准演进描述不能被当作某运营商或芯片已经支持全部功能。
+- CS-P05 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://doi.org/10.1016/j.eng.2025.05.013)；abstract_reviewed。研究方向不等于部署成熟度；需区分协议研究、原型和商用网络。
+- CS-P06 [Multi-layer NTN architectures toward 6G: The ITA-NTN view](https://doi.org/10.1016/j.comnet.2024.110725)；abstract_reviewed。体系架构综述不能用来证明特定星座采用相同分层方案。
+- CS-P07 [Resource Allocation Techniques in Multibeam Satellites: Conventional Methods vs. AI/ML Approaches](https://onlinelibrary.wiley.com/doi/10.1002/sat.1548)；abstract_reviewed。优化算法结果高度依赖流量、信道和约束假设，不应直接写成在轨吞吐提升。
+- CS-P08 [Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions](https://arxiv.org/abs/2412.00820)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。属于综述/前沿讨论，不能据此证明具体星座、终端或运营商已经实现相同能力；不同轨道、频段、星座密度和协议版本下约束不同。
+- CS-P09 [UAV Communications in Integrated Terrestrial and Non-terrestrial Networks](https://arxiv.org/abs/2208.02683)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。结果建立在特定城市、sub-6GHz、用户密度、星座密度和最低仰角假设上；不能直接外推为任意地区、频段或商业星座都能获得同等覆盖与容量收益。

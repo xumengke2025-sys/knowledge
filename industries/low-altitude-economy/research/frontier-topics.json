@@ -1,7 +1,7 @@
 {
   "industry_id": "low-altitude-economy",
   "industry": "低空经济",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-22",
   "topics": [
     {
       "topic_id": "F-LA-M01",
@@ -90,6 +90,25 @@
         "airworthiness"
       ],
       "monitor_query": "低空经济 适航证据必须分对象、分阶段，不是一个“拿证”标签 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-LA-M07",
+      "topic": "规模化低空运营必须把交通冲突、吞吐和能源储备联合优化",
+      "node_ids": [
+        "evtol",
+        "traffic-management",
+        "operations",
+        "electric-drive",
+        "vertiport"
+      ],
+      "monitor_query": "低空经济 规模化低空运营必须把交通冲突、吞吐和能源储备联合优化 review OR benchmark OR reliability",
       "watch_for": [
         "new review",
         "open benchmark/dataset",

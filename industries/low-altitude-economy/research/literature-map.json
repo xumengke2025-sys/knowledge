@@ -1,8 +1,8 @@
 {
   "industry_id": "low-altitude-economy",
   "industry": "低空经济",
-  "as_of": "2026-09-20",
-  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "as_of": "2026-09-22",
+  "scope_note": "curated academic evidence for expert reasoning; SecEmp v0.8 adds reviewed abstracts and paper_text triage but is not a systematic literature review",
   "review_and_survey": [
     "LA-P02",
     "LA-P03",
@@ -14,7 +14,10 @@
     "LA-P01"
   ],
   "frontier_or_method": [
-    "LA-P05"
+    "LA-P01",
+    "LA-P05",
+    "LA-P08",
+    "LA-P09"
   ],
   "mechanism_to_papers": {
     "LA-M01": [
@@ -39,10 +42,14 @@
     "LA-M06": [
       "LA-P02",
       "LA-P04"
+    ],
+    "LA-M07": [
+      "LA-P08",
+      "LA-P09"
     ]
   },
   "reading_status_counts": {
     "sections_reviewed": 1,
-    "abstract_reviewed": 6
+    "abstract_reviewed": 8
   }
 }

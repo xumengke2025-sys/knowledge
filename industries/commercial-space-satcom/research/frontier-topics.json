@@ -1,7 +1,7 @@
 {
   "industry_id": "commercial-space-satcom",
   "industry": "商业航天与卫星互联网",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-22",
   "topics": [
     {
       "topic_id": "F-CS-M01",
@@ -92,6 +92,23 @@
         "rocket-engine"
       ],
       "monitor_query": "商业航天与卫星互联网 商业火箭的技术成功与可复用经济性是两套证据 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-CS-M07",
+      "topic": "NTN的有效服务能力取决于移动性和资源调度，覆盖范围不能替代连续性与容量",
+      "node_ids": [
+        "satcom-network",
+        "ntn",
+        "handover"
+      ],
+      "monitor_query": "商业航天与卫星互联网 NTN的有效服务能力取决于移动性和资源调度，覆盖范围不能替代连续性与容量 review OR benchmark OR reliability",
       "watch_for": [
         "new review",
         "open benchmark/dataset",

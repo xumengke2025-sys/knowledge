@@ -1,7 +1,7 @@
 {
   "industry_id": "smart-sensors-mems",
   "industry": "高端智能传感器与MEMS",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-22",
   "topics": [
     {
       "topic_id": "F-SEN-M01",
@@ -95,6 +95,24 @@
         "optical-sensor"
       ],
       "monitor_query": "高端智能传感器与MEMS 多传感融合的价值取决于误差模型和时间同步，而非传感器数量 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-SEN-M07",
+      "topic": "高端惯性传感的性能边界来自非线性动力学、噪声与带宽的共同约束",
+      "node_ids": [
+        "inertial",
+        "gyro",
+        "accelerometer",
+        "mems-chip"
+      ],
+      "monitor_query": "高端智能传感器与MEMS 高端惯性传感的性能边界来自非线性动力学、噪声与带宽的共同约束 review OR benchmark OR reliability",
       "watch_for": [
         "new review",
         "open benchmark/dataset",

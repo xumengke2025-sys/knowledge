@@ -1,8 +1,8 @@
 {
   "industry_id": "solid-state-battery",
   "industry": "固态电池与下一代电池材料",
-  "as_of": "2026-09-20",
-  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "as_of": "2026-09-22",
+  "scope_note": "curated academic evidence for expert reasoning; SecEmp v0.8 adds reviewed abstracts and paper_text triage but is not a systematic literature review",
   "review_and_survey": [
     "SSB-P02",
     "SSB-P04",
@@ -15,8 +15,11 @@
     "SSB-P02"
   ],
   "frontier_or_method": [
+    "SSB-P03",
     "SSB-P06",
-    "SSB-P07"
+    "SSB-P07",
+    "SSB-P10",
+    "SSB-P11"
   ],
   "mechanism_to_papers": {
     "SSB-M01": [
@@ -43,10 +46,14 @@
     "SSB-M06": [
       "SSB-P04",
       "SSB-P09"
+    ],
+    "SSB-M07": [
+      "SSB-P10",
+      "SSB-P11"
     ]
   },
   "reading_status_counts": {
     "metadata_only": 1,
-    "abstract_reviewed": 8
+    "abstract_reviewed": 10
   }
 }

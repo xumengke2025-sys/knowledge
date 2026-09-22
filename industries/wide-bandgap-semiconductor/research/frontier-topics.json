@@ -1,7 +1,7 @@
 {
   "industry_id": "wide-bandgap-semiconductor",
   "industry": "第三代/宽禁带半导体",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-22",
   "topics": [
     {
       "topic_id": "F-WBG-M01",
@@ -90,6 +90,24 @@
         "qualification"
       ],
       "monitor_query": "第三代/宽禁带半导体 车规/工业可靠性要从加速应力映射到真实任务谱 review OR benchmark OR reliability",
+      "watch_for": [
+        "new review",
+        "open benchmark/dataset",
+        "method with real-world validation",
+        "reliability/scale-up evidence"
+      ],
+      "expert_use": "新论文先进入学术候选池，阅读摘要/正文后再升级为机制支持；不得因标题命中直接改变公司阶段。"
+    },
+    {
+      "topic_id": "F-WBG-M07",
+      "topic": "宽禁带材料优势必须经过接触、界面和高场输运才能兑现为器件性能",
+      "node_ids": [
+        "gan-epitaxy",
+        "gan-hemt",
+        "sic-mosfet",
+        "device"
+      ],
+      "monitor_query": "第三代/宽禁带半导体 宽禁带材料优势必须经过接触、界面和高场输运才能兑现为器件性能 review OR benchmark OR reliability",
       "watch_for": [
         "new review",
         "open benchmark/dataset",

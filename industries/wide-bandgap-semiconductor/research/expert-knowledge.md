@@ -1,14 +1,15 @@
 # 第三代/宽禁带半导体｜学术机制与研究证据
 
-> 用途：FirmBuddy 行业专家的 `research` 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
+> 用途：FirmBuddy 行业专家的 research 知识装备。本文把论文转化为可检索的机制知识；论文是证据，不是需要背诵的答案。
 > 边界：学术结果不能单独证明某家上市公司已量产、已获订单或具备同等性能；涉及公司事实仍需回到法定披露/公司证据装备。
 
 ## 使用规则
 
 1. 先定位技术节点，再解释机制；性能数字必须带测试条件。
 2. 综述用于建立问题框架，单篇实验用于解释特定机制；两者不能替代公司产业化证据。
-3. `metadata_only` 文献只能做检索线索，不得支持技术结论。
-4. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
+3. metadata_only 文献只能做检索线索，不得支持技术结论。
+4. abstract_reviewed 只支持摘要明确表达的方向性结论；SecEmp paper_text 机器预审不等于 sections_reviewed。
+5. 学术机制与专利权利要求、上市公司披露相互验证，但不得互相替代。
 
 ## WBG-M01｜衬底缺陷通过外延和器件区域放大为良率与可靠性问题
 
@@ -25,7 +26,7 @@
 **禁止外推**：发布大尺寸样片不能直接等同稳定量产或成本下降。
 
 **主要学术支持**：
-- `WBG-P06` [Silicon carbide MOSFETs: A critical review of applications, technological advancements, and future perspectives](https://doi.org/10.1016/j.micrna.2025.208126)；abstract_reviewed。综合制造、器件结构、可靠性和应用演进，为SiC MOSFET技术节点梳理提供参考。
+- WBG-P06 [Silicon carbide MOSFETs: A critical review of applications, technological advancements, and future perspectives](https://doi.org/10.1016/j.micrna.2025.208126)；abstract_reviewed。综合制造、器件结构、可靠性和应用演进，为SiC MOSFET技术节点梳理提供参考。
 
 ## WBG-M02｜SiC MOS界面决定沟道迁移率和阈值稳定性，是器件可靠性核心
 
@@ -42,8 +43,8 @@
 **禁止外推**：室温静态Ron低不能证明车规寿命更好。
 
 **主要学术支持**：
-- `WBG-P02` [Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives](https://doi.org/10.1109/TED.2023.3346369)；abstract_reviewed。比较商用SiC/GaN器件结构、应用和可靠性，包括GaN动态Ron/阈值稳定性及SiC栅氧/短路问题。
-- `WBG-P05` [Degradation mechanism and reliability tests for silicon carbide power MOSFETs: challenges and progress](https://doi.org/10.1016/j.chip.2025.100188)；abstract_reviewed。综述SiC MOSFET芯片与封装层面的退化机制、阈值电压、栅漏电等可靠性评价。
+- WBG-P02 [Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives](https://doi.org/10.1109/TED.2023.3346369)；abstract_reviewed。比较商用SiC/GaN器件结构、应用和可靠性，包括GaN动态Ron/阈值稳定性及SiC栅氧/短路问题。
+- WBG-P05 [Degradation mechanism and reliability tests for silicon carbide power MOSFETs: challenges and progress](https://doi.org/10.1016/j.chip.2025.100188)；abstract_reviewed。综述SiC MOSFET芯片与封装层面的退化机制、阈值电压、栅漏电等可靠性评价。
 
 ## WBG-M03｜GaN陷阱效应使动态Ron与静态Ron不是同一件事
 
@@ -60,8 +61,8 @@
 **禁止外推**：数据表静态Ron不能直接代表高频变换器真实损耗。
 
 **主要学术支持**：
-- `WBG-P01` [Characterisation and Modeling of Gallium Nitride Power Semiconductor Devices Dynamic On-State Resistance](https://doi.org/10.1109/TPEL.2017.2730260)；sections_reviewed。把GaN HEMT动态导通电阻与关态偏置、陷阱捕获/释放时间联系起来，说明静态数据表不足以描述开关工作状态。
-- `WBG-P02` [Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives](https://doi.org/10.1109/TED.2023.3346369)；abstract_reviewed。比较商用SiC/GaN器件结构、应用和可靠性，包括GaN动态Ron/阈值稳定性及SiC栅氧/短路问题。
+- WBG-P01 [Characterisation and Modeling of Gallium Nitride Power Semiconductor Devices Dynamic On-State Resistance](https://doi.org/10.1109/TPEL.2017.2730260)；sections_reviewed。把GaN HEMT动态导通电阻与关态偏置、陷阱捕获/释放时间联系起来，说明静态数据表不足以描述开关工作状态。
+- WBG-P02 [Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives](https://doi.org/10.1109/TED.2023.3346369)；abstract_reviewed。比较商用SiC/GaN器件结构、应用和可靠性，包括GaN动态Ron/阈值稳定性及SiC栅氧/短路问题。
 
 ## WBG-M04｜高速开关把封装寄生、电磁兼容和热设计推到系统瓶颈
 
@@ -78,9 +79,9 @@
 **禁止外推**：“采用SiC芯片”不等于系统效率和可靠性自动领先。
 
 **主要学术支持**：
-- `WBG-P03` [Industry perspective on power electronics for electric vehicles](https://www.nature.com/articles/s44287-024-00055-4)；abstract_reviewed。从器件、变换器和模块讨论Si/SiC/GaN在800V电驱、OBC/DC-DC中的效率、成本和可靠性权衡。
-- `WBG-P04` [Packaging and integration of silicon carbide power devices](https://www.nature.com/articles/s44287-026-00263-0)；abstract_reviewed。聚焦SiC高温高压、高速开关和高热流密度下的封装材料、互联、电磁和散热挑战。
-- `WBG-P07` [Conventional, wide-bandgap, and hybrid power converters: A comprehensive review](https://doi.org/10.1016/j.rser.2025.115419)；abstract_reviewed。从开关器件到系统级变换器比较Si、SiC、GaN及混合方案的效率、热管理、成本和可靠性。
+- WBG-P03 [Industry perspective on power electronics for electric vehicles](https://www.nature.com/articles/s44287-024-00055-4)；abstract_reviewed。从器件、变换器和模块讨论Si/SiC/GaN在800V电驱、OBC/DC-DC中的效率、成本和可靠性权衡。
+- WBG-P04 [Packaging and integration of silicon carbide power devices](https://www.nature.com/articles/s44287-026-00263-0)；abstract_reviewed。聚焦SiC高温高压、高速开关和高热流密度下的封装材料、互联、电磁和散热挑战。
+- WBG-P07 [Conventional, wide-bandgap, and hybrid power converters: A comprehensive review](https://doi.org/10.1016/j.rser.2025.115419)；abstract_reviewed。从开关器件到系统级变换器比较Si、SiC、GaN及混合方案的效率、热管理、成本和可靠性。
 
 ## WBG-M05｜系统效率收益依赖开关频率、拓扑和磁性/散热的协同设计
 
@@ -97,8 +98,8 @@
 **禁止外推**：材料理论优值不能直接等同整机续航提升。
 
 **主要学术支持**：
-- `WBG-P03` [Industry perspective on power electronics for electric vehicles](https://www.nature.com/articles/s44287-024-00055-4)；abstract_reviewed。从器件、变换器和模块讨论Si/SiC/GaN在800V电驱、OBC/DC-DC中的效率、成本和可靠性权衡。
-- `WBG-P07` [Conventional, wide-bandgap, and hybrid power converters: A comprehensive review](https://doi.org/10.1016/j.rser.2025.115419)；abstract_reviewed。从开关器件到系统级变换器比较Si、SiC、GaN及混合方案的效率、热管理、成本和可靠性。
+- WBG-P03 [Industry perspective on power electronics for electric vehicles](https://www.nature.com/articles/s44287-024-00055-4)；abstract_reviewed。从器件、变换器和模块讨论Si/SiC/GaN在800V电驱、OBC/DC-DC中的效率、成本和可靠性权衡。
+- WBG-P07 [Conventional, wide-bandgap, and hybrid power converters: A comprehensive review](https://doi.org/10.1016/j.rser.2025.115419)；abstract_reviewed。从开关器件到系统级变换器比较Si、SiC、GaN及混合方案的效率、热管理、成本和可靠性。
 
 ## WBG-M06｜车规/工业可靠性要从加速应力映射到真实任务谱
 
@@ -115,56 +116,37 @@
 **禁止外推**：单一测试通过不能证明所有车规工况和寿命目标。
 
 **主要学术支持**：
-- `WBG-P02` [Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives](https://doi.org/10.1109/TED.2023.3346369)；abstract_reviewed。比较商用SiC/GaN器件结构、应用和可靠性，包括GaN动态Ron/阈值稳定性及SiC栅氧/短路问题。
-- `WBG-P05` [Degradation mechanism and reliability tests for silicon carbide power MOSFETs: challenges and progress](https://doi.org/10.1016/j.chip.2025.100188)；abstract_reviewed。综述SiC MOSFET芯片与封装层面的退化机制、阈值电压、栅漏电等可靠性评价。
+- WBG-P02 [Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives](https://doi.org/10.1109/TED.2023.3346369)；abstract_reviewed。比较商用SiC/GaN器件结构、应用和可靠性，包括GaN动态Ron/阈值稳定性及SiC栅氧/短路问题。
+- WBG-P05 [Degradation mechanism and reliability tests for silicon carbide power MOSFETs: challenges and progress](https://doi.org/10.1016/j.chip.2025.100188)；abstract_reviewed。综述SiC MOSFET芯片与封装层面的退化机制、阈值电压、栅漏电等可靠性评价。
 
-## 论文清单与阅读边界
+## WBG-M07｜宽禁带材料优势必须经过接触、界面和高场输运才能兑现为器件性能
 
-### WBG-P01｜Characterisation and Modeling of Gallium Nitride Power Semiconductor Devices Dynamic On-State Resistance
-- 年份：2018；类型：journal-article；阅读状态：`sections_reviewed`
-- 标识：10.1109/TPEL.2017.2730260
-- 研究卡：把GaN HEMT动态导通电阻与关态偏置、陷阱捕获/释放时间联系起来，说明静态数据表不足以描述开关工作状态。
-- 局限：结果依赖具体器件和测试条件，不能推广到所有GaN路线。
-- 技术节点：gan-hemt
+**技术节点**：gan-epitaxy, gan-hemt, sic-mosfet, device
 
-### WBG-P02｜Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1109/TED.2023.3346369
-- 研究卡：比较商用SiC/GaN器件结构、应用和可靠性，包括GaN动态Ron/阈值稳定性及SiC栅氧/短路问题。
-- 局限：综述跨产品比较仍需统一电压、温度、频率和封装条件。
-- 技术节点：sic-mosfet, gan-hemt, qualification
+**机制**：GaN/SiC的材料参数为高场器件提供潜力，但器件电流、跨导、动态与高压行为仍受到接触电阻、异质结界面、载流子注入、空间电荷和速度饱和等因素约束。材料或势垒创新只有经过器件工艺与真实工作点验证才能形成系统价值。
 
-### WBG-P03｜Industry perspective on power electronics for electric vehicles
-- 年份：2024；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1038/s44287-024-00055-4
-- 研究卡：从器件、变换器和模块讨论Si/SiC/GaN在800V电驱、OBC/DC-DC中的效率、成本和可靠性权衡。
-- 局限：行业视角不能替代单一厂商的车规认证、良率和成本数据。
-- 技术节点：sic-mosfet, gan-hemt, module
+**应观察变量**：接触电阻；界面载流子密度；跨导；饱和电流；动态/高场电阻；击穿场；温度与偏压
 
-### WBG-P04｜Packaging and integration of silicon carbide power devices
-- 年份：2026；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1038/s44287-026-00263-0
-- 研究卡：聚焦SiC高温高压、高速开关和高热流密度下的封装材料、互联、电磁和散热挑战。
-- 局限：封装方案必须结合功率循环、绝缘和热循环验证，不能仅凭低寄生设计判断寿命。
-- 技术节点：advanced-package, module
+**补证重点**：同结构器件对照；接触与界面表征；高场I-V与温度依赖；动态/可靠性测试；制造一致性
 
-### WBG-P05｜Degradation mechanism and reliability tests for silicon carbide power MOSFETs: challenges and progress
-- 年份：2026；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.chip.2025.100188
-- 研究卡：综述SiC MOSFET芯片与封装层面的退化机制、阈值电压、栅漏电等可靠性评价。
-- 局限：寿命与退化参数依赖应力条件，不能把单一加速测试结果当成实际车辆寿命。
-- 技术节点：sic-mosfet, qualification
+**专家如何使用**：看到企业宣传新材料、外延或高介电常数势垒时，要继续追问接触、界面、器件结构及高场实测，而不是直接把材料参数写成器件或系统优势。
 
-### WBG-P06｜Silicon carbide MOSFETs: A critical review of applications, technological advancements, and future perspectives
-- 年份：2025；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.micrna.2025.208126
-- 研究卡：综合制造、器件结构、可靠性和应用演进，为SiC MOSFET技术节点梳理提供参考。
-- 局限：宏观综述不能直接用于公司间技术实力排名。
-- 技术节点：sic-mosfet, device
+**禁止外推**：更高介电常数、更宽禁带或更高理论击穿场，不能直接推出实际MOSFET/HEMT具有更低损耗或更高可靠性。
 
-### WBG-P07｜Conventional, wide-bandgap, and hybrid power converters: A comprehensive review
-- 年份：2025；类型：journal-review；阅读状态：`abstract_reviewed`
-- 标识：10.1016/j.rser.2025.115419
-- 研究卡：从开关器件到系统级变换器比较Si、SiC、GaN及混合方案的效率、热管理、成本和可靠性。
-- 局限：系统级收益必须在同一拓扑、负载和冷却条件下比较。
-- 技术节点：module, qualification
+**主要学术支持**：
+- WBG-P08 [Epitaxial high-K AlBN barrier GaN HEMTs](https://arxiv.org/abs/2502.19315)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。研究AlBN/GaN异质结及高介电常数势垒在HEMT中的实现，摘要报告了2DEG、器件电流和跨导等初步结果，同时明确当前样品性能受接触电阻限制，说明材料/势垒创新仍需经过接触与器件工艺才能兑现。
+- WBG-P09 [Injection-Limited and Space-Charge-Limited Conduction in Wide Bandgap Semiconductors with Velocity Saturation Effect](https://arxiv.org/abs/2308.00955)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。建立同时考虑接触注入、空间电荷、散射与速度饱和的宽禁带半导体载流子输运模型，并以GaN与SiC为例讨论高场下不同导电机制的转换，提示高压器件分析不能只使用低场或理想欧姆假设。
+
+## 文献索引
+
+> 下列文献均保留阅读状态；未进入机制支持链的论文仍只作为检索/补证线索。
+
+- WBG-P01 [Characterisation and Modeling of Gallium Nitride Power Semiconductor Devices Dynamic On-State Resistance](https://doi.org/10.1109/TPEL.2017.2730260)；sections_reviewed。结果依赖具体器件和测试条件，不能推广到所有GaN路线。
+- WBG-P02 [Review and Outlook on GaN and SiC Power Devices: Industrial State-of-the-Art, Applications, and Perspectives](https://doi.org/10.1109/TED.2023.3346369)；abstract_reviewed。综述跨产品比较仍需统一电压、温度、频率和封装条件。
+- WBG-P03 [Industry perspective on power electronics for electric vehicles](https://www.nature.com/articles/s44287-024-00055-4)；abstract_reviewed。行业视角不能替代单一厂商的车规认证、良率和成本数据。
+- WBG-P04 [Packaging and integration of silicon carbide power devices](https://www.nature.com/articles/s44287-026-00263-0)；abstract_reviewed。封装方案必须结合功率循环、绝缘和热循环验证，不能仅凭低寄生设计判断寿命。
+- WBG-P05 [Degradation mechanism and reliability tests for silicon carbide power MOSFETs: challenges and progress](https://doi.org/10.1016/j.chip.2025.100188)；abstract_reviewed。寿命与退化参数依赖应力条件，不能把单一加速测试结果当成实际车辆寿命。
+- WBG-P06 [Silicon carbide MOSFETs: A critical review of applications, technological advancements, and future perspectives](https://doi.org/10.1016/j.micrna.2025.208126)；abstract_reviewed。宏观综述不能直接用于公司间技术实力排名。
+- WBG-P07 [Conventional, wide-bandgap, and hybrid power converters: A comprehensive review](https://doi.org/10.1016/j.rser.2025.115419)；abstract_reviewed。系统级收益必须在同一拓扑、负载和冷却条件下比较。
+- WBG-P08 [Epitaxial high-K AlBN barrier GaN HEMTs](https://arxiv.org/abs/2502.19315)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。属于初步器件实现，长沟道结构、接触电阻和特定材料体系限制可比性；不能把单器件结果外推为量产GaN功率/射频器件的综合性能优势。
+- WBG-P09 [Injection-Limited and Space-Charge-Limited Conduction in Wide Bandgap Semiconductors with Velocity Saturation Effect](https://arxiv.org/abs/2308.00955)；abstract_reviewed；SecEmp正文可用，仅完成机器预审。主要是理论/模型工作，示例结构与参数不能替代真实器件的陷阱、界面、几何、温度和可靠性测试；模型中的高场机制也不能直接转化为某家企业器件性能。

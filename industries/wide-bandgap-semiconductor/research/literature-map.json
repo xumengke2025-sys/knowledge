@@ -1,8 +1,8 @@
 {
   "industry_id": "wide-bandgap-semiconductor",
   "industry": "第三代/宽禁带半导体",
-  "as_of": "2026-09-20",
-  "scope_note": "curated academic evidence for expert reasoning; not a systematic literature review",
+  "as_of": "2026-09-22",
+  "scope_note": "curated academic evidence for expert reasoning; SecEmp v0.8 adds reviewed abstracts and paper_text triage but is not a systematic literature review",
   "review_and_survey": [
     "WBG-P02",
     "WBG-P03",
@@ -14,7 +14,11 @@
   "landmark_or_foundational": [
     "WBG-P01"
   ],
-  "frontier_or_method": [],
+  "frontier_or_method": [
+    "WBG-P01",
+    "WBG-P08",
+    "WBG-P09"
+  ],
   "mechanism_to_papers": {
     "WBG-M01": [
       "WBG-P06"
@@ -39,10 +43,14 @@
     "WBG-M06": [
       "WBG-P02",
       "WBG-P05"
+    ],
+    "WBG-M07": [
+      "WBG-P08",
+      "WBG-P09"
     ]
   },
   "reading_status_counts": {
     "sections_reviewed": 1,
-    "abstract_reviewed": 6
+    "abstract_reviewed": 8
   }
 }

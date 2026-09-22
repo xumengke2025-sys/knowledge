@@ -1,0 +1,429 @@
+{
+  "version": "0.9.0",
+  "as_of": "2026-09-22",
+  "policy": "Only papers explicitly listed here may be promoted from abstract_reviewed to sections_reviewed. SecEmp paper_text hash anchors the reviewed corpus version; arXiv HTML is used to cross-check readable section content.",
+  "papers": [
+    {
+      "industry_id": "embodied-intelligence",
+      "id": "EI-P09",
+      "paper_id": "2502.19645",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "4e14656c1e09c5794e630dff1ad7eb0dfd6c2cafaa19c647a1495af17042fe74",
+      "secemp_resolution": "single",
+      "reviewed_sections": [
+        "V-A LIBERO Experimental Setup",
+        "V-B/V-C LIBERO performance and inference efficiency",
+        "VI-A ALOHA Experimental Setup",
+        "VI-C/VI-D ALOHA performance and inference efficiency",
+        "VIII Limitations"
+      ],
+      "method_note": "比较VLA微调中的并行/自回归解码、动作分块、离散/连续动作表示以及L1回归/扩散目标；OpenVLA作为统一底座，尽量通过受控实验拆分设计因素。",
+      "experiment_note": "LIBERO包含4个task suite，每个suite 10个任务、500条专家演示；OpenVLA采用LoRA微调。真实机器人部分使用双臂ALOHA、3路相机、14维关节状态，控制频率25 Hz，且与OpenVLA预训练分布存在明显本体、视角、状态输入和控制频率差异。",
+      "baselines": [
+        "base OpenVLA fine-tuning",
+        "Diffusion Policy",
+        "Octo",
+        "DiT Policy",
+        "Seer",
+        "MDT",
+        "pi0",
+        "RDT-1B",
+        "ACT"
+      ],
+      "metrics": [
+        "task success rate",
+        "action generation throughput",
+        "latency",
+        "control frequency"
+      ],
+      "key_findings": [
+        "并行解码与action chunking同时改善推理效率和任务表现",
+        "连续动作表示优于离散动作方案",
+        "L1目标在研究设置中可接近扩散式任务表现但训练和推理更简单",
+        "真实ALOHA结果表明适配方案可支持高频双臂控制，但结论依赖特定数据和硬件"
+      ],
+      "limitations": [
+        "训练演示通常每个任务采用一致策略，真正多峰动作分布仍可能使L1回归受限",
+        "主要实验集中于OpenVLA、LIBERO和ALOHA，不能视为所有VLA与机器人本体的普遍规律"
+      ],
+      "expert_questions": [
+        "目标机器人与底座预训练数据的分布差距有多大",
+        "动作表示、chunk长度和控制频率是什么",
+        "推理硬件、端到端延迟和真实闭环成功率是多少",
+        "是否存在多策略/多峰动作任务以及失败模式"
+      ],
+      "cannot_infer": [
+        "采用OpenVLA/OFT思路即可在任意机器人上获得相同成功率",
+        "论文中的吞吐提升可直接等同量产系统端到端实时性"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/2502.19645v2"
+      ]
+    },
+    {
+      "industry_id": "commercial-space-satcom",
+      "id": "CS-P09",
+      "paper_id": "2208.02683",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "5a7239e5515dd7644dd32ac4982e33da3f0aaf9cb517a83e339c2d47a13e2ff2",
+      "secemp_resolution": "resolved",
+      "reviewed_sections": [
+        "II System Model",
+        "III Evaluation Methodology",
+        "IV Numerical Results",
+        "V Conclusion"
+      ],
+      "method_note": "构建地面蜂窝TN与600 km LEO NTN联合网络模型，比较UAV继续使用TN与将UAV流量卸载到NTN两种模式，并分别评估上下行。",
+      "experiment_note": "研究采用sub-6 GHz、城市地面用户与150 m高度UAV场景；集成方案中GUE留在TN、UAV统一卸载到NTN，考察卫星仰角、频率复用和UAV密度等因素。",
+      "baselines": [
+        "standalone terrestrial network",
+        "TN with interference relief",
+        "integrated TN-NTN with UAV offloading"
+      ],
+      "metrics": [
+        "downlink SINR",
+        "outage probability",
+        "uplink signal quality",
+        "per-user data rate",
+        "command-and-control rate"
+      ],
+      "key_findings": [
+        "在研究假设下，UAV卸载至NTN可显著减少空中用户中断并缓解对地面用户的上行干扰",
+        "服务收益依赖足够的LEO星座密度/最低仰角和UAV渗透率",
+        "当UAV数量下降时，单位用户可用速率上升"
+      ],
+      "limitations": [
+        "统一把所有UAV卸载到NTN是简化策略，论文明确将按高度与负载的动态卸载留作后续研究",
+        "传播、星座、频谱和城市模型均是特定假设，结果不应直接外推到任意商用星座"
+      ],
+      "expert_questions": [
+        "星座轨道高度和最低仰角是多少",
+        "频谱/带宽与终端功率条件是什么",
+        "真实切换与波束移动是否纳入",
+        "动态卸载还是固定卸载",
+        "高负载下中断率与吞吐如何"
+      ],
+      "cannot_infer": [
+        "存在NTN覆盖即可保证城市UAV稳定宽带",
+        "论文中的中断率改善可直接代表某运营商真实网络表现"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/2208.02683v1"
+      ]
+    },
+    {
+      "industry_id": "low-altitude-economy",
+      "id": "LA-P08",
+      "paper_id": "2604.06093",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "b85f61d97c6bce90dbc29eb3d1f32349da71f4afda692ccc5128498d8f156704",
+      "secemp_resolution": "single",
+      "reviewed_sections": [
+        "II eVTOL Energy Consumption Model and Model Scope",
+        "III Conflict Resolution and Simulation Framework",
+        "V/VI Results and reserve estimation",
+        "VI-B Limitations"
+      ],
+      "method_note": "将基于航空器部件/动量理论的eVTOL巡航功率模型与MVP战术冲突解脱算法、交通级仿真组合，用冲突场景与无冲突基线的相对能耗差计算deconfliction overhead，并进一步训练预测模型估计任务开始时的能耗增量范围。",
+      "experiment_note": "基线机型为Joby S4级六旋翼倾转构型，最大起飞质量2177 kg、电池136 kWh；自由飞行圆形空域中系统改变并发航空器密度并生成大量航段样本。",
+      "baselines": [
+        "conflict-free trajectory energy",
+        "MVP conflict-resolution trajectory energy"
+      ],
+      "metrics": [
+        "relative energy overhead",
+        "median/P95/tail overhead",
+        "prediction interval coverage",
+        "RMSE/MAE for prediction model"
+      ],
+      "key_findings": [
+        "大多数研究场景的中位能耗增量较低，但高密度持续冲突产生明显长尾",
+        "储备能量不能只看平均值，需要关注高分位和初始拥堵状态",
+        "相对能耗增量比绝对能耗对功率模型系统偏差更稳健"
+      ],
+      "limitations": [
+        "论文明确说明功率模型尚未由飞行试验验证，绝对能耗需谨慎解释",
+        "自由飞行扇区和MVP算法属于研究设定，不能直接替代真实航路、气象、适航和运营规则"
+      ],
+      "expert_questions": [
+        "企业航程/储备能量是否考虑交通冲突和备降",
+        "能源模型是否有真实飞行数据校准",
+        "高密度P95/P99能耗增量是多少",
+        "调度、气象和冲突算法改变后结论是否稳定"
+      ],
+      "cannot_infer": [
+        "4-5%的研究储备比例可作为所有eVTOL机型统一工程标准",
+        "仿真中MVP能耗较低即可证明真实城市高密度运行经济性成立"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/2604.06093v1"
+      ]
+    },
+    {
+      "industry_id": "wide-bandgap-semiconductor",
+      "id": "WBG-P08",
+      "paper_id": "2502.19315",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "25110897d0e5f9b1a2de8cd8cc143c8f1ae4a2001e7e73a40b87ae0cf46cfb18",
+      "secemp_resolution": "resolved",
+      "reviewed_sections": [
+        "heterostructure characterization",
+        "HEMT device process flow",
+        "electrical characteristics",
+        "C-V dielectric extraction"
+      ],
+      "method_note": "在SiC衬底上外延AlBN/GaN异质结构，使用Hall、器件I-V和MIS C-V测试表征2DEG与介电性质；从3英寸晶圆中心切取样片制造HEMT，采用ICP隔离、合金源漏接触和Ni/Au栅极。",
+      "experiment_note": "约7% B的AlBN势垒、2.2 nm AlBN与2 nm GaN cap；源漏Ta/Al/Ni/Au堆栈在830°C氮气中退火65秒，电学和C-V测试用于提取接触、电流、跨导与介电参数。",
+      "baselines": [
+        "AlN dielectric constant/reference barrier behavior",
+        "self-consistent Schrödinger-Poisson C-V calculation"
+      ],
+      "metrics": [
+        "2DEG density/mobility",
+        "contact resistance",
+        "on/off ratio",
+        "threshold voltage",
+        "subthreshold slope",
+        "transconductance",
+        "on-resistance",
+        "saturation current density",
+        "relative dielectric constant"
+      ],
+      "key_findings": [
+        "AlBN/GaN界面可形成极化诱导2DEG并实现超薄势垒HEMT",
+        "样品展示清晰电流饱和与可观跨导",
+        "当前器件性能明显受接触电阻限制，说明材料势垒优势尚未完全转化为器件性能"
+      ],
+      "limitations": [
+        "论文属于初步器件实现，长沟道、小样片和接触电阻限制可比性",
+        "未建立量产良率、长期可靠性、动态Ron、高温或高压寿命证据"
+      ],
+      "expert_questions": [
+        "接触电阻能否进一步降低且具批次一致性",
+        "高温/高压/动态应力下性能如何",
+        "外延厚度与B组分均匀性怎样",
+        "晶圆级良率与可靠性数据是否存在"
+      ],
+      "cannot_infer": [
+        "高介电常数势垒即可保证商业GaN器件更低损耗/更高可靠性",
+        "中心小样片结果代表整片3英寸乃至大尺寸晶圆量产一致性"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/2502.19315v1"
+      ]
+    },
+    {
+      "industry_id": "solid-state-battery",
+      "id": "SSB-P10",
+      "paper_id": "2510.09861",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "76b22e77060614245f5adbf3e6b6ef6ba65b263a9b01b3bc4303a36493c214b7",
+      "secemp_resolution": "resolved",
+      "reviewed_sections": [
+        "ordered-structure enumeration/ranking workflow",
+        "finite-temperature CHGNet fine-tuning",
+        "benchmark against DFT/SevenNet/experiment",
+        "Li diffusion and ionic conductivity analysis",
+        "summary"
+      ],
+      "method_note": "从实验精修但含部分占位的LYC/LYB结构出发，先枚举有序构型并用机器学习势排序，再用DFT确认低能结构；随后通过逐步加入不同温度MD轨迹对应的DFT数据，迭代微调CHGNet，并用于更长时间尺度的Li扩散模拟。",
+      "experiment_note": "预训练CHGNet在高温NpT下出现体积偏差甚至不稳定；研究构建200K/400K/600K/800K逐级模型，并用独立0-800K结构测试集评估能量、力、应力误差，同时比较体积、活化能和室温离子电导与DFT、SevenNet和实验数据。",
+      "baselines": [
+        "pretrained CHGNet",
+        "SevenNet",
+        "DFT/AIMD",
+        "published experimental structure and conductivity data"
+      ],
+      "metrics": [
+        "energy MAE",
+        "force MAE",
+        "stress MAE",
+        "volume deviation",
+        "simulation stability",
+        "activation energy",
+        "room-temperature ionic conductivity"
+      ],
+      "key_findings": [
+        "面向具体卤化物体系的有限温度微调显著修复了通用势在高温结构空间中的失效",
+        "600K微调模型在精度与稳定性之间取得较好平衡，并可用于跨LYCB组分的长时间动力学",
+        "模型能够把高成本第一性原理计算扩展到更大的结构/成分空间"
+      ],
+      "limitations": [
+        "可信度受训练化学空间和有限温度构型覆盖约束，通用模型需要体系特定微调",
+        "研究聚焦体相结构与离子输运，不能证明电极界面稳定、循环寿命、机械可靠性和制造可行性"
+      ],
+      "expert_questions": [
+        "训练集是否覆盖企业目标成分与温度窗口",
+        "是否有未见成分独立验证和不确定性估计",
+        "计算电导与实验电导偏差如何",
+        "是否进一步进入界面/全电池和工艺验证"
+      ],
+      "cannot_infer": [
+        "ML势准确预测体相离子电导即可证明材料适合全固态量产",
+        "模拟筛选速度提升等同材料研发周期和商业化周期按同比例缩短"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/2510.09861v3"
+      ]
+    },
+    {
+      "industry_id": "synthetic-biology-biomanufacturing",
+      "id": "SB-P09",
+      "paper_id": "1911.11091",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "1139692b4f7731a6b970e3e80bdcf4a12cd794cf64294ba706e28b57a2c87c68",
+      "secemp_resolution": "single",
+      "reviewed_sections": [
+        "2 Methods / key capabilities",
+        "2.2 predictive model and optimization",
+        "3 Results and discussion",
+        "experimental metabolic-engineering examples and failure case"
+      ],
+      "method_note": "ART用机器学习/贝叶斯集成从输入组学或工程变量预测产量，再通过类似Bayesian optimization的目标函数在预测均值与不确定性之间权衡，给出下一轮应构建的菌株/输入建议。",
+      "experiment_note": "论文既使用模拟数据，也使用多个真实代谢工程项目数据；案例覆盖可再生燃料、无啤酒花风味啤酒和脂肪酸等，并专门讨论训练样本不足或工程控制不准确时模型假设失效的情况。",
+      "baselines": [
+        "simulated data ground truth",
+        "existing engineered strain data / previous DBTL observations"
+      ],
+      "metrics": [
+        "predictive accuracy/error",
+        "prediction uncertainty",
+        "target product response",
+        "recommendation improvement across DBTL iterations"
+      ],
+      "key_findings": [
+        "不确定性不仅用于报告置信度，还参与探索-利用权衡和下一轮实验推荐",
+        "在部分真实项目中模型能够指导工程选择",
+        "当训练数据过少或实验手段无法准确实现目标输入时，预测能力会显著下降，说明AI不能脱离实验可控性"
+      ],
+      "limitations": [
+        "有效性依赖输入变量能否表示关键生物状态、训练数据规模和噪声、以及实验系统能否实现推荐条件",
+        "实验室菌株优化结果不能直接外推到发酵放大、长期遗传稳定性和经济性"
+      ],
+      "expert_questions": [
+        "每轮DBTL实际样本量是多少",
+        "模型是否输出不确定性并驱动探索",
+        "推荐条件能否在实验中准确实现",
+        "跨底盘/产物迁移表现如何",
+        "放大后产率、滴度、生产强度是否保持"
+      ],
+      "cannot_infer": [
+        "AI推荐出高产候选即可证明工业菌株成功",
+        "模型在一个代谢工程项目有效即可无条件迁移到其他底盘与产物"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/1911.11091v2"
+      ]
+    },
+    {
+      "industry_id": "industrial-machine-tools",
+      "id": "IMT-P09",
+      "paper_id": "2510.03261",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "8a043e92322a6c188495b6afd4a1f6259336b8b69c0bc683dfd367dad52924e9",
+      "secemp_resolution": "single",
+      "reviewed_sections": [
+        "feature/node selection strategy",
+        "NN benchmark setup",
+        "Results and Discussion",
+        "generalised temperature/heat-flux predictors"
+      ],
+      "method_note": "用FEM生成不同初始条件下的机床温度场/热流数据，先按Pearson相关性移除高度冗余节点，再比较RNN、GRU、LSTM、BiLSTM、Transformer和TCN等时序模型；同时区分专用模型与跨工况generalised模型。",
+      "experiment_note": "模型统一训练30个epoch，使用AdamW、序列长度10、batch 32；generalised实验基于12组FEM仿真做leave-one-out交叉验证，每次把一组未见初始条件留作测试。",
+      "baselines": [
+        "RNN",
+        "GRU",
+        "LSTM",
+        "BiLSTM",
+        "Transformer",
+        "TCN",
+        "ANSYS/FEM reference field"
+      ],
+      "metrics": [
+        "MSE",
+        "standard deviation across runs",
+        "number of retained sensor nodes",
+        "generalisation error on held-out initial conditions"
+      ],
+      "key_findings": [
+        "对温度场预测，部分时序架构在跨初始条件下表现稳定",
+        "热流的跨工况泛化明显更难，某些独特初始条件导致所有架构误差上升",
+        "相关性筛点说明减少传感节点与保持场重构精度可同时优化"
+      ],
+      "limitations": [
+        "训练与测试主体仍来自FEM而非长期真实机床数据",
+        "从温度/热流预测到最终TCP/工件误差补偿仍隔着结构模型、环境变化与实机闭环"
+      ],
+      "expert_questions": [
+        "模型是否用真实机床跨季节/跨负载数据验证",
+        "预测场如何映射为TCP或工件补偿量",
+        "传感器数量削减后鲁棒性如何",
+        "异常初始条件/热源变化是否触发模型失效"
+      ],
+      "cannot_infer": [
+        "FEM上的低MSE直接等于真实机床热误差补偿精度",
+        "某一网络在benchmark最佳即可说明跨机型普遍最佳"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/2510.03261v1"
+      ]
+    },
+    {
+      "industry_id": "smart-sensors-mems",
+      "id": "SEN-P09",
+      "paper_id": "2002.02234",
+      "reading_status": "sections_reviewed",
+      "secemp_text_sha256": "49fc31baa1ec77bc1aa29945204138f6c1d1eaa76b2fd181ed6f003604b1df48",
+      "secemp_resolution": "single",
+      "reviewed_sections": [
+        "measured amplitude response / sensor characterization",
+        "nonlinear two-mode model and parameter identification",
+        "IV Results",
+        "V Conclusion"
+      ],
+      "method_note": "针对MEMS陀螺驱动模态与寄生模态的非线性耦合建立两自由度模型，并通过不同输入电压下的频率扫频响应提取参数；先分析稳态解，再用瞬态频率扫频解释稳态模型无法描述的分支跳变。",
+      "experiment_note": "使用未封装传感器进行电学表征，比较正/反向扫频和不同驱动幅值；高幅值下出现双稳态、迟滞和跳变，模型将其解释为3:1内部共振下的模态间能量转移。",
+      "baselines": [
+        "measured PLL/frequency sweep response",
+        "steady-state nonlinear model",
+        "transient coupled-mode simulation"
+      ],
+      "metrics": [
+        "amplitude response",
+        "frequency sweep hysteresis",
+        "mode frequency relation",
+        "branch stability / transition behavior"
+      ],
+      "key_findings": [
+        "单纯稳态模型能给出解分支但不能解释真实扫频中的分支选择与跳变",
+        "加入瞬态动力学后可复现实测迟滞和大幅调制区域",
+        "设计上需要管理寄生模态与主模态频率关系，而不只是提升单一Q值"
+      ],
+      "limitations": [
+        "测试对象是未封装器件且聚焦特定3:1耦合，不能代表所有MEMS陀螺失效机制",
+        "尚未把封装应力、温漂、长期老化和系统级bias稳定性纳入同一验证"
+      ],
+      "expert_questions": [
+        "寄生模态频率分布与工艺波动如何",
+        "封装后共振耦合是否变化",
+        "温度/老化是否推动模态进入危险比值",
+        "瞬态扫频和长期bias稳定性是否有量产统计"
+      ],
+      "cannot_infer": [
+        "识别一个3:1内部共振机制即可解释所有陀螺稳定性问题",
+        "未封装样片的动力学改善可直接等同封装产品长期精度改善"
+      ],
+      "review_sources": [
+        "secemp9/arxiv-complete:paper_text",
+        "https://arxiv.org/html/2002.02234v1"
+      ]
+    }
+  ]
+}

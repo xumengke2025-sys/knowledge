@@ -1,5 +1,9 @@
 # FirmBuddy 先进科技行业知识库
 
+## 新专家构建总装标准
+
+新建或重建 FirmBuddy 专家时，统一以 [EXPERT-BUILD-METHODOLOGY-V1.0](methodology/EXPERT-BUILD-METHODOLOGY-V1.0.md) 为 **Canonical 总装方法论**。该文件已经合并数据源、Taxonomy、Academic v0.9、Benchmark、Evidence Framework、Patent Method、Company Runtime、Radar、Expert Pack、Knowledge Equipment、FirmBuddy 发布与真实验收流程。旧版 `METHODOLOGY.md`、`EXPERT-OS-V0.6.md`、各 Import/Radar/Academic 文档继续作为子规范和实现参考。
+
 ## v0.9 SecEmp Section Review
 
 2026-09-22 从 8 行业稳定 SecEmp 论文中各选 1 篇完成章节级复核，共 8 篇由 `abstract_reviewed` 晋级为 `sections_reviewed`。新增方法、实验条件、基线、指标、关键发现、局限、专家追问和禁止外推等深读证据卡，并同步进入 FirmBuddy academic Knowledge Equipment。详见 `QUALITY-V0.9.md`。

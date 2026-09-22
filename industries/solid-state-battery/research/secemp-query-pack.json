@@ -16,7 +16,7 @@
     "cond-mat.mtrl-sci",
     "physics.chem-ph"
   ],
-  "min_score": 5,
+  "min_score": 4,
   "term_groups": [
     {
       "node_ids": [
@@ -122,6 +122,51 @@
         {
           "term": "solid state battery scale-up",
           "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "solid-electrolyte",
+        "cell-validation"
+      ],
+      "terms": [
+        {
+          "term": "solid-state battery",
+          "weight": 2
+        },
+        {
+          "term": "all-solid-state battery",
+          "weight": 2
+        },
+        {
+          "term": "solid electrolyte",
+          "weight": 1
+        },
+        {
+          "term": "solid state lithium battery",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "li-metal",
+        "interface",
+        "cell-validation"
+      ],
+      "terms": [
+        {
+          "term": "lithium metal solid state battery",
+          "weight": 2
+        },
+        {
+          "term": "dendrite solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "solid electrolyte lithium metal",
+          "weight": 2
         }
       ]
     }

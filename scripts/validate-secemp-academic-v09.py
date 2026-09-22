@@ -32,6 +32,8 @@ for iid, rows in by_ind.items():
         assert notes[row["id"]]["paper_id"]==row["paper_id"]
         assert row["id"] in expert and "SecEmp 深读证据卡" in expert
         assert row["secemp_text_sha256"] in expert
+        assert f"{row['id']} [{p['title']}]({p['url']})；sections_reviewed；SecEmp正文已完成章节复核" in expert
+        assert f"{row['id']} [{p['title']}]({p['url']})；abstract_reviewed；SecEmp正文可用，仅完成机器预审" not in expert
 
 catalog=json.loads((R/"academic-catalog.json").read_text(encoding="utf-8"))
 assert catalog["version"]=="0.9.0"

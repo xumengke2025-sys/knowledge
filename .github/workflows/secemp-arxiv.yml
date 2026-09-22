@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'scripts/secemp-arxiv.py'
+      - 'scripts/secemp-paper-text-triage.py'
       - 'scripts/validate-secemp-arxiv.py'
       - 'sources/secemp-arxiv/**'
       - 'industries/**/research/secemp-query-pack.json'
@@ -12,6 +13,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/secemp-arxiv.py'
+      - 'scripts/secemp-paper-text-triage.py'
       - 'scripts/validate-secemp-arxiv.py'
       - 'sources/secemp-arxiv/**'
       - 'industries/**/research/secemp-query-pack.json'
@@ -24,6 +26,10 @@ on:
         description: 'Maximum SecEmp metadata candidates kept per industry'
         required: false
         default: '120'
+      triage_top_per_industry:
+        description: 'Top candidates per industry to inspect via SecEmp paper_text'
+        required: false
+        default: '8'
 
 permissions:
   contents: write
@@ -70,11 +76,15 @@ jobs:
         env:
           LIMIT_PER_INDUSTRY: ${{ inputs.limit_per_industry || '120' }}
         run: python scripts/secemp-arxiv.py discover-all --source metadata --limit "$LIMIT_PER_INDUSTRY"
-      - name: Persist candidate pools only
+      - name: Build paper_text evidence triage cards
+        env:
+          TRIAGE_TOP_PER_INDUSTRY: ${{ inputs.triage_top_per_industry || '8' }}
+        run: python scripts/secemp-paper-text-triage.py --top-per-industry "$TRIAGE_TOP_PER_INDUSTRY"
+      - name: Persist candidate pools and evidence triage
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add industries/*/research/arxiv-candidates.jsonl radar/secemp-arxiv-summary.json
+          git add industries/*/research/arxiv-candidates.jsonl industries/*/research/paper-evidence-candidates.jsonl radar/secemp-arxiv-summary.json radar/secemp-paper-text-triage-summary.json
           git diff --cached --quiet && exit 0
           git commit -m "data: refresh SecEmp arXiv candidate pools"
           git pull --rebase origin main

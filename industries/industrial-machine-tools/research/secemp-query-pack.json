@@ -18,7 +18,7 @@
     "cs.LG",
     "physics.app-ph"
   ],
-  "min_score": 5,
+  "min_score": 4,
   "term_groups": [
     {
       "node_ids": [
@@ -129,6 +129,72 @@
         {
           "term": "machine tool accuracy test",
           "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "cnc-machine",
+        "cnc-system",
+        "five-axis"
+      ],
+      "terms": [
+        {
+          "term": "machine tool",
+          "weight": 2
+        },
+        {
+          "term": "cnc machining",
+          "weight": 2
+        },
+        {
+          "term": "numerical control machine",
+          "weight": 2
+        },
+        {
+          "term": "multi-axis machining",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "chatter",
+        "tooling",
+        "acceptance"
+      ],
+      "terms": [
+        {
+          "term": "milling process",
+          "weight": 1
+        },
+        {
+          "term": "machining dynamics",
+          "weight": 2
+        },
+        {
+          "term": "cutting force machining",
+          "weight": 2
+        },
+        {
+          "term": "surface roughness machining",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "grinding-machine",
+        "acceptance"
+      ],
+      "terms": [
+        {
+          "term": "precision grinding",
+          "weight": 2
+        },
+        {
+          "term": "grinding machine tool",
+          "weight": 2
         }
       ]
     }

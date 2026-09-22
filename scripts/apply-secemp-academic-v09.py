@@ -134,6 +134,12 @@ def main():
 
         expert_path = research / "expert-knowledge.md"
         expert = expert_path.read_text(encoding="utf-8")
+        # Keep rendered paper status consistent with the structured academic record.
+        for review in grouped[iid]:
+            p = by_id[review["id"]]
+            old_status = f"{review['id']} [{p['title']}]({p['url']})；abstract_reviewed；SecEmp正文可用，仅完成机器预审"
+            new_status = f"{review['id']} [{p['title']}]({p['url']})；sections_reviewed；SecEmp正文已完成章节复核"
+            expert = expert.replace(old_status, new_status)
         expert_path.write_text(render_section_cards(expert, notes), encoding="utf-8")
 
     catalog_path = ROOT / "academic-catalog.json"

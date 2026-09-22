@@ -88,6 +88,17 @@ def expert_markdown(industry_id: str, name: str, papers, mechanisms) -> str:
                 f"- {pid} [{p['title']}]({p['url']})；{p['reading_status']}{secemp}。{p.get('summary','')}"
             )
         lines.append("")
+
+    lines += [
+        "## 文献索引",
+        "",
+        "> 下列文献均保留阅读状态；未进入机制支持链的论文仍只作为检索/补证线索。",
+        "",
+    ]
+    for p in papers:
+        secemp = "；SecEmp正文可用，仅完成机器预审" if p.get("secemp_paper_text_available") else ""
+        lines.append(f"- {p['id']} [{p['title']}]({p['url']})；{p['reading_status']}{secemp}。{p.get('limitations','')}")
+    lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
 def evaluation_rows(industry_id: str, mechanisms):

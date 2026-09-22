@@ -21,6 +21,9 @@ jobs:
       - name: Validate v0.4 academic knowledge equipment
         run: python scripts/validate-academic.py
 
+      - name: Validate v0.7 SecEmp arXiv source contracts
+        run: python scripts/validate-secemp-arxiv.py
+
       - name: Validate v0.5 expert operating system
         run: python scripts/validate-v05.py
 

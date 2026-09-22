@@ -1,0 +1,684 @@
+{
+  "version": "0.8.0",
+  "as_of": "2026-09-22",
+  "source_dataset": "secemp9/arxiv-complete",
+  "review_scope": "ChatGPT reviewed title+abstract from committed SecEmp metadata; paper_text signals are triage only, not treated as full-text reading.",
+  "industries": {
+    "embodied-intelligence": {
+      "papers": [
+        {
+          "id": "EI-P09",
+          "paper_id": "2502.19645",
+          "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+          "year": "2025",
+          "url": "https://arxiv.org/abs/2502.19645",
+          "identifier": "arXiv:2502.19645",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "系统比较VLA微调中的动作解码、动作表示与学习目标，并在OpenVLA上形成OFT适配方案；摘要显示并行解码、动作分块和连续动作表示可同时影响控制成功率与推理吞吐，说明VLA落地效果高度依赖适配方法，而不只是底座模型本身。",
+          "limitations": "结论来自OpenVLA及LIBERO、ALOHA等特定基准和机器人设置；摘要中的成功率与吞吐提升不能直接外推到其他VLA、本体、任务分布或量产实时控制。",
+          "node_ids": [
+            "brain-cognition",
+            "data-simulation",
+            "motion-control",
+            "dexterous-hand"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "EI-P10",
+          "paper_id": "2510.21571",
+          "title": "Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos",
+          "year": "2025",
+          "url": "https://arxiv.org/abs/2510.21571",
+          "identifier": "arXiv:2510.21571",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "把无标注第一视角人类手部活动视频转换为与机器人VLA训练对齐的数据格式，并构造百万级episode预训练数据；摘要表明大规模人类视频预训练配合少量真实机器人微调，可提升新物体和真实操作任务上的泛化。",
+          "limitations": "人类手部运动到机器人动作的映射、数据处理管线和目标平台都会影响迁移效果；摘要中的规模效应与零样本结果不能理解为任意机器人无需适配即可工作。",
+          "node_ids": [
+            "brain-cognition",
+            "data-simulation",
+            "motion-control",
+            "dexterous-hand"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "EI-M07",
+          "title": "VLA落地性能高度依赖数据接口与适配方案，而不只是底座模型规模",
+          "node_ids": [
+            "brain-cognition",
+            "data-simulation",
+            "motion-control"
+          ],
+          "mechanism": "同一VLA底座在动作表示、解码方式、动作分块、训练目标以及预训练数据映射不同的情况下，控制成功率、推理吞吐和跨任务泛化可能显著变化。大规模预训练提供先验，但目标机器人上的动作接口与少量适配数据仍决定最终闭环表现。",
+          "measurable_variables": [
+            "目标机器人微调数据量",
+            "动作表示形式",
+            "动作分块长度",
+            "推理吞吐/延迟",
+            "真实机器人任务成功率",
+            "未见物体/任务成功率"
+          ],
+          "evidence_to_seek": [
+            "同一底座不同微调方案的消融",
+            "目标本体是否出现在预训练分布",
+            "真实机器人闭环测试",
+            "端到端推理频率与硬件配置"
+          ],
+          "expert_use": "当企业宣称接入某VLA或机器人基础模型时，不能只看模型名称和参数量；应继续追问动作接口、适配数据、微调策略、推理频率和目标机器人上的真实闭环结果。",
+          "false_inference": "使用更大的VLA或更多预训练数据，不能直接推出目标机器人无需适配即可获得更高成功率。",
+          "support_paper_ids": [
+            "EI-P09",
+            "EI-P10"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    },
+    "commercial-space-satcom": {
+      "papers": [
+        {
+          "id": "CS-P08",
+          "paper_id": "2412.00820",
+          "title": "Non-Terrestrial Networking for 6G: Evolution, Opportunities, and Future Directions",
+          "year": "2024",
+          "url": "https://arxiv.org/abs/2412.00820",
+          "identifier": "arXiv:2412.00820",
+          "publication_type": "review-preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "从6G演进视角梳理NTN的无线资源管理、移动性管理和动态网络切片，并把波束赋形、切换和星间传输列为关键挑战，说明大覆盖只是入口，持续服务还依赖动态资源与移动性管理。",
+          "limitations": "属于综述/前沿讨论，不能据此证明具体星座、终端或运营商已经实现相同能力；不同轨道、频段、星座密度和协议版本下约束不同。",
+          "node_ids": [
+            "satcom-network",
+            "ntn",
+            "handover",
+            "phased-array"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "CS-P09",
+          "paper_id": "2208.02683",
+          "title": "UAV Communications in Integrated Terrestrial and Non-terrestrial Networks",
+          "year": "2022",
+          "url": "https://arxiv.org/abs/2208.02683",
+          "identifier": "arXiv:2208.02683",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "研究地面蜂窝网络与LEO NTN联合为城市地面用户和无人机提供连接，摘要中的仿真表明在特定星座密度、仰角和业务假设下，将无人机流量卸载到NTN可显著降低空中用户的中断并改善共存地面用户体验。",
+          "limitations": "结果建立在特定城市、sub-6GHz、用户密度、星座密度和最低仰角假设上；不能直接外推为任意地区、频段或商业星座都能获得同等覆盖与容量收益。",
+          "node_ids": [
+            "satcom-network",
+            "ntn",
+            "handover"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "CS-M07",
+          "title": "NTN的有效服务能力取决于移动性和资源调度，覆盖范围不能替代连续性与容量",
+          "node_ids": [
+            "satcom-network",
+            "ntn",
+            "handover"
+          ],
+          "mechanism": "LEO卫星移动、波束切换和用户流量变化使NTN成为持续重配置的动态网络。资源管理、移动性管理、切片与地面网络协同共同决定中断率、吞吐和服务连续性；单纯扩大几何覆盖并不会自动形成可用容量。",
+          "measurable_variables": [
+            "切换频率与失败率",
+            "最低仰角",
+            "星座密度",
+            "用户/业务密度",
+            "资源利用率",
+            "中断概率",
+            "端到端吞吐"
+          ],
+          "evidence_to_seek": [
+            "动态移动场景而非静态覆盖图",
+            "真实或高保真流量模型",
+            "不同星座密度/仰角敏感性",
+            "TN-NTN联合调度策略",
+            "协议版本与终端能力"
+          ],
+          "expert_use": "评价卫星互联网或手机直连卫星时，把“能覆盖”拆成接入、保持、切换、容量和业务连续性五层，不用覆盖面积替代网络可用性。",
+          "false_inference": "卫星可见或协议支持NTN，不能直接推出用户在高负载和移动场景下可获得稳定连续服务。",
+          "support_paper_ids": [
+            "CS-P08",
+            "CS-P09"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    },
+    "low-altitude-economy": {
+      "papers": [
+        {
+          "id": "LA-P08",
+          "paper_id": "2604.06093",
+          "title": "eVTOL Aircraft Energy Overhead Estimation under Conflict Resolution in High-Density Airspaces",
+          "year": "2026",
+          "url": "https://arxiv.org/abs/2604.06093",
+          "identifier": "arXiv:2604.06093",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "把eVTOL功率模型与高密度空域交通仿真结合，研究战术冲突解脱带来的额外能耗；摘要显示大多数场景能耗增量较小，但高密度多机冲突存在明显长尾，提示储备能量应与空域运行状态联动。",
+          "limitations": "结论来自特定冲突解脱算法、交通密度与物理功率模型；给出的储备比例不能直接作为不同机型、航路、气象或适航规则下的统一设计值。",
+          "node_ids": [
+            "evtol",
+            "aircraft",
+            "electric-drive",
+            "traffic-management"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "LA-P09",
+          "paper_id": "2503.17313",
+          "title": "Throughput Maximizing Takeoff Scheduling for eVTOL Vehicles in On-Demand Urban Air Mobility Systems",
+          "year": "2025",
+          "url": "https://arxiv.org/abs/2503.17313",
+          "identifier": "arXiv:2503.17313",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "提出面向按需UAM的冲突无关起飞调度策略，把出行请求服务、车辆再平衡、安全间隔和能源约束共同纳入系统调度；摘要强调吞吐极限与车队规模、网络结构和调度策略存在耦合。",
+          "limitations": "吞吐最优性质依赖足够大的车队及特定网络对称性，案例城市与需求模型也影响结果；不能直接转化为现实城市起降场吞吐或商业运营效率。",
+          "node_ids": [
+            "evtol",
+            "traffic-management",
+            "operations",
+            "vertiport"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "LA-M07",
+          "title": "规模化低空运营必须把交通冲突、吞吐和能源储备联合优化",
+          "node_ids": [
+            "evtol",
+            "traffic-management",
+            "operations",
+            "electric-drive",
+            "vertiport"
+          ],
+          "mechanism": "eVTOL的可运营能力不是单机航程与起降性能的简单叠加。随着交通密度增加，冲突解脱会引入额外能耗和长尾储备需求，起飞时隙、车辆再平衡和安全间隔又共同决定系统吞吐，因此空域调度与航空器能源模型必须联动。",
+          "measurable_variables": [
+            "并发航空器数量",
+            "冲突解脱能耗增量",
+            "P95/P99储备能量",
+            "起降时隙利用率",
+            "平均等待时间",
+            "车队规模",
+            "起降场吞吐"
+          ],
+          "evidence_to_seek": [
+            "真实航路与需求分布",
+            "机型功率模型",
+            "异常/长尾冲突场景",
+            "起降场容量约束",
+            "天气和备降规则"
+          ],
+          "expert_use": "研判低空运营平台或eVTOL商业化时，不只问标称航程，而要继续核查高密度运行下的冲突处置、储备能量、起降调度和等待时间。",
+          "false_inference": "单机能完成某航程，不能直接推出同一机型在高密度城市网络中也能维持相同航程和运营吞吐。",
+          "support_paper_ids": [
+            "LA-P08",
+            "LA-P09"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    },
+    "wide-bandgap-semiconductor": {
+      "papers": [
+        {
+          "id": "WBG-P08",
+          "paper_id": "2502.19315",
+          "title": "Epitaxial high-K AlBN barrier GaN HEMTs",
+          "year": "2025",
+          "url": "https://arxiv.org/abs/2502.19315",
+          "identifier": "arXiv:2502.19315",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "研究AlBN/GaN异质结及高介电常数势垒在HEMT中的实现，摘要报告了2DEG、器件电流和跨导等初步结果，同时明确当前样品性能受接触电阻限制，说明材料/势垒创新仍需经过接触与器件工艺才能兑现。",
+          "limitations": "属于初步器件实现，长沟道结构、接触电阻和特定材料体系限制可比性；不能把单器件结果外推为量产GaN功率/射频器件的综合性能优势。",
+          "node_ids": [
+            "gan-epitaxy",
+            "gan-hemt",
+            "device"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "WBG-P09",
+          "paper_id": "2308.00955",
+          "title": "Injection-Limited and Space-Charge-Limited Conduction in Wide Bandgap Semiconductors with Velocity Saturation Effect",
+          "year": "2023",
+          "url": "https://arxiv.org/abs/2308.00955",
+          "identifier": "arXiv:2308.00955",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "建立同时考虑接触注入、空间电荷、散射与速度饱和的宽禁带半导体载流子输运模型，并以GaN与SiC为例讨论高场下不同导电机制的转换，提示高压器件分析不能只使用低场或理想欧姆假设。",
+          "limitations": "主要是理论/模型工作，示例结构与参数不能替代真实器件的陷阱、界面、几何、温度和可靠性测试；模型中的高场机制也不能直接转化为某家企业器件性能。",
+          "node_ids": [
+            "device",
+            "sic-mosfet",
+            "gan-hemt",
+            "schottky"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "WBG-M07",
+          "title": "宽禁带材料优势必须经过接触、界面和高场输运才能兑现为器件性能",
+          "node_ids": [
+            "gan-epitaxy",
+            "gan-hemt",
+            "sic-mosfet",
+            "device"
+          ],
+          "mechanism": "GaN/SiC的材料参数为高场器件提供潜力，但器件电流、跨导、动态与高压行为仍受到接触电阻、异质结界面、载流子注入、空间电荷和速度饱和等因素约束。材料或势垒创新只有经过器件工艺与真实工作点验证才能形成系统价值。",
+          "measurable_variables": [
+            "接触电阻",
+            "界面载流子密度",
+            "跨导",
+            "饱和电流",
+            "动态/高场电阻",
+            "击穿场",
+            "温度与偏压"
+          ],
+          "evidence_to_seek": [
+            "同结构器件对照",
+            "接触与界面表征",
+            "高场I-V与温度依赖",
+            "动态/可靠性测试",
+            "制造一致性"
+          ],
+          "expert_use": "看到企业宣传新材料、外延或高介电常数势垒时，要继续追问接触、界面、器件结构及高场实测，而不是直接把材料参数写成器件或系统优势。",
+          "false_inference": "更高介电常数、更宽禁带或更高理论击穿场，不能直接推出实际MOSFET/HEMT具有更低损耗或更高可靠性。",
+          "support_paper_ids": [
+            "WBG-P08",
+            "WBG-P09"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    },
+    "solid-state-battery": {
+      "papers": [
+        {
+          "id": "SSB-P10",
+          "paper_id": "2510.09861",
+          "title": "Predicting Crystal Structures and Ionic Conductivities in Li3YCl6-xBrx Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential",
+          "year": "2025",
+          "url": "https://arxiv.org/abs/2510.09861",
+          "identifier": "arXiv:2510.09861",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "通过微调通用机器学习原子间势，对卤化物固态电解质的结构、能量和锂离子动力学进行近DFT精度模拟，并探索成分对相稳定性与离子电导的影响，展示ML势在扩大复杂固态电解质计算筛选范围上的潜力。",
+          "limitations": "核心证据仍来自结构建模、DFT和分子动力学体系；模拟精度、训练域与实验结构质量决定外推能力，不能据此直接证明材料在全电池中的界面稳定、循环或制造可行性。",
+          "node_ids": [
+            "halide-electrolyte",
+            "solid-electrolyte",
+            "cell-validation"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "SSB-P11",
+          "paper_id": "2406.18263",
+          "title": "A Pre-trained Deep Potential Model for Sulfide Solid Electrolytes with Broad Coverage and High Accuracy",
+          "year": "2024",
+          "url": "https://arxiv.org/abs/2406.18263",
+          "identifier": "arXiv:2406.18263",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "构建面向硫化物固态电解质的预训练深度势模型，覆盖多元素和非平衡构型，并通过迁移、蒸馏与持续学习降低新体系模拟成本；摘要强调模型可用于更大化学空间的离子输运预测。",
+          "limitations": "模型覆盖范围仍由训练元素、构型和下游微调数据决定；复现实验电导不等于可预测界面副反应、机械失效、全电池循环和制造窗口。",
+          "node_ids": [
+            "sulfide-electrolyte",
+            "solid-electrolyte",
+            "cell-validation"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "SSB-M07",
+          "title": "机器学习势能面可扩大固态电解质筛选空间，但可信度受训练域和实验闭环约束",
+          "node_ids": [
+            "sulfide-electrolyte",
+            "halide-electrolyte",
+            "solid-electrolyte",
+            "cell-validation"
+          ],
+          "mechanism": "机器学习原子间势可以把接近第一性原理精度的结构与动力学计算扩展到更大成分和时间尺度，用于探索相稳定、离子迁移和成分优化。但模型只在训练元素、构型与物理状态覆盖范围内可靠，最终仍需与实验结构、电导和电芯条件形成闭环。",
+          "measurable_variables": [
+            "训练元素/构型覆盖",
+            "能量与力误差",
+            "外推不确定性",
+            "模拟温度",
+            "预测离子电导",
+            "实验复现误差",
+            "下游微调数据量"
+          ],
+          "evidence_to_seek": [
+            "训练/测试化学空间是否隔离",
+            "对未见成分的验证",
+            "与实验电导和结构交叉验证",
+            "模型失效/不确定性分析",
+            "从材料到全电池的额外验证"
+          ],
+          "expert_use": "企业或研究机构宣称“AI筛材料”时，要区分计算加速、材料发现和电芯验证三个层级，追问模型训练域、实验闭环和是否进入实际电池测试。",
+          "false_inference": "模型能高精度预测离子电导，不能直接推出该材料具备优良界面稳定性、循环寿命或量产可制造性。",
+          "support_paper_ids": [
+            "SSB-P10",
+            "SSB-P11"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    },
+    "synthetic-biology-biomanufacturing": {
+      "papers": [
+        {
+          "id": "SB-P08",
+          "paper_id": "2601.17582",
+          "title": "GenAI-Net: A Generative AI Framework for Automated Biomolecular Network Design",
+          "year": "2026",
+          "url": "https://arxiv.org/abs/2601.17582",
+          "identifier": "arXiv:2601.17582",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "提出生成式AI驱动的生物分子反应网络设计框架，由智能体提出反应网络并通过用户目标定义的仿真评价进行迭代，可从期望动力学行为反向生成多种候选网络与可复用结构。",
+          "limitations": "摘要主要证明计算设计与仿真搜索能力；生成的反应网络能满足模型目标不等于可在真实底盘细胞中构建、稳定表达、放大生产或满足经济性。",
+          "node_ids": [
+            "design",
+            "build",
+            "test",
+            "learn",
+            "metabolic-model",
+            "data-learning"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "SB-P09",
+          "paper_id": "1911.11091",
+          "title": "ART: A machine learning Automated Recommendation Tool for synthetic biology",
+          "year": "2020",
+          "url": "https://arxiv.org/abs/1911.11091",
+          "identifier": "arXiv:1911.11091",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "以机器学习和概率建模对下一轮应构建的菌株进行推荐，并同时给出产量预测的不确定性；摘要显示该方法可用于仿真数据和多个真实代谢工程项目，体现ML在DBTL循环中从预测走向实验优先级排序的作用。",
+          "limitations": "推荐质量依赖已有训练数据、目标函数和模型假设；在具体项目中有效不能保证迁移到其他底盘、产物或放大环境，预测高产也不等于工业发酵稳定和经济可行。",
+          "node_ids": [
+            "design",
+            "build",
+            "test",
+            "learn",
+            "data-learning",
+            "fermentation"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "SB-M08",
+          "title": "AI正在把DBTL从经验搜索转成候选生成与实验优先级排序，但实验反馈仍是最终闭环",
+          "node_ids": [
+            "design",
+            "build",
+            "test",
+            "learn",
+            "data-learning"
+          ],
+          "mechanism": "生成式模型可以从目标行为产生候选生物网络，机器学习推荐器可以根据历史实验选择下一轮菌株，从而减少盲目组合搜索。但这类方法的有效性由训练数据、目标函数、不确定性估计和真实实验反馈共同决定；计算候选必须回到构建、测试和放大验证。",
+          "measurable_variables": [
+            "候选空间大小",
+            "每轮实验数量",
+            "预测误差与不确定性",
+            "有效候选命中率",
+            "DBTL轮次",
+            "跨底盘迁移表现",
+            "湿实验验证比例"
+          ],
+          "evidence_to_seek": [
+            "真实实验而非纯仿真验证",
+            "失败候选与负样本",
+            "跨项目/底盘外推",
+            "下一轮推荐是否提升收敛速度",
+            "放大条件下性能保持"
+          ],
+          "expert_use": "评价AI+合成生物平台时，不只看生成模型或自动化设备数量，要看是否真实缩短DBTL轮次、减少实验数量并在湿实验和放大阶段保持有效。",
+          "false_inference": "AI能生成符合仿真目标的网络或预测高产菌株，不能直接推出该方案可稳定构建、工业放大或达到目标成本。",
+          "support_paper_ids": [
+            "SB-P08",
+            "SB-P09"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    },
+    "industrial-machine-tools": {
+      "papers": [
+        {
+          "id": "IMT-P08",
+          "paper_id": "2010.06869",
+          "title": "Robust Parametrization of a Model Predictive Controller for a CNC Machining Center Using Bayesian Optimization",
+          "year": "2020",
+          "url": "https://arxiv.org/abs/2010.06869",
+          "identifier": "arXiv:2010.06869",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "使用贝叶斯优化自动整定CNC加工中心模型预测控制器，并通过对仿真模型引入模型—真实对象偏差来寻找更鲁棒的参数，体现数据驱动优化不仅追求名义最优，还需显式考虑模型失配和实时约束。",
+          "limitations": "摘要中的主要比较基于加工中心仿真研究；鲁棒参数优于手工整定不等于已在所有机床、切削工况和真实生产线上获得相同收益。",
+          "node_ids": [
+            "cnc-system",
+            "servo",
+            "cnc-machine"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "IMT-P09",
+          "paper_id": "2510.03261",
+          "title": "Data-Driven Temperature Modelling of Machine Tools by Neural Networks: A Benchmark",
+          "year": "2025",
+          "url": "https://arxiv.org/abs/2510.03261",
+          "identifier": "arXiv:2510.03261",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "比较多类时间序列神经网络对机床温度与热流场的预测，尝试从直接预测单一热误差转向预测可供下游补偿模块使用的完整场信息，并关注模型对未见初始条件的泛化。",
+          "limitations": "训练数据主要来自有限元生成，准确预测温度/热流场不等于最终空间误差补偿准确；传感器布点、真实热源变化、结构老化和跨机型迁移仍需实机验证。",
+          "node_ids": [
+            "thermal-error",
+            "cnc-machine",
+            "industrial-software"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "IMT-M07",
+          "title": "数据驱动机床优化的核心是跨工况鲁棒与闭环补偿，而不只是离线预测精度",
+          "node_ids": [
+            "cnc-system",
+            "servo",
+            "thermal-error",
+            "industrial-software"
+          ],
+          "mechanism": "机床控制和热误差模型都会遭遇仿真—实机差异与工况漂移。有效的数据驱动方法需要把模型失配、不确定性和未见工况纳入优化，并通过控制或补偿闭环验证最终工件/轨迹误差，而不是停留在离线模型指标。",
+          "measurable_variables": [
+            "模型失配范围",
+            "未见工况误差",
+            "控制跟踪误差",
+            "温度/热流场误差",
+            "补偿后空间误差",
+            "实时计算周期",
+            "传感器数量"
+          ],
+          "evidence_to_seek": [
+            "实机而非纯仿真对照",
+            "跨转速/负载/环境工况",
+            "补偿前后工件或轨迹误差",
+            "长期漂移与重新标定频率",
+            "实时控制周期"
+          ],
+          "expert_use": "企业宣称AI热补偿或智能控制时，先看跨工况鲁棒性和补偿后的实机精度，再看模型离线RMSE或网络结构。",
+          "false_inference": "神经网络预测温度更准或仿真中控制器更优，不能直接推出实际机床加工精度和稳定性同步提升。",
+          "support_paper_ids": [
+            "IMT-P08",
+            "IMT-P09"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    },
+    "smart-sensors-mems": {
+      "papers": [
+        {
+          "id": "SEN-P09",
+          "paper_id": "2002.02234",
+          "title": "Nonlinear Dynamical System Model for Drive Mode Amplitude Instabilities in MEMS Gyroscopes",
+          "year": "2020",
+          "url": "https://arxiv.org/abs/2002.02234",
+          "identifier": "arXiv:2002.02234",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "通过两个非线性耦合机械模态解释MEMS陀螺驱动模态幅值不稳定，摘要指出3:1内部共振可引起模态间能量转移，并需要从稳态模型扩展到瞬态仿真才能解释测得的迟滞与动态行为。",
+          "limitations": "结论针对特定陀螺结构、寄生模态和共振条件；不能推广为所有MEMS陀螺的主要误差来源，实际稳定性还受温度、封装、真空和电子读出影响。",
+          "node_ids": [
+            "gyro",
+            "inertial",
+            "mems-chip"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        },
+        {
+          "id": "SEN-P10",
+          "paper_id": "2005.03456",
+          "title": "Optomechanical Inertial Sensors",
+          "year": "2020",
+          "url": "https://arxiv.org/abs/2005.03456",
+          "identifier": "arXiv:2005.03456",
+          "publication_type": "preprint",
+          "reading_status": "abstract_reviewed",
+          "summary": "分析紧凑型单片光机惯性传感器的基础噪声极限、灵敏度与带宽权衡，并结合机械谐振器表征讨论高mQ结构对低频加速度测量能力的支撑。",
+          "limitations": "对象为光机惯性传感路线，并非传统电容式MEMS陀螺/加速度计；模拟可达噪声底和谐振器表征不能直接等同完整传感器在封装、温漂和系统集成后的长期性能。",
+          "node_ids": [
+            "inertial",
+            "accelerometer",
+            "sensing-material"
+          ],
+          "venue": "",
+          "retrieved_at": "2026-09-22",
+          "source_dataset": "secemp9/arxiv-complete",
+          "secemp_paper_text_available": true
+        }
+      ],
+      "mechanisms": [
+        {
+          "id": "SEN-M07",
+          "title": "高端惯性传感的性能边界来自非线性动力学、噪声与带宽的共同约束",
+          "node_ids": [
+            "inertial",
+            "gyro",
+            "accelerometer",
+            "mems-chip"
+          ],
+          "mechanism": "惯性传感器的灵敏度和稳定性不仅由单一敏感结构参数决定。模态耦合和内部共振可能造成幅值迟滞与瞬态不稳定，而提高机械Q值和灵敏度又会与带宽、噪声和系统动态形成权衡，因此必须在完整动力学和噪声预算下评价。",
+          "measurable_variables": [
+            "模态频率间隔",
+            "Q值/mQ",
+            "噪声底",
+            "带宽",
+            "幅值稳定性",
+            "迟滞区间",
+            "温度漂移",
+            "瞬态响应时间"
+          ],
+          "evidence_to_seek": [
+            "频率响应与瞬态测试",
+            "寄生模态识别",
+            "完整噪声预算",
+            "温度与封装条件",
+            "长期bias稳定性",
+            "系统级带宽"
+          ],
+          "expert_use": "比较高端陀螺/加速度计时，不使用单一灵敏度、Q值或噪声底作为总性能结论；必须同时核查带宽、动态稳定、温漂与封装条件。",
+          "false_inference": "更高Q值或更低理论噪声底，不能直接推出传感器具有更好的全工况精度和长期稳定性。",
+          "support_paper_ids": [
+            "SEN-P09",
+            "SEN-P10"
+          ],
+          "confidence": "medium-high",
+          "as_of": "2026-09-22"
+        }
+      ]
+    }
+  }
+}

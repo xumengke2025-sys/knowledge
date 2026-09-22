@@ -1,0 +1,60 @@
+{
+  "version": "0.7.0",
+  "dataset": "secemp9/arxiv-complete",
+  "homepage": "https://huggingface.co/datasets/secemp9/arxiv-complete",
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "configs": {
+    "metadata": {
+      "rows": 3148796,
+      "parquet_size": "1.6 GB",
+      "role": "全量书目、分类、摘要、版本日期、DOI、许可与arXiv链接；作为行业候选发现层"
+    },
+    "versions": {
+      "rows": 5030612,
+      "parquet_size": "269 MB",
+      "role": "版本状态、最新PDF/PS标记与版本日期核查"
+    },
+    "paper_text": {
+      "papers": 2856227,
+      "coverage": 0.9071,
+      "parquet_size": "70 GB",
+      "role": "按paper_id读取已拼装TeX文本，用于高价值论文的章节、方法和实验条件复核"
+    },
+    "latex": {
+      "rows": 12348082,
+      "papers": 2860286,
+      "parquet_size": "0.16 TB",
+      "role": "仅在paper_text不足时按需读取单个TeX/Bib文件，不作为默认路径"
+    },
+    "pdf": {
+      "papers": 3131959,
+      "coverage": 0.9947,
+      "parquet_size": "8.65 TB",
+      "role": "渲染文档兜底；Knowledge仓库不批量下载、不重分发"
+    }
+  },
+  "policy": {
+    "commit_raw_full_text": false,
+    "auto_promote_candidates": false,
+    "default_discovery_config": "metadata",
+    "default_review_config": "paper_text",
+    "raw_text_cache": ".cache/secemp-arxiv/",
+    "stable_outputs": [
+      "arxiv-candidates.jsonl",
+      "academic-papers.jsonl",
+      "paper-evidence.jsonl",
+      "mechanisms.jsonl",
+      "literature-map.json",
+      "expert-knowledge.md"
+    ],
+    "license_rule": "数据集组织层CC0不等于论文全文CC0。逐篇保留license字段；稳定仓库仅保存自写研究卡、结构化事实、必要短引文和原文链接。"
+  },
+  "attribution": {
+    "dataset": "arXiv Complete Corpus, secemp9, 2026",
+    "source": "arXiv",
+    "require_paper_citation": true
+  }
+}

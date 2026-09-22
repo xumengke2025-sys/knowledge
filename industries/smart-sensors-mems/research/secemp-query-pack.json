@@ -1,0 +1,147 @@
+{
+  "version": "0.7.0",
+  "industry_id": "smart-sensors-mems",
+  "industry": "高端智能传感器与MEMS",
+  "source_dataset": "secemp9/arxiv-complete",
+  "source_configs": [
+    "metadata",
+    "paper_text"
+  ],
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "preferred_categories": [
+    "physics.app-ph",
+    "cond-mat.mtrl-sci",
+    "physics.ins-det",
+    "eess.SY"
+  ],
+  "min_score": 5,
+  "term_groups": [
+    {
+      "node_ids": [
+        "mems-chip",
+        "micromachining",
+        "wafer-package"
+      ],
+      "terms": [
+        {
+          "term": "mems fabrication",
+          "weight": 2
+        },
+        {
+          "term": "mems micromachining",
+          "weight": 2
+        },
+        {
+          "term": "wafer level packaging mems",
+          "weight": 1
+        },
+        {
+          "term": "mems process integration",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "gyro",
+        "accelerometer",
+        "inertial"
+      ],
+      "terms": [
+        {
+          "term": "mems gyroscope",
+          "weight": 2
+        },
+        {
+          "term": "mems accelerometer",
+          "weight": 2
+        },
+        {
+          "term": "inertial mems sensor",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "force-pressure",
+        "tactile-array",
+        "flexible"
+      ],
+      "terms": [
+        {
+          "term": "mems pressure sensor",
+          "weight": 2
+        },
+        {
+          "term": "flexible tactile sensor",
+          "weight": 2
+        },
+        {
+          "term": "tactile sensor array",
+          "weight": 1
+        },
+        {
+          "term": "force sensor mems",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "gas",
+        "gas-selectivity",
+        "sensing-material"
+      ],
+      "terms": [
+        {
+          "term": "mems gas sensor",
+          "weight": 2
+        },
+        {
+          "term": "gas sensor selectivity",
+          "weight": 2
+        },
+        {
+          "term": "chemical sensor mems",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "asic",
+        "calibration",
+        "sensor-fusion"
+      ],
+      "terms": [
+        {
+          "term": "sensor readout asic",
+          "weight": 2
+        },
+        {
+          "term": "mems calibration compensation",
+          "weight": 2
+        },
+        {
+          "term": "multi sensor fusion calibration",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "negative_terms": [
+    "remote sensing satellite image"
+  ],
+  "promotion_gate": [
+    "metadata命中后先做主题相关性复核",
+    "至少abstract_reviewed后才能支持摘要明确表达的方向性判断",
+    "机制结论需记录实验/方法条件和外推边界",
+    "高价值结论优先读取paper_text并与正式发表版本/其他来源交叉核验",
+    "论文证据不能替代上市公司披露或企业运行时事实"
+  ]
+}

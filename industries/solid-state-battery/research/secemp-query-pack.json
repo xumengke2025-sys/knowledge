@@ -1,0 +1,139 @@
+{
+  "version": "0.7.0",
+  "industry_id": "solid-state-battery",
+  "industry": "固态电池与下一代电池材料",
+  "source_dataset": "secemp9/arxiv-complete",
+  "source_configs": [
+    "metadata",
+    "paper_text"
+  ],
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "preferred_categories": [
+    "cond-mat.mtrl-sci",
+    "physics.chem-ph"
+  ],
+  "min_score": 5,
+  "term_groups": [
+    {
+      "node_ids": [
+        "sulfide-electrolyte",
+        "solid-electrolyte"
+      ],
+      "terms": [
+        {
+          "term": "sulfide solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "argyrodite solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "thiophosphate electrolyte",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "oxide-electrolyte",
+        "solid-electrolyte"
+      ],
+      "terms": [
+        {
+          "term": "llzo solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "garnet solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "oxide solid electrolyte battery",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "halide-electrolyte",
+        "solid-electrolyte"
+      ],
+      "terms": [
+        {
+          "term": "halide solid electrolyte",
+          "weight": 2
+        },
+        {
+          "term": "chloride solid electrolyte battery",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "interface",
+        "coating",
+        "li-metal"
+      ],
+      "terms": [
+        {
+          "term": "solid state battery interface",
+          "weight": 2
+        },
+        {
+          "term": "lithium metal solid electrolyte interface",
+          "weight": 2
+        },
+        {
+          "term": "interfacial resistance solid electrolyte",
+          "weight": 1
+        },
+        {
+          "term": "critical current density solid electrolyte",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "cell-process",
+        "dry-process",
+        "cell-validation",
+        "pilot-line"
+      ],
+      "terms": [
+        {
+          "term": "all-solid-state battery stack pressure",
+          "weight": 2
+        },
+        {
+          "term": "solid state battery dry process",
+          "weight": 2
+        },
+        {
+          "term": "ah solid state cell",
+          "weight": 1
+        },
+        {
+          "term": "solid state battery scale-up",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "negative_terms": [
+    "fuel cell solid oxide"
+  ],
+  "promotion_gate": [
+    "metadata命中后先做主题相关性复核",
+    "至少abstract_reviewed后才能支持摘要明确表达的方向性判断",
+    "机制结论需记录实验/方法条件和外推边界",
+    "高价值结论优先读取paper_text并与正式发表版本/其他来源交叉核验",
+    "论文证据不能替代上市公司披露或企业运行时事实"
+  ]
+}

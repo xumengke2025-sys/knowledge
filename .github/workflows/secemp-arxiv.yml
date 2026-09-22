@@ -1,0 +1,81 @@
+name: Build SecEmp arXiv academic pools
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/secemp-arxiv.py'
+      - 'scripts/validate-secemp-arxiv.py'
+      - 'sources/secemp-arxiv/**'
+      - 'industries/**/research/secemp-query-pack.json'
+      - '.github/workflows/secemp-arxiv.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/secemp-arxiv.py'
+      - 'scripts/validate-secemp-arxiv.py'
+      - 'sources/secemp-arxiv/**'
+      - 'industries/**/research/secemp-query-pack.json'
+      - '.github/workflows/secemp-arxiv.yml'
+  schedule:
+    - cron: '43 3 1 * *'
+  workflow_dispatch:
+    inputs:
+      limit_per_industry:
+        description: 'Maximum SecEmp metadata candidates kept per industry'
+        required: false
+        default: '120'
+
+permissions:
+  contents: write
+
+jobs:
+  smoke:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install query dependency
+        run: pip install 'duckdb>=1.3,<2'
+      - name: Validate SecEmp contracts
+        run: python scripts/validate-secemp-arxiv.py
+      - name: Query the public SecEmp sample
+        run: |
+          python scripts/secemp-arxiv.py discover \
+            --industry embodied-intelligence \
+            --source sample \
+            --limit 20 \
+            --out /tmp/secemp-sample.jsonl
+          test -f /tmp/secemp-sample.jsonl
+
+  build-full-pools:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install query dependency
+        run: pip install 'duckdb>=1.3,<2'
+      - name: Validate SecEmp contracts
+        run: python scripts/validate-secemp-arxiv.py
+      - name: Build eight industry metadata candidate pools
+        env:
+          LIMIT_PER_INDUSTRY: ${{ inputs.limit_per_industry || '120' }}
+        run: python scripts/secemp-arxiv.py discover-all --source metadata --limit "$LIMIT_PER_INDUSTRY"
+      - name: Persist candidate pools only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add industries/*/research/arxiv-candidates.jsonl radar/secemp-arxiv-summary.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: refresh SecEmp arXiv candidate pools"
+          git pull --rebase origin main
+          git push origin HEAD:main

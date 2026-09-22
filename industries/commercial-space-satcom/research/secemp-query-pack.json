@@ -1,0 +1,156 @@
+{
+  "version": "0.7.0",
+  "industry_id": "commercial-space-satcom",
+  "industry": "商业航天与卫星互联网",
+  "source_dataset": "secemp9/arxiv-complete",
+  "source_configs": [
+    "metadata",
+    "paper_text"
+  ],
+  "snapshot": {
+    "metadata": "2026-08-30",
+    "files": "2026-09-05"
+  },
+  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "preferred_categories": [
+    "eess.SP",
+    "cs.NI",
+    "cs.IT",
+    "math.IT",
+    "astro-ph.IM"
+  ],
+  "min_score": 5,
+  "term_groups": [
+    {
+      "node_ids": [
+        "satcom-network",
+        "ntn",
+        "handover"
+      ],
+      "terms": [
+        {
+          "term": "non-terrestrial network",
+          "weight": 2
+        },
+        {
+          "term": "satellite internet",
+          "weight": 2
+        },
+        {
+          "term": "leo satellite network",
+          "weight": 1
+        },
+        {
+          "term": "satellite handover",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "inter-satellite-link",
+        "payload-communication",
+        "digital-payload"
+      ],
+      "terms": [
+        {
+          "term": "inter-satellite link",
+          "weight": 2
+        },
+        {
+          "term": "optical intersatellite",
+          "weight": 2
+        },
+        {
+          "term": "digital payload satellite",
+          "weight": 1
+        },
+        {
+          "term": "regenerative payload",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "phased-array",
+        "rf-chips",
+        "ground-terminal"
+      ],
+      "terms": [
+        {
+          "term": "satellite phased array",
+          "weight": 2
+        },
+        {
+          "term": "satellite beamforming",
+          "weight": 2
+        },
+        {
+          "term": "satellite terminal antenna",
+          "weight": 1
+        },
+        {
+          "term": "ka-band terminal",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "navigation",
+        "ttc",
+        "satellite-operation"
+      ],
+      "terms": [
+        {
+          "term": "satellite navigation augmentation",
+          "weight": 2
+        },
+        {
+          "term": "telemetry tracking command",
+          "weight": 2
+        },
+        {
+          "term": "satellite constellation operation",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "node_ids": [
+        "launch",
+        "rocket-engine",
+        "ground-test"
+      ],
+      "terms": [
+        {
+          "term": "reusable launch vehicle",
+          "weight": 2
+        },
+        {
+          "term": "rocket engine reuse",
+          "weight": 2
+        },
+        {
+          "term": "launch vehicle reentry",
+          "weight": 1
+        },
+        {
+          "term": "rocket engine test",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "negative_terms": [
+    "cellular terrestrial only"
+  ],
+  "promotion_gate": [
+    "metadata命中后先做主题相关性复核",
+    "至少abstract_reviewed后才能支持摘要明确表达的方向性判断",
+    "机制结论需记录实验/方法条件和外推边界",
+    "高价值结论优先读取paper_text并与正式发表版本/其他来源交叉核验",
+    "论文证据不能替代上市公司披露或企业运行时事实"
+  ]
+}

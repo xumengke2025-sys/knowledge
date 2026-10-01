@@ -1,6 +1,6 @@
 {
   "version": "0.7.0",
-  "as_of": "2026-09-22",
+  "as_of": "2026-10-01",
   "dataset": "secemp9/arxiv-complete",
   "dataset_snapshot": {
     "metadata": "2026-08-30",

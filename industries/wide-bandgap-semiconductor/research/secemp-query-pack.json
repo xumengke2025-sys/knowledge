@@ -11,7 +11,7 @@
     "metadata": "2026-08-30",
     "files": "2026-09-05"
   },
-  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "purpose": "从SecEmp arXiv全量快照中构造高召回、taxonomy对齐的行业学术候选池；技术词命中为硬门槛，arXiv分类只参与排序，候选不直接进入稳定知识。",
   "preferred_categories": [
     "cond-mat.mtrl-sci",
     "physics.app-ph",
@@ -41,6 +41,26 @@
         {
           "term": "wide bandgap crystal growth",
           "weight": 1
+        },
+        {
+          "term": "silicon carbide",
+          "weight": 2
+        },
+        {
+          "term": "4h-sic",
+          "weight": 1
+        },
+        {
+          "term": "sic crystal",
+          "weight": 2
+        },
+        {
+          "term": "gallium nitride",
+          "weight": 2
+        },
+        {
+          "term": "gan bulk",
+          "weight": 1
         }
       ]
     },
@@ -67,6 +87,22 @@
         {
           "term": "sic wafer polishing",
           "weight": 1
+        },
+        {
+          "term": "sic epitaxy",
+          "weight": 2
+        },
+        {
+          "term": "sic wafer",
+          "weight": 2
+        },
+        {
+          "term": "gan-on-silicon",
+          "weight": 2
+        },
+        {
+          "term": "gan on sic",
+          "weight": 2
         }
       ]
     },
@@ -93,6 +129,26 @@
         {
           "term": "wide bandgap power device",
           "weight": 1
+        },
+        {
+          "term": "sic mosfet",
+          "weight": 2
+        },
+        {
+          "term": "gan hemt",
+          "weight": 1
+        },
+        {
+          "term": "wide bandgap semiconductor",
+          "weight": 2
+        },
+        {
+          "term": "power semiconductor",
+          "weight": 2
+        },
+        {
+          "term": "schottky barrier diode",
+          "weight": 2
         }
       ]
     },
@@ -113,6 +169,22 @@
         {
           "term": "high temperature power packaging",
           "weight": 1
+        },
+        {
+          "term": "power module packaging",
+          "weight": 2
+        },
+        {
+          "term": "wide bandgap packaging",
+          "weight": 2
+        },
+        {
+          "term": "sic power module",
+          "weight": 2
+        },
+        {
+          "term": "gan power module",
+          "weight": 2
         }
       ]
     },
@@ -133,6 +205,26 @@
         {
           "term": "power cycling sic module",
           "weight": 1
+        },
+        {
+          "term": "sic reliability",
+          "weight": 2
+        },
+        {
+          "term": "gan reliability",
+          "weight": 2
+        },
+        {
+          "term": "gate oxide reliability",
+          "weight": 2
+        },
+        {
+          "term": "threshold voltage instability",
+          "weight": 2
+        },
+        {
+          "term": "power cycling",
+          "weight": 2
         }
       ]
     },
@@ -144,15 +236,7 @@
       ],
       "terms": [
         {
-          "term": "silicon carbide",
-          "weight": 1
-        },
-        {
           "term": "sic semiconductor",
-          "weight": 2
-        },
-        {
-          "term": "wide bandgap semiconductor",
           "weight": 2
         },
         {
@@ -168,14 +252,6 @@
         "device"
       ],
       "terms": [
-        {
-          "term": "sic mosfet",
-          "weight": 2
-        },
-        {
-          "term": "gan hemt",
-          "weight": 2
-        },
         {
           "term": "algan gan hemt",
           "weight": 2

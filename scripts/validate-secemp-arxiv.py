@@ -50,6 +50,23 @@ for iid in IDS:
     assert len(all_terms) == len(set(all_terms)), (iid, "duplicate terms")
     assert referenced_nodes, iid
 
+# Generated candidate pools, when present, must remain review-only and map to taxonomy.
+for iid in IDS:
+    p = R / "industries" / iid / "research/arxiv-candidates.jsonl"
+    if not p.exists():
+        continue
+    nodes = {x["id"] for x in load(R / "industries" / iid / "taxonomy.json")["nodes"]}
+    for line_no, line in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        mapped = set(row.get("taxonomy_node_ids") or [])
+        assert mapped, (iid, line_no, "candidate_without_taxonomy_node")
+        assert mapped <= nodes, (iid, line_no, mapped - nodes)
+        assert row.get("verification_status") == "candidate", (iid, line_no)
+        assert row.get("reading_status") == "metadata_only", (iid, line_no)
+        assert row.get("promote_to_stable_knowledge") is False, (iid, line_no)
+
 for p in R.rglob("*"):
     if not p.is_file() or ".git" in p.parts or ".cache" in p.parts:
         continue

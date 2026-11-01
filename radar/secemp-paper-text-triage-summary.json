@@ -1,6 +1,6 @@
 {
   "version": "0.7.1",
-  "as_of": "2026-10-01T10:35:32.848423+00:00",
+  "as_of": "2026-11-01T10:55:02.708868+00:00",
   "dataset": "secemp9/arxiv-complete",
   "top_per_industry": 8,
   "unique_papers_requested": 64,

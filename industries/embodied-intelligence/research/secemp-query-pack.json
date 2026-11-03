@@ -11,7 +11,7 @@
     "metadata": "2026-08-30",
     "files": "2026-09-05"
   },
-  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "purpose": "从SecEmp arXiv全量快照中构造高召回、taxonomy对齐的行业学术候选池；技术词命中为硬门槛，arXiv分类只参与排序，候选不直接进入稳定知识。",
   "preferred_categories": [
     "cs.RO",
     "cs.AI",
@@ -46,6 +46,22 @@
         {
           "term": "world model robotics",
           "weight": 1
+        },
+        {
+          "term": "vision language action",
+          "weight": 2
+        },
+        {
+          "term": "robot learning",
+          "weight": 2
+        },
+        {
+          "term": "robotics foundation model",
+          "weight": 2
+        },
+        {
+          "term": "embodied intelligence",
+          "weight": 2
         }
       ]
     },
@@ -74,6 +90,22 @@
         {
           "term": "whole-body control",
           "weight": 1
+        },
+        {
+          "term": "robot manipulation",
+          "weight": 2
+        },
+        {
+          "term": "manipulation policy",
+          "weight": 2
+        },
+        {
+          "term": "humanoid locomotion",
+          "weight": 2
+        },
+        {
+          "term": "motion imitation",
+          "weight": 2
         }
       ]
     },
@@ -99,6 +131,18 @@
         {
           "term": "multimodal robot perception",
           "weight": 1
+        },
+        {
+          "term": "robot tactile sensing",
+          "weight": 2
+        },
+        {
+          "term": "robot force sensing",
+          "weight": 2
+        },
+        {
+          "term": "robot perception",
+          "weight": 2
         }
       ]
     },
@@ -124,6 +168,18 @@
         {
           "term": "series elastic actuator",
           "weight": 1
+        },
+        {
+          "term": "humanoid robot actuator",
+          "weight": 2
+        },
+        {
+          "term": "robot actuator",
+          "weight": 2
+        },
+        {
+          "term": "robot joint",
+          "weight": 2
         }
       ]
     },
@@ -144,6 +200,18 @@
         {
           "term": "real-world robot evaluation",
           "weight": 1
+        },
+        {
+          "term": "robot benchmark",
+          "weight": 2
+        },
+        {
+          "term": "sim-to-real robot",
+          "weight": 2
+        },
+        {
+          "term": "robotics dataset",
+          "weight": 2
         }
       ]
     }

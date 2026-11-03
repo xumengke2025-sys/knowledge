@@ -11,7 +11,7 @@
     "metadata": "2026-08-30",
     "files": "2026-09-05"
   },
-  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "purpose": "从SecEmp arXiv全量快照中构造高召回、taxonomy对齐的行业学术候选池；技术词命中为硬门槛，arXiv分类只参与排序，候选不直接进入稳定知识。",
   "preferred_categories": [
     "q-bio.BM",
     "q-bio.MN",
@@ -42,6 +42,26 @@
         {
           "term": "protein design biomanufacturing",
           "weight": 1
+        },
+        {
+          "term": "synthetic biology",
+          "weight": 2
+        },
+        {
+          "term": "metabolic engineering",
+          "weight": 2
+        },
+        {
+          "term": "metabolic flux",
+          "weight": 2
+        },
+        {
+          "term": "genome-scale metabolic",
+          "weight": 2
+        },
+        {
+          "term": "pathway design",
+          "weight": 2
         }
       ]
     },
@@ -63,6 +83,22 @@
         {
           "term": "pathway engineering microorganism",
           "weight": 1
+        },
+        {
+          "term": "cell factory",
+          "weight": 2
+        },
+        {
+          "term": "strain engineering",
+          "weight": 2
+        },
+        {
+          "term": "chassis cell",
+          "weight": 2
+        },
+        {
+          "term": "pathway engineering",
+          "weight": 2
         }
       ]
     },
@@ -84,6 +120,22 @@
         {
           "term": "automation biofoundry",
           "weight": 1
+        },
+        {
+          "term": "biofoundry",
+          "weight": 2
+        },
+        {
+          "term": "design-build-test-learn",
+          "weight": 2
+        },
+        {
+          "term": "high-throughput screening",
+          "weight": 2
+        },
+        {
+          "term": "synthetic biology automation",
+          "weight": 2
         }
       ]
     },
@@ -109,6 +161,26 @@
         {
           "term": "industrial biomanufacturing scale",
           "weight": 1
+        },
+        {
+          "term": "biomanufacturing",
+          "weight": 2
+        },
+        {
+          "term": "fermentation",
+          "weight": 2
+        },
+        {
+          "term": "bioreactor",
+          "weight": 2
+        },
+        {
+          "term": "bioprocess scale-up",
+          "weight": 2
+        },
+        {
+          "term": "oxygen transfer",
+          "weight": 2
         }
       ]
     },
@@ -130,27 +202,25 @@
         {
           "term": "life cycle assessment biomanufacturing",
           "weight": 1
-        }
-      ]
-    },
-    {
-      "node_ids": [
-        "design",
-        "build",
-        "test",
-        "learn"
-      ],
-      "terms": [
+        },
         {
-          "term": "synthetic biology",
+          "term": "downstream bioprocess",
           "weight": 2
         },
         {
-          "term": "design build test learn synthetic biology",
+          "term": "separation purification bioprocess",
           "weight": 2
         },
         {
-          "term": "biofoundry",
+          "term": "techno-economic biomanufacturing",
+          "weight": 2
+        },
+        {
+          "term": "life cycle biomanufacturing",
+          "weight": 2
+        },
+        {
+          "term": "enzyme engineering",
           "weight": 2
         }
       ]
@@ -163,15 +233,7 @@
       ],
       "terms": [
         {
-          "term": "biomanufacturing",
-          "weight": 2
-        },
-        {
           "term": "microbial cell factory",
-          "weight": 2
-        },
-        {
-          "term": "metabolic engineering",
           "weight": 2
         },
         {

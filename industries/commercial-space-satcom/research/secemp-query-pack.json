@@ -11,7 +11,7 @@
     "metadata": "2026-08-30",
     "files": "2026-09-05"
   },
-  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "purpose": "从SecEmp arXiv全量快照中构造高召回、taxonomy对齐的行业学术候选池；技术词命中为硬门槛，arXiv分类只参与排序，候选不直接进入稳定知识。",
   "preferred_categories": [
     "eess.SP",
     "cs.NI",
@@ -43,6 +43,22 @@
         {
           "term": "satellite handover",
           "weight": 1
+        },
+        {
+          "term": "satellite communication",
+          "weight": 2
+        },
+        {
+          "term": "satellite network",
+          "weight": 2
+        },
+        {
+          "term": "LEO constellation",
+          "weight": 2
+        },
+        {
+          "term": "non terrestrial network",
+          "weight": 2
         }
       ]
     },
@@ -68,6 +84,18 @@
         {
           "term": "regenerative payload",
           "weight": 1
+        },
+        {
+          "term": "intersatellite link",
+          "weight": 2
+        },
+        {
+          "term": "laser communication satellite",
+          "weight": 2
+        },
+        {
+          "term": "satellite optical link",
+          "weight": 2
         }
       ]
     },
@@ -93,6 +121,18 @@
         {
           "term": "ka-band terminal",
           "weight": 1
+        },
+        {
+          "term": "phased array satellite",
+          "weight": 2
+        },
+        {
+          "term": "electronically steered array",
+          "weight": 2
+        },
+        {
+          "term": "satellite user terminal",
+          "weight": 2
         }
       ]
     },
@@ -114,6 +154,18 @@
         {
           "term": "satellite constellation operation",
           "weight": 1
+        },
+        {
+          "term": "satellite navigation",
+          "weight": 2
+        },
+        {
+          "term": "satellite telemetry",
+          "weight": 2
+        },
+        {
+          "term": "constellation management",
+          "weight": 2
         }
       ]
     },
@@ -139,6 +191,18 @@
         {
           "term": "rocket engine test",
           "weight": 1
+        },
+        {
+          "term": "reusable rocket",
+          "weight": 2
+        },
+        {
+          "term": "launch vehicle",
+          "weight": 2
+        },
+        {
+          "term": "liquid rocket engine",
+          "weight": 2
         }
       ]
     }

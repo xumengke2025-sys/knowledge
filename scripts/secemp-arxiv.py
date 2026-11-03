@@ -97,12 +97,12 @@ def score_expr(pack: dict[str, Any], has_categories: bool) -> str:
             f"(CASE WHEN contains(lower(coalesce(title,'')), {q}) THEN {3*w} ELSE 0 END"
             f" + CASE WHEN contains(lower(coalesce(abstract,'')), {q}) THEN {w} ELSE 0 END)"
         )
-    if has_categories:
+    if has_categories and pack.get("preferred_categories"):
+        checks = []
         for cat in pack.get("preferred_categories", []):
             q = sql_quote(cat)
-            parts.append(
-                f"CASE WHEN list_contains(string_split(coalesce(categories,''), ' '), {q}) THEN 4 ELSE 0 END"
-            )
+            checks.append(f"list_contains(string_split(coalesce(categories,''), ' '), {q})")
+        parts.append("CASE WHEN (" + " OR ".join(checks) + ") THEN 4 ELSE 0 END")
     for term in pack.get("negative_terms", []):
         q = sql_quote(term.lower())
         parts.append(
@@ -119,14 +119,23 @@ def term_filter_expr(pack: dict[str, Any]) -> str:
         )
     return "(" + " OR ".join(parts) + ")" if parts else "false"
 
-def match_nodes(row: dict[str, Any], pack: dict[str, Any]) -> list[str]:
+def match_details(row: dict[str, Any], pack: dict[str, Any]) -> tuple[list[str], list[str]]:
     text = ((row.get("title") or "") + " " + (row.get("abstract") or "")).lower()
     nodes: list[str] = []
+    matched_terms: list[str] = []
     for group in pack.get("term_groups", []):
-        terms = [x if isinstance(x, str) else x.get("term", "") for x in group.get("terms", [])]
-        if any(t and t.lower() in text for t in terms):
+        group_hits = []
+        for item in group.get("terms", []):
+            term = item if isinstance(item, str) else item.get("term", "")
+            if term and term.lower() in text:
+                group_hits.append(term)
+        if group_hits:
             nodes.extend(group.get("node_ids", []))
-    return list(dict.fromkeys(nodes))
+            matched_terms.extend(group_hits)
+    return list(dict.fromkeys(nodes)), list(dict.fromkeys(matched_terms))
+
+def match_nodes(row: dict[str, Any], pack: dict[str, Any]) -> list[str]:
+    return match_details(row, pack)[0]
 
 def discover(industry_id: str, limit: int, source: str, out: pathlib.Path | None) -> dict[str, Any]:
     pack = load_pack(industry_id)
@@ -172,12 +181,13 @@ def discover(industry_id: str, limit: int, source: str, out: pathlib.Path | None
         for k, v in list(r.items()):
             if isinstance(v, (dt.date, dt.datetime)):
                 r[k] = v.isoformat()
-        nodes = match_nodes(r, pack)
-        if not nodes:
+        nodes, matched_terms = match_details(r, pack)
+        if not nodes or not matched_terms:
             continue
         r.update({
             "industry_id": industry_id,
             "taxonomy_node_ids": nodes,
+            "matched_terms": matched_terms,
             "source_dataset": DATASET,
             "source_config": source,
             "dataset_snapshot": SNAPSHOT,

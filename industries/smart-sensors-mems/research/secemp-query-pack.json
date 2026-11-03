@@ -11,7 +11,7 @@
     "metadata": "2026-08-30",
     "files": "2026-09-05"
   },
-  "purpose": "从SecEmp arXiv全量快照中构造行业学术候选池；命中只代表候选，不直接进入稳定知识。",
+  "purpose": "从SecEmp arXiv全量快照中构造高召回、taxonomy对齐的行业学术候选池；技术词命中为硬门槛，arXiv分类只参与排序，候选不直接进入稳定知识。",
   "preferred_categories": [
     "physics.app-ph",
     "cond-mat.mtrl-sci",
@@ -42,6 +42,22 @@
         {
           "term": "mems process integration",
           "weight": 1
+        },
+        {
+          "term": "mems sensor",
+          "weight": 2
+        },
+        {
+          "term": "microelectromechanical systems",
+          "weight": 2
+        },
+        {
+          "term": "mems packaging",
+          "weight": 2
+        },
+        {
+          "term": "mems resonator",
+          "weight": 2
         }
       ]
     },
@@ -63,6 +79,14 @@
         {
           "term": "inertial mems sensor",
           "weight": 1
+        },
+        {
+          "term": "inertial sensor",
+          "weight": 2
+        },
+        {
+          "term": "inertial measurement unit",
+          "weight": 2
         }
       ]
     },
@@ -88,6 +112,26 @@
         {
           "term": "force sensor mems",
           "weight": 1
+        },
+        {
+          "term": "pressure sensor",
+          "weight": 2
+        },
+        {
+          "term": "tactile sensor",
+          "weight": 2
+        },
+        {
+          "term": "flexible sensor",
+          "weight": 2
+        },
+        {
+          "term": "force sensor",
+          "weight": 2
+        },
+        {
+          "term": "piezoresistive sensor",
+          "weight": 2
         }
       ]
     },
@@ -109,6 +153,18 @@
         {
           "term": "chemical sensor mems",
           "weight": 1
+        },
+        {
+          "term": "chemical sensor",
+          "weight": 2
+        },
+        {
+          "term": "gas sensing",
+          "weight": 2
+        },
+        {
+          "term": "gas selectivity",
+          "weight": 2
         }
       ]
     },
@@ -130,42 +186,21 @@
         {
           "term": "multi sensor fusion calibration",
           "weight": 1
-        }
-      ]
-    },
-    {
-      "node_ids": [
-        "mems-chip",
-        "industrial-sensor"
-      ],
-      "terms": [
+        },
         {
-          "term": "mems sensor",
+          "term": "readout asic",
           "weight": 2
         },
         {
-          "term": "microelectromechanical sensor",
+          "term": "sensor calibration",
           "weight": 2
         },
         {
-          "term": "microelectromechanical systems",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "node_ids": [
-        "inertial",
-        "gyro",
-        "accelerometer"
-      ],
-      "terms": [
-        {
-          "term": "inertial sensor",
-          "weight": 1
+          "term": "sensor fusion",
+          "weight": 2
         },
         {
-          "term": "inertial measurement unit mems",
+          "term": "signal conditioning sensor",
           "weight": 2
         }
       ]
